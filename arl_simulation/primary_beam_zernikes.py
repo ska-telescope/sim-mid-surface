@@ -45,8 +45,7 @@ if __name__ == '__main__':
     cellsize = 8 * numpy.pi / 180.0 / 280
     model = create_image_from_visibility(vis, npixel=512, cellsize=cellsize, override_cellsize=False)
     
-    # These are the nolls that main left-right symmetry
-    key_nolls = [3, 5, 6, 7]
+    # These are the nolls that maintain left-right symmetry
     plt.clf()
     fig, axs = plt.subplots(4, 4, gridspec_kw={'hspace': 0, 'wspace': 0})
     ntrials = 16
@@ -55,6 +54,7 @@ if __name__ == '__main__':
                                               taper='gaussian',
                                               edge=0.03162278, padding=2, use_local=True)
 
+    key_nolls = [3, 5, 6, 7]
     for noll in key_nolls:
         zernike = {'coeff': 1.0, 'noll': noll}
         zernike['vp'] = create_vp_generic_numeric(model, pointingcentre=None, diameter=15.0, blockage=0.0,
@@ -68,10 +68,11 @@ if __name__ == '__main__':
         for i in range(len(key_nolls)):
             vp.data += coeffs[i] * zernikes[i]['vp'].data
         
+        vp.data = vp.data / numpy.max(numpy.abs(vp.data))
         vp_data = vp.data / numpy.max(numpy.abs(vp.data))
         vp.data = numpy.real(vp_data)
         print(trial, qa_image(vp))
-        export_image_to_fits(vp, "%s/test_voltage_pattern_real_%s_NOLL%d.fits" % (dir, 'MID_RANDOM_ZERNIKES', trial))
+        export_image_to_fits(vp, "%s/test_voltage_pattern_real_%s_trial%d.fits" % (dir, 'MID_RANDOM_ZERNIKES', trial))
         row = (trial - 1) // 4
         col = (trial - 1) - 4 * row
         ax = axs[row, col]
