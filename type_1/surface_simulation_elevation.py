@@ -81,8 +81,8 @@ def create_vis_list_with_errors(band, sub_bvis_list, sub_components, sub_model_l
     def get_band_vp(band, el):
     
         if band == 'B1':
-            vpa = import_image_from_fits('%s/B1_%d_0765_real_interpolated.fits' % (vp_directory, int(el)))
-            vpa_imag = import_image_from_fits('%s/B1_%d_0765_imag_interpolated.fits' % (vp_directory, int(el)))
+            vpa = import_image_from_fits('%s/B1_%d_0565_real_interpolated.fits' % (vp_directory, int(el)))
+            vpa_imag = import_image_from_fits('%s/B1_%d_0565_imag_interpolated.fits' % (vp_directory, int(el)))
         elif band == 'B2':
             vpa = import_image_from_fits('%s/B2_%d_1360_real_interpolated.fits' % (vp_directory, int(el)))
             vpa_imag = import_image_from_fits('%s/B2_%d_1360_imag_interpolated.fits' % (vp_directory, int(el)))
