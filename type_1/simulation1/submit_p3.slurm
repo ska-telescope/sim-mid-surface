@@ -69,7 +69,7 @@ for host in `cat hostfile.$JOBID`; do
     fi
     echo "run dask-worker"
     ssh $host dask-worker --host ${host} --nprocs 2 --nthreads 1  \
-    --memory-limit 0.75 --local-directory /tmp $scheduler:8786  &
+    --memory-limit 50GB --local-directory /tmp $scheduler:8786  &
         sleep 1
     hostIndex="1"
 done
@@ -79,6 +79,15 @@ echo "Scheduler and workers now running"
 export ARL_DASK_SCHEDULER=${scheduler}:8786
 echo "Scheduler is running at ${scheduler}"
 
+<<<<<<< HEAD:type_1/band2/simulation1/submit_p3.slurm
+CMD="python ../../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 \
+--ngroup_visibility 2880 --ngroup_components 100 --show True \
+--elevation_sampling 1.0 \
+--seed 18051955  --band B2 --pbtype MID_FEKO_B2 --memory 32  --integration_time 30 --use_agg True \
+--time_chunk 30 --time_range -6 6 --shared_directory /alaska/tim/Code/sim-mid-surface/shared \
+--vp_directory /alaska/tim/Code/sim-mid-surface/beams/interpolated/ \
+| tee surface_simulation.log"
+=======
 CMD="python ../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 \
 --ngroup_visibility 24 --ngroup_components 100 --show True \
 --seed 18051955  --pbtype MID_GRASP --memory 32  --integration_time 30 --use_agg True --time_chunk \
@@ -86,6 +95,7 @@ CMD="python ../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux
 --vp_directory /alaska/tim/Code/sim-mid-pointing/beam_models/EMSS/with_elevation/ \
 | tee surface_simulation
 .log"
+>>>>>>> parent of c1115c2... End of sprint 3.6:type_1/simulation1/submit_p3.slurm
 echo "About to execute $CMD"
 
 eval $CMD

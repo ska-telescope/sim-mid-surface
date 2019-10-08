@@ -1,0 +1,3738 @@
+PYTHONPATH is /alaska/tim/Code/algorithm-reference-library/::/alaska/tim/Code/algorithm-reference-library/
+Running python: /alaska/tim/alaska-venv/bin/python
+Running dask-scheduler: /alaska/tim/alaska-venv/bin/dask-scheduler
+/var/spool/slurm/job00757/slurm_script: line 52: cd: /mnt/storage-ssd/tim/Code/sim-mid-surface/type_1/1: No such file or directory
+Changed directory to /alaska/tim/Code/sim-mid-surface/type_1/1 degree/simulation1.
+
+openhpc-compute-[0-15]
+Working on openhpc-compute-0 ....
+run dask-scheduler
+run dask-worker
+distributed.scheduler - INFO - -----------------------------------------------
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:33151'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:41959'
+Working on openhpc-compute-1 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-q2ubdu9a', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_c6ac4sg', purging
+Working on openhpc-compute-2 ....
+run dask-worker
+Working on openhpc-compute-3 ....
+run dask-worker
+Working on openhpc-compute-4 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:46830'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:40429'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-sm8uz6op', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-wne6lq2l', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:36989'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:39241'
+distributed.scheduler - INFO - Clear task state
+Working on openhpc-compute-5 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:38892
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:46539
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:38892
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:46539
+distributed.worker - INFO -          dashboard at:         10.60.253.14:43185
+distributed.worker - INFO -          dashboard at:         10.60.253.14:43098
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-n0jg_dng
+distributed.worker - INFO -       Local Directory:       /tmp/worker-vq0hzeuy
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.dashboard.proxy - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: pip install jupyter-server-proxy
+distributed.scheduler - INFO -   Scheduler at:   tcp://10.60.253.14:8786
+distributed.scheduler - INFO -   dashboard at:                     :8787
+distributed.scheduler - INFO - Local Directory:    /tmp/scheduler-xm7ufdbq
+distributed.scheduler - INFO - -----------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.14:46539
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:46539
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.14:38892
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:38892
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-xcqnc2eg', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-oftkwlgv', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:43923'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:41570'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_f0hbej0', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-2m9_1xan', purging
+Working on openhpc-compute-6 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:42424
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:45742
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:45742
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:42424
+distributed.worker - INFO -          dashboard at:         10.60.253.19:42089
+distributed.worker - INFO -          dashboard at:         10.60.253.19:45624
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-8ssqe70i
+distributed.worker - INFO -       Local Directory:       /tmp/worker-was0gnie
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.19:45742
+distributed.scheduler - INFO - Register tcp://10.60.253.19:42424
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:45742
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:42424
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-7 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:35335'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:33941'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-5fkym00q', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-mlb1l8uq', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:34982'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:40761'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:39861
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:44464
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:44464
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:39861
+distributed.worker - INFO -          dashboard at:         10.60.253.38:36659
+distributed.worker - INFO -          dashboard at:         10.60.253.38:43310
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-wjj8z9ho
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-swhqs07u
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.38:39861
+distributed.scheduler - INFO - Register tcp://10.60.253.38:44464
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:39861
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:44464
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-lsy4u05c', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-tfwexsic', purging
+Working on openhpc-compute-8 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:42976'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:41272'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-7yajh9td', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-6btz9y5a', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:45218
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:35000
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:35000
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:45218
+distributed.worker - INFO -          dashboard at:         10.60.253.23:35364
+distributed.worker - INFO -          dashboard at:         10.60.253.23:38270
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-o9aae8_2
+distributed.worker - INFO -       Local Directory:       /tmp/worker-5_a_12c3
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.23:45218
+distributed.scheduler - INFO - Register tcp://10.60.253.23:35000
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:45218
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:35000
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-9 ....
+run dask-worker
+Working on openhpc-compute-10 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:38693'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:46718'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:37001'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:38943'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-sella715', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-j8i02lwd', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:42183
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:33478
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:42183
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:33478
+distributed.worker - INFO -          dashboard at:         10.60.253.16:42379
+distributed.worker - INFO -          dashboard at:         10.60.253.16:43574
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-4_114b35
+distributed.worker - INFO -       Local Directory:       /tmp/worker-ldhtptoz
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.16:42183
+distributed.scheduler - INFO - Register tcp://10.60.253.16:33478
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:42183
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:33478
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:40182'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:36010'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-5rs55y36', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-dtyt12gg', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:44941
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:38876
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:44941
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:38876
+distributed.worker - INFO -          dashboard at:         10.60.253.18:38056
+distributed.worker - INFO -          dashboard at:         10.60.253.18:35266
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-fics93bi
+distributed.worker - INFO -       Local Directory:       /tmp/worker-8jkovs7y
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.18:38876
+distributed.scheduler - INFO - Register tcp://10.60.253.18:44941
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:38876
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:44941
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-11 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-04yf7lnr', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-fqx_q727', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:39522'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:42324'
+Working on openhpc-compute-12 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-rzvjmrbd', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-y7mdkm0n', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:41554'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:41102
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:36380
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:41102
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:36380
+distributed.worker - INFO -          dashboard at:         10.60.253.39:37823
+distributed.worker - INFO -          dashboard at:         10.60.253.39:43050
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-nd5lrqr_
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-_11iy84l
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:45884'
+distributed.scheduler - INFO - Register tcp://10.60.253.39:41102
+distributed.scheduler - INFO - Register tcp://10.60.253.39:36380
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:41102
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:36380
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:38986
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:38986
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:43554
+distributed.worker - INFO -          dashboard at:         10.60.253.55:35598
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:43554
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.55:46225
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-gr1m3lzo
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-f_4tixpc
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.55:43554
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:43554
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Register tcp://10.60.253.55:38986
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:38986
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-13 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-z1n3561a', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_keine8a', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:34380'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:40107'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:38633
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:38633
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:35318
+distributed.worker - INFO -          dashboard at:         10.60.253.33:46338
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:35318
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.33:39674
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-6xx3_z5i
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-a7j_i_i_
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.33:35318
+distributed.scheduler - INFO - Register tcp://10.60.253.33:38633
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:35318
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:38633
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-14 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-v_qgnnd9', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-22zx77oq', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:40687
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:40687
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:45954
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:45954
+distributed.worker - INFO -          dashboard at:         10.60.253.41:33281
+distributed.worker - INFO -          dashboard at:         10.60.253.41:41527
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-q6b0zkpu
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-l05gd41n
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.41:40687
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:40687
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:45954
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:45954
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:43113'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:43696'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ri3cdqqc', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-quyt6mrd', purging
+Working on openhpc-compute-15 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:42008'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:45605'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ljjo8k5q', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-xf0h4qx2', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:43216
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:41508
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:43216
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:41508
+distributed.worker - INFO -          dashboard at:         10.60.253.51:39110
+distributed.worker - INFO -          dashboard at:         10.60.253.51:40364
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-87dkonxs
+distributed.worker - INFO -       Local Directory:       /tmp/worker-hxyif2wo
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.51:43216
+distributed.scheduler - INFO - Register tcp://10.60.253.51:41508
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:43216
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:41508
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+Scheduler and workers now running
+Scheduler is running at openhpc-compute-0
+About to execute python ../../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 --ngroup_visibility 2880 --ngroup_components 100 --show True --elevation_sampling 1.0 --seed 18051955  --pbtype MID_FEKO_B1 --memory 32  --integration_time 30 --use_agg True --time_chunk 30 --time_range -6 6 --shared_directory /alaska/tim/Code/sim-mid-surface/shared --vp_directory /alaska/tim/Code/sim-mid-surface/beams/interpolated/ | tee surface_simulation.log
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:40845
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:34675
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:40845
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:34675
+distributed.worker - INFO -          dashboard at:         10.60.253.27:37017
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.27:34780
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-j19mk5jp
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-ri8oak15
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.27:40845
+distributed.scheduler - INFO - Register tcp://10.60.253.27:34675
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:40845
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:34675
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:41495'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:41005'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:39297
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:36404
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:39297
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:36404
+distributed.worker - INFO -          dashboard at:         10.60.253.12:44391
+distributed.worker - INFO -          dashboard at:         10.60.253.12:43084
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-nqyv60wx
+distributed.worker - INFO -       Local Directory:       /tmp/worker-68yxcua0
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.12:36404
+distributed.scheduler - INFO - Register tcp://10.60.253.12:39297
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:36404
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:39297
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-iat3xgjk', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-h3e2c8oj', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:46191
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:37300
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:46191
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:37300
+distributed.worker - INFO -          dashboard at:         10.60.253.36:44464
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.60.253.36:36747
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-6ts1kov5
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-29yvbgjx
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.36:46191
+distributed.scheduler - INFO - Register tcp://10.60.253.36:37300
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:46191
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:37300
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:36723
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:39703
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:36723
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:39703
+distributed.worker - INFO -          dashboard at:         10.60.253.37:36586
+distributed.worker - INFO -          dashboard at:         10.60.253.37:43580
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-96qy0m90
+distributed.worker - INFO -       Local Directory:       /tmp/worker-atis807a
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.37:36723
+distributed.scheduler - INFO - Register tcp://10.60.253.37:39703
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:36723
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:39703
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.13:46310
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.13:39274
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.13:46310
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.13:39274
+distributed.worker - INFO -          dashboard at:         10.60.253.13:43312
+distributed.worker - INFO -          dashboard at:         10.60.253.13:35634
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-dtj9of80
+distributed.worker - INFO -       Local Directory:       /tmp/worker-6z2etbby
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.13:46310
+distributed.scheduler - INFO - Register tcp://10.60.253.13:39274
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:46310
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:39274
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Receive client connection: Client-bf3a8798-ceea-11e9-916c-246e964883a8
+distributed.core - INFO - Starting established connection
+ 
+Distributed simulation of surface errors for SKA-MID
+----------------------------------------------------
+ 
+Random number seed is 18051955
+Creating Dask Client using externally defined scheduler
+Using 32 Dask workers
+Start times for chunks:
+array([-21600., -21570., -21540., ...,  21510.,  21540.,  21570.])
+Start times for chunks above elevation limit:
+[-21600.0,
+ -21570.0,
+ -21540.0,
+ -21510.0,
+ -21480.0,
+ -21450.0,
+ -21420.0,
+ -21390.0,
+ -21360.0,
+ -21330.0,
+ -21300.0,
+ -21270.0,
+ -21240.0,
+ -21210.0,
+ -21180.0,
+ -21150.0,
+ -21120.0,
+ -21090.0,
+ -21060.0,
+ -21030.0,
+ -21000.0,
+ -20970.0,
+ -20940.0,
+ -20910.0,
+ -20880.0,
+ -20850.0,
+ -20820.0,
+ -20790.0,
+ -20760.0,
+ -20730.0,
+ -20700.0,
+ -20670.0,
+ -20640.0,
+ -20610.0,
+ -20580.0,
+ -20550.0,
+ -20520.0,
+ -20490.0,
+ -20460.0,
+ -20430.0,
+ -20400.0,
+ -20370.0,
+ -20340.0,
+ -20310.0,
+ -20280.0,
+ -20250.0,
+ -20220.0,
+ -20190.0,
+ -20160.0,
+ -20130.0,
+ -20100.0,
+ -20070.0,
+ -20040.0,
+ -20010.0,
+ -19980.0,
+ -19950.0,
+ -19920.0,
+ -19890.0,
+ -19860.0,
+ -19830.0,
+ -19800.0,
+ -19770.0,
+ -19740.0,
+ -19710.0,
+ -19680.0,
+ -19650.0,
+ -19620.0,
+ -19590.0,
+ -19560.0,
+ -19530.0,
+ -19500.0,
+ -19470.0,
+ -19440.0,
+ -19410.0,
+ -19380.0,
+ -19350.0,
+ -19320.0,
+ -19290.0,
+ -19260.0,
+ -19230.0,
+ -19200.0,
+ -19170.0,
+ -19140.0,
+ -19110.0,
+ -19080.0,
+ -19050.0,
+ -19020.0,
+ -18990.0,
+ -18960.0,
+ -18930.0,
+ -18900.0,
+ -18870.0,
+ -18840.0,
+ -18810.0,
+ -18780.0,
+ -18750.0,
+ -18720.0,
+ -18690.0,
+ -18660.0,
+ -18630.0,
+ -18600.0,
+ -18570.0,
+ -18540.0,
+ -18510.0,
+ -18480.0,
+ -18450.0,
+ -18420.0,
+ -18390.0,
+ -18360.0,
+ -18330.0,
+ -18300.0,
+ -18270.0,
+ -18240.0,
+ -18210.0,
+ -18180.0,
+ -18150.0,
+ -18120.0,
+ -18090.0,
+ -18060.0,
+ -18030.0,
+ -18000.0,
+ -17970.0,
+ -17940.0,
+ -17910.0,
+ -17880.0,
+ -17850.0,
+ -17820.0,
+ -17790.0,
+ -17760.0,
+ -17730.0,
+ -17700.0,
+ -17670.0,
+ -17640.0,
+ -17610.0,
+ -17580.0,
+ -17550.0,
+ -17520.0,
+ -17490.0,
+ -17460.0,
+ -17430.0,
+ -17400.0,
+ -17370.0,
+ -17340.0,
+ -17310.0,
+ -17280.0,
+ -17250.0,
+ -17220.0,
+ -17190.0,
+ -17160.0,
+ -17130.0,
+ -17100.0,
+ -17070.0,
+ -17040.0,
+ -17010.0,
+ -16980.0,
+ -16950.0,
+ -16920.0,
+ -16890.0,
+ -16860.0,
+ -16830.0,
+ -16800.0,
+ -16770.0,
+ -16740.0,
+ -16710.0,
+ -16680.0,
+ -16650.0,
+ -16620.0,
+ -16590.0,
+ -16560.0,
+ -16530.0,
+ -16500.0,
+ -16470.0,
+ -16440.0,
+ -16410.0,
+ -16380.0,
+ -16350.0,
+ -16320.0,
+ -16290.0,
+ -16260.0,
+ -16230.0,
+ -16200.0,
+ -16170.0,
+ -16140.0,
+ -16110.0,
+ -16080.0,
+ -16050.0,
+ -16020.0,
+ -15990.0,
+ -15960.0,
+ -15930.0,
+ -15900.0,
+ -15870.0,
+ -15840.0,
+ -15810.0,
+ -15780.0,
+ -15750.0,
+ -15720.0,
+ -15690.0,
+ -15660.0,
+ -15630.0,
+ -15600.0,
+ -15570.0,
+ -15540.0,
+ -15510.0,
+ -15480.0,
+ -15450.0,
+ -15420.0,
+ -15390.0,
+ -15360.0,
+ -15330.0,
+ -15300.0,
+ -15270.0,
+ -15240.0,
+ -15210.0,
+ -15180.0,
+ -15150.0,
+ -15120.0,
+ -15090.0,
+ -15060.0,
+ -15030.0,
+ -15000.0,
+ -14970.0,
+ -14940.0,
+ -14910.0,
+ -14880.0,
+ -14850.0,
+ -14820.0,
+ -14790.0,
+ -14760.0,
+ -14730.0,
+ -14700.0,
+ -14670.0,
+ -14640.0,
+ -14610.0,
+ -14580.0,
+ -14550.0,
+ -14520.0,
+ -14490.0,
+ -14460.0,
+ -14430.0,
+ -14400.0,
+ -14370.0,
+ -14340.0,
+ -14310.0,
+ -14280.0,
+ -14250.0,
+ -14220.0,
+ -14190.0,
+ -14160.0,
+ -14130.0,
+ -14100.0,
+ -14070.0,
+ -14040.0,
+ -14010.0,
+ -13980.0,
+ -13950.0,
+ -13920.0,
+ -13890.0,
+ -13860.0,
+ -13830.0,
+ -13800.0,
+ -13770.0,
+ -13740.0,
+ -13710.0,
+ -13680.0,
+ -13650.0,
+ -13620.0,
+ -13590.0,
+ -13560.0,
+ -13530.0,
+ -13500.0,
+ -13470.0,
+ -13440.0,
+ -13410.0,
+ -13380.0,
+ -13350.0,
+ -13320.0,
+ -13290.0,
+ -13260.0,
+ -13230.0,
+ -13200.0,
+ -13170.0,
+ -13140.0,
+ -13110.0,
+ -13080.0,
+ -13050.0,
+ -13020.0,
+ -12990.0,
+ -12960.0,
+ -12930.0,
+ -12900.0,
+ -12870.0,
+ -12840.0,
+ -12810.0,
+ -12780.0,
+ -12750.0,
+ -12720.0,
+ -12690.0,
+ -12660.0,
+ -12630.0,
+ -12600.0,
+ -12570.0,
+ -12540.0,
+ -12510.0,
+ -12480.0,
+ -12450.0,
+ -12420.0,
+ -12390.0,
+ -12360.0,
+ -12330.0,
+ -12300.0,
+ -12270.0,
+ -12240.0,
+ -12210.0,
+ -12180.0,
+ -12150.0,
+ -12120.0,
+ -12090.0,
+ -12060.0,
+ -12030.0,
+ -12000.0,
+ -11970.0,
+ -11940.0,
+ -11910.0,
+ -11880.0,
+ -11850.0,
+ -11820.0,
+ -11790.0,
+ -11760.0,
+ -11730.0,
+ -11700.0,
+ -11670.0,
+ -11640.0,
+ -11610.0,
+ -11580.0,
+ -11550.0,
+ -11520.0,
+ -11490.0,
+ -11460.0,
+ -11430.0,
+ -11400.0,
+ -11370.0,
+ -11340.0,
+ -11310.0,
+ -11280.0,
+ -11250.0,
+ -11220.0,
+ -11190.0,
+ -11160.0,
+ -11130.0,
+ -11100.0,
+ -11070.0,
+ -11040.0,
+ -11010.0,
+ -10980.0,
+ -10950.0,
+ -10920.0,
+ -10890.0,
+ -10860.0,
+ -10830.0,
+ -10800.0,
+ -10770.0,
+ -10740.0,
+ -10710.0,
+ -10680.0,
+ -10650.0,
+ -10620.0,
+ -10590.0,
+ -10560.0,
+ -10530.0,
+ -10500.0,
+ -10470.0,
+ -10440.0,
+ -10410.0,
+ -10380.0,
+ -10350.0,
+ -10320.0,
+ -10290.0,
+ -10260.0,
+ -10230.0,
+ -10200.0,
+ -10170.0,
+ -10140.0,
+ -10110.0,
+ -10080.0,
+ -10050.0,
+ -10020.0,
+ -9990.0,
+ -9960.0,
+ -9930.0,
+ -9900.0,
+ -9870.0,
+ -9840.0,
+ -9810.0,
+ -9780.0,
+ -9750.0,
+ -9720.0,
+ -9690.0,
+ -9660.0,
+ -9630.0,
+ -9600.0,
+ -9570.0,
+ -9540.0,
+ -9510.0,
+ -9480.0,
+ -9450.0,
+ -9420.0,
+ -9390.0,
+ -9360.0,
+ -9330.0,
+ -9300.0,
+ -9270.0,
+ -9240.0,
+ -9210.0,
+ -9180.0,
+ -9150.0,
+ -9120.0,
+ -9090.0,
+ -9060.0,
+ -9030.0,
+ -9000.0,
+ -8970.0,
+ -8940.0,
+ -8910.0,
+ -8880.0,
+ -8850.0,
+ -8820.0,
+ -8790.0,
+ -8760.0,
+ -8730.0,
+ -8700.0,
+ -8670.0,
+ -8640.0,
+ -8610.0,
+ -8580.0,
+ -8550.0,
+ -8520.0,
+ -8490.0,
+ -8460.0,
+ -8430.0,
+ -8400.0,
+ -8370.0,
+ -8340.0,
+ -8310.0,
+ -8280.0,
+ -8250.0,
+ -8220.0,
+ -8190.0,
+ -8160.0,
+ -8130.0,
+ -8100.0,
+ -8070.0,
+ -8040.0,
+ -8010.0,
+ -7980.0,
+ -7950.0,
+ -7920.0,
+ -7890.0,
+ -7860.0,
+ -7830.0,
+ -7800.0,
+ -7770.0,
+ -7740.0,
+ -7710.0,
+ -7680.0,
+ -7650.0,
+ -7620.0,
+ -7590.0,
+ -7560.0,
+ -7530.0,
+ -7500.0,
+ -7470.0,
+ -7440.0,
+ -7410.0,
+ -7380.0,
+ -7350.0,
+ -7320.0,
+ -7290.0,
+ -7260.0,
+ -7230.0,
+ -7200.0,
+ -7170.0,
+ -7140.0,
+ -7110.0,
+ -7080.0,
+ -7050.0,
+ -7020.0,
+ -6990.0,
+ -6960.0,
+ -6930.0,
+ -6900.0,
+ -6870.0,
+ -6840.0,
+ -6810.0,
+ -6780.0,
+ -6750.0,
+ -6720.0,
+ -6690.0,
+ -6660.0,
+ -6630.0,
+ -6600.0,
+ -6570.0,
+ -6540.0,
+ -6510.0,
+ -6480.0,
+ -6450.0,
+ -6420.0,
+ -6390.0,
+ -6360.0,
+ -6330.0,
+ -6300.0,
+ -6270.0,
+ -6240.0,
+ -6210.0,
+ -6180.0,
+ -6150.0,
+ -6120.0,
+ -6090.0,
+ -6060.0,
+ -6030.0,
+ -6000.0,
+ -5970.0,
+ -5940.0,
+ -5910.0,
+ -5880.0,
+ -5850.0,
+ -5820.0,
+ -5790.0,
+ -5760.0,
+ -5730.0,
+ -5700.0,
+ -5670.0,
+ -5640.0,
+ -5610.0,
+ -5580.0,
+ -5550.0,
+ -5520.0,
+ -5490.0,
+ -5460.0,
+ -5430.0,
+ -5400.0,
+ -5370.0,
+ -5340.0,
+ -5310.0,
+ -5280.0,
+ -5250.0,
+ -5220.0,
+ -5190.0,
+ -5160.0,
+ -5130.0,
+ -5100.0,
+ -5070.0,
+ -5040.0,
+ -5010.0,
+ -4980.0,
+ -4950.0,
+ -4920.0,
+ -4890.0,
+ -4860.0,
+ -4830.0,
+ -4800.0,
+ -4770.0,
+ -4740.0,
+ -4710.0,
+ -4680.0,
+ -4650.0,
+ -4620.0,
+ -4590.0,
+ -4560.0,
+ -4530.0,
+ -4500.0,
+ -4470.0,
+ -4440.0,
+ -4410.0,
+ -4380.0,
+ -4350.0,
+ -4320.0,
+ -4290.0,
+ -4260.0,
+ -4230.0,
+ -4200.0,
+ -4170.0,
+ -4140.0,
+ -4110.0,
+ -4080.0,
+ -4050.0,
+ -4020.0,
+ -3990.0,
+ -3960.0,
+ -3930.0,
+ -3900.0,
+ -3870.0,
+ -3840.0,
+ -3810.0,
+ -3780.0,
+ -3750.0,
+ -3720.0,
+ -3690.0,
+ -3660.0,
+ -3630.0,
+ -3600.0,
+ -3570.0,
+ -3540.0,
+ -3510.0,
+ -3480.0,
+ -3450.0,
+ -3420.0,
+ -3390.0,
+ -3360.0,
+ -3330.0,
+ -3300.0,
+ -3270.0,
+ -3240.0,
+ -3210.0,
+ -3180.0,
+ -3150.0,
+ -3120.0,
+ -3090.0,
+ -3060.0,
+ -3030.0,
+ -3000.0,
+ -2970.0,
+ -2940.0,
+ -2910.0,
+ -2880.0,
+ -2850.0,
+ -2820.0,
+ -2790.0,
+ -2760.0,
+ -2730.0,
+ -2700.0,
+ -2670.0,
+ -2640.0,
+ -2610.0,
+ -2580.0,
+ -2550.0,
+ -2520.0,
+ -2490.0,
+ -2460.0,
+ -2430.0,
+ -2400.0,
+ -2370.0,
+ -2340.0,
+ -2310.0,
+ -2280.0,
+ -2250.0,
+ -2220.0,
+ -2190.0,
+ -2160.0,
+ -2130.0,
+ -2100.0,
+ -2070.0,
+ -2040.0,
+ -2010.0,
+ -1980.0,
+ -1950.0,
+ -1920.0,
+ -1890.0,
+ -1860.0,
+ -1830.0,
+ -1800.0,
+ -1770.0,
+ -1740.0,
+ -1710.0,
+ -1680.0,
+ -1650.0,
+ -1620.0,
+ -1590.0,
+ -1560.0,
+ -1530.0,
+ -1500.0,
+ -1470.0,
+ -1440.0,
+ -1410.0,
+ -1380.0,
+ -1350.0,
+ -1320.0,
+ -1290.0,
+ -1260.0,
+ -1230.0,
+ -1200.0,
+ -1170.0,
+ -1140.0,
+ -1110.0,
+ -1080.0,
+ -1050.0,
+ -1020.0,
+ -990.0,
+ -960.0,
+ -930.0,
+ -900.0,
+ -870.0,
+ -840.0,
+ -810.0,
+ -780.0,
+ -750.0,
+ -720.0,
+ -690.0,
+ -660.0,
+ -630.0,
+ -600.0,
+ -570.0,
+ -540.0,
+ -510.0,
+ -480.0,
+ -450.0,
+ -420.0,
+ -390.0,
+ -360.0,
+ -330.0,
+ -300.0,
+ -270.0,
+ -240.0,
+ -210.0,
+ -180.0,
+ -150.0,
+ -120.0,
+ -90.0,
+ -60.0,
+ -30.0,
+ 0.0,
+ 30.0,
+ 60.0,
+ 90.0,
+ 120.0,
+ 150.0,
+ 180.0,
+ 210.0,
+ 240.0,
+ 270.0,
+ 300.0,
+ 330.0,
+ 360.0,
+ 390.0,
+ 420.0,
+ 450.0,
+ 480.0,
+ 510.0,
+ 540.0,
+ 570.0,
+ 600.0,
+ 630.0,
+ 660.0,
+ 690.0,
+ 720.0,
+ 750.0,
+ 780.0,
+ 810.0,
+ 840.0,
+ 870.0,
+ 900.0,
+ 930.0,
+ 960.0,
+ 990.0,
+ 1020.0,
+ 1050.0,
+ 1080.0,
+ 1110.0,
+ 1140.0,
+ 1170.0,
+ 1200.0,
+ 1230.0,
+ 1260.0,
+ 1290.0,
+ 1320.0,
+ 1350.0,
+ 1380.0,
+ 1410.0,
+ 1440.0,
+ 1470.0,
+ 1500.0,
+ 1530.0,
+ 1560.0,
+ 1590.0,
+ 1620.0,
+ 1650.0,
+ 1680.0,
+ 1710.0,
+ 1740.0,
+ 1770.0,
+ 1800.0,
+ 1830.0,
+ 1860.0,
+ 1890.0,
+ 1920.0,
+ 1950.0,
+ 1980.0,
+ 2010.0,
+ 2040.0,
+ 2070.0,
+ 2100.0,
+ 2130.0,
+ 2160.0,
+ 2190.0,
+ 2220.0,
+ 2250.0,
+ 2280.0,
+ 2310.0,
+ 2340.0,
+ 2370.0,
+ 2400.0,
+ 2430.0,
+ 2460.0,
+ 2490.0,
+ 2520.0,
+ 2550.0,
+ 2580.0,
+ 2610.0,
+ 2640.0,
+ 2670.0,
+ 2700.0,
+ 2730.0,
+ 2760.0,
+ 2790.0,
+ 2820.0,
+ 2850.0,
+ 2880.0,
+ 2910.0,
+ 2940.0,
+ 2970.0,
+ 3000.0,
+ 3030.0,
+ 3060.0,
+ 3090.0,
+ 3120.0,
+ 3150.0,
+ 3180.0,
+ 3210.0,
+ 3240.0,
+ 3270.0,
+ 3300.0,
+ 3330.0,
+ 3360.0,
+ 3390.0,
+ 3420.0,
+ 3450.0,
+ 3480.0,
+ 3510.0,
+ 3540.0,
+ 3570.0,
+ 3600.0,
+ 3630.0,
+ 3660.0,
+ 3690.0,
+ 3720.0,
+ 3750.0,
+ 3780.0,
+ 3810.0,
+ 3840.0,
+ 3870.0,
+ 3900.0,
+ 3930.0,
+ 3960.0,
+ 3990.0,
+ 4020.0,
+ 4050.0,
+ 4080.0,
+ 4110.0,
+ 4140.0,
+ 4170.0,
+ 4200.0,
+ 4230.0,
+ 4260.0,
+ 4290.0,
+ 4320.0,
+ 4350.0,
+ 4380.0,
+ 4410.0,
+ 4440.0,
+ 4470.0,
+ 4500.0,
+ 4530.0,
+ 4560.0,
+ 4590.0,
+ 4620.0,
+ 4650.0,
+ 4680.0,
+ 4710.0,
+ 4740.0,
+ 4770.0,
+ 4800.0,
+ 4830.0,
+ 4860.0,
+ 4890.0,
+ 4920.0,
+ 4950.0,
+ 4980.0,
+ 5010.0,
+ 5040.0,
+ 5070.0,
+ 5100.0,
+ 5130.0,
+ 5160.0,
+ 5190.0,
+ 5220.0,
+ 5250.0,
+ 5280.0,
+ 5310.0,
+ 5340.0,
+ 5370.0,
+ 5400.0,
+ 5430.0,
+ 5460.0,
+ 5490.0,
+ 5520.0,
+ 5550.0,
+ 5580.0,
+ 5610.0,
+ 5640.0,
+ 5670.0,
+ 5700.0,
+ 5730.0,
+ 5760.0,
+ 5790.0,
+ 5820.0,
+ 5850.0,
+ 5880.0,
+ 5910.0,
+ 5940.0,
+ 5970.0,
+ 6000.0,
+ 6030.0,
+ 6060.0,
+ 6090.0,
+ 6120.0,
+ 6150.0,
+ 6180.0,
+ 6210.0,
+ 6240.0,
+ 6270.0,
+ 6300.0,
+ 6330.0,
+ 6360.0,
+ 6390.0,
+ 6420.0,
+ 6450.0,
+ 6480.0,
+ 6510.0,
+ 6540.0,
+ 6570.0,
+ 6600.0,
+ 6630.0,
+ 6660.0,
+ 6690.0,
+ 6720.0,
+ 6750.0,
+ 6780.0,
+ 6810.0,
+ 6840.0,
+ 6870.0,
+ 6900.0,
+ 6930.0,
+ 6960.0,
+ 6990.0,
+ 7020.0,
+ 7050.0,
+ 7080.0,
+ 7110.0,
+ 7140.0,
+ 7170.0,
+ 7200.0,
+ 7230.0,
+ 7260.0,
+ 7290.0,
+ 7320.0,
+ 7350.0,
+ 7380.0,
+ 7410.0,
+ 7440.0,
+ 7470.0,
+ 7500.0,
+ 7530.0,
+ 7560.0,
+ 7590.0,
+ 7620.0,
+ 7650.0,
+ 7680.0,
+ 7710.0,
+ 7740.0,
+ 7770.0,
+ 7800.0,
+ 7830.0,
+ 7860.0,
+ 7890.0,
+ 7920.0,
+ 7950.0,
+ 7980.0,
+ 8010.0,
+ 8040.0,
+ 8070.0,
+ 8100.0,
+ 8130.0,
+ 8160.0,
+ 8190.0,
+ 8220.0,
+ 8250.0,
+ 8280.0,
+ 8310.0,
+ 8340.0,
+ 8370.0,
+ 8400.0,
+ 8430.0,
+ 8460.0,
+ 8490.0,
+ 8520.0,
+ 8550.0,
+ 8580.0,
+ 8610.0,
+ 8640.0,
+ 8670.0,
+ 8700.0,
+ 8730.0,
+ 8760.0,
+ 8790.0,
+ 8820.0,
+ 8850.0,
+ 8880.0,
+ 8910.0,
+ 8940.0,
+ 8970.0,
+ 9000.0,
+ 9030.0,
+ 9060.0,
+ 9090.0,
+ 9120.0,
+ 9150.0,
+ 9180.0,
+ 9210.0,
+ 9240.0,
+ 9270.0,
+ 9300.0,
+ 9330.0,
+ 9360.0,
+ 9390.0,
+ 9420.0,
+ 9450.0,
+ 9480.0,
+ 9510.0,
+ 9540.0,
+ 9570.0,
+ 9600.0,
+ 9630.0,
+ 9660.0,
+ 9690.0,
+ 9720.0,
+ 9750.0,
+ 9780.0,
+ 9810.0,
+ 9840.0,
+ 9870.0,
+ 9900.0,
+ 9930.0,
+ 9960.0,
+ 9990.0,
+ 10020.0,
+ 10050.0,
+ 10080.0,
+ 10110.0,
+ 10140.0,
+ 10170.0,
+ 10200.0,
+ 10230.0,
+ 10260.0,
+ 10290.0,
+ 10320.0,
+ 10350.0,
+ 10380.0,
+ 10410.0,
+ 10440.0,
+ 10470.0,
+ 10500.0,
+ 10530.0,
+ 10560.0,
+ 10590.0,
+ 10620.0,
+ 10650.0,
+ 10680.0,
+ 10710.0,
+ 10740.0,
+ 10770.0,
+ 10800.0,
+ 10830.0,
+ 10860.0,
+ 10890.0,
+ 10920.0,
+ 10950.0,
+ 10980.0,
+ 11010.0,
+ 11040.0,
+ 11070.0,
+ 11100.0,
+ 11130.0,
+ 11160.0,
+ 11190.0,
+ 11220.0,
+ 11250.0,
+ 11280.0,
+ 11310.0,
+ 11340.0,
+ 11370.0,
+ 11400.0,
+ 11430.0,
+ 11460.0,
+ 11490.0,
+ 11520.0,
+ 11550.0,
+ 11580.0,
+ 11610.0,
+ 11640.0,
+ 11670.0,
+ 11700.0,
+ 11730.0,
+ 11760.0,
+ 11790.0,
+ 11820.0,
+ 11850.0,
+ 11880.0,
+ 11910.0,
+ 11940.0,
+ 11970.0,
+ 12000.0,
+ 12030.0,
+ 12060.0,
+ 12090.0,
+ 12120.0,
+ 12150.0,
+ 12180.0,
+ 12210.0,
+ 12240.0,
+ 12270.0,
+ 12300.0,
+ 12330.0,
+ 12360.0,
+ 12390.0,
+ 12420.0,
+ 12450.0,
+ 12480.0,
+ 12510.0,
+ 12540.0,
+ 12570.0,
+ 12600.0,
+ 12630.0,
+ 12660.0,
+ 12690.0,
+ 12720.0,
+ 12750.0,
+ 12780.0,
+ 12810.0,
+ 12840.0,
+ 12870.0,
+ 12900.0,
+ 12930.0,
+ 12960.0,
+ 12990.0,
+ 13020.0,
+ 13050.0,
+ 13080.0,
+ 13110.0,
+ 13140.0,
+ 13170.0,
+ 13200.0,
+ 13230.0,
+ 13260.0,
+ 13290.0,
+ 13320.0,
+ 13350.0,
+ 13380.0,
+ 13410.0,
+ 13440.0,
+ 13470.0,
+ 13500.0,
+ 13530.0,
+ 13560.0,
+ 13590.0,
+ 13620.0,
+ 13650.0,
+ 13680.0,
+ 13710.0,
+ 13740.0,
+ 13770.0,
+ 13800.0,
+ 13830.0,
+ 13860.0,
+ 13890.0,
+ 13920.0,
+ 13950.0,
+ 13980.0,
+ 14010.0,
+ 14040.0,
+ 14070.0,
+ 14100.0,
+ 14130.0,
+ 14160.0,
+ 14190.0,
+ 14220.0,
+ 14250.0,
+ 14280.0,
+ 14310.0,
+ 14340.0,
+ 14370.0,
+ 14400.0,
+ 14430.0,
+ 14460.0,
+ 14490.0,
+ 14520.0,
+ 14550.0,
+ 14580.0,
+ 14610.0,
+ 14640.0,
+ 14670.0,
+ 14700.0,
+ 14730.0,
+ 14760.0,
+ 14790.0,
+ 14820.0,
+ 14850.0,
+ 14880.0,
+ 14910.0,
+ 14940.0,
+ 14970.0,
+ 15000.0,
+ 15030.0,
+ 15060.0,
+ 15090.0,
+ 15120.0,
+ 15150.0,
+ 15180.0,
+ 15210.0,
+ 15240.0,
+ 15270.0,
+ 15300.0,
+ 15330.0,
+ 15360.0,
+ 15390.0,
+ 15420.0,
+ 15450.0,
+ 15480.0,
+ 15510.0,
+ 15540.0,
+ 15570.0,
+ 15600.0,
+ 15630.0,
+ 15660.0,
+ 15690.0,
+ 15720.0,
+ 15750.0,
+ 15780.0,
+ 15810.0,
+ 15840.0,
+ 15870.0,
+ 15900.0,
+ 15930.0,
+ 15960.0,
+ 15990.0,
+ 16020.0,
+ 16050.0,
+ 16080.0,
+ 16110.0,
+ 16140.0,
+ 16170.0,
+ 16200.0,
+ 16230.0,
+ 16260.0,
+ 16290.0,
+ 16320.0,
+ 16350.0,
+ 16380.0,
+ 16410.0,
+ 16440.0,
+ 16470.0,
+ 16500.0,
+ 16530.0,
+ 16560.0,
+ 16590.0,
+ 16620.0,
+ 16650.0,
+ 16680.0,
+ 16710.0,
+ 16740.0,
+ 16770.0,
+ 16800.0,
+ 16830.0,
+ 16860.0,
+ 16890.0,
+ 16920.0,
+ 16950.0,
+ 16980.0,
+ 17010.0,
+ 17040.0,
+ 17070.0,
+ 17100.0,
+ 17130.0,
+ 17160.0,
+ 17190.0,
+ 17220.0,
+ 17250.0,
+ 17280.0,
+ 17310.0,
+ 17340.0,
+ 17370.0,
+ 17400.0,
+ 17430.0,
+ 17460.0,
+ 17490.0,
+ 17520.0,
+ 17550.0,
+ 17580.0,
+ 17610.0,
+ 17640.0,
+ 17670.0,
+ 17700.0,
+ 17730.0,
+ 17760.0,
+ 17790.0,
+ 17820.0,
+ 17850.0,
+ 17880.0,
+ 17910.0,
+ 17940.0,
+ 17970.0,
+ 18000.0,
+ 18030.0,
+ 18060.0,
+ 18090.0,
+ 18120.0,
+ 18150.0,
+ 18180.0,
+ 18210.0,
+ 18240.0,
+ 18270.0,
+ 18300.0,
+ 18330.0,
+ 18360.0,
+ 18390.0,
+ 18420.0,
+ 18450.0,
+ 18480.0,
+ 18510.0,
+ 18540.0,
+ 18570.0,
+ 18600.0,
+ 18630.0,
+ 18660.0,
+ 18690.0,
+ 18720.0,
+ 18750.0,
+ 18780.0,
+ 18810.0,
+ 18840.0,
+ 18870.0,
+ 18900.0,
+ 18930.0,
+ 18960.0,
+ 18990.0,
+ 19020.0,
+ 19050.0,
+ 19080.0,
+ 19110.0,
+ 19140.0,
+ 19170.0,
+ 19200.0,
+ 19230.0,
+ 19260.0,
+ 19290.0,
+ 19320.0,
+ 19350.0,
+ 19380.0,
+ 19410.0,
+ 19440.0,
+ 19470.0,
+ 19500.0,
+ 19530.0,
+ 19560.0,
+ 19590.0,
+ 19620.0,
+ 19650.0,
+ 19680.0,
+ 19710.0,
+ 19740.0,
+ 19770.0,
+ 19800.0,
+ 19830.0,
+ 19860.0,
+ 19890.0,
+ 19920.0,
+ 19950.0,
+ 19980.0,
+ 20010.0,
+ 20040.0,
+ 20070.0,
+ 20100.0,
+ 20130.0,
+ 20160.0,
+ 20190.0,
+ 20220.0,
+ 20250.0,
+ 20280.0,
+ 20310.0,
+ 20340.0,
+ 20370.0,
+ 20400.0,
+ 20430.0,
+ 20460.0,
+ 20490.0,
+ 20520.0,
+ 20550.0,
+ 20580.0,
+ 20610.0,
+ 20640.0,
+ 20670.0,
+ 20700.0,
+ 20730.0,
+ 20760.0,
+ 20790.0,
+ 20820.0,
+ 20850.0,
+ 20880.0,
+ 20910.0,
+ 20940.0,
+ 20970.0,
+ 21000.0,
+ 21030.0,
+ 21060.0,
+ 21090.0,
+ 21120.0,
+ 21150.0,
+ 21180.0,
+ 21210.0,
+ 21240.0,
+ 21270.0,
+ 21300.0,
+ 21330.0,
+ 21360.0,
+ 21390.0,
+ 21420.0,
+ 21450.0,
+ 21480.0,
+ 21510.0,
+ 21540.0,
+ 21570.0]
+Observation times:
+[array([-21600.]),
+ array([-21570.]),
+ array([-21540.]),
+ array([-21510.]),
+ array([-21480.]),
+ array([-21450.]),
+ array([-21420.]),
+ array([-21390.]),
+ array([-21360.]),
+ array([-21330.]),
+ array([-21300.]),
+ array([-21270.]),
+ array([-21240.]),
+ array([-21210.]),
+ array([-21180.]),
+ array([-21150.]),
+ array([-21120.]),
+ array([-21090.]),
+ array([-21060.]),
+ array([-21030.]),
+ array([-21000.]),
+ array([-20970.]),
+ array([-20940.]),
+ array([-20910.]),
+ array([-20880.]),
+ array([-20850.]),
+ array([-20820.]),
+ array([-20790.]),
+ array([-20760.]),
+ array([-20730.]),
+ array([-20700.]),
+ array([-20670.]),
+ array([-20640.]),
+ array([-20610.]),
+ array([-20580.]),
+ array([-20550.]),
+ array([-20520.]),
+ array([-20490.]),
+ array([-20460.]),
+ array([-20430.]),
+ array([-20400.]),
+ array([-20370.]),
+ array([-20340.]),
+ array([-20310.]),
+ array([-20280.]),
+ array([-20250.]),
+ array([-20220.]),
+ array([-20190.]),
+ array([-20160.]),
+ array([-20130.]),
+ array([-20100.]),
+ array([-20070.]),
+ array([-20040.]),
+ array([-20010.]),
+ array([-19980.]),
+ array([-19950.]),
+ array([-19920.]),
+ array([-19890.]),
+ array([-19860.]),
+ array([-19830.]),
+ array([-19800.]),
+ array([-19770.]),
+ array([-19740.]),
+ array([-19710.]),
+ array([-19680.]),
+ array([-19650.]),
+ array([-19620.]),
+ array([-19590.]),
+ array([-19560.]),
+ array([-19530.]),
+ array([-19500.]),
+ array([-19470.]),
+ array([-19440.]),
+ array([-19410.]),
+ array([-19380.]),
+ array([-19350.]),
+ array([-19320.]),
+ array([-19290.]),
+ array([-19260.]),
+ array([-19230.]),
+ array([-19200.]),
+ array([-19170.]),
+ array([-19140.]),
+ array([-19110.]),
+ array([-19080.]),
+ array([-19050.]),
+ array([-19020.]),
+ array([-18990.]),
+ array([-18960.]),
+ array([-18930.]),
+ array([-18900.]),
+ array([-18870.]),
+ array([-18840.]),
+ array([-18810.]),
+ array([-18780.]),
+ array([-18750.]),
+ array([-18720.]),
+ array([-18690.]),
+ array([-18660.]),
+ array([-18630.]),
+ array([-18600.]),
+ array([-18570.]),
+ array([-18540.]),
+ array([-18510.]),
+ array([-18480.]),
+ array([-18450.]),
+ array([-18420.]),
+ array([-18390.]),
+ array([-18360.]),
+ array([-18330.]),
+ array([-18300.]),
+ array([-18270.]),
+ array([-18240.]),
+ array([-18210.]),
+ array([-18180.]),
+ array([-18150.]),
+ array([-18120.]),
+ array([-18090.]),
+ array([-18060.]),
+ array([-18030.]),
+ array([-18000.]),
+ array([-17970.]),
+ array([-17940.]),
+ array([-17910.]),
+ array([-17880.]),
+ array([-17850.]),
+ array([-17820.]),
+ array([-17790.]),
+ array([-17760.]),
+ array([-17730.]),
+ array([-17700.]),
+ array([-17670.]),
+ array([-17640.]),
+ array([-17610.]),
+ array([-17580.]),
+ array([-17550.]),
+ array([-17520.]),
+ array([-17490.]),
+ array([-17460.]),
+ array([-17430.]),
+ array([-17400.]),
+ array([-17370.]),
+ array([-17340.]),
+ array([-17310.]),
+ array([-17280.]),
+ array([-17250.]),
+ array([-17220.]),
+ array([-17190.]),
+ array([-17160.]),
+ array([-17130.]),
+ array([-17100.]),
+ array([-17070.]),
+ array([-17040.]),
+ array([-17010.]),
+ array([-16980.]),
+ array([-16950.]),
+ array([-16920.]),
+ array([-16890.]),
+ array([-16860.]),
+ array([-16830.]),
+ array([-16800.]),
+ array([-16770.]),
+ array([-16740.]),
+ array([-16710.]),
+ array([-16680.]),
+ array([-16650.]),
+ array([-16620.]),
+ array([-16590.]),
+ array([-16560.]),
+ array([-16530.]),
+ array([-16500.]),
+ array([-16470.]),
+ array([-16440.]),
+ array([-16410.]),
+ array([-16380.]),
+ array([-16350.]),
+ array([-16320.]),
+ array([-16290.]),
+ array([-16260.]),
+ array([-16230.]),
+ array([-16200.]),
+ array([-16170.]),
+ array([-16140.]),
+ array([-16110.]),
+ array([-16080.]),
+ array([-16050.]),
+ array([-16020.]),
+ array([-15990.]),
+ array([-15960.]),
+ array([-15930.]),
+ array([-15900.]),
+ array([-15870.]),
+ array([-15840.]),
+ array([-15810.]),
+ array([-15780.]),
+ array([-15750.]),
+ array([-15720.]),
+ array([-15690.]),
+ array([-15660.]),
+ array([-15630.]),
+ array([-15600.]),
+ array([-15570.]),
+ array([-15540.]),
+ array([-15510.]),
+ array([-15480.]),
+ array([-15450.]),
+ array([-15420.]),
+ array([-15390.]),
+ array([-15360.]),
+ array([-15330.]),
+ array([-15300.]),
+ array([-15270.]),
+ array([-15240.]),
+ array([-15210.]),
+ array([-15180.]),
+ array([-15150.]),
+ array([-15120.]),
+ array([-15090.]),
+ array([-15060.]),
+ array([-15030.]),
+ array([-15000.]),
+ array([-14970.]),
+ array([-14940.]),
+ array([-14910.]),
+ array([-14880.]),
+ array([-14850.]),
+ array([-14820.]),
+ array([-14790.]),
+ array([-14760.]),
+ array([-14730.]),
+ array([-14700.]),
+ array([-14670.]),
+ array([-14640.]),
+ array([-14610.]),
+ array([-14580.]),
+ array([-14550.]),
+ array([-14520.]),
+ array([-14490.]),
+ array([-14460.]),
+ array([-14430.]),
+ array([-14400.]),
+ array([-14370.]),
+ array([-14340.]),
+ array([-14310.]),
+ array([-14280.]),
+ array([-14250.]),
+ array([-14220.]),
+ array([-14190.]),
+ array([-14160.]),
+ array([-14130.]),
+ array([-14100.]),
+ array([-14070.]),
+ array([-14040.]),
+ array([-14010.]),
+ array([-13980.]),
+ array([-13950.]),
+ array([-13920.]),
+ array([-13890.]),
+ array([-13860.]),
+ array([-13830.]),
+ array([-13800.]),
+ array([-13770.]),
+ array([-13740.]),
+ array([-13710.]),
+ array([-13680.]),
+ array([-13650.]),
+ array([-13620.]),
+ array([-13590.]),
+ array([-13560.]),
+ array([-13530.]),
+ array([-13500.]),
+ array([-13470.]),
+ array([-13440.]),
+ array([-13410.]),
+ array([-13380.]),
+ array([-13350.]),
+ array([-13320.]),
+ array([-13290.]),
+ array([-13260.]),
+ array([-13230.]),
+ array([-13200.]),
+ array([-13170.]),
+ array([-13140.]),
+ array([-13110.]),
+ array([-13080.]),
+ array([-13050.]),
+ array([-13020.]),
+ array([-12990.]),
+ array([-12960.]),
+ array([-12930.]),
+ array([-12900.]),
+ array([-12870.]),
+ array([-12840.]),
+ array([-12810.]),
+ array([-12780.]),
+ array([-12750.]),
+ array([-12720.]),
+ array([-12690.]),
+ array([-12660.]),
+ array([-12630.]),
+ array([-12600.]),
+ array([-12570.]),
+ array([-12540.]),
+ array([-12510.]),
+ array([-12480.]),
+ array([-12450.]),
+ array([-12420.]),
+ array([-12390.]),
+ array([-12360.]),
+ array([-12330.]),
+ array([-12300.]),
+ array([-12270.]),
+ array([-12240.]),
+ array([-12210.]),
+ array([-12180.]),
+ array([-12150.]),
+ array([-12120.]),
+ array([-12090.]),
+ array([-12060.]),
+ array([-12030.]),
+ array([-12000.]),
+ array([-11970.]),
+ array([-11940.]),
+ array([-11910.]),
+ array([-11880.]),
+ array([-11850.]),
+ array([-11820.]),
+ array([-11790.]),
+ array([-11760.]),
+ array([-11730.]),
+ array([-11700.]),
+ array([-11670.]),
+ array([-11640.]),
+ array([-11610.]),
+ array([-11580.]),
+ array([-11550.]),
+ array([-11520.]),
+ array([-11490.]),
+ array([-11460.]),
+ array([-11430.]),
+ array([-11400.]),
+ array([-11370.]),
+ array([-11340.]),
+ array([-11310.]),
+ array([-11280.]),
+ array([-11250.]),
+ array([-11220.]),
+ array([-11190.]),
+ array([-11160.]),
+ array([-11130.]),
+ array([-11100.]),
+ array([-11070.]),
+ array([-11040.]),
+ array([-11010.]),
+ array([-10980.]),
+ array([-10950.]),
+ array([-10920.]),
+ array([-10890.]),
+ array([-10860.]),
+ array([-10830.]),
+ array([-10800.]),
+ array([-10770.]),
+ array([-10740.]),
+ array([-10710.]),
+ array([-10680.]),
+ array([-10650.]),
+ array([-10620.]),
+ array([-10590.]),
+ array([-10560.]),
+ array([-10530.]),
+ array([-10500.]),
+ array([-10470.]),
+ array([-10440.]),
+ array([-10410.]),
+ array([-10380.]),
+ array([-10350.]),
+ array([-10320.]),
+ array([-10290.]),
+ array([-10260.]),
+ array([-10230.]),
+ array([-10200.]),
+ array([-10170.]),
+ array([-10140.]),
+ array([-10110.]),
+ array([-10080.]),
+ array([-10050.]),
+ array([-10020.]),
+ array([-9990.]),
+ array([-9960.]),
+ array([-9930.]),
+ array([-9900.]),
+ array([-9870.]),
+ array([-9840.]),
+ array([-9810.]),
+ array([-9780.]),
+ array([-9750.]),
+ array([-9720.]),
+ array([-9690.]),
+ array([-9660.]),
+ array([-9630.]),
+ array([-9600.]),
+ array([-9570.]),
+ array([-9540.]),
+ array([-9510.]),
+ array([-9480.]),
+ array([-9450.]),
+ array([-9420.]),
+ array([-9390.]),
+ array([-9360.]),
+ array([-9330.]),
+ array([-9300.]),
+ array([-9270.]),
+ array([-9240.]),
+ array([-9210.]),
+ array([-9180.]),
+ array([-9150.]),
+ array([-9120.]),
+ array([-9090.]),
+ array([-9060.]),
+ array([-9030.]),
+ array([-9000.]),
+ array([-8970.]),
+ array([-8940.]),
+ array([-8910.]),
+ array([-8880.]),
+ array([-8850.]),
+ array([-8820.]),
+ array([-8790.]),
+ array([-8760.]),
+ array([-8730.]),
+ array([-8700.]),
+ array([-8670.]),
+ array([-8640.]),
+ array([-8610.]),
+ array([-8580.]),
+ array([-8550.]),
+ array([-8520.]),
+ array([-8490.]),
+ array([-8460.]),
+ array([-8430.]),
+ array([-8400.]),
+ array([-8370.]),
+ array([-8340.]),
+ array([-8310.]),
+ array([-8280.]),
+ array([-8250.]),
+ array([-8220.]),
+ array([-8190.]),
+ array([-8160.]),
+ array([-8130.]),
+ array([-8100.]),
+ array([-8070.]),
+ array([-8040.]),
+ array([-8010.]),
+ array([-7980.]),
+ array([-7950.]),
+ array([-7920.]),
+ array([-7890.]),
+ array([-7860.]),
+ array([-7830.]),
+ array([-7800.]),
+ array([-7770.]),
+ array([-7740.]),
+ array([-7710.]),
+ array([-7680.]),
+ array([-7650.]),
+ array([-7620.]),
+ array([-7590.]),
+ array([-7560.]),
+ array([-7530.]),
+ array([-7500.]),
+ array([-7470.]),
+ array([-7440.]),
+ array([-7410.]),
+ array([-7380.]),
+ array([-7350.]),
+ array([-7320.]),
+ array([-7290.]),
+ array([-7260.]),
+ array([-7230.]),
+ array([-7200.]),
+ array([-7170.]),
+ array([-7140.]),
+ array([-7110.]),
+ array([-7080.]),
+ array([-7050.]),
+ array([-7020.]),
+ array([-6990.]),
+ array([-6960.]),
+ array([-6930.]),
+ array([-6900.]),
+ array([-6870.]),
+ array([-6840.]),
+ array([-6810.]),
+ array([-6780.]),
+ array([-6750.]),
+ array([-6720.]),
+ array([-6690.]),
+ array([-6660.]),
+ array([-6630.]),
+ array([-6600.]),
+ array([-6570.]),
+ array([-6540.]),
+ array([-6510.]),
+ array([-6480.]),
+ array([-6450.]),
+ array([-6420.]),
+ array([-6390.]),
+ array([-6360.]),
+ array([-6330.]),
+ array([-6300.]),
+ array([-6270.]),
+ array([-6240.]),
+ array([-6210.]),
+ array([-6180.]),
+ array([-6150.]),
+ array([-6120.]),
+ array([-6090.]),
+ array([-6060.]),
+ array([-6030.]),
+ array([-6000.]),
+ array([-5970.]),
+ array([-5940.]),
+ array([-5910.]),
+ array([-5880.]),
+ array([-5850.]),
+ array([-5820.]),
+ array([-5790.]),
+ array([-5760.]),
+ array([-5730.]),
+ array([-5700.]),
+ array([-5670.]),
+ array([-5640.]),
+ array([-5610.]),
+ array([-5580.]),
+ array([-5550.]),
+ array([-5520.]),
+ array([-5490.]),
+ array([-5460.]),
+ array([-5430.]),
+ array([-5400.]),
+ array([-5370.]),
+ array([-5340.]),
+ array([-5310.]),
+ array([-5280.]),
+ array([-5250.]),
+ array([-5220.]),
+ array([-5190.]),
+ array([-5160.]),
+ array([-5130.]),
+ array([-5100.]),
+ array([-5070.]),
+ array([-5040.]),
+ array([-5010.]),
+ array([-4980.]),
+ array([-4950.]),
+ array([-4920.]),
+ array([-4890.]),
+ array([-4860.]),
+ array([-4830.]),
+ array([-4800.]),
+ array([-4770.]),
+ array([-4740.]),
+ array([-4710.]),
+ array([-4680.]),
+ array([-4650.]),
+ array([-4620.]),
+ array([-4590.]),
+ array([-4560.]),
+ array([-4530.]),
+ array([-4500.]),
+ array([-4470.]),
+ array([-4440.]),
+ array([-4410.]),
+ array([-4380.]),
+ array([-4350.]),
+ array([-4320.]),
+ array([-4290.]),
+ array([-4260.]),
+ array([-4230.]),
+ array([-4200.]),
+ array([-4170.]),
+ array([-4140.]),
+ array([-4110.]),
+ array([-4080.]),
+ array([-4050.]),
+ array([-4020.]),
+ array([-3990.]),
+ array([-3960.]),
+ array([-3930.]),
+ array([-3900.]),
+ array([-3870.]),
+ array([-3840.]),
+ array([-3810.]),
+ array([-3780.]),
+ array([-3750.]),
+ array([-3720.]),
+ array([-3690.]),
+ array([-3660.]),
+ array([-3630.]),
+ array([-3600.]),
+ array([-3570.]),
+ array([-3540.]),
+ array([-3510.]),
+ array([-3480.]),
+ array([-3450.]),
+ array([-3420.]),
+ array([-3390.]),
+ array([-3360.]),
+ array([-3330.]),
+ array([-3300.]),
+ array([-3270.]),
+ array([-3240.]),
+ array([-3210.]),
+ array([-3180.]),
+ array([-3150.]),
+ array([-3120.]),
+ array([-3090.]),
+ array([-3060.]),
+ array([-3030.]),
+ array([-3000.]),
+ array([-2970.]),
+ array([-2940.]),
+ array([-2910.]),
+ array([-2880.]),
+ array([-2850.]),
+ array([-2820.]),
+ array([-2790.]),
+ array([-2760.]),
+ array([-2730.]),
+ array([-2700.]),
+ array([-2670.]),
+ array([-2640.]),
+ array([-2610.]),
+ array([-2580.]),
+ array([-2550.]),
+ array([-2520.]),
+ array([-2490.]),
+ array([-2460.]),
+ array([-2430.]),
+ array([-2400.]),
+ array([-2370.]),
+ array([-2340.]),
+ array([-2310.]),
+ array([-2280.]),
+ array([-2250.]),
+ array([-2220.]),
+ array([-2190.]),
+ array([-2160.]),
+ array([-2130.]),
+ array([-2100.]),
+ array([-2070.]),
+ array([-2040.]),
+ array([-2010.]),
+ array([-1980.]),
+ array([-1950.]),
+ array([-1920.]),
+ array([-1890.]),
+ array([-1860.]),
+ array([-1830.]),
+ array([-1800.]),
+ array([-1770.]),
+ array([-1740.]),
+ array([-1710.]),
+ array([-1680.]),
+ array([-1650.]),
+ array([-1620.]),
+ array([-1590.]),
+ array([-1560.]),
+ array([-1530.]),
+ array([-1500.]),
+ array([-1470.]),
+ array([-1440.]),
+ array([-1410.]),
+ array([-1380.]),
+ array([-1350.]),
+ array([-1320.]),
+ array([-1290.]),
+ array([-1260.]),
+ array([-1230.]),
+ array([-1200.]),
+ array([-1170.]),
+ array([-1140.]),
+ array([-1110.]),
+ array([-1080.]),
+ array([-1050.]),
+ array([-1020.]),
+ array([-990.]),
+ array([-960.]),
+ array([-930.]),
+ array([-900.]),
+ array([-870.]),
+ array([-840.]),
+ array([-810.]),
+ array([-780.]),
+ array([-750.]),
+ array([-720.]),
+ array([-690.]),
+ array([-660.]),
+ array([-630.]),
+ array([-600.]),
+ array([-570.]),
+ array([-540.]),
+ array([-510.]),
+ array([-480.]),
+ array([-450.]),
+ array([-420.]),
+ array([-390.]),
+ array([-360.]),
+ array([-330.]),
+ array([-300.]),
+ array([-270.]),
+ array([-240.]),
+ array([-210.]),
+ array([-180.]),
+ array([-150.]),
+ array([-120.]),
+ array([-90.]),
+ array([-60.]),
+ array([-30.]),
+ array([0.]),
+ array([30.]),
+ array([60.]),
+ array([90.]),
+ array([120.]),
+ array([150.]),
+ array([180.]),
+ array([210.]),
+ array([240.]),
+ array([270.]),
+ array([300.]),
+ array([330.]),
+ array([360.]),
+ array([390.]),
+ array([420.]),
+ array([450.]),
+ array([480.]),
+ array([510.]),
+ array([540.]),
+ array([570.]),
+ array([600.]),
+ array([630.]),
+ array([660.]),
+ array([690.]),
+ array([720.]),
+ array([750.]),
+ array([780.]),
+ array([810.]),
+ array([840.]),
+ array([870.]),
+ array([900.]),
+ array([930.]),
+ array([960.]),
+ array([990.]),
+ array([1020.]),
+ array([1050.]),
+ array([1080.]),
+ array([1110.]),
+ array([1140.]),
+ array([1170.]),
+ array([1200.]),
+ array([1230.]),
+ array([1260.]),
+ array([1290.]),
+ array([1320.]),
+ array([1350.]),
+ array([1380.]),
+ array([1410.]),
+ array([1440.]),
+ array([1470.]),
+ array([1500.]),
+ array([1530.]),
+ array([1560.]),
+ array([1590.]),
+ array([1620.]),
+ array([1650.]),
+ array([1680.]),
+ array([1710.]),
+ array([1740.]),
+ array([1770.]),
+ array([1800.]),
+ array([1830.]),
+ array([1860.]),
+ array([1890.]),
+ array([1920.]),
+ array([1950.]),
+ array([1980.]),
+ array([2010.]),
+ array([2040.]),
+ array([2070.]),
+ array([2100.]),
+ array([2130.]),
+ array([2160.]),
+ array([2190.]),
+ array([2220.]),
+ array([2250.]),
+ array([2280.]),
+ array([2310.]),
+ array([2340.]),
+ array([2370.]),
+ array([2400.]),
+ array([2430.]),
+ array([2460.]),
+ array([2490.]),
+ array([2520.]),
+ array([2550.]),
+ array([2580.]),
+ array([2610.]),
+ array([2640.]),
+ array([2670.]),
+ array([2700.]),
+ array([2730.]),
+ array([2760.]),
+ array([2790.]),
+ array([2820.]),
+ array([2850.]),
+ array([2880.]),
+ array([2910.]),
+ array([2940.]),
+ array([2970.]),
+ array([3000.]),
+ array([3030.]),
+ array([3060.]),
+ array([3090.]),
+ array([3120.]),
+ array([3150.]),
+ array([3180.]),
+ array([3210.]),
+ array([3240.]),
+ array([3270.]),
+ array([3300.]),
+ array([3330.]),
+ array([3360.]),
+ array([3390.]),
+ array([3420.]),
+ array([3450.]),
+ array([3480.]),
+ array([3510.]),
+ array([3540.]),
+ array([3570.]),
+ array([3600.]),
+ array([3630.]),
+ array([3660.]),
+ array([3690.]),
+ array([3720.]),
+ array([3750.]),
+ array([3780.]),
+ array([3810.]),
+ array([3840.]),
+ array([3870.]),
+ array([3900.]),
+ array([3930.]),
+ array([3960.]),
+ array([3990.]),
+ array([4020.]),
+ array([4050.]),
+ array([4080.]),
+ array([4110.]),
+ array([4140.]),
+ array([4170.]),
+ array([4200.]),
+ array([4230.]),
+ array([4260.]),
+ array([4290.]),
+ array([4320.]),
+ array([4350.]),
+ array([4380.]),
+ array([4410.]),
+ array([4440.]),
+ array([4470.]),
+ array([4500.]),
+ array([4530.]),
+ array([4560.]),
+ array([4590.]),
+ array([4620.]),
+ array([4650.]),
+ array([4680.]),
+ array([4710.]),
+ array([4740.]),
+ array([4770.]),
+ array([4800.]),
+ array([4830.]),
+ array([4860.]),
+ array([4890.]),
+ array([4920.]),
+ array([4950.]),
+ array([4980.]),
+ array([5010.]),
+ array([5040.]),
+ array([5070.]),
+ array([5100.]),
+ array([5130.]),
+ array([5160.]),
+ array([5190.]),
+ array([5220.]),
+ array([5250.]),
+ array([5280.]),
+ array([5310.]),
+ array([5340.]),
+ array([5370.]),
+ array([5400.]),
+ array([5430.]),
+ array([5460.]),
+ array([5490.]),
+ array([5520.]),
+ array([5550.]),
+ array([5580.]),
+ array([5610.]),
+ array([5640.]),
+ array([5670.]),
+ array([5700.]),
+ array([5730.]),
+ array([5760.]),
+ array([5790.]),
+ array([5820.]),
+ array([5850.]),
+ array([5880.]),
+ array([5910.]),
+ array([5940.]),
+ array([5970.]),
+ array([6000.]),
+ array([6030.]),
+ array([6060.]),
+ array([6090.]),
+ array([6120.]),
+ array([6150.]),
+ array([6180.]),
+ array([6210.]),
+ array([6240.]),
+ array([6270.]),
+ array([6300.]),
+ array([6330.]),
+ array([6360.]),
+ array([6390.]),
+ array([6420.]),
+ array([6450.]),
+ array([6480.]),
+ array([6510.]),
+ array([6540.]),
+ array([6570.]),
+ array([6600.]),
+ array([6630.]),
+ array([6660.]),
+ array([6690.]),
+ array([6720.]),
+ array([6750.]),
+ array([6780.]),
+ array([6810.]),
+ array([6840.]),
+ array([6870.]),
+ array([6900.]),
+ array([6930.]),
+ array([6960.]),
+ array([6990.]),
+ array([7020.]),
+ array([7050.]),
+ array([7080.]),
+ array([7110.]),
+ array([7140.]),
+ array([7170.]),
+ array([7200.]),
+ array([7230.]),
+ array([7260.]),
+ array([7290.]),
+ array([7320.]),
+ array([7350.]),
+ array([7380.]),
+ array([7410.]),
+ array([7440.]),
+ array([7470.]),
+ array([7500.]),
+ array([7530.]),
+ array([7560.]),
+ array([7590.]),
+ array([7620.]),
+ array([7650.]),
+ array([7680.]),
+ array([7710.]),
+ array([7740.]),
+ array([7770.]),
+ array([7800.]),
+ array([7830.]),
+ array([7860.]),
+ array([7890.]),
+ array([7920.]),
+ array([7950.]),
+ array([7980.]),
+ array([8010.]),
+ array([8040.]),
+ array([8070.]),
+ array([8100.]),
+ array([8130.]),
+ array([8160.]),
+ array([8190.]),
+ array([8220.]),
+ array([8250.]),
+ array([8280.]),
+ array([8310.]),
+ array([8340.]),
+ array([8370.]),
+ array([8400.]),
+ array([8430.]),
+ array([8460.]),
+ array([8490.]),
+ array([8520.]),
+ array([8550.]),
+ array([8580.]),
+ array([8610.]),
+ array([8640.]),
+ array([8670.]),
+ array([8700.]),
+ array([8730.]),
+ array([8760.]),
+ array([8790.]),
+ array([8820.]),
+ array([8850.]),
+ array([8880.]),
+ array([8910.]),
+ array([8940.]),
+ array([8970.]),
+ array([9000.]),
+ array([9030.]),
+ array([9060.]),
+ array([9090.]),
+ array([9120.]),
+ array([9150.]),
+ array([9180.]),
+ array([9210.]),
+ array([9240.]),
+ array([9270.]),
+ array([9300.]),
+ array([9330.]),
+ array([9360.]),
+ array([9390.]),
+ array([9420.]),
+ array([9450.]),
+ array([9480.]),
+ array([9510.]),
+ array([9540.]),
+ array([9570.]),
+ array([9600.]),
+ array([9630.]),
+ array([9660.]),
+ array([9690.]),
+ array([9720.]),
+ array([9750.]),
+ array([9780.]),
+ array([9810.]),
+ array([9840.]),
+ array([9870.]),
+ array([9900.]),
+ array([9930.]),
+ array([9960.]),
+ array([9990.]),
+ array([10020.]),
+ array([10050.]),
+ array([10080.]),
+ array([10110.]),
+ array([10140.]),
+ array([10170.]),
+ array([10200.]),
+ array([10230.]),
+ array([10260.]),
+ array([10290.]),
+ array([10320.]),
+ array([10350.]),
+ array([10380.]),
+ array([10410.]),
+ array([10440.]),
+ array([10470.]),
+ array([10500.]),
+ array([10530.]),
+ array([10560.]),
+ array([10590.]),
+ array([10620.]),
+ array([10650.]),
+ array([10680.]),
+ array([10710.]),
+ array([10740.]),
+ array([10770.]),
+ array([10800.]),
+ array([10830.]),
+ array([10860.]),
+ array([10890.]),
+ array([10920.]),
+ array([10950.]),
+ array([10980.]),
+ array([11010.]),
+ array([11040.]),
+ array([11070.]),
+ array([11100.]),
+ array([11130.]),
+ array([11160.]),
+ array([11190.]),
+ array([11220.]),
+ array([11250.]),
+ array([11280.]),
+ array([11310.]),
+ array([11340.]),
+ array([11370.]),
+ array([11400.]),
+ array([11430.]),
+ array([11460.]),
+ array([11490.]),
+ array([11520.]),
+ array([11550.]),
+ array([11580.]),
+ array([11610.]),
+ array([11640.]),
+ array([11670.]),
+ array([11700.]),
+ array([11730.]),
+ array([11760.]),
+ array([11790.]),
+ array([11820.]),
+ array([11850.]),
+ array([11880.]),
+ array([11910.]),
+ array([11940.]),
+ array([11970.]),
+ array([12000.]),
+ array([12030.]),
+ array([12060.]),
+ array([12090.]),
+ array([12120.]),
+ array([12150.]),
+ array([12180.]),
+ array([12210.]),
+ array([12240.]),
+ array([12270.]),
+ array([12300.]),
+ array([12330.]),
+ array([12360.]),
+ array([12390.]),
+ array([12420.]),
+ array([12450.]),
+ array([12480.]),
+ array([12510.]),
+ array([12540.]),
+ array([12570.]),
+ array([12600.]),
+ array([12630.]),
+ array([12660.]),
+ array([12690.]),
+ array([12720.]),
+ array([12750.]),
+ array([12780.]),
+ array([12810.]),
+ array([12840.]),
+ array([12870.]),
+ array([12900.]),
+ array([12930.]),
+ array([12960.]),
+ array([12990.]),
+ array([13020.]),
+ array([13050.]),
+ array([13080.]),
+ array([13110.]),
+ array([13140.]),
+ array([13170.]),
+ array([13200.]),
+ array([13230.]),
+ array([13260.]),
+ array([13290.]),
+ array([13320.]),
+ array([13350.]),
+ array([13380.]),
+ array([13410.]),
+ array([13440.]),
+ array([13470.]),
+ array([13500.]),
+ array([13530.]),
+ array([13560.]),
+ array([13590.]),
+ array([13620.]),
+ array([13650.]),
+ array([13680.]),
+ array([13710.]),
+ array([13740.]),
+ array([13770.]),
+ array([13800.]),
+ array([13830.]),
+ array([13860.]),
+ array([13890.]),
+ array([13920.]),
+ array([13950.]),
+ array([13980.]),
+ array([14010.]),
+ array([14040.]),
+ array([14070.]),
+ array([14100.]),
+ array([14130.]),
+ array([14160.]),
+ array([14190.]),
+ array([14220.]),
+ array([14250.]),
+ array([14280.]),
+ array([14310.]),
+ array([14340.]),
+ array([14370.]),
+ array([14400.]),
+ array([14430.]),
+ array([14460.]),
+ array([14490.]),
+ array([14520.]),
+ array([14550.]),
+ array([14580.]),
+ array([14610.]),
+ array([14640.]),
+ array([14670.]),
+ array([14700.]),
+ array([14730.]),
+ array([14760.]),
+ array([14790.]),
+ array([14820.]),
+ array([14850.]),
+ array([14880.]),
+ array([14910.]),
+ array([14940.]),
+ array([14970.]),
+ array([15000.]),
+ array([15030.]),
+ array([15060.]),
+ array([15090.]),
+ array([15120.]),
+ array([15150.]),
+ array([15180.]),
+ array([15210.]),
+ array([15240.]),
+ array([15270.]),
+ array([15300.]),
+ array([15330.]),
+ array([15360.]),
+ array([15390.]),
+ array([15420.]),
+ array([15450.]),
+ array([15480.]),
+ array([15510.]),
+ array([15540.]),
+ array([15570.]),
+ array([15600.]),
+ array([15630.]),
+ array([15660.]),
+ array([15690.]),
+ array([15720.]),
+ array([15750.]),
+ array([15780.]),
+ array([15810.]),
+ array([15840.]),
+ array([15870.]),
+ array([15900.]),
+ array([15930.]),
+ array([15960.]),
+ array([15990.]),
+ array([16020.]),
+ array([16050.]),
+ array([16080.]),
+ array([16110.]),
+ array([16140.]),
+ array([16170.]),
+ array([16200.]),
+ array([16230.]),
+ array([16260.]),
+ array([16290.]),
+ array([16320.]),
+ array([16350.]),
+ array([16380.]),
+ array([16410.]),
+ array([16440.]),
+ array([16470.]),
+ array([16500.]),
+ array([16530.]),
+ array([16560.]),
+ array([16590.]),
+ array([16620.]),
+ array([16650.]),
+ array([16680.]),
+ array([16710.]),
+ array([16740.]),
+ array([16770.]),
+ array([16800.]),
+ array([16830.]),
+ array([16860.]),
+ array([16890.]),
+ array([16920.]),
+ array([16950.]),
+ array([16980.]),
+ array([17010.]),
+ array([17040.]),
+ array([17070.]),
+ array([17100.]),
+ array([17130.]),
+ array([17160.]),
+ array([17190.]),
+ array([17220.]),
+ array([17250.]),
+ array([17280.]),
+ array([17310.]),
+ array([17340.]),
+ array([17370.]),
+ array([17400.]),
+ array([17430.]),
+ array([17460.]),
+ array([17490.]),
+ array([17520.]),
+ array([17550.]),
+ array([17580.]),
+ array([17610.]),
+ array([17640.]),
+ array([17670.]),
+ array([17700.]),
+ array([17730.]),
+ array([17760.]),
+ array([17790.]),
+ array([17820.]),
+ array([17850.]),
+ array([17880.]),
+ array([17910.]),
+ array([17940.]),
+ array([17970.]),
+ array([18000.]),
+ array([18030.]),
+ array([18060.]),
+ array([18090.]),
+ array([18120.]),
+ array([18150.]),
+ array([18180.]),
+ array([18210.]),
+ array([18240.]),
+ array([18270.]),
+ array([18300.]),
+ array([18330.]),
+ array([18360.]),
+ array([18390.]),
+ array([18420.]),
+ array([18450.]),
+ array([18480.]),
+ array([18510.]),
+ array([18540.]),
+ array([18570.]),
+ array([18600.]),
+ array([18630.]),
+ array([18660.]),
+ array([18690.]),
+ array([18720.]),
+ array([18750.]),
+ array([18780.]),
+ array([18810.]),
+ array([18840.]),
+ array([18870.]),
+ array([18900.]),
+ array([18930.]),
+ array([18960.]),
+ array([18990.]),
+ array([19020.]),
+ array([19050.]),
+ array([19080.]),
+ array([19110.]),
+ array([19140.]),
+ array([19170.]),
+ array([19200.]),
+ array([19230.]),
+ array([19260.]),
+ array([19290.]),
+ array([19320.]),
+ array([19350.]),
+ array([19380.]),
+ array([19410.]),
+ array([19440.]),
+ array([19470.]),
+ array([19500.]),
+ array([19530.]),
+ array([19560.]),
+ array([19590.]),
+ array([19620.]),
+ array([19650.]),
+ array([19680.]),
+ array([19710.]),
+ array([19740.]),
+ array([19770.]),
+ array([19800.]),
+ array([19830.]),
+ array([19860.]),
+ array([19890.]),
+ array([19920.]),
+ array([19950.]),
+ array([19980.]),
+ array([20010.]),
+ array([20040.]),
+ array([20070.]),
+ array([20100.]),
+ array([20130.]),
+ array([20160.]),
+ array([20190.]),
+ array([20220.]),
+ array([20250.]),
+ array([20280.]),
+ array([20310.]),
+ array([20340.]),
+ array([20370.]),
+ array([20400.]),
+ array([20430.]),
+ array([20460.]),
+ array([20490.]),
+ array([20520.]),
+ array([20550.]),
+ array([20580.]),
+ array([20610.]),
+ array([20640.]),
+ array([20670.]),
+ array([20700.]),
+ array([20730.]),
+ array([20760.]),
+ array([20790.]),
+ array([20820.]),
+ array([20850.]),
+ array([20880.]),
+ array([20910.]),
+ array([20940.]),
+ array([20970.]),
+ array([21000.]),
+ array([21030.]),
+ array([21060.]),
+ array([21090.]),
+ array([21120.]),
+ array([21150.]),
+ array([21180.]),
+ array([21210.]),
+ array([21240.]),
+ array([21270.]),
+ array([21300.]),
+ array([21330.]),
+ array([21360.]),
+ array([21390.]),
+ array([21420.]),
+ array([21450.]),
+ array([21480.]),
+ array([21510.]),
+ array([21540.]),
+ array([21570.])]
+1440 integrations of duration 30.0 s processed in 1440 chunks
+MID_FEKO_B1: HWHM beam = 0.447 deg
+Context is  s3sky
+Constructing s3sky components
+create_test_skycomponents_from_s3: Reading S3-SEX sources from /alaska/tim/Code/algorithm-reference-library/data/models/S3_1400MHz_100uJy_18deg.csv 
+create_test_skycomponents_from_s3: 1923 sources found above fluxlimit inside search radius
+distributed.utils_perf - INFO - full garbage collection released 210.45 MB from 412 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 23.37 MB from 1874 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 228.94 MB from 11909 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 23.38 MB from 8099 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 23.37 MB from 6923 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 14.02 MB from 7417 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 193.31 MB from 6312 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 14.03 MB from 9103 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 14.00 MB from 8679 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.06 MB from 1597 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.08 MB from 1530 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.90 MB from 1861 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.89 MB from 431 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.03 MB from 580 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 1291 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.09 MB from 1048 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 1239 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.13 MB from 909 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.16 MB from 705 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.01 MB from 774 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.20 MB from 992 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 857 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.06 MB from 1172 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.10 MB from 626 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 864 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.00 MB from 696 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.92 MB from 638 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.91 MB from 539 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.07 MB from 980 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.09 MB from 959 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 201.33 MB from 1189 reference cycles (threshold: 10.00 MB)
+distributed.core - INFO - Event loop was unresponsive in Scheduler for 40.09s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 2251 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.23 MB from 2605 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 2037 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 2059 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.02 MB from 2042 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 2498 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 201.34 MB from 2521 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 2243 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 2222 reference cycles (threshold: 10.00 MB)
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.74s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 2045 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 1970 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 2137 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 2355 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.10 MB from 2025 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 113.75 MB from 2289 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.19 MB from 2542 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.23 MB from 2193 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.10 MB from 2053 reference cycles (threshold: 10.00 MB)
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.07s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.01s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.utils_perf - INFO - full garbage collection released 134.22 MB from 2183 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 4928 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 5052 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 11416 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.07 MB from 6555 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 7454 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.08 MB from 6131 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 8407 reference cycles (threshold: 10.00 MB)
+distributed.core - INFO - Event loop was unresponsive in Scheduler for 4.03s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.utils_perf - INFO - full garbage collection released 66.86 MB from 8741 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.78 MB from 6756 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.95 MB from 8470 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 7596 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 6986 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 8432 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 13984 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 11587 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 10900 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.10 MB from 8121 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 10323 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 10818 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.06 MB from 8330 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 8890 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.06 MB from 9538 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.04 MB from 17835 reference cycles (threshold: 10.00 MB)
+distributed.core - INFO - Event loop was unresponsive in Scheduler for 4.70s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.utils_perf - INFO - full garbage collection released 33.13 MB from 11420 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 61.97 MB from 5915 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 63.65 MB from 7504 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.92 MB from 4916 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.86 MB from 4452 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 33.56 MB from 5857 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.88 MB from 2999 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 201.19 MB from 7325 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.22 MB from 8141 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.10 MB from 6822 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 201.33 MB from 6278 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 5535 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.38 MB from 28981 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.17 MB from 7492 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.92 MB from 7278 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 8514 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 201.33 MB from 4612 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 66.99 MB from 7017 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 402.67 MB from 9157 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.09 MB from 10218 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 268.43 MB from 18896 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 9705 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.09 MB from 14230 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 12304 reference cycles (threshold: 10.00 MB)
+distributed.core - INFO - Event loop was unresponsive in Scheduler for 4.32s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.utils_perf - INFO - full garbage collection released 67.05 MB from 10551 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 15693 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 201.34 MB from 10843 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 134.23 MB from 10167 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 10709 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 11669 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 201.33 MB from 10584 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 13124 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 14038 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 13391 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.09 MB from 13284 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 38.23 MB from 8553 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 11795 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.05 MB from 13165 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 12384 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 12862 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.10 MB from 8306 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.10 MB from 12738 reference cycles (threshold: 10.00 MB)
+distributed.core - INFO - Event loop was unresponsive in Scheduler for 4.71s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 17770 reference cycles (threshold: 10.00 MB)
+distributed.utils_perf - INFO - full garbage collection released 67.11 MB from 19665 reference cycles (threshold: 10.00 MB)
+1923 components before application of primary beam
+62 components > 0.003 Jy after application of primary beam
+Strongest components is 0.950783 (Jy)
+Total flux in components is 1.73883 (Jy)
+Created 62 components
+Memory use (GB)
+{'bvis_list': 2.9146599769592285,
+ 'model_list': 0.12109375,
+ 'vis_list': 2.8998327255249023,
+ 'vp_list': 5.625}
+Summary of processing:
+    There are 32 workers
+    There are 1440 separate visibility time chunks being processed
+    The integration time within each chunk is 30.0 (s)
+    There are a total of 1440 integrations
+    There are 19306 baselines
+    There are 62 components
+    1 surface scenario(s) will be tested
+    Total processing 1.72364e+09 times-baselines-components-scenarios
+    Approximate total memory use for data = 11.561 GB
+    Using 32 Dask workers
+Using uniform weighting
+Inverting to get PSF
+PSF sumwt  [[50536.]]
+Primary beam: Image:
+	Shape: (1, 1, 1024, 1024)
+	WCS: WCS Keywords
+
+Number of WCS axes: 4
+CTYPE : 'RA---SIN'  'DEC--SIN'  'STOKES'  'FREQ'  
+CRVAL : 15.0  -45.0  1.0  1360000000.0  
+CRPIX : 513.0  513.0  1.0  1.0  
+PC1_1 PC1_2 PC1_3 PC1_4  : 1.0  0.0  0.0  0.0  
+PC2_1 PC2_2 PC2_3 PC2_4  : 0.0  1.0  0.0  0.0  
+PC3_1 PC3_2 PC3_3 PC3_4  : 0.0  0.0  1.0  0.0  
+PC4_1 PC4_2 PC4_3 PC4_4  : 0.0  0.0  0.0  1.0  
+CDELT : -0.0078125  0.0078125  1.0  9999999.9999  
+NAXIS : 0  0
+	Polarisation frame: stokesI
+
+Saving results to ./surface_simulation_openhpc-compute-0.novalocal_0.csv
+
+***** Starting loop over scenarios ******
+
+Processing component_chunk 0, visibility chunk 0
+Dirty image sumwt [[50536.]]
+Quality assessment:
+	Origin: qa_image
+	Context: 
+	Data:
+		shape: '(1, 1, 512, 512)'
+		max: '1.724128726000827e-05'
+		min: '-1.5193438220205002e-05'
+		maxabs: '1.724128726000827e-05'
+		rms: '3.413915048839604e-06'
+		sum: '6.715643153035184e-05'
+		medianabs: '2.300063868416453e-06'
+		medianabsdevmedian: '2.299989319905889e-06'
+		median: '1.8336883997471607e-08'
+
+Elapsed time = 2607.6 (s)
+[{'basename': 'simulation1',
+  'context': 's3sky',
+  'declination': -45.0,
+  'elapsed_time': 2607.554277420044,
+  'epoch': '2019-09-04 09:11:19',
+  'flux_limit': 0.003,
+  'hostname': 'openhpc-compute-0.novalocal',
+  'integration_time': 30.0,
+  'nb_name': '../../surface_simulation_elevation.py',
+  'ngroup_components': 100,
+  'ngroup_visibity': 2880,
+  'npixel': 512,
+  'ntotal': 1723639680,
+  'nworkers': 32,
+  'offset_dir': [1.0, 0.0],
+  'onsource_abscentral': 2.063577398049035e-06,
+  'onsource_maxabs': 1.724128726000827e-05,
+  'onsource_medianabs': 2.300063868416453e-06,
+  'onsource_rms': 3.413915048839604e-06,
+  'opposite': False,
+  'pb_npixel': 1024,
+  'pbtype': 'MID_FEKO_B1',
+  'psf_maxabs': 0.9991303922603441,
+  'psf_medianabs': 0.0012812819230475665,
+  'psf_rms': 0.004278479835688468,
+  'se': 0.0,
+  'seed': 18051955,
+  'snapshot': False,
+  'surface_scaling': 0.0,
+  'tsys': 0.0,
+  'use_natural': False,
+  'use_radec': False}]
+Total processing 1.72364e+09 times-baselines-components-scenarios
+Processing rate of time-baseline-component-scenario = 20656.8 per worker-second
+Future exception was never retrieved
+future: <Future finished exception=CommClosedError('in <closed TCP>: Stream is closed',)>
+Traceback (most recent call last):
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/comm/tcp.py", line 194, in read
+    n_frames = yield stream.read_bytes(8)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+    value = future.result()
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+    yielded = self.gen.throw(*exc_info)  # type: ignore
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/core.py", line 535, in send_recv
+    response = yield comm.read(deserializers=deserializers)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+    value = future.result()
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+    yielded = self.gen.throw(*exc_info)  # type: ignore
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/comm/tcp.py", line 214, in read
+    convert_stream_closed_error(self, e)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/comm/tcp.py", line 141, in convert_stream_closed_error
+    raise CommClosedError("in %s: %s" % (obj, exc))
+distributed.comm.core.CommClosedError: in <closed TCP>: Stream is closed

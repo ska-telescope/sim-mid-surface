@@ -1,0 +1,479 @@
+PYTHONPATH is /alaska/tim/Code/algorithm-reference-library/::/alaska/tim/Code/algorithm-reference-library/
+Running python: /alaska/tim/alaska-venv/bin/python
+Running dask-scheduler: /alaska/tim/alaska-venv/bin/dask-scheduler
+/var/spool/slurm/job00629/slurm_script: line 52: cd: /mnt/storage-ssd/tim/Code/sim-mid-surface/type_1/1: No such file or directory
+Changed directory to /alaska/tim/Code/sim-mid-surface/type_1/1 degree/simulation2.
+
+openhpc-compute-[0-15]
+Working on openhpc-compute-0 ....
+run dask-scheduler
+distributed.scheduler - INFO - -----------------------------------------------
+distributed.scheduler - INFO - Clear task state
+Traceback (most recent call last):
+  File "/alaska/tim/alaska-venv/bin/dask-scheduler", line 11, in <module>
+    sys.exit(go())
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/cli/dask_scheduler.py", line 242, in go
+    main()
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/click/core.py", line 764, in __call__
+    return self.main(*args, **kwargs)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/click/core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/cli/dask_scheduler.py", line 215, in main
+    scheduler.start()
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/scheduler.py", line 1206, in start
+    self.listen(addr_or_port, listen_args=self.listen_args)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/core.py", line 322, in listen
+    self.listener.start()
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/comm/tcp.py", line 421, in start
+    self.port, address=self.ip, backlog=backlog
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/tornado/netutil.py", line 174, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:38672'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:42242'
+Working on openhpc-compute-1 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:46514
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:46514
+distributed.worker - INFO -          dashboard at:         10.60.253.14:33891
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-l158l9sl
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:44292
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:44292
+distributed.worker - INFO -          dashboard at:         10.60.253.14:41754
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-qypdm_7w
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-2 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:42709'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:39744'
+Working on openhpc-compute-3 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:44072'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:35257'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:46222
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:46222
+distributed.worker - INFO -          dashboard at:         10.60.253.19:38554
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-q0kgpzxa
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:38417
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:38417
+distributed.worker - INFO -          dashboard at:         10.60.253.19:34955
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-muu53b8f
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:34166
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:34166
+distributed.worker - INFO -          dashboard at:         10.60.253.38:45166
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-54jp49a3
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:36633
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:36633
+distributed.worker - INFO -          dashboard at:         10.60.253.38:35568
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-302oogbw
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-4 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:43262'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:39350'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:46265
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:46265
+distributed.worker - INFO -          dashboard at:         10.60.253.23:41396
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-0jo3uzky
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:44437
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:44437
+distributed.worker - INFO -          dashboard at:         10.60.253.23:45330
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-255t3qk0
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-5 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:34976'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:35289'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:43173'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:41334'
+Working on openhpc-compute-6 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:37065
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:37065
+distributed.worker - INFO -          dashboard at:         10.60.253.39:42314
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-zvs3rv1m
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:36793
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:36793
+distributed.worker - INFO -          dashboard at:         10.60.253.39:39243
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-ou5rmjf8
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:33905
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:33905
+distributed.worker - INFO -          dashboard at:         10.60.253.16:34115
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-4sp1kzfr
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:40643
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:40643
+distributed.worker - INFO -          dashboard at:         10.60.253.16:32959
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Local Directory:       /tmp/worker-vdh6aiwm
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:45994'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:40194'
+Working on openhpc-compute-7 ....
+run dask-worker
+Working on openhpc-compute-8 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:34100'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:38063'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:39036
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:39036
+distributed.worker - INFO -          dashboard at:         10.60.253.18:42553
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-2l4nllxq
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:37343
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:37343
+distributed.worker - INFO -          dashboard at:         10.60.253.18:36135
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-_uxyxg67
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-9 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:45141'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:39355'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:34081
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:34081
+distributed.worker - INFO -          dashboard at:         10.60.253.41:35555
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:46578
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:46578
+distributed.worker - INFO -          dashboard at:         10.60.253.41:34364
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-hfjzsmab
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-f074y8t9
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:39463'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:41061'
+Working on openhpc-compute-10 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:37056
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:37056
+distributed.worker - INFO -          dashboard at:         10.60.253.33:35758
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-9efo48yj
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:46763
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:46763
+distributed.worker - INFO -          dashboard at:         10.60.253.33:35853
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-qst1zrrb
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:39677
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:39677
+distributed.worker - INFO -          dashboard at:         10.60.253.55:35160
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-f2bnlrmy
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:34959
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:34959
+distributed.worker - INFO -          dashboard at:         10.60.253.55:41209
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-nj73bmyc
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:37971'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:37434'
+Working on openhpc-compute-11 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:34005
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:34005
+distributed.worker - INFO -          dashboard at:         10.60.253.27:33769
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:32992
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:32992
+distributed.worker - INFO -          dashboard at:         10.60.253.27:39811
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-4q23wzqe
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-32a38vxl
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-12 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:39658'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:34708'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:41682'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:46376'
+Working on openhpc-compute-13 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:46613
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:46613
+distributed.worker - INFO -          dashboard at:         10.60.253.36:40860
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-k713tbaz
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:38457
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:38457
+distributed.worker - INFO -          dashboard at:         10.60.253.36:37110
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-glwzxq3o
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:36178
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:36178
+distributed.worker - INFO -          dashboard at:         10.60.253.51:33340
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-3c4xgxkr
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:44368
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:44368
+distributed.worker - INFO -          dashboard at:         10.60.253.51:33391
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-vcexs1ow
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:36206'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:33160'
+Working on openhpc-compute-14 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:46795
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:46795
+distributed.worker - INFO -          dashboard at:         10.60.253.12:43188
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:33389
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:33389
+distributed.worker - INFO -          dashboard at:         10.60.253.12:40460
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-po7ib8a3
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-tmswc5xw
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:35762'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:42566'
+Working on openhpc-compute-15 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:32886
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:32886
+distributed.worker - INFO -          dashboard at:         10.60.253.37:43690
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:44235
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:44235
+distributed.worker - INFO -          dashboard at:         10.60.253.37:43622
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-r5im8rg5
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-ppx_gwh2
+distributed.worker - INFO - -------------------------------------------------
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:41460'
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:35003'
+Scheduler and workers now running
+Scheduler is running at openhpc-compute-0
+About to execute python ../../surface_simulation_elevation.py --context singlesource --rmax 1e5 --flux_limit 0.003 --ngroup_visibility 2880 --ngroup_components 100 --show True --elevation_sampling 1.0 --offset_dir 1.0 0.0 --seed 18051955  --pbtype MID_FEKO_B1 --memory 32  --integration_time 30 --use_agg True --time_chunk 30 --time_range -6 6
+--shared_directory /alaska/tim/Code/sim-mid-surface/shared --vp_directory /alaska/tim/Code/sim-mid-surface/beams/interpolated/ | tee surface_simulation.log
+slurmstepd: error: *** JOB 629 ON openhpc-compute-0 CANCELLED AT 2019-09-02T13:22:41 ***
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.

@@ -1,0 +1,2332 @@
+PYTHONPATH is /alaska/tim/Code/algorithm-reference-library/::/alaska/tim/Code/algorithm-reference-library/
+Running python: /alaska/tim/alaska-venv/bin/python
+Running dask-scheduler: /alaska/tim/alaska-venv/bin/dask-scheduler
+/var/spool/slurm/job00828/slurm_script: line 52: cd: /mnt/storage-ssd/tim/Code/sim-mid-surface/type_1/1: No such file or directory
+Changed directory to /alaska/tim/Code/sim-mid-surface/type_1/1 degree/simulation7/m60.
+
+openhpc-compute-[0-15]
+Working on openhpc-compute-0 ....
+run dask-scheduler
+distributed.scheduler - INFO - -----------------------------------------------
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:35401'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:37096'
+Working on openhpc-compute-1 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ppt41u3m', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hdheri8q', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-yc3vbm_e', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ez5hjnjm', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-q8pxwb1l', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-xi7fhy1n', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-9maund66', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-fhkgnfhy', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-aq1qa_rz', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ipcnfr7f', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-tuhx_vdx', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-iwpk07pi', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-uyevyc2f', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ncjidhon', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-egiw31ns', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-p8n4_od_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hxxm5stm', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-rxpwgtu7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-u2duo8ij', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-pe7m4gbq', purging
+Working on openhpc-compute-2 ....
+run dask-worker
+Working on openhpc-compute-3 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:39881'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:46289'
+Working on openhpc-compute-4 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-aoz1yifb', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-835f0hjy', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-oos07nx7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ia331o0_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-0vz36j1y', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-7c_kt252', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ay7nkufu', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-4p4shwh_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_8ciwu_s', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-7m3ql4ta', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-um63lqpi', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ypsy88me', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_7xfdsni', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-t9wfw57p', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-07bu0z9c', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-c0a52ap2', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-1p6afefm', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-kd4q62k3', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-o24jt3s5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-rroxgykz', purging
+distributed.scheduler - INFO - Local Directory:    /tmp/scheduler-v8vb3js9
+distributed.scheduler - INFO - -----------------------------------------------
+distributed.scheduler - INFO - Clear task state
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:39737
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:42983
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:39737
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:42983
+distributed.worker - INFO -          dashboard at:         10.60.253.14:40898
+distributed.worker - INFO -          dashboard at:         10.60.253.14:36039
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-586togq9
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-lcsa3vfj
+distributed.worker - INFO - -------------------------------------------------
+distributed.dashboard.proxy - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: pip install jupyter-server-proxy
+distributed.scheduler - INFO -   Scheduler at:   tcp://10.60.253.14:8786
+distributed.scheduler - INFO -   dashboard at:                     :8787
+distributed.scheduler - INFO - Register tcp://10.60.253.14:42983
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:42983
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:39737
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:39737
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-5 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:39188'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:41571'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-80oy14l3', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-mjx0ialv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-moldu45_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-j14y93q1', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-r6cag0x7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-v4bo2n8y', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-bdxr379l', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-a7jnqjmj', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-e31u6nht', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hd_53rds', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-pr5nsv8w', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-v6n0z1nv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hxb366bw', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-96guilif', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-mg32oxqn', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-frqo86go', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-n1_gmg09', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-6vafnaks', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-sq7j525b', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-oo7xjtwn', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:44032'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:38107'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-14yb9tku', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-avcrj6qo', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-dlj51zki', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-t_l_5v84', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-o5xzaci6', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ppkazf_a', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-w77tf3d8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-jomz6a6w', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-k2oe9kxq', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-oawtgpg7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ul5wdkzv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-4c2z3sfb', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-9is7q9gy', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-lb9sbidc', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-nl6tg7yc', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-uv2wzw6k', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-he4oj3d3', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-lkw0qwds', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-lljxjz54', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-6kwgojpj', purging
+Working on openhpc-compute-6 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:37528
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:41227
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:37528
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:41227
+distributed.worker - INFO -          dashboard at:         10.60.253.19:43898
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.60.253.19:42749
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-mk26bgv2
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-_tvw6sk7
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.19:37528
+distributed.scheduler - INFO - Register tcp://10.60.253.19:41227
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:37528
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:41227
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-7 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:43629'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:36433'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-61hiaesd', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-wn3qwaek', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-sk4a56_8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-upv2jfwk', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-1engo115', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-7wutghst', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-q2xbm2p2', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-0nsnz5mg', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-abbka6v5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-fffqfnbh', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-3nw2x_xy', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-nzqxqq70', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-pdpox935', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-qim04sbq', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-efx4sy9b', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-u1_4w81r', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-s3gw_ubb', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-xefu7gd7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-wgmu5yw4', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-zuwx_l2y', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:34584'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:45922'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-w_epzu2e', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-gyh32w6j', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-pkjgng0b', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-zdf1oay7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-41it6kg8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-zrry20cc', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-58rwwcb5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-8l0h6r3a', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-m9h7dvi2', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-v1y_poh6', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-s6loqbo_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ey_bv6l6', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ukkuurya', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-9i8jt6_5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-9sue_vb8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-9mzaslgy', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-u0h0ft49', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-b_dk_8rm', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-4m9dfcyz', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-8xvcpkl3', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:34273
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:34273
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:45995
+distributed.worker - INFO -          dashboard at:         10.60.253.38:39711
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:45995
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.60.253.38:42914
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-u5_hro6l
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-4lgxjtob
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.38:34273
+distributed.scheduler - INFO - Register tcp://10.60.253.38:45995
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:34273
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:45995
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:46143'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:45536'
+Working on openhpc-compute-8 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:41729
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:43031
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:41729
+distributed.worker - INFO -          dashboard at:         10.60.253.23:45418
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:43031
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.23:34010
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-sgdedfl3
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-hjix4pu9
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.23:43031
+distributed.scheduler - INFO - Register tcp://10.60.253.23:41729
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:43031
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:41729
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-cf93_1_6', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-cjfpg9hu', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-udctv638', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-72zagw7t', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-4paw2x2t', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-y187lt_2', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_0pxqc97', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-tspeup5h', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-3xmg082e', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ab1w3y19', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-u7vm10cg', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-e95a29sa', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-vvmbsxsy', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-x8q2qwuc', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-k09mbh_b', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-mtkdn1gh', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-20q9r0j_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-mc_qo5jz', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ts4ogg14', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-euw4zp96', purging
+Working on openhpc-compute-9 ....
+run dask-worker
+Working on openhpc-compute-10 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:32796'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:40667'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:37144'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:43364'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:37552
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:44567
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:37552
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:44567
+distributed.worker - INFO -          dashboard at:         10.60.253.16:42169
+distributed.worker - INFO -          dashboard at:         10.60.253.16:38925
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-_27gqjx_
+distributed.worker - INFO -       Local Directory:       /tmp/worker-jlzcm4i4
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.16:44567
+distributed.scheduler - INFO - Register tcp://10.60.253.16:37552
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:44567
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:37552
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-xhgwaq6r', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-z9psqua_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-asr9o426', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-2szpmaiy', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-daabhtpq', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-nyzhrqdh', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ft9tcp1p', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-vuv8m60m', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ixp46_d1', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-5piylsyp', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-vw6b99d8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-1bw5v3dv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-xezemnbu', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-r6v49lpe', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_vwflxjo', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_m2f212d', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-rux7v2u9', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-kfifer42', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-sijq1dxt', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-zrwjpp0t', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-dipe91it', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-jazsk5bs', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-1hdw919i', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-6_jy6b_e', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-gea_2pjh', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-0o6ukyxa', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-2p0tvxe3', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-qcbkbngj', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-fi4nqrms', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-qwbd6tl2', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-z5z56dp9', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-lx5h6p6a', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-czw9k6yp', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-dtxnlao_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-b_35wbk7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-z76yc_7k', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-l1q92ysd', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-s2nvf_ls', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-8m9d_c7q', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-g88rkekg', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:36199'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:36965'
+Working on openhpc-compute-11 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-bdh80y9y', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-qm1tvva9', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-7u1cr6xw', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-3of0ks4k', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-o9vf1b5l', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-o25ppij7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-r8gg3rnt', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-dyhumq04', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ehvn6jv1', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-qe4bedx4', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-mt84xdzd', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-y519ejbr', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-vjul5mcz', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-otj86u3c', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-e5iptiqb', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_phn03cm', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-pg559doj', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-98so0qh8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-laolnnyu', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-tsjy1k38', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:36462
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:40528
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:40528
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:36462
+distributed.worker - INFO -          dashboard at:         10.60.253.18:33691
+distributed.worker - INFO -          dashboard at:         10.60.253.18:40405
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-wte69at1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-5xvct5by
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.18:36462
+distributed.scheduler - INFO - Register tcp://10.60.253.18:40528
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:36462
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:40528
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:33518'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:41236'
+Working on openhpc-compute-12 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-4uz8yhrz', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-3dg9m7bv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-g7q27swz', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-icn1izav', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-zic_w0tv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-oojlknyo', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-rpr_99th', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-vg4sualk', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-dy3qzy58', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-he64cjri', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-h5obffv5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-pwcp9e4_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-u3b62rv7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-f4ocl7pv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-qusd0wtz', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-sy0oklux', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hg090edx', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-fa1uvth0', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-lpm29_5t', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-pe6c0jdj', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:42237
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:36347
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:42237
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:36347
+distributed.worker - INFO -          dashboard at:         10.60.253.39:35853
+distributed.worker - INFO -          dashboard at:         10.60.253.39:34922
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-xn4nliu7
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-zpdw47j0
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.39:36347
+distributed.scheduler - INFO - Register tcp://10.60.253.39:42237
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:36347
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:42237
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:36131'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:36307'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:34578
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:46123
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:46123
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:34578
+distributed.worker - INFO -          dashboard at:         10.60.253.55:39220
+distributed.worker - INFO -          dashboard at:         10.60.253.55:43737
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-onpphlgk
+distributed.worker - INFO -       Local Directory:       /tmp/worker-8yaca2ct
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.55:34578
+distributed.scheduler - INFO - Register tcp://10.60.253.55:46123
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:34578
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:46123
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-13 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-3cxe3qb5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-gpxjkga8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-bcfquz3f', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-rxsg6hv2', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-6nj6jq8a', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-1dvc6dpn', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-c8un71wn', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-xgkkjsxg', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-mkpz90p_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-x12yuoko', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-lopspo03', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-tacknuho', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-v10hm4ei', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ul4ib1is', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-e0r8f16l', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hg3z5y2c', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-aw8uiob9', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-zozawy8i', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-vyreo9na', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-mbsrnj5z', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:42611'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:33134'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-qvij5s3g', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-2hc3m1dp', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-v32izyac', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-b57gyn4k', purging
+Working on openhpc-compute-14 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-p36yk91o', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-2pfxnq5v', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-icdq43p7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-1h6pto38', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-7tp6rltq', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-v8sm6iuw', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-j7if4fdw', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-veroxz0u', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-uvhkl37y', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-3v4efh70', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-0qefiptv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-tx2tiwis', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-3wb723is', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-mjqtvapc', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-jkv1spf4', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-qiq95xoy', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:35713
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:35713
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:32866
+distributed.worker - INFO -          dashboard at:         10.60.253.33:33203
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:32866
+distributed.worker - INFO -          dashboard at:         10.60.253.33:36428
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-g766my7s
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-w5zq3o81
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.33:35713
+distributed.scheduler - INFO - Register tcp://10.60.253.33:32866
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:35713
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:32866
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:37812
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:44417
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:37812
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:44417
+distributed.worker - INFO -          dashboard at:         10.60.253.41:34290
+distributed.worker - INFO -          dashboard at:         10.60.253.41:33395
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-ss08cyyt
+distributed.worker - INFO -       Local Directory:       /tmp/worker-h3el1i4x
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.41:37812
+distributed.scheduler - INFO - Register tcp://10.60.253.41:44417
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:37812
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:44417
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:35241'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:46195'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-0qm7pknb', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-5gpirzel', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-pe32xzcy', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-5ftvo5xe', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-t8vut2qt', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-p0mkv8ok', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-7h2icrs7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-x7dxl5wk', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-vv7w2j72', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-i23t5t_1', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-shbt5fum', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-m3drsmb5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-zgilcvbd', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-60jlmquc', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-tfu19bh4', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-9klz8bio', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-1d25x8vw', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-y8257gyh', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-09egtzre', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-6fcrytnq', purging
+Working on openhpc-compute-15 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:36673'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:40377'
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:37425
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:37425
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:36576
+distributed.worker - INFO -          dashboard at:         10.60.253.27:42190
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:36576
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.60.253.27:40813
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-_sah6et6
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-s07mbw3n
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.27:37425
+distributed.scheduler - INFO - Register tcp://10.60.253.27:36576
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:37425
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:36576
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ao7k2aat', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-bwb0jmno', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-srb64vza', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-qeomzh59', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-8i8r_qjj', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-_bggglh_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-xk35sae8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-cmn7r5_v', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-tb5g1wrq', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-1eon5mdf', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-nb4ko85g', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-6_3smpbm', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-t9k4kh2m', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-aktrmpt4', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-exql2lpj', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-yjqq4cvd', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-pj9hl3j5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-117db9rp', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-yfhev_gw', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-tnfo9z9a', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:45639
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:42010
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:45639
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:42010
+distributed.worker - INFO -          dashboard at:         10.60.253.51:44895
+distributed.worker - INFO -          dashboard at:         10.60.253.51:38811
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-w2gkrmue
+distributed.worker - INFO -       Local Directory:       /tmp/worker-l2x21poq
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.51:42010
+distributed.scheduler - INFO - Register tcp://10.60.253.51:45639
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:42010
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:45639
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+Scheduler and workers now running
+Scheduler is running at openhpc-compute-0
+About to execute python ../../../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 --ngroup_visibility 2880 --ngroup_components 100 --show True --elevation_sampling 1.0 --declination -60 --seed 18051955  --pbtype MID_FEKO_B1 --memory 32  --integration_time 30 --use_agg True --time_chunk 30 --time_range -0.05 0.05 --shared_directory /alaska/tim/Code/sim-mid-surface/shared --vp_directory /alaska/tim/Code/sim-mid-surface/beams/interpolated/ | tee surface_simulation.log
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:39646
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:38626
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:38626
+distributed.worker - INFO -          dashboard at:         10.60.253.12:40877
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:39646
+distributed.worker - INFO -          dashboard at:         10.60.253.12:36759
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-o6o9qu7d
+distributed.worker - INFO -       Local Directory:       /tmp/worker-1l__l7qa
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.12:39646
+distributed.scheduler - INFO - Register tcp://10.60.253.12:38626
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:39646
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:38626
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:35932
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:45810
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:35932
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:45810
+distributed.worker - INFO -          dashboard at:         10.60.253.36:34169
+distributed.worker - INFO -          dashboard at:         10.60.253.36:34684
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-1qs90agp
+distributed.worker - INFO -       Local Directory:       /tmp/worker-vxjj497d
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.36:35932
+distributed.scheduler - INFO - Register tcp://10.60.253.36:45810
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:35932
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:45810
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:45542
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:40345
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:45542
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:40345
+distributed.worker - INFO -          dashboard at:         10.60.253.37:37614
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.37:38424
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-rbkzidrm
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-jew86d0j
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.37:40345
+distributed.scheduler - INFO - Register tcp://10.60.253.37:45542
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:40345
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:45542
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:41809'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:43080'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-7rgj9puv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-m0raw4pi', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-nlcex7bq', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-b3n6vwh3', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ow91_amr', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-oo1mew2e', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ken3be14', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-gqfedtmo', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-22n8ua13', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-gepli8v0', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-vo7kxj1i', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-fyu396ma', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hnz7c03j', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ou4lxmdt', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-8_iw1zfa', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-5k5nb7ts', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-16nfsgvp', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-9rv85jg3', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-3fg9nvg_', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-j4ysrm7a', purging
+distributed.scheduler - INFO - Receive client connection: Client-a74800e8-d30c-11e9-90eb-246e964883a8
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.13:35066
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.13:46367
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.13:46367
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.13:35066
+distributed.worker - INFO -          dashboard at:         10.60.253.13:38671
+distributed.worker - INFO -          dashboard at:         10.60.253.13:43974
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-hqwyt2uv
+distributed.worker - INFO -       Local Directory:       /tmp/worker-bugwqblr
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.13:35066
+distributed.scheduler - INFO - Register tcp://10.60.253.13:46367
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:35066
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:46367
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+ 
+Distributed simulation of surface errors for SKA-MID
+----------------------------------------------------
+ 
+Random number seed is 18051955
+Creating Dask Client using externally defined scheduler
+Using 30 Dask workers
+Start times for chunks:
+array([-180., -150., -120.,  -90.,  -60.,  -30.,    0.,   30.,   60.,
+         90.,  120.,  150.])
+array([-180., -150., -120.,  -90.,  -60.,  -30.,    0.,   30.,   60.,
+         90.,  120.,  150.])
+Observation times:
+[array([-180.]),
+ array([-150.]),
+ array([-120.]),
+ array([-90.]),
+ array([-60.]),
+ array([-30.]),
+ array([0.]),
+ array([30.]),
+ array([60.]),
+ array([90.]),
+ array([120.]),
+ array([150.])]
+12 integrations of duration 30.0 s processed in 12 chunks
+MID_FEKO_B1: HWHM beam = 0.447 deg
+[-180.]
+[-150.]
+[-120.]
+[-90.]
+[-60.]
+[-30.]
+[0.]
+[30.]
+[60.]
+[90.]
+[120.]
+[150.]
+Context is  s3sky
+Constructing s3sky components
+create_test_skycomponents_from_s3: Reading S3-SEX sources from /alaska/tim/Code/algorithm-reference-library/data/models/S3_1400MHz_100uJy_18deg.csv 
+distributed.scheduler - INFO - Register tcp://10.60.253.14:42749
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:42749
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:39284
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:39284
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:35675
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:35675
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:37346
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:37346
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.38:35106
+distributed.scheduler - INFO - Register tcp://10.60.253.38:43280
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:35106
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:43280
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:39916
+distributed.scheduler - INFO - Register tcp://10.60.253.23:44664
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:39916
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:44664
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:46527
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:46527
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:45450
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:45450
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:45268
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:45268
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:40679
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:40679
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:42381
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:42381
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:38210
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:38210
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:40209
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:40209
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:40126
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:40126
+distributed.core - INFO - Starting established connection
+create_test_skycomponents_from_s3: 1922 sources found above fluxlimit inside search radius
+distributed.scheduler - INFO - Register tcp://10.60.253.55:41340
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:41340
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.55:33827
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:33827
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.33:42381
+distributed.scheduler - INFO - Register tcp://10.60.253.33:42094
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:42381
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:42094
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.27:36199
+distributed.scheduler - INFO - Register tcp://10.60.253.27:34562
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:36199
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:34562
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.51:46452
+distributed.scheduler - INFO - Register tcp://10.60.253.51:34217
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:46452
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:34217
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.36:43508
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:43508
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.36:40045
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:40045
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.12:42077
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:42077
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.12:34649
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:34649
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.37:35113
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:35113
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.37:41204
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:41204
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.13:37015
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:37015
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.13:45400
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:45400
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.21s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.23s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.scheduler - INFO - Register tcp://10.60.253.14:33100
+distributed.scheduler - INFO - Register tcp://10.60.253.14:38527
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:33100
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:38527
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:38582
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:38582
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:42824
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:42824
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:39923
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:39923
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:41382
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:41382
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:38913
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:38913
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:37165
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:37165
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:38625
+distributed.scheduler - INFO - Register tcp://10.60.253.19:40892
+distributed.scheduler - INFO - Register tcp://10.60.253.19:40986
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:38625
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:40892
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:40986
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:46793
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:46793
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:32852
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:32852
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:39225
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:39225
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:43429
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:43429
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:33001
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:33001
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.38:44494
+distributed.scheduler - INFO - Register tcp://10.60.253.38:33564
+distributed.scheduler - INFO - Register tcp://10.60.253.38:45445
+distributed.scheduler - INFO - Register tcp://10.60.253.38:35588
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:44494
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:33564
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:45445
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:35588
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.38:34344
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:34344
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.38:32906
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:32906
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.38:33500
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:33500
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.38:38792
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:38792
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:36901
+distributed.scheduler - INFO - Register tcp://10.60.253.23:42195
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:36901
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:42195
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:43732
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:43732
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:40398
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:40398
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:35465
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:35465
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:40093
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:40093
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:42101
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:42101
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:43715
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:43715
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:38232
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:38232
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:36912
+distributed.scheduler - INFO - Register tcp://10.60.253.39:43888
+distributed.scheduler - INFO - Register tcp://10.60.253.39:40503
+distributed.scheduler - INFO - Register tcp://10.60.253.39:38599
+distributed.scheduler - INFO - Register tcp://10.60.253.39:39375
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:36912
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:43888
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:40503
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:38599
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:39375
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:36185
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:36185
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:41968
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:41968
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:42942
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:42942
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:41005
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:41005
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:36461
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:36461
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:32876
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:32876
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:32769
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:32769
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:38707
+distributed.scheduler - INFO - Register tcp://10.60.253.16:35539
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:38707
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:35539
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:34291
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:34291
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:37431
+distributed.scheduler - INFO - Register tcp://10.60.253.18:43431
+distributed.scheduler - INFO - Register tcp://10.60.253.18:42081
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:37431
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:43431
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:42081
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:43855
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:43855
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:46209
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:46209
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:42316
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:42316
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:46400
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:46400
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:40910
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:40910
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:35734
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:35734
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:40675
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:40675
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:46567
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:46567
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:38224
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:38224
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:34086
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:34086
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:39246
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:39246
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:41544
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:41544
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:41816
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:41816
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.33:40376
+distributed.scheduler - INFO - Register tcp://10.60.253.33:46237
+distributed.scheduler - INFO - Register tcp://10.60.253.33:35003
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:40376
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.33:40584
+distributed.scheduler - INFO - Register tcp://10.60.253.33:35399
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:46237
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:35003
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:40584
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:35399
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.33:34260
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:34260
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.33:32845
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:32845
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.33:36886
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:36886
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.55:42766
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:42766
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.55:40904
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:40904
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.55:36753
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:36753
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.55:37184
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:37184
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.55:44354
+distributed.scheduler - INFO - Register tcp://10.60.253.55:45993
+distributed.scheduler - INFO - Register tcp://10.60.253.55:35162
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:44354
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:45993
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:35162
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.55:46011
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:46011
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.27:36452
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:36452
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.27:43255
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:43255
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.27:45963
+distributed.scheduler - INFO - Register tcp://10.60.253.27:46420
+distributed.scheduler - INFO - Register tcp://10.60.253.27:38384
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:45963
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:46420
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:38384
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.27:46466
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:46466
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.27:40515
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:40515
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.27:39147
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:39147
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.36:38308
+distributed.scheduler - INFO - Register tcp://10.60.253.36:39297
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:38308
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:39297
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.36:33994
+distributed.scheduler - INFO - Register tcp://10.60.253.36:42980
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:33994
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:42980
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.36:37979
+distributed.scheduler - INFO - Register tcp://10.60.253.36:45629
+distributed.scheduler - INFO - Register tcp://10.60.253.36:32946
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:37979
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:45629
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.36:33655
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:32946
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:33655
+distributed.core - INFO - Starting established connection
+1922 components before application of primary beam
+62 components > 0.003 Jy after application of primary beam
+Strongest components is 0.950783 (Jy)
+Total flux in components is 1.73684 (Jy)
+Created 62 components
+Memory use (GB)
+{'bvis_list': 0.024288833141326904,
+ 'model_list': 0.12109375,
+ 'vis_list': 0.02416527271270752,
+ 'vp_list': 0.046875}
+Summary of processing:
+    There are 30 workers
+    There are 12 separate visibility time chunks being processed
+    The integration time within each chunk is 30.0 (s)
+    There are a total of 12 integrations
+    There are 19306 baselines
+    There are 62 components
+    1 surface scenario(s) will be tested
+    Total processing 1.43637e+07 times-baselines-components-scenarios
+    Approximate total memory use for data = 0.216 GB
+    Using 64 Dask workers
+Using uniform weighting
+Inverting to get PSF
+<Future: status: finished, type: Visibility, key: Visibility-7f7bedf04e7f0115b0c4415bfceb5b07>
+<Future: status: finished, type: Visibility, key: Visibility-4ab0b706d0e6e820d09ad59faf453416>
+<Future: status: finished, type: Visibility, key: Visibility-6f1655187ff4e3190806c7c24bd4fd3c>
+<Future: status: finished, type: Visibility, key: Visibility-4535089b2cb7a5734b4b58021f10960a>
+<Future: status: finished, type: Visibility, key: Visibility-c971f087ebbc7a261beed5e6ffe975c6>
+<Future: status: finished, type: Visibility, key: Visibility-b94e525163211b00306dbb98528e8314>
+<Future: status: finished, type: Visibility, key: Visibility-78cd5262f33f3d86a1d0b85b8ce9c42f>
+<Future: status: finished, type: Visibility, key: Visibility-14b742e9869b35253251002f6788a23d>
+<Future: status: finished, type: Visibility, key: Visibility-0202c3196d29dd05c60e0f55285af842>
+<Future: status: finished, type: Visibility, key: Visibility-256c70589847b86484a8c6819070eb78>
+<Future: status: finished, type: Visibility, key: Visibility-69e31bae5c14de0d45882265cea84412>
+<Future: status: finished, type: Visibility, key: Visibility-ef81abb61b75cd0a970a5f604921d339>
+PSF sumwt  [[3530.]]
+Primary beam: Image:
+	Shape: (1, 1, 1024, 1024)
+	WCS: WCS Keywords
+
+Number of WCS axes: 4
+CTYPE : 'RA---SIN'  'DEC--SIN'  'STOKES'  'FREQ'  
+CRVAL : 15.0  -60.0  1.0  1360000000.0  
+CRPIX : 513.0  513.0  1.0  1.0  
+PC1_1 PC1_2 PC1_3 PC1_4  : 1.0  0.0  0.0  0.0  
+PC2_1 PC2_2 PC2_3 PC2_4  : 0.0  1.0  0.0  0.0  
+PC3_1 PC3_2 PC3_3 PC3_4  : 0.0  0.0  1.0  0.0  
+PC4_1 PC4_2 PC4_3 PC4_4  : 0.0  0.0  0.0  1.0  
+CDELT : -0.0078125  0.0078125  1.0  9999999.9999  
+NAXIS : 0  0
+	Polarisation frame: stokesI
+
+Saving results to ./surface_simulation_openhpc-compute-0.novalocal_0.csv
+
+***** Starting loop over scenarios ******
+
+Processing component_chunk 0, visibility chunk 0
+Delayed('subtract_vis_convert-af82e704-829b-4b75-8a3f-41dddd849ee0')
+Delayed('subtract_vis_convert-443b0e76-7646-44d3-af2b-fb7072fbc83a')
+Delayed('subtract_vis_convert-e26d4765-59bc-41b8-86f5-a59508bec236')
+Delayed('subtract_vis_convert-fbbf3be4-b108-4035-b98e-198f90500a70')
+Delayed('subtract_vis_convert-fc45a81e-f26e-43ec-80bb-bd6a435d7ec3')
+Delayed('subtract_vis_convert-b77635d7-0479-4fb1-b68e-28f4286e69d3')
+Delayed('subtract_vis_convert-d2ebd0b6-e6d1-4b78-8fb9-558aeff228b4')
+Delayed('subtract_vis_convert-0157bb5e-45c3-407c-81b1-227a51fadf5c')
+Delayed('subtract_vis_convert-68ec0b2a-20fa-42bb-b19a-049a3d91efb4')
+Delayed('subtract_vis_convert-d2db32a2-8c80-4969-8a72-e2c3b1b41acd')
+Delayed('subtract_vis_convert-b6820d7e-667e-4cb9-960a-7f0ae9f38eba')
+Delayed('subtract_vis_convert-ea1972eb-b3f6-429f-ab5e-2bee1c8e3be5')
+Delayed('subtract_vis_convert-e8f48ccd-55ba-4320-989a-1f9b53001e79')
+Delayed('subtract_vis_convert-488f2325-23c9-4849-b81d-756b6d259278')
+Delayed('subtract_vis_convert-f28cf5cc-9e53-43c1-a95c-ac9b28578827')
+Delayed('subtract_vis_convert-088a9186-f537-40c0-ac9d-ef1e46c21b85')
+Delayed('subtract_vis_convert-d6f0d942-8645-4269-9b04-269d108ca096')
+Delayed('subtract_vis_convert-150e0281-a586-44c6-95aa-b7ae67a0b61b')
+Delayed('subtract_vis_convert-f2b540f0-cfe7-4110-84a8-7861fd87a5f1')
+Delayed('subtract_vis_convert-789b345d-eec2-4a97-99ee-5885328311c8')
+Delayed('subtract_vis_convert-5e5f2939-a93a-48c2-8c7c-718219efadcc')
+Delayed('subtract_vis_convert-608af011-87d5-4305-9d57-d758acd8e143')
+Delayed('subtract_vis_convert-0ecf90e2-847e-46d0-8791-e3319cca94c3')
+Delayed('subtract_vis_convert-47cfe161-aba9-4cbc-bd31-6d45a7894f48')
+Delayed('subtract_vis_convert-5d61a921-0cf3-41e2-b6b7-0d3e8baf6ca5')
+Delayed('subtract_vis_convert-d1a22590-3476-412b-a72b-45e023abccd5')
+Delayed('subtract_vis_convert-38400a83-5445-4acd-9b69-a6557306cb34')
+Delayed('subtract_vis_convert-db23d820-3e70-4be2-b642-6095549d5d16')
+Delayed('subtract_vis_convert-b362c4d1-63f4-4a53-a6ee-ce4d1e420237')
+Delayed('subtract_vis_convert-624e15d0-028a-4ee9-b8ff-ededc081f83d')
+Delayed('subtract_vis_convert-ae8b0f96-7d70-4cac-ac0e-07205212f5d6')
+Delayed('subtract_vis_convert-922df4e8-71b7-4f40-ad6d-1653f5898d43')
+Delayed('subtract_vis_convert-2a8ad2b6-18fd-4cbb-8fa0-601a99aa77ec')
+Delayed('subtract_vis_convert-d9b3db1c-0de5-466b-a03f-b323ddfc0803')
+Delayed('subtract_vis_convert-200a970e-5a65-4954-8541-7b9e6553bf59')
+Delayed('subtract_vis_convert-e8db4cb0-24d5-4de3-86cc-0f28f4c8c136')
+Delayed('subtract_vis_convert-67491df6-dc80-4140-bb45-0b5ffa340ecc')
+Delayed('subtract_vis_convert-da11e854-5bf8-4dd2-8e0a-428ed7503e08')
+Delayed('subtract_vis_convert-c35ff170-010c-457e-aaf1-6ece3a427b81')
+Delayed('subtract_vis_convert-5395fede-9b5c-42df-8ab3-6d3c474083e1')
+Delayed('subtract_vis_convert-2b1e4a51-0572-470b-8de1-5b9ab3675dad')
+Delayed('subtract_vis_convert-349b06a4-9f1b-46bf-b99e-24c743fddb4e')
+Delayed('subtract_vis_convert-0639c5d2-8c26-4b08-813d-3ff94c3d4b42')
+Delayed('subtract_vis_convert-4152bc23-966d-4147-a21a-cdc4a190f96a')
+Delayed('subtract_vis_convert-b2fe1515-ef83-42cf-b9d8-57ec64d5fcaf')
+Delayed('subtract_vis_convert-adde3ae6-d304-4767-b939-3edf42c95f0d')
+Delayed('subtract_vis_convert-9466f2f9-c73b-452d-b446-6ed7ab06958b')
+Delayed('subtract_vis_convert-52a87815-6bbf-460b-b343-ee24b7c8bad2')
+Delayed('subtract_vis_convert-36e85d8f-2bdc-41d3-a1d1-10acc70b8938')
+Delayed('subtract_vis_convert-3dcd9005-cb29-4633-8c34-b3ee1b7a03ba')
+Delayed('subtract_vis_convert-9b05e862-18d3-4628-b347-954d439f875f')
+Delayed('subtract_vis_convert-0daf005c-e65c-4e00-a7b7-00234eecf525')
+Delayed('subtract_vis_convert-f91ad04c-987a-4f05-967c-d87c9dbf3d99')
+Delayed('subtract_vis_convert-0bf898af-c8ac-446a-b273-cc5f9029c91c')
+Delayed('subtract_vis_convert-0a8972f2-efd2-44d3-8f7b-f6a4e97acec6')
+Delayed('subtract_vis_convert-23d09aeb-b956-4985-959f-79decf44a479')
+Delayed('subtract_vis_convert-f0cea293-e5a8-4e6b-aeb1-4be065fe29fd')
+Delayed('subtract_vis_convert-49303482-fc12-4c52-9ff1-1908247d0098')
+Delayed('subtract_vis_convert-7adb723f-04b4-4b5d-a347-87e88010e973')
+Delayed('subtract_vis_convert-e3f94adb-c391-4015-ab02-1c62340ed894')
+Delayed('subtract_vis_convert-1f5b0b73-9211-47db-9ab2-ddfd11ca68dd')
+Delayed('subtract_vis_convert-1349dcf4-abd7-46b4-b896-e8e4e4c1ba10')
+Delayed('subtract_vis_convert-09ebf256-a05b-4286-bc8c-8ad1bdfa4149')
+Delayed('subtract_vis_convert-8936e9cb-917a-40d4-a884-7baffbfb19bd')
+Delayed('subtract_vis_convert-30350a4f-54e3-4d4e-950f-d27b9f7f3ec0')
+Delayed('subtract_vis_convert-53f809d4-450d-4d4f-8a5b-c7eff421d982')
+Delayed('subtract_vis_convert-68e75d36-d18b-4de3-9088-a1d36a533510')
+Delayed('subtract_vis_convert-4f69b603-2fe1-451e-a62d-c5899fab98a4')
+Delayed('subtract_vis_convert-249da1a8-5126-4354-96c3-dddf7b8dcc23')
+Delayed('subtract_vis_convert-8ec31349-6c4e-418d-b25f-fdc07e087596')
+Delayed('subtract_vis_convert-c59b4fcf-920f-4d57-b1fd-e6a5a7c6fd79')
+Delayed('subtract_vis_convert-00181cdc-6aea-44c5-b397-13b600056bbc')
+Delayed('subtract_vis_convert-c36319eb-5244-47d0-a924-3e6d122079e9')
+Delayed('subtract_vis_convert-c3279bbd-5934-42af-bd88-8b2324af1236')
+Delayed('subtract_vis_convert-41059ddb-eb0e-4074-ac38-18ef570e2d1c')
+Delayed('subtract_vis_convert-5908a628-29c4-4ab5-be12-d3a2e6fce68b')
+Delayed('subtract_vis_convert-a5851bec-faaa-4984-99f5-7984f33d8fd8')
+Delayed('subtract_vis_convert-5297dc38-e5b9-4e98-9bfd-c9c26de2cdff')
+Delayed('subtract_vis_convert-b3ee2a1e-2b1e-4200-a25c-0cc77d350666')
+Delayed('subtract_vis_convert-94cfc9fc-2a38-4068-ad68-7685ee88823b')
+Delayed('subtract_vis_convert-c63ad9eb-23af-4b09-86dc-ecd2716472b2')
+Delayed('subtract_vis_convert-b7c8a435-e287-42c0-b2eb-3f2b86437af6')
+Delayed('subtract_vis_convert-7c71756f-c6ad-4cd6-bda6-f129c6ce132a')
+Delayed('subtract_vis_convert-4232a827-3c6e-4c89-8545-0e3db0929cce')
+Delayed('subtract_vis_convert-bea47c81-8288-487d-a126-5d4de19b1f8d')
+Delayed('subtract_vis_convert-f8695f22-0799-48f8-b383-beabb88f43d6')
+Delayed('subtract_vis_convert-8cea6cd5-fa5c-4319-a0db-64a40e345fc7')
+Delayed('subtract_vis_convert-125f5bb1-aa01-4af3-af5e-5ec6d04b2d11')
+Delayed('subtract_vis_convert-17dcb4ff-3af7-4434-a56c-11755303ac84')
+Delayed('subtract_vis_convert-5afff08d-8945-43ef-bfc7-b90e033c78ab')
+Delayed('subtract_vis_convert-a6c46095-13cc-4738-89c5-1b3988071dba')
+Delayed('subtract_vis_convert-a05d2767-b0ad-4bc9-99fc-c0216b88447d')
+Delayed('subtract_vis_convert-945765c3-d69e-46a5-a06b-aba2cba95f5e')
+Delayed('subtract_vis_convert-9e2da2d4-935e-4d0b-8f8f-9c70547cdd44')
+Delayed('subtract_vis_convert-b5c398e7-8256-4910-b798-d60cb80167d7')
+Delayed('subtract_vis_convert-e0afcf7d-e9bb-47cd-9532-f7b888bdd65f')
+Delayed('subtract_vis_convert-2ee6e37f-e3b5-4c6d-876d-24745a93999a')
+Delayed('subtract_vis_convert-4cb8e9f4-8fe6-4339-8d9c-9cbd629adb46')
+Delayed('subtract_vis_convert-9394175e-2e8d-4315-8c53-797a5324279b')
+Delayed('subtract_vis_convert-0667cec3-3263-4eef-9663-da0e524543ff')
+Delayed('subtract_vis_convert-28c4cf15-de78-48e6-bd2a-c01225e576e6')
+Delayed('subtract_vis_convert-c7e4123d-ab95-4914-ad12-e9695814aeb6')
+Delayed('subtract_vis_convert-44040301-cdb4-4bcb-a8a6-6e940d4e03c3')
+Delayed('subtract_vis_convert-340e1805-c18a-4df9-8356-f98c32e4ef15')
+Delayed('subtract_vis_convert-ff01799c-1d07-42fd-b965-2e8bdc643ab2')
+Delayed('subtract_vis_convert-5592e564-316d-493a-baaf-15f9403ff515')
+Delayed('subtract_vis_convert-9d78290d-1897-4bf5-b5cb-88cbe01bcf23')
+Delayed('subtract_vis_convert-bc89c69b-4d71-4804-89c6-e95d85e3c4da')
+Delayed('subtract_vis_convert-8215b5a5-dc5d-4df3-9c58-d5a9cf1848d2')
+Delayed('subtract_vis_convert-77c6b703-6daf-4723-a6ed-ed5ad36c5b0b')
+Delayed('subtract_vis_convert-f0248b3d-0e95-44d2-b3de-9fc2d1b59bfe')
+Delayed('subtract_vis_convert-6e0a48e1-ada3-4c22-9508-7d9ee9b71e29')
+Delayed('subtract_vis_convert-b15447e3-a68c-4587-b9cf-82e18a3231f4')
+Delayed('subtract_vis_convert-75d1d881-1335-431f-93d5-2b1e4fe10fb6')
+Delayed('subtract_vis_convert-202fe51a-09d9-4e55-8886-1e56c95cc8be')
+Delayed('subtract_vis_convert-48ed4342-2fe3-4d96-ae67-90c3f9c4a671')
+Delayed('subtract_vis_convert-b7cbd1da-2d89-4c7c-ad71-9311faad4c67')
+Delayed('subtract_vis_convert-7b2fdcdf-d58e-4efc-a3a5-2b766c57e4c7')
+Delayed('subtract_vis_convert-e77d2f79-b1f5-4648-a783-90693d4d52ea')
+Delayed('subtract_vis_convert-92741b30-1961-4eab-b685-b2069a6b69a4')
+Delayed('subtract_vis_convert-4bb9764c-d9b3-4cc1-b892-7b03a9a9f366')
+Delayed('subtract_vis_convert-f6cbd22c-9405-4473-8239-ed0bb40bf804')
+Delayed('subtract_vis_convert-e039613d-8b8d-4569-a74e-fa96381aa2aa')
+Delayed('subtract_vis_convert-d6a43ff0-ae00-4344-8359-b409e39bd3a9')
+Delayed('subtract_vis_convert-4f3b3195-055a-4d70-b72f-eecd59d89a53')
+Delayed('subtract_vis_convert-e28e81b6-7268-4cb9-82a0-189237b86fa0')
+Delayed('subtract_vis_convert-9dcb3605-4f50-4c2b-b0bf-f9d2ccde18a2')
+Delayed('subtract_vis_convert-99089c5d-32c0-454f-883d-b60e91084cf4')
+Delayed('subtract_vis_convert-98ce1297-be78-4c75-9625-718ffa4dd657')
+Delayed('subtract_vis_convert-3d418cce-73f6-4c55-a8bd-130c5e1fc951')
+Delayed('subtract_vis_convert-10567946-3f61-4997-9593-b6cae93a6a19')
+Delayed('subtract_vis_convert-96fe756a-a006-4429-90fe-f4fb4ab1b8ca')
+Delayed('subtract_vis_convert-9f29271f-802d-42eb-9bf4-43a551c95113')
+Delayed('subtract_vis_convert-3e239d73-137d-4d92-a3fc-c0e8eb8b354a')
+Delayed('subtract_vis_convert-c735b9a2-c5b6-4705-a751-869df1a8a778')
+Delayed('subtract_vis_convert-d7e849af-64c9-464e-9352-427ab7b38dcb')
+Delayed('subtract_vis_convert-f1e458d3-4a13-4fa2-8c94-5e74b9e780c2')
+Delayed('subtract_vis_convert-63ca9644-bbf0-4fd5-bc59-e5858de7b072')
+Delayed('subtract_vis_convert-a621dd49-5446-432b-a4bd-537486f64e8c')
+Delayed('subtract_vis_convert-31089778-4a78-4c8c-b56e-f15f8d25f058')
+Delayed('subtract_vis_convert-cf35253f-78ca-4e02-a0d3-623450cddada')
+Delayed('subtract_vis_convert-3e0fb783-b0a0-422a-acb5-8fb0b2eb7c4c')
+Delayed('subtract_vis_convert-4a3ff404-58c0-4318-8a2a-3993b68aafa1')
+Delayed('subtract_vis_convert-0e926170-ab12-4fa5-a6c0-9bf08290c920')
+Delayed('subtract_vis_convert-b199240a-af44-420f-918a-294d27023ffb')
+Delayed('subtract_vis_convert-d134e12d-f287-4bfc-9217-9c023546d2ff')
+Delayed('subtract_vis_convert-f2c5f518-54ee-46a7-8336-b1011f292711')
+Delayed('subtract_vis_convert-71babb57-f35a-4e40-96e7-2750526e9f2d')
+Delayed('subtract_vis_convert-eaaf2afa-6d80-4a44-accd-69c8a4c02b8c')
+Delayed('subtract_vis_convert-bfca9237-1768-4df2-a035-bb755185d425')
+Delayed('subtract_vis_convert-189e5924-0cb4-4e2d-a406-37abcf177816')
+Delayed('subtract_vis_convert-9f87619a-e7c0-4455-875d-5f7179f3682d')
+Delayed('subtract_vis_convert-b2b3eb15-e5c4-46ee-ab4e-b2827c729548')
+Delayed('subtract_vis_convert-f36596d3-1143-4da3-8b38-bcdbd4ca2cef')
+Delayed('subtract_vis_convert-16166d36-e98d-4364-aec7-b26b992fef20')
+Delayed('subtract_vis_convert-56e0121d-687b-489b-8555-ac20eec61c63')
+Delayed('subtract_vis_convert-a782caec-b6f2-4b12-b710-a614089e42d5')
+Delayed('subtract_vis_convert-b5fe3c78-d88a-40e0-a6f9-feb3b5682d84')
+Delayed('subtract_vis_convert-d32ef682-d434-4855-a71f-e569ec904ef5')
+Delayed('subtract_vis_convert-27d6d6f0-c2f9-4445-92b8-faacd538acaf')
+Delayed('subtract_vis_convert-8c392e10-6c62-406c-80fa-5e0bb8973a30')
+Delayed('subtract_vis_convert-1c45c96e-ff92-4436-9c35-1a968404d285')
+Delayed('subtract_vis_convert-218a2a7a-0ba7-4b93-ab13-2cfba69310f0')
+Delayed('subtract_vis_convert-24334602-1b89-45ce-8f87-4a679d75c94d')
+Delayed('subtract_vis_convert-a61ac18d-ddc9-44ad-9229-63726205a88d')
+Delayed('subtract_vis_convert-04981bd5-2d58-4079-b32c-0cc0394831f8')
+Delayed('subtract_vis_convert-5e9ee242-7aec-402b-857d-c887cdfc7660')
+Delayed('subtract_vis_convert-f570c556-9d15-41e9-b867-b5dca646d642')
+Delayed('subtract_vis_convert-545e5940-6608-4286-af7b-f82b836907d5')
+Delayed('subtract_vis_convert-7d78053b-6461-4992-bcc6-4dde0f1a553c')
+Delayed('subtract_vis_convert-d3e6a7d9-1fe3-4f9e-89c2-95658a6317f8')
+Delayed('subtract_vis_convert-c0289193-a7f3-4166-8a67-23857510a9bd')
+Delayed('subtract_vis_convert-10d211d2-adfa-43b1-9e43-52907f397ad2')
+Delayed('subtract_vis_convert-1afc9588-79eb-493c-b96d-ab304e09e043')
+Delayed('subtract_vis_convert-4d9605d3-f6b7-4986-b0b3-2ebd939c2dba')
+Delayed('subtract_vis_convert-5fb9ce80-0b54-42c9-ac55-b780c968d2cb')
+Delayed('subtract_vis_convert-d28882c2-20b9-4d51-bb2a-0b7d16f28206')
+Delayed('subtract_vis_convert-5cc32d6f-3fce-4371-8cf9-a836cc5f590a')
+Delayed('subtract_vis_convert-e265d832-30f8-476e-8dd2-045cff2d30da')
+Delayed('subtract_vis_convert-64d5b9d3-388e-4f17-a85b-472d245dc9b6')
+Delayed('subtract_vis_convert-0b087f5d-f854-4f32-9fdb-95fc6e92ec51')
+Delayed('subtract_vis_convert-83e8edd4-4743-401c-b988-416aab8e477f')
+Delayed('subtract_vis_convert-bfef357e-c9f9-4ce5-96c4-0f178da329c6')
+Delayed('subtract_vis_convert-41c60e6b-406d-4e66-ad1d-06cb35782c79')
+Delayed('subtract_vis_convert-a3393740-2d20-45d3-a9a2-a964c2161fb3')
+Delayed('subtract_vis_convert-13d65cbf-193f-44da-b1d6-253ff86c340a')
+Delayed('subtract_vis_convert-c3c2d18e-52df-473d-8785-cd946da207b3')
+Delayed('subtract_vis_convert-84dcfff2-69b3-4f5b-baf3-29c978937cc2')
+Delayed('subtract_vis_convert-cc89f424-175a-4420-8ed1-23e4427138d7')
+Delayed('subtract_vis_convert-04aac572-92df-4326-8ce7-bdf4a964d610')
+Delayed('subtract_vis_convert-6298f9d0-ae22-47a2-8d69-7200d1dee595')
+Delayed('subtract_vis_convert-68719671-49a4-43e2-a627-cffea70152ae')
+Delayed('subtract_vis_convert-8243f3d5-903c-4342-a6a3-319a0b834795')
+Delayed('subtract_vis_convert-af1d6a69-fd69-431a-9d06-8e89787b6a9f')
+Delayed('subtract_vis_convert-9d135739-6e64-4682-bb42-d26a1d4db4c3')
+Delayed('subtract_vis_convert-47178158-43b2-4b73-8f48-720e7a7da7c6')
+Delayed('subtract_vis_convert-4e695219-4c55-41a0-aee3-94294db4b41f')
+Delayed('subtract_vis_convert-efd377bb-b399-4567-85b4-c6c098f47571')
+Delayed('subtract_vis_convert-6a7b3fb9-f639-4667-a728-efe901581405')distributed.scheduler - INFO - Register tcp://10.60.253.51:32869
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:32869
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.51:39877
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:39877
+distributed.core - INFO - Starting established connection
+
+Delayed('subtract_vis_convert-6692c5d6-c8b6-492b-89e1-857f6f1a8710')
+Delayed('subtract_vis_convert-bc8f23d1-7240-49a0-bf9c-46d519de6bd9')
+Delayed('subtract_vis_convert-38869032-215e-43bd-94f3-f96b43085719')
+Delayed('subtract_vis_convert-c6026332-2223-453a-94f9-124807b59c25')
+Delayed('subtract_vis_convert-9b95717a-a423-47e5-a146-d328e130938f')
+Delayed('subtract_vis_convert-91148c22-1def-4a89-b605-b4f1ea5968b4')
+Delayed('subtract_vis_convert-7a6e73ae-917a-49d4-8079-8ae32a5e4ca0')
+Delayed('subtract_vis_convert-3497d9af-3fa4-4008-a0c9-7912b1f43e0b')
+Delayed('subtract_vis_convert-3b786b50-72e4-4d1a-80c9-0547a03afce6')
+Delayed('subtract_vis_convert-07d2be04-daaf-4c60-b296-6588c48d707a')
+Delayed('subtract_vis_convert-e80f967c-d984-4d10-b85c-1e4a717e68b0')
+Delayed('subtract_vis_convert-a50dc222-1d72-4574-974d-7a82e31416ac')
+Delayed('subtract_vis_convert-f8d9f848-2019-46d7-8f36-be775388373b')
+Delayed('subtract_vis_convert-23c95a27-ce00-4295-b539-b9d5922e8af9')
+Delayed('subtract_vis_convert-211e44f0-6bb0-45e1-ab3c-1f9232479be6')
+Delayed('subtract_vis_convert-d136dc63-c71a-4cb3-b362-1c3c80c32128')
+Delayed('subtract_vis_convert-b1104145-94cd-4e09-b110-02308da0335f')
+Delayed('subtract_vis_convert-47014587-8fc1-4831-92eb-e041a243b6a0')
+Delayed('subtract_vis_convert-5fc81c21-7f12-4d00-932f-424522d75310')
+Delayed('subtract_vis_convert-d0835659-a4e6-40a0-8d6b-d601ef7e006c')
+Delayed('subtract_vis_convert-88de3604-e80f-461b-b3d5-714f04680642')
+Delayed('subtract_vis_convert-31640ca2-fbb9-43fb-95e5-6c7d5e1c2ca1')
+Delayed('subtract_vis_convert-0f0c0323-7ebb-4f93-8f5f-200606b29063')
+Delayed('subtract_vis_convert-c704c734-feac-4663-be6e-01ed5364a312')
+Delayed('subtract_vis_convert-b31ac13c-a547-4ff6-aa06-7b42b1533be9')
+Delayed('subtract_vis_convert-c568a7c1-6f1d-4862-b10c-d774ceebf932')
+Delayed('subtract_vis_convert-2681c804-4317-46d3-8a0c-6cf428dea0c5')
+Delayed('subtract_vis_convert-cc0267a0-6d95-4dfc-9286-8c1ab4f4b44e')
+Delayed('subtract_vis_convert-b905daa3-8d75-4ef7-a571-b9c580674f44')
+Delayed('subtract_vis_convert-d0e877ec-7de1-476a-b8e4-8bf4b3764328')
+Delayed('subtract_vis_convert-c191ca92-4207-428b-8e01-e70040f9c6fd')
+Delayed('subtract_vis_convert-8f46dcf7-0584-4540-a780-38d8fad75b79')
+Delayed('subtract_vis_convert-3791f5a9-d9d7-40c6-83e2-37af9556f61e')
+Delayed('subtract_vis_convert-f5c285a7-eb8f-4998-8041-7147c89d014d')
+Delayed('subtract_vis_convert-91e2bad6-0a3b-449e-b587-2fa4be9f8b83')
+Delayed('subtract_vis_convert-ec8bc890-9327-476f-96ee-8c97530476fa')
+Delayed('subtract_vis_convert-8a370556-9b76-4fd4-a310-79dc34790ef6')
+Delayed('subtract_vis_convert-32f778e7-ca3b-46e0-bac9-1010f4a56bb9')
+Delayed('subtract_vis_convert-4121e2f0-4569-4237-b8b7-56d8f0498cc4')
+Delayed('subtract_vis_convert-de815687-1088-4abc-97d3-e6c4d88c7f55')
+Delayed('subtract_vis_convert-1c446c31-3377-4a53-90b7-42e23c08e491')
+Delayed('subtract_vis_convert-a7b2d771-0d69-4690-a29d-addf6cc1a3d0')
+Delayed('subtract_vis_convert-f687fc1d-70ef-41d8-8a7b-0231d8c54229')
+Delayed('subtract_vis_convert-e14cf6ff-d106-4521-af34-b84cd7e48166')
+Delayed('subtract_vis_convert-51b1c8eb-83b2-40f7-bc58-1791f946fbbc')
+Delayed('subtract_vis_convert-d18a4c6d-1b66-4c7a-b355-024dccddbf6f')
+Delayed('subtract_vis_convert-5c16f53f-cbea-40b9-b599-be030a493526')
+Delayed('subtract_vis_convert-00182eb2-9149-4132-8363-137af09285a4')
+Delayed('subtract_vis_convert-abe26b51-38a7-4d33-b5f8-e249b4bac387')
+Delayed('subtract_vis_convert-530bf90d-6879-4580-b9bd-ddb013bac99c')
+Delayed('subtract_vis_convert-2af4b7df-ca43-487c-bc10-20f83241b15e')
+Delayed('subtract_vis_convert-53d4b58d-1ad4-45a2-b7e3-4644b04415a8')
+Delayed('subtract_vis_convert-c492e798-efd6-4c8d-98e7-f2b90e22d294')
+Delayed('subtract_vis_convert-13f7ae2e-9ee3-4b92-86a1-388a1be3e253')
+Delayed('subtract_vis_convert-849d78ed-94c7-4fbd-aec1-a96cb3d62aaf')
+Delayed('subtract_vis_convert-f2de5540-9643-4df9-81e9-da93965e38d7')
+Delayed('subtract_vis_convert-c0ebf240-ce41-4d10-8b8d-58e5f1116899')
+Delayed('subtract_vis_convert-0e0e8a09-2247-4030-872e-b25d40c66c31')
+Delayed('subtract_vis_convert-0d47c27d-5925-4c71-8035-1d95ef76b974')
+Delayed('subtract_vis_convert-2cad400e-14cc-46fa-977d-7c19910445a0')
+Delayed('subtract_vis_convert-40ab8141-c398-4c66-9e9a-909473925ab6')
+Delayed('subtract_vis_convert-1d1af8d3-4a62-4a47-a343-1d167e6b8b13')
+Delayed('subtract_vis_convert-2733f35e-48b1-49fe-ab1f-37f71a20719b')
+Delayed('subtract_vis_convert-04976c4c-61aa-44bf-95d5-6aa0e4ed187a')
+Delayed('subtract_vis_convert-510439de-60a9-4719-8c3c-3fa4adcfb4ac')
+Delayed('subtract_vis_convert-5cbd8aaf-005e-413b-b175-c0c27b7b1fc5')
+Delayed('subtract_vis_convert-b7bacbae-d781-4de5-91fd-a63f16fb7d12')
+Delayed('subtract_vis_convert-2eee20e1-2ffa-492d-80b5-57210b2ca361')
+Delayed('subtract_vis_convert-03357b53-1d7a-49aa-9a49-313354788efa')
+Delayed('subtract_vis_convert-71658bd1-5858-4d04-959a-1e78ed25b31b')
+Delayed('subtract_vis_convert-dcbcb853-d3a0-457d-a06a-ab0e9b3941d8')
+Delayed('subtract_vis_convert-359aac8a-2eba-4704-a4f0-6e24b72cb8f2')
+Delayed('subtract_vis_convert-7f1c4901-df0f-4f84-bc9e-7b96bad9b12e')
+Delayed('subtract_vis_convert-f682f3b3-25d9-4886-b983-b11e93bd3a60')
+Delayed('subtract_vis_convert-44db12f4-1c9b-471a-8b77-fd36c698f0eb')
+Delayed('subtract_vis_convert-e9365a14-eefb-40f1-b5f6-a4696c6d10d1')
+Delayed('subtract_vis_convert-c7c90719-d7ec-4f3f-b78a-610c4772ae1e')
+Delayed('subtract_vis_convert-feba2700-1564-4634-b7f7-2db861040184')
+Delayed('subtract_vis_convert-91048342-2a67-4e2b-b40d-5d0eedb2d417')
+Delayed('subtract_vis_convert-d32ec184-161a-41a1-afe7-394c7bc05c36')
+Delayed('subtract_vis_convert-46c1c1e7-4e8a-432c-9605-96c7c155b7f4')
+Delayed('subtract_vis_convert-87d5b035-eb47-4249-b9ee-fed28b7fcb91')
+Delayed('subtract_vis_convert-007205a3-e89a-4f94-9d7c-776570023352')
+Delayed('subtract_vis_convert-4e6154d8-dcef-47ca-bda2-fe0ed31cf5d8')
+Delayed('subtract_vis_convert-f427f926-eca9-48d3-a72c-3ee18c9fa443')
+Delayed('subtract_vis_convert-ad75aab0-6dd7-41c5-8651-5e111e35a4b5')
+Delayed('subtract_vis_convert-b63ecf89-d713-4251-8774-d79143cb2993')
+Delayed('subtract_vis_convert-2e5890e7-28eb-4c9f-8aa0-041dd8153e86')
+Delayed('subtract_vis_convert-a70134dd-4594-4ea4-8e23-74adedf6c8d4')
+Delayed('subtract_vis_convert-9d0ed9be-47ee-4885-a4a9-3a7d030559bf')
+Delayed('subtract_vis_convert-af9652b0-98d6-4e33-89a7-7ccc7c660210')
+Delayed('subtract_vis_convert-4d2998e5-69a8-449f-b685-338028283b9d')
+Delayed('subtract_vis_convert-4c243ecb-c85e-414c-aa95-3f04a571926c')
+Delayed('subtract_vis_convert-6aec0897-ec95-46fe-bb0c-773e20441d5d')
+Delayed('subtract_vis_convert-ea28e863-f708-4340-8529-c382fade8277')
+Delayed('subtract_vis_convert-7a5f067f-74bb-47ab-8937-34ce77710840')
+Delayed('subtract_vis_convert-f9cd06b8-236c-4004-a9b3-90b4b24cb075')
+Delayed('subtract_vis_convert-589e8b07-6fc3-4c27-b420-96c441946174')
+Delayed('subtract_vis_convert-f9d71e5f-867e-4d5f-b1ed-b473de37b86b')
+Delayed('subtract_vis_convert-a9051fef-5d4a-4ac7-9661-0d9ae0e55c3a')
+Delayed('subtract_vis_convert-f70358fb-115d-4e9e-bed2-9ac8ca10cfda')
+Delayed('subtract_vis_convert-020e9714-b6cb-4c3d-946a-baadc3883e88')
+Delayed('subtract_vis_convert-970c620a-d6b0-4741-9ed2-948a5448a251')
+Delayed('subtract_vis_convert-04f380b2-6ac1-4007-8630-ef8c2e788c9e')
+Delayed('subtract_vis_convert-acc2ad0d-cd83-4822-a752-b5a13d5d324b')
+Delayed('subtract_vis_convert-321ea99e-c0d3-42b0-a1c7-444977fb98b3')
+Delayed('subtract_vis_convert-f7e071a4-352d-4c3e-b161-f1c7e798dd71')
+Delayed('subtract_vis_convert-8d9fbefa-8a5b-426e-a7d6-ccfeba21414d')
+Delayed('subtract_vis_convert-f5f76884-5298-4cd2-9505-433179e54042')
+Delayed('subtract_vis_convert-027bf552-c318-4010-a62a-fe1f0b2c77a2')
+Delayed('subtract_vis_convert-46ea7b4d-f4f1-4122-a6c1-fb3f61061d20')
+Delayed('subtract_vis_convert-2f07fb36-2600-4fa2-ab83-661446ae912f')
+Delayed('subtract_vis_convert-5d8c3c6c-95a0-4b78-abcb-ac9249ef9253')
+Delayed('subtract_vis_convert-98955150-a81e-48a9-b028-ff2dd880c4f4')
+Delayed('subtract_vis_convert-90ab8067-70e5-4eec-8446-5c440149a31f')
+Delayed('subtract_vis_convert-cb28ad68-9175-40da-8571-b7aadb7bc305')
+Delayed('subtract_vis_convert-d7212ced-41be-476d-9133-e88c1c014deb')
+Delayed('subtract_vis_convert-52f1e683-abfe-441c-8e54-6af537c23130')
+Delayed('subtract_vis_convert-290f0d3a-93e6-4032-acd3-084b915574af')distributed.scheduler - INFO - Register tcp://10.60.253.51:36820
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:36820
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.51:36964
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:36964
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.51:36953
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:36953
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.51:45265
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:45265
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.51:34595
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:34595
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.51:44396
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:44396
+distributed.core - INFO - Starting established connection
+
+Delayed('subtract_vis_convert-2a2ded04-8135-4e75-88e5-8dc6d3f4791e')
+Delayed('subtract_vis_convert-35f4d7d9-c553-4b29-9825-cefba724d92f')
+Delayed('subtract_vis_convert-ae4434e3-460f-4e7e-a38b-f02021b11364')
+Delayed('subtract_vis_convert-6f63e4e7-fae1-437b-9d81-9425737a0116')
+Delayed('subtract_vis_convert-e731db2a-5c2d-4c6b-bde3-b68ab95a2369')
+Delayed('subtract_vis_convert-61454edc-f5d4-4d91-a76e-76d39f88e097')
+Delayed('subtract_vis_convert-e00b08e7-b844-42c9-afcd-ba555ed46597')
+Delayed('subtract_vis_convert-85b6925a-d139-49e6-86a3-9cf8c54cdb0e')
+Delayed('subtract_vis_convert-5785a986-af73-4218-963c-9c1d069dd87e')
+Delayed('subtract_vis_convert-1f9854ea-7927-4b3c-ba27-dd64cbfa5787')
+Delayed('subtract_vis_convert-fd5f5efc-d8c1-487b-9431-20ba62d6693f')
+Delayed('subtract_vis_convert-d267d870-5ded-483d-b614-e4f9997e3cfa')
+Delayed('subtract_vis_convert-91b9667e-6828-404f-8205-793ab024dac8')
+Delayed('subtract_vis_convert-17c1450f-154f-4212-94c6-38de956818bc')
+Delayed('subtract_vis_convert-54a77f1b-90f8-414d-9bb2-f6deb85bf93d')
+Delayed('subtract_vis_convert-6d06a40c-59ce-4dbf-85d2-6d2ad6cf813b')
+Delayed('subtract_vis_convert-382b580c-d472-478d-848b-3baa0aba301e')
+Delayed('subtract_vis_convert-e6998c56-efb7-49e9-b39f-5325105e7d55')
+Delayed('subtract_vis_convert-43812600-0327-4394-9aff-13db8fe31ed9')
+Delayed('subtract_vis_convert-fd316215-3fd1-459a-b9bf-678108b4d211')
+Delayed('subtract_vis_convert-76920ab0-788d-4ffc-bdbf-f020864547f4')
+Delayed('subtract_vis_convert-6b9bb99b-2f4c-4c9a-9b39-8fc9b3b5c82c')
+Delayed('subtract_vis_convert-60827dcd-d745-4029-a1f6-23208b458c44')
+Delayed('subtract_vis_convert-4437247f-e62a-4aac-9950-3ad687f3eabd')
+Delayed('subtract_vis_convert-936437a7-47db-45e8-beb4-ddd03271358e')
+Delayed('subtract_vis_convert-5e83e4bf-5c55-43da-a211-ccd74a6f9ff0')
+Delayed('subtract_vis_convert-a473baf2-d5af-420b-aedc-9b515b448021')
+Delayed('subtract_vis_convert-b45b406b-300f-4bfc-bd66-fb152b0048cd')
+Delayed('subtract_vis_convert-270316b7-ca40-48fd-b177-c85fbef26d67')
+Delayed('subtract_vis_convert-d653de4b-1e24-48d0-b8fc-c67b3f0c5df1')
+Delayed('subtract_vis_convert-fc1b3e3e-0fd8-451c-9592-236594c024c8')
+Delayed('subtract_vis_convert-7ceb64b6-085a-4d01-9fd4-ae4d9dc3f847')
+Delayed('subtract_vis_convert-e8e2ea2b-853d-4bc6-9d3d-99c59b626f9a')
+Delayed('subtract_vis_convert-bc91634d-e5a2-44b4-89c4-c5eccaea8284')
+Delayed('subtract_vis_convert-82844bde-efe1-48e4-8119-12385c737180')
+Delayed('subtract_vis_convert-bfa5f778-e7c6-4686-a148-61a4e5fd7d80')
+Delayed('subtract_vis_convert-75ae89ff-90d6-4829-a44c-5b423d0e2baf')
+Delayed('subtract_vis_convert-943b11a4-bcf8-4af4-95dd-73fb340b6d3b')
+Delayed('subtract_vis_convert-b0ba1fe2-3da7-4cc5-8ca9-acb4e64d01ff')
+Delayed('subtract_vis_convert-f74f96e9-6c4a-47a2-af97-08be75cff756')
+Delayed('subtract_vis_convert-fb502a71-7303-4109-b46e-ccde69c706e7')
+Delayed('subtract_vis_convert-fd683e4f-3179-4a87-87a4-f21d8cf7911f')
+Delayed('subtract_vis_convert-fc7a1273-e668-4422-9c71-c4b633203b92')
+Delayed('subtract_vis_convert-b8040af3-624e-48ab-8efa-6e570d07bab4')
+Delayed('subtract_vis_convert-cdb03f3a-28f3-4a7a-bd5d-5be43a508569')
+Delayed('subtract_vis_convert-6ba2a03f-c527-43c3-bbb1-cd162bf02b93')
+Delayed('subtract_vis_convert-986b3816-3950-44d0-8a94-5f94af6747ed')
+Delayed('subtract_vis_convert-e5d4c819-449b-41a1-b591-805f4f1e60b3')
+Delayed('subtract_vis_convert-b489b451-4709-46da-b603-9604e9a5b669')
+Delayed('subtract_vis_convert-5f6780a1-7465-475b-932a-25e48d9fe712')
+Delayed('subtract_vis_convert-bad0a9e8-3c20-41e0-9a8a-aaf3988edf39')
+Delayed('subtract_vis_convert-af9e3505-f898-4e96-b8dd-60781a86a9b1')
+Delayed('subtract_vis_convert-50adcca0-712a-4d4f-86f8-d2a08ee2f928')
+Delayed('subtract_vis_convert-463a53c4-c31c-4242-9318-b975f90fa01b')
+Delayed('subtract_vis_convert-ab52b2ce-ed2e-4d52-b9a1-b888493ed1d0')
+Delayed('subtract_vis_convert-5ba0eb85-9f77-4ed3-8d48-43a4ae105836')
+Delayed('subtract_vis_convert-6418c4cd-f122-4b0f-b486-059d397c1652')
+Delayed('subtract_vis_convert-de98b33f-92f6-4ff6-8185-a29e02626488')
+Delayed('subtract_vis_convert-7dbfec3a-c4a7-4fd4-bd71-d83b6ee77e62')
+Delayed('subtract_vis_convert-09fa8dd6-9f7c-4525-9f4b-64f07167af31')
+Delayed('subtract_vis_convert-f8483b54-3734-4ae0-99db-589c23f68a79')
+Delayed('subtract_vis_convert-997e2b62-7116-407a-8311-fdc6c5048a6c')
+Delayed('subtract_vis_convert-32e9633a-cd48-4dbe-9445-e4c1703df1ae')
+Delayed('subtract_vis_convert-ef287ead-c2f3-4ab7-83af-5ab6f5eda852')
+Delayed('subtract_vis_convert-99104d0b-d771-46e5-975b-27a44df804ff')
+Delayed('subtract_vis_convert-2280b4ad-8b3b-4829-af14-650c297d698d')
+Delayed('subtract_vis_convert-07d923fb-a4ec-4e39-8b50-73f19c361309')
+Delayed('subtract_vis_convert-e5a7c387-9950-48f5-b2f5-1dd1de5f65ce')
+Delayed('subtract_vis_convert-c3c12ef4-780a-455d-aa7c-02cd469a86a4')
+Delayed('subtract_vis_convert-6b55e7cc-73e3-4b33-b777-4e8d5768cbdc')
+Delayed('subtract_vis_convert-0402ec0b-57cc-4e80-89d9-01b4a0653e7e')
+Delayed('subtract_vis_convert-00e628ba-894e-4053-8b5b-ce7dddcb932f')
+Delayed('subtract_vis_convert-455f472f-5eeb-4794-bfb7-609a00dfa3ef')
+Delayed('subtract_vis_convert-1c5e285a-17dd-44cc-98db-72ebc48eda04')
+Delayed('subtract_vis_convert-686ed84d-3663-446e-b19f-aaf343aa3015')
+Delayed('subtract_vis_convert-9d01e32f-2116-4661-883c-295da42966d2')
+Delayed('subtract_vis_convert-9cb42a3e-c83a-4aeb-8c21-90098040154e')
+Delayed('subtract_vis_convert-e4ebef7b-8995-4fa0-80d6-b519527e842d')
+Delayed('subtract_vis_convert-01b48524-2f09-42d4-bacc-64f45378536c')
+Delayed('subtract_vis_convert-1d52ddf3-f49e-4145-b560-f8413d36dd9c')
+Delayed('subtract_vis_convert-60fc7ec2-61eb-48a5-9408-ce6de89f9e15')
+Delayed('subtract_vis_convert-ae4f33c4-827e-4442-8405-562b4a6d98f2')
+Delayed('subtract_vis_convert-fc4277d2-6867-4bf8-851c-5bb6fbda0477')
+Delayed('subtract_vis_convert-dd9ececd-e635-4de0-8e47-69e691011d8d')
+Delayed('subtract_vis_convert-1a394286-f79c-4ea0-8ba4-68e7d3e9da26')
+Delayed('subtract_vis_convert-b7e1d867-e167-4132-a775-8cc8fe54c208')
+Delayed('subtract_vis_convert-45e67a04-1c1d-4abb-b4f9-18f0b1f2539d')
+Delayed('subtract_vis_convert-bef8a798-251c-406d-9f2e-3f1406794d66')
+Delayed('subtract_vis_convert-b1c07b90-9ebf-44a9-9ec8-cd2b8a1b6294')
+Delayed('subtract_vis_convert-66707cb9-eadf-4927-ac2e-f90c5947f009')
+Delayed('subtract_vis_convert-e424f90d-7e3b-444d-a272-0a2d77c525ab')
+Delayed('subtract_vis_convert-630a3e46-24d0-4960-9e8e-adc9d0d30b6e')
+Delayed('subtract_vis_convert-98d2f000-6d8f-440c-9d6e-dd007951ba75')
+Delayed('subtract_vis_convert-47c0fbd1-040e-4df2-84df-6c64b201a7d0')
+Delayed('subtract_vis_convert-fc1deed9-12dd-4a26-8b9e-e07c8bbafdae')
+Delayed('subtract_vis_convert-8fa82cce-fb65-44b0-bb8c-961b9d36b080')
+Delayed('subtract_vis_convert-8d4d5937-bdc2-442f-bb53-bf9c64760934')
+Delayed('subtract_vis_convert-e02885b5-e4aa-46d3-bf8b-3aa4268508ea')
+Delayed('subtract_vis_convert-9d0a0a34-86bd-4bef-b775-8ee2088d983d')
+Delayed('subtract_vis_convert-dfa40967-142d-466e-bfa2-92661dd2dae3')
+Delayed('subtract_vis_convert-4e9027d2-ed51-442a-8ef8-577c5f36ace6')
+Delayed('subtract_vis_convert-ea49505b-3edf-406a-b42b-618d01f5be24')
+Delayed('subtract_vis_convert-cda93bf4-5a62-46e1-9920-6c1331ff1bbb')
+Delayed('subtract_vis_convert-0b2c5cfa-766e-42a4-be56-372de0270f61')
+Delayed('subtract_vis_convert-a161ae26-433c-4bbb-a059-212b5bd2ffb5')
+Delayed('subtract_vis_convert-d674bb07-45a5-4937-b236-84170e4aec1e')
+Delayed('subtract_vis_convert-61ada268-8737-42fd-b78f-cf8eef74003e')
+Delayed('subtract_vis_convert-117eacf1-1362-47a3-a321-b725a0c56749')
+Delayed('subtract_vis_convert-d0594b2d-a41f-4457-aaa8-1b4690106c84')
+Delayed('subtract_vis_convert-50559b15-5dbc-40cf-a4ce-58df6807c176')
+Delayed('subtract_vis_convert-b22287d4-faab-41f6-afb0-fc3a4081c5c9')
+Delayed('subtract_vis_convert-1b4d2be1-1898-4aef-968b-2f503862327b')
+Delayed('subtract_vis_convert-aea3a7ce-dfc3-43d6-8137-def7ec58d02e')
+Delayed('subtract_vis_convert-52f69176-e5ed-4d65-a5a4-70e346c24578')
+Delayed('subtract_vis_convert-92c9d489-bc80-4558-8704-171c94283437')
+Delayed('subtract_vis_convert-e21859f5-f451-4ca0-9ed0-a412f51799e8')
+Delayed('subtract_vis_convert-a1b94b2c-b4d6-4559-8b60-91e80f4a3025')
+Delayed('subtract_vis_convert-30ef41fa-502b-4612-b4ac-2aa314fb7590')
+Delayed('subtract_vis_convert-9a024f85-363d-4fb3-be9f-83dd85bcdc6e')
+Delayed('subtract_vis_convert-101d2d48-73bf-41de-b4a9-33f301a9d4e6')
+Delayed('subtract_vis_convert-35cb041d-8339-4083-a7a7-0f6a3ef5424b')
+Delayed('subtract_vis_convert-4e0df063-fc0a-4009-a649-3ef8e65bd96d')
+Delayed('subtract_vis_convert-4bc29b66-31ee-4fd7-9508-83101ae019e5')
+Delayed('subtract_vis_convert-63d742e4-1c18-4cda-8230-2a075ddfb7c4')
+Delayed('subtract_vis_convert-0ff9efd7-85d9-4a34-a016-ed38d848742d')
+Delayed('subtract_vis_convert-c0fea88e-8d7e-45cb-8804-4957f01e09b3')
+Delayed('subtract_vis_convert-3a822bd6-4ce2-4a0a-807f-156427acf92d')
+Delayed('subtract_vis_convert-0c698ebe-3de6-4441-86fa-4ab7cda2e2c4')
+Delayed('subtract_vis_convert-2ff1ad76-93f1-4ec4-9718-76b52dba3edb')
+Delayed('subtract_vis_convert-542caab9-07de-490f-ab57-2d05a793dc4f')
+Delayed('subtract_vis_convert-23b30d9c-c772-4503-8e61-87d51ebbad0e')
+Delayed('subtract_vis_convert-737e2392-dfdf-413c-9d4d-b3714eff757e')
+Delayed('subtract_vis_convert-361f114c-298d-47df-966e-57ba3763efbd')
+Delayed('subtract_vis_convert-dd5f6e75-bd5f-4dd8-8466-bcee9c4fc651')
+Delayed('subtract_vis_convert-57dbb797-7d01-4ba2-88d1-f8a1624846da')
+Delayed('subtract_vis_convert-95ea008e-548e-4f21-9995-38682c01adfc')
+Delayed('subtract_vis_convert-658ef46a-50dd-4d8f-b93c-5d8fc4fe3168')
+Delayed('subtract_vis_convert-5e1ebcf3-b2c8-42a9-81e2-bb939886b0a3')
+Delayed('subtract_vis_convert-358500c6-593e-408b-85b6-3ff01dcf5b8a')
+Delayed('subtract_vis_convert-d4943ea0-87c1-42c4-8e39-bef27ef09083')
+Delayed('subtract_vis_convert-917c51f8-683f-456d-838f-4b67e228ada1')
+Delayed('subtract_vis_convert-8b0ce038-ff68-4723-9e05-a5e8c41c2f3e')
+Delayed('subtract_vis_convert-59c0ce77-527c-4890-90b6-71460885efd5')
+Delayed('subtract_vis_convert-c3b0f8ee-61a6-491f-8b0c-645c2c3955b6')
+Delayed('subtract_vis_convert-7246b716-01d0-4b93-8ddf-f0452815410c')
+Delayed('subtract_vis_convert-129db34e-3620-47cf-97ac-be60d53d48dc')
+Delayed('subtract_vis_convert-5a3995e8-2af3-4a27-9f80-a5ffbee7c8a4')
+Delayed('subtract_vis_convert-d1c2451b-14d7-45e8-ba44-9ff26ad03390')
+Delayed('subtract_vis_convert-d20556c1-c1b6-43da-b6ac-95d61045377d')
+Delayed('subtract_vis_convert-1850f6cd-5e2a-4afd-b693-ed8d1419ee59')
+Delayed('subtract_vis_convert-661aa8b7-9b2e-473d-8d27-b782b0a95205')
+Delayed('subtract_vis_convert-0e91f6be-b514-4b54-b2f7-ac53b2658909')
+Delayed('subtract_vis_convert-b10bec95-316a-4405-9051-8591232ae370')
+Delayed('subtract_vis_convert-823d8d09-40c2-405e-9382-2249b59b06db')
+Delayed('subtract_vis_convert-12f9164a-73e9-4e9f-9d21-2173b684819e')
+Delayed('subtract_vis_convert-4fd042a3-a021-4f1f-8ac0-414e578b31a5')
+Delayed('subtract_vis_convert-31b15ce4-b260-4b04-9f18-1ee497fb23ac')
+Delayed('subtract_vis_convert-7140c6bf-5758-4359-aa93-f04075ba0f2d')
+Delayed('subtract_vis_convert-c2177ed9-07ff-4dec-ba2b-28d07f56f496')
+Delayed('subtract_vis_convert-1e3f2827-ad18-45ef-8c59-3b72e24b807d')
+Delayed('subtract_vis_convert-3f28d7f9-0e32-4440-9203-4a0ec2a34ca6')
+Delayed('subtract_vis_convert-48772aaf-f2fa-4ee6-9d94-b43a22ccc746')
+Delayed('subtract_vis_convert-5cc58cf4-b170-4e1d-a4c7-1d00c8f9008f')
+Delayed('subtract_vis_convert-f59cddf7-f26e-4e13-89f3-99fad51e96d4')
+Delayed('subtract_vis_convert-1547425d-11bb-4247-8d2f-05c1d13c2dfe')
+Delayed('subtract_vis_convert-5ff1963b-fa2c-4f26-a0e8-838517be7d34')
+Delayed('subtract_vis_convert-7924022a-4395-4714-86f8-c6f4b3320d03')
+Delayed('subtract_vis_convert-2471dc99-fa74-40d3-88f7-393a55469118')
+Delayed('subtract_vis_convert-07f9ff52-b2d0-452a-b369-06e9de786831')
+Delayed('subtract_vis_convert-ffadb174-b223-4aa5-8a7b-1a5e3e02dfee')
+Delayed('subtract_vis_convert-d1597688-ecd5-4609-b7ab-efb2cda4f40d')
+Delayed('subtract_vis_convert-c1b997fc-8fcc-443a-b2ec-686457ec913f')
+Delayed('subtract_vis_convert-d06a32c1-6501-49d9-976d-3c6f1d836335')
+Delayed('subtract_vis_convert-7c154927-c74f-43a2-9a30-44de43bcf7ec')
+Delayed('subtract_vis_convert-273de851-b8de-4677-9755-b8c6fc8e76d6')
+Delayed('subtract_vis_convert-608f738f-eb0a-43d3-a62d-a25939534209')
+Delayed('subtract_vis_convert-2f3702db-02f1-4e91-a2e3-1ffa3b4b1649')
+Delayed('subtract_vis_convert-b3110415-fc8d-47f9-9297-6b6572cd4b1a')
+Delayed('subtract_vis_convert-0bdb7c41-9edb-4bf5-964e-a88d58dcd3cb')
+Delayed('subtract_vis_convert-a7a459d9-6ce4-40e3-8abc-374f5bec4af4')
+Delayed('subtract_vis_convert-3dae3f7e-79c3-4fd1-92d4-1e30836cd6a3')
+Delayed('subtract_vis_convert-1dd9d17b-9f74-4a04-97fc-dbe3ab2ec64a')
+Delayed('subtract_vis_convert-28d5a6c2-8bff-470a-a192-7016dd4da4e8')
+Delayed('subtract_vis_convert-f4c48f12-463c-4d5d-b9a0-34b750918baf')
+Delayed('subtract_vis_convert-deb3a11e-9f9f-4fc3-b64d-eef279b1c440')
+Delayed('subtract_vis_convert-bf87eec4-21a4-45f8-a090-2692c63cbf0a')
+Delayed('subtract_vis_convert-d9047bef-7de5-43e5-b831-3e4f63cf8c1e')
+Delayed('subtract_vis_convert-7fae3050-b9d3-48fc-8475-6ace4bb88c30')
+Delayed('subtract_vis_convert-539af6ed-5497-413c-afb7-8b7878033ba3')
+Delayed('subtract_vis_convert-1f6a1d68-2cbd-4db2-abfe-e6a4a3a91d9d')
+Delayed('subtract_vis_convert-f2d6e290-ba6b-47d8-b0d5-cfe0d5e919d4')
+Delayed('subtract_vis_convert-7808d7da-d46f-43d8-8722-422b505c6c86')
+Delayed('subtract_vis_convert-fbc5e5fb-c8c6-432a-994f-c64f6c44708a')
+Delayed('subtract_vis_convert-a1ca36fe-0f46-48b6-9a72-bb2693aa29b2')
+Delayed('subtract_vis_convert-435157c1-effb-4c17-b17f-500a6117c37b')
+Delayed('subtract_vis_convert-ad97fd09-324a-4400-ad96-9dae9ee2fb9a')
+Delayed('subtract_vis_convert-586aa6c7-b32e-4867-a7a8-d36d0e637051')
+Delayed('subtract_vis_convert-f2da5f2b-2b33-45dc-bc32-d28d81a7f78f')
+Delayed('subtract_vis_convert-105131d8-d941-49b8-aeee-32149340a2d9')
+Delayed('subtract_vis_convert-dcaaffdb-9fa7-4763-9bf5-e8c1ad8df6e8')
+Delayed('subtract_vis_convert-40198972-6c77-40d5-93e2-312e3b666339')
+Delayed('subtract_vis_convert-1d2980cf-5545-4e9c-8141-f8ac5423b6d0')
+Delayed('subtract_vis_convert-a61303f6-c222-4df9-948e-f82fa42b051c')
+Delayed('subtract_vis_convert-a65e36b1-fe86-4295-8d53-7fb339b036e5')
+Delayed('subtract_vis_convert-7eb5e222-6bad-43d4-9705-e012097dfbe8')
+Delayed('subtract_vis_convert-e4cc5273-8fb7-460a-bc1e-1f7b43a32e6f')
+Delayed('subtract_vis_convert-734c3798-fa91-45c4-a9ea-cabff6fdf29b')
+Delayed('subtract_vis_convert-72436fc1-6082-4215-8cfb-4350da6313d7')
+Delayed('subtract_vis_convert-8f0301d6-193a-491e-88f0-ee83a3175a8a')
+Delayed('subtract_vis_convert-b5374bdc-7a06-4a53-a471-aac6b048cc20')
+Delayed('subtract_vis_convert-65066b78-de10-497f-9ff1-431be65adaab')
+Delayed('subtract_vis_convert-ad637ee1-3069-42b1-a7d4-9ae6ee6dd5a7')
+Delayed('subtract_vis_convert-77c6fd23-dc1c-4ecb-bf1d-10f4fc66f8e9')
+Delayed('subtract_vis_convert-e871a395-72ca-46b6-b0aa-921777297578')
+Delayed('subtract_vis_convert-7d58f1bf-1dd4-4025-9cc1-aa0d0d6dde7a')
+Delayed('subtract_vis_convert-30f4975e-3959-452c-b4ed-d2ce3e52177b')
+Delayed('subtract_vis_convert-12617b13-c52b-4ac4-88f6-05aa4788c63b')
+Delayed('subtract_vis_convert-695a2091-dba5-4995-a0d8-d37261976ecb')
+Delayed('subtract_vis_convert-4d866184-5601-4d43-b1ed-1e67d12dc65a')
+Delayed('subtract_vis_convert-23f77d0b-6a65-42de-be27-17d0b98e0552')
+Delayed('subtract_vis_convert-447e06f3-784c-4321-8a3f-82f0a99a9f3d')
+Delayed('subtract_vis_convert-22779ac0-50b3-448a-8c73-3f49ddedcac2')
+Delayed('subtract_vis_convert-ed7f0c21-5383-45c2-807a-b3867657925d')
+Delayed('subtract_vis_convert-0e6a756c-9575-4c14-b1a6-f1661d0e0294')
+Delayed('subtract_vis_convert-7038594b-cc8a-4947-af73-53d940a90f70')
+Delayed('subtract_vis_convert-b7e732ba-4e86-4565-a5fd-bb4c2e59909c')
+Delayed('subtract_vis_convert-c3d65b16-5af5-40f9-b23a-1a7b2843a849')
+Delayed('subtract_vis_convert-6f52d737-1f85-4cc7-8d64-1604c7f7404a')
+Delayed('subtract_vis_convert-805440f2-b3e8-4436-9a6a-5a9ae7df37d4')
+Delayed('subtract_vis_convert-3df1d3ee-d117-44eb-9348-0c8e2136d499')
+Delayed('subtract_vis_convert-cacae23e-a6c2-4ac3-8653-f67fd4982031')
+Delayed('subtract_vis_convert-ca56d6a5-aeb5-4aa8-9559-994da1a731ec')
+Delayed('subtract_vis_convert-f4378026-b4ca-4a69-a85b-9c72f86b8f1b')
+Delayed('subtract_vis_convert-086ba9d9-d027-4383-8eee-2b308cdf2d79')
+Delayed('subtract_vis_convert-48d4fd4f-a590-4428-a3ef-4dd2afb11685')
+Delayed('subtract_vis_convert-4f3d087a-0dd6-4d84-bdd1-06b1c35f46f4')
+Delayed('subtract_vis_convert-4b85aade-d22f-48a8-a146-a97e2b76a415')
+Delayed('subtract_vis_convert-3a3de121-c4df-4a9f-8f90-afdb97d8884e')
+Delayed('subtract_vis_convert-afda822b-89f6-49a7-9ae2-c2166334af4b')
+Delayed('subtract_vis_convert-d71469e3-c0ee-4a0b-95b7-03dd5a30e380')
+Delayed('subtract_vis_convert-7d6b4926-af21-4b50-b1db-331edb96d5bd')
+Delayed('subtract_vis_convert-5565bac8-ee56-42ac-9fe3-527ca44f6c03')
+Delayed('subtract_vis_convert-69302dab-5a87-41e3-b642-834c7fb94c95')
+Delayed('subtract_vis_convert-d1635490-9771-4875-9e7b-7d15901be39c')
+Delayed('subtract_vis_convert-48317722-0592-4d6b-8d32-e15eded07f3e')
+Delayed('subtract_vis_convert-a6f38869-2de2-4c72-b58c-2b883e8e45f0')
+Delayed('subtract_vis_convert-7668a55e-6e90-4f48-a75e-a5d6009a176c')
+Delayed('subtract_vis_convert-b1fac19a-55b1-480c-8ba1-2c628186769f')
+Delayed('subtract_vis_convert-7d58e678-1051-4d03-85d5-aaf7d75a2441')
+Delayed('subtract_vis_convert-b417fd3c-7781-4e81-8e17-60d1652696c4')
+Delayed('subtract_vis_convert-0a445fed-646b-4937-aba7-0115b1def6b6')
+Delayed('subtract_vis_convert-fb0a7dcd-ae3e-46c6-870b-ac5fdbbaefa5')
+Delayed('subtract_vis_convert-1db3cbb4-0005-4ed9-808f-b47b3c2b3f69')
+Delayed('subtract_vis_convert-dde1a9bb-e030-42ff-a7f6-199e20447fa3')
+Delayed('subtract_vis_convert-f551e323-2d73-47e8-841a-0ba5153b3b51')
+Delayed('subtract_vis_convert-38052506-5395-4079-8cff-0e62d07d571b')
+Delayed('subtract_vis_convert-c92b9ad7-4fbd-47d4-a4a3-f6d0760a2310')
+Delayed('subtract_vis_convert-eb0f2811-5e52-4596-9ddd-40af31eb12a9')
+Delayed('subtract_vis_convert-0ca171fa-8bf3-4482-90b5-a9a7434b064e')
+Delayed('subtract_vis_convert-e8d8316a-8322-4b3c-85a6-adb4a2d834f3')
+Delayed('subtract_vis_convert-f7342abc-f258-4e49-9d38-6964e7873b5f')
+Delayed('subtract_vis_convert-f0d4649d-3bdc-40a8-a233-b47ea8b78dc8')
+Delayed('subtract_vis_convert-f0dc6f36-68b1-4cba-833b-dc834d08a264')
+Delayed('subtract_vis_convert-3abf0861-cd37-4e55-b407-1be101859c50')
+Delayed('subtract_vis_convert-78f151ff-ce67-41ef-9b8a-1ed32b6f3163')
+Delayed('subtract_vis_convert-57d047f4-b1c4-4fc5-8d21-1c08014d8468')
+Delayed('subtract_vis_convert-465db620-f0c0-4e82-b241-4b5f33745dd2')
+Delayed('subtract_vis_convert-95ea218e-585a-4c53-a053-a25a72612ed2')
+Delayed('subtract_vis_convert-24663d2b-d5c9-433b-8deb-e94cd0765844')
+Delayed('subtract_vis_convert-ad6fef2d-2302-499d-8dcd-8e68b8eea3a6')
+Delayed('subtract_vis_convert-259929d9-2ec3-4874-9dcd-fe92e0f4b59f')
+Delayed('subtract_vis_convert-25ba9c91-c0bd-4d83-91e1-76b1846ca052')
+Delayed('subtract_vis_convert-4c72a7db-eaed-4b6a-a654-37aab7847c9a')
+Delayed('subtract_vis_convert-0df654f8-04a4-4362-9f75-cdb988e1098b')
+Delayed('subtract_vis_convert-7e4eb575-0085-4dd6-9079-9399c3930729')
+Delayed('subtract_vis_convert-2a343074-e9a8-44c9-946d-b9d9528d5658')
+Delayed('subtract_vis_convert-52cefcc0-36b4-4979-923d-9a82ac9cbdd7')
+Delayed('subtract_vis_convert-33f27f17-9e17-4111-acdb-196fa1b16479')
+Delayed('subtract_vis_convert-c244f511-3415-4630-b3a1-e23cad471dae')
+Delayed('subtract_vis_convert-6ce52abe-6bda-43fc-b441-4f985e3ad0b8')
+Delayed('subtract_vis_convert-9f4538c7-203f-4d5a-a6d5-f7773f689515')
+Delayed('subtract_vis_convert-d463e197-8886-4ff7-b9de-e490bc9fe2b8')
+Delayed('subtract_vis_convert-352d52de-aa82-4c3a-8890-666ce8fa0e55')
+Delayed('subtract_vis_convert-331bfa3d-8c34-4dd2-947f-01c2ca4b3b73')
+Delayed('subtract_vis_convert-325cc80f-3644-4308-98bd-97f1f65b25be')
+Delayed('subtract_vis_convert-a6df3667-728b-4636-93bf-3aaeb7bc0a34')
+Delayed('subtract_vis_convert-68548e73-6b67-4f20-94b8-534bdfbd22ba')
+Delayed('subtract_vis_convert-59b31c5b-bdde-42ae-9ee2-687f4adff832')
+Delayed('subtract_vis_convert-90550296-38f5-4b5e-a569-80265f6d575a')
+Delayed('subtract_vis_convert-b8a02313-7d55-44d2-8a30-b787c8284d99')
+Delayed('subtract_vis_convert-7d6c97ef-72a0-4567-8b80-557ea9f5efed')
+Delayed('subtract_vis_convert-014723fa-5009-49de-ad8f-c6784a5f02a0')
+Delayed('subtract_vis_convert-5f7245b2-f823-48d5-9a8f-e18ce0282f5b')
+Delayed('subtract_vis_convert-c6c63593-e793-4227-9b7e-3be9d78eee92')
+Delayed('subtract_vis_convert-e1e4ea77-c037-4309-bbdb-416dc1657d31')
+Delayed('subtract_vis_convert-4d1ed747-3a6e-494a-acea-c729b6976c6d')
+Delayed('subtract_vis_convert-a3b402f4-9633-45a7-a082-47c96cc29dca')
+Delayed('subtract_vis_convert-58af82f3-3d84-4e78-93bf-0d8868b48b3a')
+Delayed('subtract_vis_convert-e0a1d00a-a51d-4ad3-8bc5-ed56fa42c1d4')
+Delayed('subtract_vis_convert-f8181095-7b96-4772-bbad-c7e6baa1602e')
+Delayed('subtract_vis_convert-33ae5b7a-07c3-4f8d-ad93-d9cf0733f8da')
+Delayed('subtract_vis_convert-4f679111-1d16-4870-b09d-fbb001a7e312')
+Delayed('subtract_vis_convert-f401ddf0-86e1-4874-8092-5d32f514bd3d')
+Delayed('subtract_vis_convert-8c96a111-ec70-47fc-a211-189bef9b2680')
+Delayed('subtract_vis_convert-e9034dc4-75ce-453d-98bf-75d5caabdbde')
+Delayed('subtract_vis_convert-79e8595d-14bb-4e1b-8a80-8ab0e53abf4b')
+Delayed('subtract_vis_convert-de85c692-9d73-4d20-922a-5d2b7dbeaabe')
+Delayed('subtract_vis_convert-88f68e11-e8a9-4e1c-999f-4012b2937fb7')
+Delayed('subtract_vis_convert-2c715ccc-30a7-400c-8222-b026b4d2a293')
+Delayed('subtract_vis_convert-c1109abc-b631-4ccf-ae18-db08a497d424')
+Delayed('subtract_vis_convert-bf30863f-3470-4983-b4e2-a450070f7d9d')
+Delayed('subtract_vis_convert-ce0c33c1-94f8-495b-935d-e9a1f9a35abe')
+Delayed('subtract_vis_convert-b433d08f-8790-46fd-9737-094bdaf2b0ca')
+Delayed('subtract_vis_convert-60ead405-37da-430e-b49c-993b14061d7a')
+Delayed('subtract_vis_convert-15ff112e-6e93-430b-9c86-884db5db7caf')
+Delayed('subtract_vis_convert-66a3f790-9594-45e0-95ca-82fbff3330ac')
+Delayed('subtract_vis_convert-d19096ad-37f3-4bd8-b1c8-3b30620bd530')
+Delayed('subtract_vis_convert-7d389c2f-2e5a-4d44-a60e-2cbdc02abdb4')
+Delayed('subtract_vis_convert-bab18d70-86b0-4116-8857-586709f7b677')
+Delayed('subtract_vis_convert-e8a4e8f6-f321-41fa-826a-08c5d5906c58')
+Delayed('subtract_vis_convert-4a1e00cb-67c8-4d97-8374-0d3160b1ed93')
+Delayed('subtract_vis_convert-23f1db38-fde5-40da-b2b1-4ea722e32ef1')
+Delayed('subtract_vis_convert-885901a1-02d3-456a-b207-3bc0f0db0ac7')
+Delayed('subtract_vis_convert-4ce3f365-37db-4fbb-b0b0-f3b4e016bd29')
+Delayed('subtract_vis_convert-5dad465e-be56-40e0-a204-21b18f93d4f0')
+Delayed('subtract_vis_convert-112caaaf-9260-4928-8656-10df51348b88')
+Delayed('subtract_vis_convert-ef02ebb4-9781-4690-a1b3-7792e9e43a4d')
+Delayed('subtract_vis_convert-1929ddff-a7a1-4a6d-847a-1b871f58d727')
+Delayed('subtract_vis_convert-743a8b50-d999-44ef-afd9-091b26740c80')
+Delayed('subtract_vis_convert-f81750fd-10ae-4381-a763-8e4aa188c80c')
+Delayed('subtract_vis_convert-9bd41b3f-05e4-46b9-b8b6-8b8d34d5e346')
+Delayed('subtract_vis_convert-6ff189a1-7888-4d67-abb3-69d6e52cfe7a')
+Delayed('subtract_vis_convert-e82ee5f0-f642-486a-b965-5ad85f4391ee')
+Delayed('subtract_vis_convert-5cc06030-491c-43f4-bc53-2a8d6e8dee7e')
+Delayed('subtract_vis_convert-d811700c-8ec7-415c-a894-46775f53d86e')
+Delayed('subtract_vis_convert-349f2be9-422c-4224-bd7b-70b194983582')
+Delayed('subtract_vis_convert-3f54dced-ff66-4fe2-a119-7d607461a7b7')
+Delayed('subtract_vis_convert-c58df17d-c024-4f16-ba5f-0844135788c5')
+Delayed('subtract_vis_convert-335301f1-49e9-4d3c-b0b9-fcc540f513c0')
+Delayed('subtract_vis_convert-042c65db-ba13-4908-97e5-c975dfc0ec96')
+Delayed('subtract_vis_convert-fb2ea3dd-d91a-4003-a998-f03abf2197f3')
+Delayed('subtract_vis_convert-50131ff5-8965-4099-8f6c-a4fe96985362')
+Delayed('subtract_vis_convert-ca32eeb2-7fad-4f18-9e76-4117d586aa06')
+Delayed('subtract_vis_convert-c0571611-67a8-43f8-a1f2-15dd82817d3b')
+Delayed('subtract_vis_convert-a5803e0c-df6b-4b53-aab6-9df525e14fd5')
+Delayed('subtract_vis_convert-ff0b2986-b2d1-4cf4-ae47-0e0516fb7647')
+Delayed('subtract_vis_convert-bf00e424-b0b3-447f-8c3f-3e7eae5ea9f5')
+Delayed('subtract_vis_convert-2e2b3481-bbd5-4d5d-9774-9e3b5f021654')
+Delayed('subtract_vis_convert-c138179a-bd61-43ec-b5fa-560ec2090295')
+Delayed('subtract_vis_convert-9d0d4ce5-1c64-4646-b03b-a35c873aca6b')
+Delayed('subtract_vis_convert-724c66ed-3ab0-4111-ac7b-4d4a6616799d')
+Delayed('subtract_vis_convert-8ec86adb-223d-42c7-b8f9-eeb5aadb3d1f')
+Delayed('subtract_vis_convert-6aa97d47-be5c-44bb-8508-d5d274dea028')
+Delayed('subtract_vis_convert-2363e183-2520-4a1a-9ec0-ccf8860a0d36')
+Delayed('subtract_vis_convert-53dabf14-828e-4dbf-a68b-be2f728aca4f')
+Delayed('subtract_vis_convert-54b15cfc-5033-40f8-93cb-fa49252d602d')
+Delayed('subtract_vis_convert-2dda3c2a-9dce-4b77-b574-251ec1fb609f')distributed.scheduler - INFO - Register tcp://10.60.253.12:42196
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:42196
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.12:38110
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:38110
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.12:32879
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:32879
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.12:46625
+distributed.scheduler - INFO - Register tcp://10.60.253.12:43806
+distributed.scheduler - INFO - Register tcp://10.60.253.12:43737
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:46625
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:43806
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:43737
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.12:45500
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:45500
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.12:44495
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:44495
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.37:36911
+distributed.scheduler - INFO - Register tcp://10.60.253.37:46141
+distributed.scheduler - INFO - Register tcp://10.60.253.37:45861
+distributed.scheduler - INFO - Register tcp://10.60.253.37:35609
+distributed.scheduler - INFO - Register tcp://10.60.253.37:41628
+distributed.scheduler - INFO - Register tcp://10.60.253.37:36994
+distributed.scheduler - INFO - Register tcp://10.60.253.37:45717
+distributed.scheduler - INFO - Register tcp://10.60.253.37:36271
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:36911
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:46141
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:45861
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:35609
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:41628
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:36994
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:45717
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:36271
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.13:32955
+distributed.scheduler - INFO - Register tcp://10.60.253.13:34717
+distributed.scheduler - INFO - Register tcp://10.60.253.13:36743
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:32955
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:34717
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:36743
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.13:41423
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:41423
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.13:37994
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:37994
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.13:45140
+distributed.scheduler - INFO - Register tcp://10.60.253.13:42483
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:45140
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:42483
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.13:38509
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:38509
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:34118
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:34118
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:34077
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:34077
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:46685
+distributed.scheduler - INFO - Register tcp://10.60.253.19:42692
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:46685
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:42692
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.05s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.27s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.scheduler - INFO - Register tcp://10.60.253.38:35602
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:35602
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.38:40885
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:40885
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.05s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.93s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 5.12s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.78s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.87s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.73s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.scheduler - INFO - Register tcp://10.60.253.23:41523
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:41523
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:45375
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:45375
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:39350
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:39350
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:34412
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:34412
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:45197
+distributed.scheduler - INFO - Register tcp://10.60.253.16:38020
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:45197
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:38020
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:39645
+distributed.scheduler - INFO - Register tcp://10.60.253.18:43162
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:39645
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:43162
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:46139
+distributed.scheduler - INFO - Register tcp://10.60.253.41:41149
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:46139
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:41149
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.33:36603
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:36603
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.33:38911
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:38911
+distributed.core - INFO - Starting established connection
+
+Delayed('subtract_vis_convert-360b9786-44c9-49c2-adaf-7a6f5e60db2f')
+Delayed('subtract_vis_convert-b37f41d1-82d4-43fb-ade8-e719bc1d4501')
+Delayed('subtract_vis_convert-771df1ec-e291-4e9d-88ad-09c031ef4711')
+Delayed('subtract_vis_convert-adaeb1f5-6ee4-403c-bb78-cae77ed82006')
+Delayed('subtract_vis_convert-35111ba9-3ef8-4cb9-8694-9a6b81b1f266')
+Delayed('subtract_vis_convert-45325452-6d5b-45fc-93f9-2f949a9e303f')
+Delayed('subtract_vis_convert-f5723a41-8ff5-4190-b5af-07a810cf1a84')
+Delayed('subtract_vis_convert-8aca6a7c-b7a8-400c-9af5-058c68c3a10c')
+Delayed('subtract_vis_convert-3d73c048-5bcf-40b1-82ef-a14fabc23766')
+Delayed('subtract_vis_convert-157a07d8-2478-48cd-87be-045f2b55133d')
+Delayed('subtract_vis_convert-1c70d393-9202-4614-a2a0-a94fa7d430e5')
+Delayed('subtract_vis_convert-423db016-5e87-47e4-b5a0-5a40c5db8555')
+Delayed('subtract_vis_convert-45a38510-9802-4306-9639-5bfbdd04a32e')
+Delayed('subtract_vis_convert-c742cc9d-dfe1-4326-b31f-f0f6e65e282b')
+Delayed('subtract_vis_convert-10ee5b3d-9cdb-44ea-8a98-94a0e4bcdddb')
+Delayed('subtract_vis_convert-885cbb73-8114-48b5-8e93-f4508aadf674')
+Delayed('subtract_vis_convert-00048b7c-a192-4418-8279-46ad4fe464ea')
+Delayed('subtract_vis_convert-0d17f95b-6d35-4586-993f-119f04091f3a')
+Delayed('subtract_vis_convert-fd3d3d42-4637-4eb0-afb8-906295602094')
+Delayed('subtract_vis_convert-b8cb6ec9-d742-4855-bc26-bf46b60b83dd')
+Delayed('subtract_vis_convert-c47edcff-6dad-49f6-adb7-4613a051427f')
+Delayed('subtract_vis_convert-82f31727-01de-4a24-a35d-4393a20038ca')
+Delayed('subtract_vis_convert-8271665d-cb56-4b28-99f1-2dd58720a000')
+Delayed('subtract_vis_convert-ec16d6b9-2131-4361-8610-36f8ade27ed6')
+Delayed('subtract_vis_convert-66e89a35-ffcc-4401-99a5-d40a825d987f')
+Delayed('subtract_vis_convert-e44b8a89-e342-4167-b211-b5616225d615')
+Delayed('subtract_vis_convert-87575b39-b244-471d-ade3-2bd80b7ee738')
+Delayed('subtract_vis_convert-c9e9e7e1-0a87-42aa-ac0c-176c9e4e936d')
+Delayed('subtract_vis_convert-0d4ff647-5544-4ff1-b109-0fdf04291f5e')
+Delayed('subtract_vis_convert-e43fa1d6-35b5-4142-abbd-2b11b3ebb50d')
+Delayed('subtract_vis_convert-c6c9848d-d372-4552-8659-46692066f719')
+Delayed('subtract_vis_convert-13b9dc50-0950-40eb-a518-247ee2df147d')
+Delayed('subtract_vis_convert-1c58b5de-c47a-4330-ad8e-3a74e96ad51e')
+Delayed('subtract_vis_convert-662f248d-2652-44ff-beeb-86a36c30dcba')
+Delayed('subtract_vis_convert-e18ef57e-092a-495b-8d68-b90b68f1b71e')
+Delayed('subtract_vis_convert-7c8d966c-7b9d-49f0-86e3-49faefbdc309')
+Delayed('subtract_vis_convert-d9a28768-ba0b-40cd-a8e1-fd9c21a068b7')
+Delayed('subtract_vis_convert-10d104d6-256f-4539-9fd0-0e04186e0c89')
+Delayed('subtract_vis_convert-91502067-ab52-4ab9-b403-de389aa683d3')
+Delayed('subtract_vis_convert-9de27cbb-6071-4e66-a1b6-515d4c23f031')
+Delayed('subtract_vis_convert-162f3af3-b60f-4df8-9b7f-425be9a5a19e')
+Delayed('subtract_vis_convert-bd68996c-0a87-4eef-a262-217600b2d9e6')
+Delayed('subtract_vis_convert-9b9119a6-3ebe-4c45-9f32-e4499f3d964b')
+Delayed('subtract_vis_convert-641b4fc3-b5e0-4c89-b3b8-ad2b578fabbc')
+Delayed('subtract_vis_convert-4d9ba89d-83da-4d35-a0e1-8a21207eedcf')
+Delayed('subtract_vis_convert-56841d96-63e5-4149-aff3-f34fc9a4ee46')
+Delayed('subtract_vis_convert-aa6caa51-5021-458e-8d46-300ca8ca2acd')
+Delayed('subtract_vis_convert-59b3bc8a-ffa0-421b-a958-b5f4b5123d92')
+Delayed('subtract_vis_convert-5025f06c-bb1f-4a4b-ba96-05d3a6255be2')
+Delayed('subtract_vis_convert-52b63fc9-483a-4f12-8a27-e2fc577f4ab2')
+Delayed('subtract_vis_convert-b88b0d6d-6fc4-4d44-8ab2-c7c4a34469a5')
+Delayed('subtract_vis_convert-47a7a1c6-1c17-4ba0-ab6e-f4bcbeafd831')
+Delayed('subtract_vis_convert-7096cc29-cf3f-4627-88c4-38f03eaf6475')
+Delayed('subtract_vis_convert-b6a8906a-1b13-4e98-bdc8-7ae97b676039')
+Delayed('subtract_vis_convert-d232eeb7-93cc-4bf0-b77a-42ee0b6af275')
+Delayed('subtract_vis_convert-7cffa9ee-824f-4bb5-8b1b-059e6b445f84')
+Delayed('subtract_vis_convert-41361bf7-05e9-4785-beb2-87d8fa2fa443')
+Delayed('subtract_vis_convert-23317fd5-948e-489c-a429-ddfce6ebc1a8')
+Delayed('subtract_vis_convert-9124c803-c8ea-4657-aba0-ae27b0a7bef9')
+Delayed('subtract_vis_convert-06955e4b-6b4e-401b-9a4b-addce5825b7e')
+Delayed('subtract_vis_convert-7116eaf8-e539-455e-b87f-836ebf43c18c')
+Delayed('subtract_vis_convert-e29d2d1b-6e16-4879-871e-e230b643a177')
+Delayed('subtract_vis_convert-e565e975-ba8a-483c-acf7-7070287b1422')
+Delayed('subtract_vis_convert-a22391cc-befa-4a6c-b63f-9a4fb66e6eee')
+Delayed('subtract_vis_convert-a8a9d32d-93f1-43a7-a240-cd4d1ac8623d')
+Delayed('subtract_vis_convert-65044ed5-fd31-49a6-8e2e-b2e5298c5941')
+Delayed('subtract_vis_convert-3eddd090-ee49-478a-a087-20c5e3afb9f4')
+Delayed('subtract_vis_convert-adae9afb-4279-4295-a3ae-4b3d9eabe122')
+Delayed('subtract_vis_convert-c908d04f-9012-4eb9-9a67-92be7710a744')
+Dirty image sumwt [[3530.]]
+Quality assessment:
+	Origin: qa_image
+	Context: 
+	Data:
+		shape: '(1, 1, 512, 512)'
+		max: '2.6423284404911952e-05'
+		min: '-2.2112940255566953e-05'
+		maxabs: '2.6423284404911952e-05'
+		rms: '5.345762962717175e-06'
+		sum: '0.002947532052962736'
+		medianabs: '3.5801243882479043e-06'
+		medianabsdevmedian: '3.5645555434549455e-06'
+		median: '-1.667073953243066e-07'
+
+Elapsed time = 26.7 (s)
+[{'basename': 'm60',
+  'context': 's3sky',
+  'declination': -60.0,
+  'elapsed_time': 26.67650270462036,
+  'epoch': '2019-09-09 15:19:37',
+  'flux_limit': 0.003,
+  'hostname': 'openhpc-compute-0.novalocal',
+  'integration_time': 30.0,
+  'nb_name': '../../../surface_simulation_elevation.py',
+  'ngroup_components': 100,
+  'ngroup_visibility': 2880,
+  'npixel': 512,
+  'ntotal': 14363664,
+  'nworkers': 64,
+  'offset_dir': '1.0 0.0',
+  'onsource_abscentral': 1.011913247285213e-05,
+  'onsource_maxabs': 2.6423284404911952e-05,
+  'onsource_medianabs': 3.5801243882479043e-06,
+  'onsource_rms': 5.345762962717175e-06,
+  'opposite': False,
+  'pb_npixel': 1024,
+  'pbtype': 'MID_FEKO_B1',
+  'psf_maxabs': 0.9990149450393435,
+  'psf_medianabs': 0.007311476397740456,
+  'psf_rms': 0.015594379899128333,
+  'se': 0.0,
+  'seed': 18051955,
+  'snapshot': False,
+  'surface_scaling': 0.0,
+  'time_range': '-0.05 0.05',
+  'tsys': 0.0,
+  'use_natural': False,
+  'use_radec': False}]
+Total processing 1.43637e+07 times-baselines-components-scenarios
+Processing rate of time-baseline-component-scenario = 8412.89 per worker-second
+distributed.scheduler - INFO - Remove client Client-a74800e8-d30c-11e9-90eb-246e964883a8
+distributed.scheduler - INFO - Remove client Client-a74800e8-d30c-11e9-90eb-246e964883a8
+Traceback (most recent call last):
+  File "../../../surface_simulation_elevation.py", line 722, in <module>
+    arlexecute.close()
+  File "/alaska/tim/Code/algorithm-reference-library/wrappers/arlexecute/execution_support/arlexecutebase.py", line 206, in close
+    self._client.cluster.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+distributed.scheduler - INFO - Close client connection: Client-a74800e8-d30c-11e9-90eb-246e964883a8

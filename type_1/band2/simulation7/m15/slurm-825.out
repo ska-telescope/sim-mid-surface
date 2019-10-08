@@ -1,0 +1,1603 @@
+PYTHONPATH is /alaska/tim/Code/algorithm-reference-library/::/alaska/tim/Code/algorithm-reference-library/
+Running python: /alaska/tim/alaska-venv/bin/python
+Running dask-scheduler: /alaska/tim/alaska-venv/bin/dask-scheduler
+/var/spool/slurm/job00825/slurm_script: line 52: cd: /mnt/storage-ssd/tim/Code/sim-mid-surface/type_1/1: No such file or directory
+Changed directory to /alaska/tim/Code/sim-mid-surface/type_1/1 degree/simulation7/m15.
+
+openhpc-compute-[0-15]
+Working on openhpc-compute-0 ....
+run dask-scheduler
+distributed.scheduler - INFO - -----------------------------------------------
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:44987'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:44411'
+Working on openhpc-compute-1 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ijaf3xqk', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-7yuxcrf0', purging
+Working on openhpc-compute-2 ....
+run dask-worker
+Working on openhpc-compute-3 ....
+run dask-worker
+Working on openhpc-compute-4 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:45356'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:34103'
+distributed.scheduler - INFO - Local Directory:    /tmp/scheduler-g33losio
+distributed.scheduler - INFO - -----------------------------------------------
+distributed.scheduler - INFO - Clear task state
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:39601
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:42802
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:39601
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:42802
+distributed.worker - INFO -          dashboard at:         10.60.253.14:41821
+distributed.worker - INFO -          dashboard at:         10.60.253.14:39496
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-aq1qa_rz
+distributed.worker - INFO -       Local Directory:       /tmp/worker-q8pxwb1l
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.dashboard.proxy - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: pip install jupyter-server-proxy
+distributed.scheduler - INFO -   Scheduler at:   tcp://10.60.253.14:8786
+distributed.scheduler - INFO -   dashboard at:                     :8787
+distributed.scheduler - INFO - Register tcp://10.60.253.14:42802
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:42802
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:39601
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:39601
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-xh_9z5o5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-untu6hlm', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:45078'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:35456'
+Working on openhpc-compute-5 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hle6oc1g', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-i10tpc59', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:41959'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:39298'
+Working on openhpc-compute-6 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-t1pahmj5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-yhnz4t89', purging
+Working on openhpc-compute-7 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:43583
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:36454
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:36454
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:43583
+distributed.worker - INFO -          dashboard at:         10.60.253.19:36455
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.19:37404
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-07bu0z9c
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-ypsy88me
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.19:43583
+distributed.scheduler - INFO - Register tcp://10.60.253.19:36454
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:43583
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:36454
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:37859'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:37451'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:44869'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:35674'
+Working on openhpc-compute-8 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-030_pd5d', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-za3ykptv', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-0hoxgrtb', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-k4m6478s', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:45428'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:42687'
+Working on openhpc-compute-9 ....
+run dask-worker
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-jr_c9i_h', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-ixomu4ad', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:39415
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:44985
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:39415
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:44985
+distributed.worker - INFO -          dashboard at:         10.60.253.38:37827
+distributed.worker - INFO -          dashboard at:         10.60.253.38:41927
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-v6n0z1nv
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-6vafnaks
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.38:39415
+distributed.scheduler - INFO - Register tcp://10.60.253.38:44985
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:39415
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:44985
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:39375
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:37333
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:39375
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:37333
+distributed.worker - INFO -          dashboard at:         10.60.253.23:39284
+distributed.worker - INFO -          dashboard at:         10.60.253.23:36046
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-6kwgojpj
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-ul5wdkzv
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.23:39375
+distributed.scheduler - INFO - Register tcp://10.60.253.23:37333
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:39375
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:37333
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-10 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:41215'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:38164'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:36883'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:39075'
+Working on openhpc-compute-11 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:32924'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:41727'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-utm_aa3o', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-dfqxfbvp', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-jf2621o5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-6n4lul9j', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-uedg0col', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hjyn4zve', purging
+Working on openhpc-compute-12 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:42548'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:42454'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-8ryx850g', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-r2gmu6cq', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:46273
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:33161
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:46273
+distributed.worker - INFO -          dashboard at:         10.60.253.18:42248
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:33161
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.18:37963
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-cf93_1_6
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-k09mbh_b
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.18:46273
+distributed.scheduler - INFO - Register tcp://10.60.253.18:33161
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:46273
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:33161
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:44716
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:44716
+distributed.worker - INFO -          dashboard at:         10.60.253.16:42305
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:40114
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:40114
+distributed.worker - INFO -          dashboard at:         10.60.253.16:45467
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-abbka6v5
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-7wutghst
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.16:44716
+distributed.scheduler - INFO - Register tcp://10.60.253.16:40114
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:44716
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:40114
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+Working on openhpc-compute-13 ....
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:33163'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:34338'
+Working on openhpc-compute-14 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:42769
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:35133
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:42769
+distributed.worker - INFO -          dashboard at:         10.60.253.39:43278
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:35133
+distributed.worker - INFO -          dashboard at:         10.60.253.39:33080
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-9mzaslgy
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-w_epzu2e
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.39:42769
+distributed.scheduler - INFO - Register tcp://10.60.253.39:35133
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:42769
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:35133
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-syroygel', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-q2qd5ow4', purging
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:37148'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:42481'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-sjgkhk4b', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-cbivok1l', purging
+Working on openhpc-compute-15 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:45226
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:45226
+distributed.worker - INFO -          dashboard at:         10.60.253.55:44755
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:44409
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:44409
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.60.253.55:35781
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-7u1cr6xw
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-o25ppij7
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.55:45226
+distributed.scheduler - INFO - Register tcp://10.60.253.55:44409
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:45226
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:44409
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:34552'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:33595'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-700zj_3j', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-2jenrfm1', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:33010
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:33010
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:32988
+distributed.worker - INFO -          dashboard at:         10.60.253.41:39929
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:32988
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         10.60.253.41:41431
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-1hdw919i
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-gea_2pjh
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.41:32988
+distributed.scheduler - INFO - Register tcp://10.60.253.41:33010
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:32988
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:33010
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:40001'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:44871'
+Scheduler and workers now running
+Scheduler is running at openhpc-compute-0
+About to execute python ../../../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 --ngroup_visibility 2880 --ngroup_components 100 --show True --elevation_sampling 1.0 --declination -15 --seed 18051955  --pbtype MID_FEKO_B1 --memory 32  --integration_time 30 --use_agg True --time_chunk 30 --time_range -0.05 0.05 --shared_directory /alaska/tim/Code/sim-mid-surface/shared --vp_directory /alaska/tim/Code/sim-mid-surface/beams/interpolated/ | tee surface_simulation.log
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-nf4tpbnp', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-hwfzpaq5', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:39702
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:39702
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:45414
+distributed.worker - INFO -          dashboard at:         10.60.253.33:37268
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:45414
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.33:36195
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-zrwjpp0t
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-asr9o426
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.33:39702
+distributed.scheduler - INFO - Register tcp://10.60.253.33:45414
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:39702
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:45414
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:37292
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:34648
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:37292
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:34648
+distributed.worker - INFO -          dashboard at:         10.60.253.27:46631
+distributed.worker - INFO -          dashboard at:         10.60.253.27:46836
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-fa1uvth0
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-vg4sualk
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.27:34648
+distributed.scheduler - INFO - Register tcp://10.60.253.27:37292
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:34648
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:37292
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:32794
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:41938
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:32794
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:41938
+distributed.worker - INFO -          dashboard at:         10.60.253.51:46175
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.51:40209
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-3wb723is
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-tx2tiwis
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.51:32794
+distributed.scheduler - INFO - Register tcp://10.60.253.51:41938
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:32794
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:41938
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:45875
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:37341
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:45875
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:37341
+distributed.worker - INFO -          dashboard at:         10.60.253.12:46631
+distributed.worker - INFO -          dashboard at:         10.60.253.12:33986
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-shbt5fum
+distributed.worker - INFO -       Local Directory:       /tmp/worker-zgilcvbd
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.12:37341
+distributed.scheduler - INFO - Register tcp://10.60.253.12:45875
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:37341
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:45875
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:34321
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:33134
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:34321
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:33134
+distributed.worker - INFO -          dashboard at:         10.60.253.36:39045
+distributed.worker - INFO -          dashboard at:         10.60.253.36:37461
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-hg3z5y2c
+distributed.worker - INFO -       Local Directory:       /tmp/worker-zozawy8i
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.36:34321
+distributed.scheduler - INFO - Register tcp://10.60.253.36:33134
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:34321
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:33134
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:42374'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:37926'
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-nnnjyywq', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/tmp/worker-wzwrgg15', purging
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:45464
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:45464
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:38581
+distributed.worker - INFO -          dashboard at:         10.60.253.37:45762
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:38581
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.37:37878
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -       Local Directory:       /tmp/worker-8i8r_qjj
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory:       /tmp/worker-xk35sae8
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.37:45464
+distributed.scheduler - INFO - Register tcp://10.60.253.37:38581
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:45464
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:38581
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.13:40141
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.13:38539
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.13:40141
+distributed.worker - INFO -          dashboard at:         10.60.253.13:33480
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.13:38539
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO -          dashboard at:         10.60.253.13:34820
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-fyu396ma
+distributed.worker - INFO -       Local Directory:       /tmp/worker-8_iw1zfa
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.scheduler - INFO - Register tcp://10.60.253.13:38539
+distributed.scheduler - INFO - Register tcp://10.60.253.13:40141
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:38539
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:40141
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Receive client connection: Client-aab335fa-d30b-11e9-bea0-246e964883a8
+distributed.core - INFO - Starting established connection
+ 
+Distributed simulation of surface errors for SKA-MID
+----------------------------------------------------
+ 
+Random number seed is 18051955
+Creating Dask Client using externally defined scheduler
+Using 32 Dask workers
+Start times for chunks:
+array([-180., -150., -120.,  -90.,  -60.,  -30.,    0.,   30.,   60.,
+         90.,  120.,  150.])
+array([-180., -150., -120.,  -90.,  -60.,  -30.,    0.,   30.,   60.,
+         90.,  120.,  150.])
+Observation times:
+[array([-180.]),
+ array([-150.]),
+ array([-120.]),
+ array([-90.]),
+ array([-60.]),
+ array([-30.]),
+ array([0.]),
+ array([30.]),
+ array([60.]),
+ array([90.]),
+ array([120.]),
+ array([150.])]
+12 integrations of duration 30.0 s processed in 12 chunks
+MID_FEKO_B1: HWHM beam = 0.447 deg
+[-180.]
+[-150.]
+[-120.]
+[-90.]
+[-60.]
+[-30.]
+[0.]
+[30.]
+[60.]
+[90.]
+[120.]
+[150.]
+Context is  s3sky
+Constructing s3sky components
+create_test_skycomponents_from_s3: Reading S3-SEX sources from /alaska/tim/Code/algorithm-reference-library/data/models/S3_1400MHz_100uJy_18deg.csv 
+create_test_skycomponents_from_s3: 1925 sources found above fluxlimit inside search radius
+distributed.core - INFO - Event loop was unresponsive in Worker for 4.38s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.55s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.57s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+1925 components before application of primary beam
+62 components > 0.003 Jy after application of primary beam
+Strongest components is 0.950783 (Jy)
+Total flux in components is 1.74059 (Jy)
+Created 62 components
+Memory use (GB)
+{'bvis_list': 0.024288833141326904,
+ 'model_list': 0.12109375,
+ 'vis_list': 0.02416527271270752,
+ 'vp_list': 0.046875}
+Summary of processing:
+    There are 32 workers
+    There are 12 separate visibility time chunks being processed
+    The integration time within each chunk is 30.0 (s)
+    There are a total of 12 integrations
+    There are 19306 baselines
+    There are 62 components
+    1 surface scenario(s) will be tested
+    Total processing 1.43637e+07 times-baselines-components-scenarios
+    Approximate total memory use for data = 0.216 GB
+    Using 32 Dask workers
+Using uniform weighting
+Inverting to get PSF
+<Future: status: finished, type: Visibility, key: Visibility-a83ea4de9bb1c7cf6f9320ca593492db>
+<Future: status: finished, type: Visibility, key: Visibility-e4deb53988c7cbfef98cd7cb5918993c>
+<Future: status: finished, type: Visibility, key: Visibility-99ef4429153ae4c67701b6c616d00163>
+<Future: status: finished, type: Visibility, key: Visibility-53e4a0e137593f8e8e649d4b94387b76>
+<Future: status: finished, type: Visibility, key: Visibility-7ff653db660aa3826006dac16233853a>
+<Future: status: finished, type: Visibility, key: Visibility-8efd8d185e4c1669b448d7138987d643>
+<Future: status: finished, type: Visibility, key: Visibility-4d4c2b608edc16396c09ad2eb586b75d>
+<Future: status: finished, type: Visibility, key: Visibility-e62467d78b3d3327df3d128beaebfdd4>
+<Future: status: finished, type: Visibility, key: Visibility-4e1dc7bba0c37a2cc85cf71cbad3ba36>
+<Future: status: finished, type: Visibility, key: Visibility-7ddec947ef73f7eed13f955fc6621b49>
+<Future: status: finished, type: Visibility, key: Visibility-fa7d32dd8119a49166a65f64ddc9ccc7>
+<Future: status: finished, type: Visibility, key: Visibility-60c632575fa03ae67bfff7b72498bbb0>
+PSF sumwt  [[3083.]]
+Primary beam: Image:
+	Shape: (1, 1, 1024, 1024)
+	WCS: WCS Keywords
+
+Number of WCS axes: 4
+CTYPE : 'RA---SIN'  'DEC--SIN'  'STOKES'  'FREQ'  
+CRVAL : 15.0  -15.0  1.0  1360000000.0  
+CRPIX : 513.0  513.0  1.0  1.0  
+PC1_1 PC1_2 PC1_3 PC1_4  : 1.0  0.0  0.0  0.0  
+PC2_1 PC2_2 PC2_3 PC2_4  : 0.0  1.0  0.0  0.0  
+PC3_1 PC3_2 PC3_3 PC3_4  : 0.0  0.0  1.0  0.0  
+PC4_1 PC4_2 PC4_3 PC4_4  : 0.0  0.0  0.0  1.0  
+CDELT : -0.0078125  0.0078125  1.0  9999999.9999  
+NAXIS : 0  0
+	Polarisation frame: stokesI
+
+Saving results to ./surface_simulation_openhpc-compute-0.novalocal_0.csv
+
+***** Starting loop over scenarios ******
+
+Processing component_chunk 0, visibility chunk 0
+Delayed('subtract_vis_convert-2b92f93d-c1ac-4169-845a-b6b683d14cf2')
+Delayed('subtract_vis_convert-baac3cb1-71ee-4e3d-9eca-b56d1274c4e3')
+Delayed('subtract_vis_convert-b58d4e6c-fcbb-4d5d-9d56-f5409e84028c')
+Delayed('subtract_vis_convert-efa5c38a-fa9c-428c-ad2c-f4658cdfeb41')
+Delayed('subtract_vis_convert-2e94f362-40c5-41a1-a551-fa7e9eaaf679')
+Delayed('subtract_vis_convert-a7fc17c3-7e62-450a-9799-c98643693edb')
+Delayed('subtract_vis_convert-19f67cf9-24e9-4068-bb27-0fd43cc2cdb4')
+Delayed('subtract_vis_convert-b26131ae-9ff7-48f3-bf57-55f9e83cb253')
+Delayed('subtract_vis_convert-cc605aa9-aca7-43d6-9b4e-c818e7af4b7b')
+Delayed('subtract_vis_convert-9ec1f02e-bdbe-4fa1-9a0b-90c2ad527627')
+Delayed('subtract_vis_convert-1e15c093-5376-4141-a2a1-fc8e22424f08')
+Delayed('subtract_vis_convert-148b4fd5-4573-441e-9289-e3832b1fea8f')
+Delayed('subtract_vis_convert-765e6382-8b0d-4a2a-9c24-5d1950e2f170')
+Delayed('subtract_vis_convert-8b8c3dcb-c0ac-4005-b078-f3044520d8d3')
+Delayed('subtract_vis_convert-ca8f0401-dfe3-45b3-b6d3-3d7131383b34')
+Delayed('subtract_vis_convert-93307251-9f1d-45b3-9293-568c2d05d5da')
+Delayed('subtract_vis_convert-cfb2cbc8-95bb-4131-b501-aab1937dd917')
+Delayed('subtract_vis_convert-18c74c79-38ce-43cb-a181-c36338a8a231')
+Delayed('subtract_vis_convert-bd624e7d-4695-41f4-8fda-4ba9f746b868')
+Delayed('subtract_vis_convert-62915071-b559-4a65-afe3-28cae2930164')
+Delayed('subtract_vis_convert-414b1f57-ab85-4c82-9b1e-67b766ba825e')
+Delayed('subtract_vis_convert-0875f43f-39f4-4588-b190-69a1455193d8')
+Delayed('subtract_vis_convert-cf4e3c04-14b3-4312-a41f-c3b70fb360a1')
+Delayed('subtract_vis_convert-9cd530df-0c8c-4bf8-8012-915b988543d7')
+Delayed('subtract_vis_convert-c9c8698a-9aad-40f7-8ac1-fbf7e200b8fa')
+Delayed('subtract_vis_convert-010beae9-7af2-4946-8d5e-3a648bf9afb9')
+Delayed('subtract_vis_convert-5d7ee104-5bd6-4cb4-a831-f47960ba77b5')
+Delayed('subtract_vis_convert-a4a1685c-70fd-4a94-820a-c41dd722fe12')
+Delayed('subtract_vis_convert-fbedde71-96ae-4134-9dcd-e441a1162f2c')
+Delayed('subtract_vis_convert-f8eff711-a8d1-45a2-8ab9-830188eb404b')
+Delayed('subtract_vis_convert-88a16f17-01a3-4781-9115-6817b888411a')
+Delayed('subtract_vis_convert-ced55730-0532-4fd3-b044-5c01fff3cd5e')
+Delayed('subtract_vis_convert-189409a9-07e7-44df-a2b0-cbc67a4865cb')
+Delayed('subtract_vis_convert-05ca4b4f-a5ec-4ddc-b9db-0f4b46e41728')
+Delayed('subtract_vis_convert-7f81c2e5-79d6-4586-998e-f6e701d590a9')
+Delayed('subtract_vis_convert-a3720061-881f-47b8-9af9-917f65c5b08f')
+Delayed('subtract_vis_convert-784f6a24-a282-4b00-bd57-2ab268b5e303')
+Delayed('subtract_vis_convert-c17b743c-4552-4c6b-9418-75e086c4a830')
+Delayed('subtract_vis_convert-a649dba5-41f9-4fb4-8dce-3a0a16649a48')
+Delayed('subtract_vis_convert-e4c162e4-81a4-4fc8-8eb2-8bed1857a56b')
+Delayed('subtract_vis_convert-f592f55c-7047-4f18-8790-f406a3a2c647')
+Delayed('subtract_vis_convert-80069815-b094-4d0c-9aad-f2daf6f46c54')
+Delayed('subtract_vis_convert-27907214-f6f7-43af-aceb-2bd58bd28c61')
+Delayed('subtract_vis_convert-49e82e59-eace-462e-b86d-96a2aa03f02f')
+Delayed('subtract_vis_convert-fc532290-ab2d-4313-bf2a-387da3714880')
+Delayed('subtract_vis_convert-13a32024-3dfe-42d1-85c1-878879f921ce')
+Delayed('subtract_vis_convert-13d99fa3-c894-4b6a-81bc-2e64fbd384c6')
+Delayed('subtract_vis_convert-6ef24213-21b0-44cc-be7f-f24c070265fd')
+Delayed('subtract_vis_convert-0347dd4b-2dbd-4ae1-a936-162f0a3fc32a')
+Delayed('subtract_vis_convert-863a2221-0c76-4e2c-a4f5-8301b56381b7')
+Delayed('subtract_vis_convert-1eaeed0d-5489-48cb-a15a-c0744261694e')
+Delayed('subtract_vis_convert-84a6ca3c-7abd-42a9-be14-a35458fc1be3')
+Delayed('subtract_vis_convert-1269302c-12b9-439f-aa7f-fd78d5c0c6dd')
+Delayed('subtract_vis_convert-2d0de0ff-2621-4313-8f41-2fea66924bd9')
+Delayed('subtract_vis_convert-74549088-b3d5-4bf4-80bc-d3f5f2238bb9')
+Delayed('subtract_vis_convert-96a9b914-a780-4a2e-a1b8-a2c5bc6dc20f')
+Delayed('subtract_vis_convert-da88f563-c059-4f40-bdc0-1ae638f944d2')
+Delayed('subtract_vis_convert-81cfc8a1-4a85-40da-a94e-fdfc4eb6acaa')
+Delayed('subtract_vis_convert-761b3651-9dce-46e8-ab66-8e20fca49829')
+Delayed('subtract_vis_convert-42945a46-2931-4e20-ab91-1bc79a8f3264')
+Delayed('subtract_vis_convert-731f9609-adbc-453e-a9c2-602a30b4e84b')
+Delayed('subtract_vis_convert-9995acda-c722-4ce5-a636-a2b24bf41afd')
+Delayed('subtract_vis_convert-5b22b54b-3ada-42b1-a499-df3a7cd22dc6')
+Delayed('subtract_vis_convert-81c762af-bd77-461b-96ad-bb9ec77b15ce')
+Delayed('subtract_vis_convert-0a9cae39-a017-4cac-89d5-f26663593229')
+Delayed('subtract_vis_convert-10e7eb4e-574e-4758-a496-fc092ece1fff')
+Delayed('subtract_vis_convert-5b07acff-d426-4bff-990b-9a1a42f5a7b1')
+Delayed('subtract_vis_convert-d14771ad-3e64-4013-9a00-15f248209e8e')
+Delayed('subtract_vis_convert-742feb93-829f-4908-a7a7-cec3aa26f504')
+Delayed('subtract_vis_convert-ef54603e-3b25-44e2-81bc-5460a7023e41')
+Delayed('subtract_vis_convert-6904a12e-34aa-49d8-962b-6b63e1c6a700')
+Delayed('subtract_vis_convert-f8a8027c-c7ff-4745-b7dc-d06cf080309c')
+Delayed('subtract_vis_convert-fd8bdd79-96ba-4f87-9360-4ec3006593f0')
+Delayed('subtract_vis_convert-cd3d0e88-23fc-4b04-b4ee-4fb4c0d8ff9f')
+Delayed('subtract_vis_convert-f17d75df-70a6-46de-ab2d-f1e7d8a6a4af')
+Delayed('subtract_vis_convert-879046ee-45bf-466d-a84b-0fbefb992495')
+Delayed('subtract_vis_convert-c92879c8-cd46-4621-b713-093149de0578')
+Delayed('subtract_vis_convert-7a96b6c8-1c1a-4b84-add7-dc5851ca60b4')
+Delayed('subtract_vis_convert-426db503-7c04-4af5-b363-435c36f1f8f9')
+Delayed('subtract_vis_convert-b4cbe9c6-f09e-4a50-ad61-b10e048899c6')
+Delayed('subtract_vis_convert-b9034858-7d6c-4b26-8fb2-8e2e46d47f53')
+Delayed('subtract_vis_convert-816a847c-cab5-4e74-b01f-152cffa8fda0')
+Delayed('subtract_vis_convert-634b914e-38c5-45a3-92c9-a37e0cd29fcd')
+Delayed('subtract_vis_convert-12887a2b-6b25-4df9-8b3f-976b2666d8f5')
+Delayed('subtract_vis_convert-04695db7-a408-4206-bcbc-4e9cec0a0c6d')
+Delayed('subtract_vis_convert-f379161b-73bc-4c22-923d-2c5d3c63b278')
+Delayed('subtract_vis_convert-5893ca70-cbd1-451d-839e-2e3d5e25a5ad')
+Delayed('subtract_vis_convert-3acb2550-62dd-4d28-8b85-c5820ba77f80')
+Delayed('subtract_vis_convert-3b1f5729-7a18-44ed-a2b8-8b447549d2cf')
+Delayed('subtract_vis_convert-1c23d482-1551-46a6-83c3-fe86d33cf09a')
+Delayed('subtract_vis_convert-1f46f277-9dd2-4158-b0f1-b8b30704dc9d')
+Delayed('subtract_vis_convert-ae1ad663-b832-4015-b62d-37c9b6cac809')
+Delayed('subtract_vis_convert-1d2361c1-c177-4e10-a4d1-aaf7cf3c0ada')
+Delayed('subtract_vis_convert-ec23b177-bb84-4819-a3e5-17e1df19ae12')
+Delayed('subtract_vis_convert-77fede16-63fa-4686-98e7-6b537e978b9f')
+Delayed('subtract_vis_convert-e7b9080a-526b-4ff3-a8df-cd0aea70a390')
+Delayed('subtract_vis_convert-bff0a076-d021-4f6e-984e-836d9a3a5537')
+Delayed('subtract_vis_convert-38acb5a6-bb5e-412f-8bd2-26cf52438263')
+Delayed('subtract_vis_convert-ad46cb59-d9d7-4234-aa29-dbe0ff03dcad')
+Delayed('subtract_vis_convert-9b6e9b0d-5294-4ff4-84c0-963adf7a392d')
+Delayed('subtract_vis_convert-2ee115a9-4dc6-419d-a10b-7d8b6474f6e9')
+Delayed('subtract_vis_convert-7bc7029c-4151-41c6-8f7f-278db5bb0757')
+Delayed('subtract_vis_convert-3fb5e033-89dc-4edd-9531-843cbaa8b85e')
+Delayed('subtract_vis_convert-573291b1-7a67-46ba-8e2c-c5ae7eb002aa')
+Delayed('subtract_vis_convert-33926dc4-beb5-4230-9552-edbacde4603c')
+Delayed('subtract_vis_convert-fbc7ab2a-68ff-4a31-a35a-0c9bcafbd5de')
+Delayed('subtract_vis_convert-3b985cee-2e37-4b9f-b39d-d8a3773b5a00')
+Delayed('subtract_vis_convert-7606e34b-d7b0-4d10-ba95-9db572cbb913')
+Delayed('subtract_vis_convert-60ba65b1-37e4-459a-99b2-055eb84a29b2')
+Delayed('subtract_vis_convert-cad45fec-b0ae-4bce-8803-3fe17eb02096')
+Delayed('subtract_vis_convert-95610712-9c4f-4fb3-8ab6-f1df32e972cc')
+Delayed('subtract_vis_convert-8df5b863-7f88-4cfa-95f4-d0e787c9f092')
+Delayed('subtract_vis_convert-c8aeeaaa-6b01-4628-903a-7a6a47e4d4a2')
+Delayed('subtract_vis_convert-7ff14a6a-f366-4995-ab68-9f2298822dd7')
+Delayed('subtract_vis_convert-f92d5252-1af1-4d81-ab27-cc1c02ceaddd')
+Delayed('subtract_vis_convert-8345e09b-2b65-4935-9a43-eb31a3641eb6')
+Delayed('subtract_vis_convert-880eeed0-5ead-4a43-983b-9ed45956df3c')
+Delayed('subtract_vis_convert-83e3af2e-a733-4716-a634-2b3790b2fa1e')
+Delayed('subtract_vis_convert-43a2e6ea-582a-4b1a-b57e-253f9ed2ee59')
+Delayed('subtract_vis_convert-5fe855fe-279a-4f4c-b88e-ba902f2ed895')
+Delayed('subtract_vis_convert-fe944df7-f888-4ee4-a352-aa8b3be93240')
+Delayed('subtract_vis_convert-d763beb3-74a9-49fd-b30d-4dbe84b9e5dc')
+Delayed('subtract_vis_convert-a81f2ade-622d-4f24-be07-776b1f838227')
+Delayed('subtract_vis_convert-69172933-2f7d-4f05-aed8-894c99c4c776')
+Delayed('subtract_vis_convert-82023117-caaf-4477-a5e5-c38b093608d1')
+Delayed('subtract_vis_convert-86811190-eff1-4c37-950d-7e4c33ecec5a')
+Delayed('subtract_vis_convert-3543ee4e-8b81-4fad-8500-301552b9e1df')
+Delayed('subtract_vis_convert-3cd76eb9-c1f6-4de7-9d3c-ab74b549bd20')
+Delayed('subtract_vis_convert-9a39055c-fc7b-41b1-a458-9b7bfcce7d7f')
+Delayed('subtract_vis_convert-4feed724-9e34-45a6-ad51-9461b2864a37')
+Delayed('subtract_vis_convert-8c4eac64-0a12-4317-858f-50f0115c0fe3')
+Delayed('subtract_vis_convert-993e1291-ec46-421c-b66e-1d164e85cc54')
+Delayed('subtract_vis_convert-4906dfc7-0ecf-4580-a24b-9602e0c3de5c')
+Delayed('subtract_vis_convert-07b893e4-0e55-4550-83b1-b52557e5ca25')
+Delayed('subtract_vis_convert-3ab38ba4-0247-4ef4-bd99-ffe08a60c021')
+Delayed('subtract_vis_convert-cfdd5d5f-c549-4e97-9a03-6143ae36ac99')
+Delayed('subtract_vis_convert-351350b1-1a07-4a1d-a2c7-c73e654a1cef')
+Delayed('subtract_vis_convert-b5cfa619-0c30-4628-81eb-5f0e65271815')
+Delayed('subtract_vis_convert-597487e5-fc52-4688-854c-eb280254d19b')
+Delayed('subtract_vis_convert-a6266123-0c56-4afa-a7ba-934d938e4817')
+Delayed('subtract_vis_convert-e1bde682-1d31-4e18-98a7-a4dbc31862f9')
+Delayed('subtract_vis_convert-027869d8-ba1d-409d-bf58-39313e620a2d')
+Delayed('subtract_vis_convert-cdc5598a-e7cd-4962-9f23-93f8e8f93dd5')
+Delayed('subtract_vis_convert-b792814e-4e53-46c5-8f0c-0563b957dc8e')
+Delayed('subtract_vis_convert-f23661aa-5288-4d72-a3af-8aab0f0fc5d4')
+Delayed('subtract_vis_convert-4e1a8f1b-c9a6-4458-943b-298c29915c35')
+Delayed('subtract_vis_convert-8c66d522-410c-4f12-b734-39f2bcd396e3')
+Delayed('subtract_vis_convert-db972047-5e04-4853-bddb-daf1381fb2f7')
+Delayed('subtract_vis_convert-7c929758-c013-4313-a89a-b3b5c112aef8')
+Delayed('subtract_vis_convert-0a70e083-b076-490b-bdb4-5842859df662')
+Delayed('subtract_vis_convert-5f9ffef4-4600-4141-b092-5d41ade3acde')
+Delayed('subtract_vis_convert-56749f9e-4c5a-4239-a4a6-71afcea24cfb')
+Delayed('subtract_vis_convert-c67dbf80-0af4-4bd7-8eca-4de578625f77')
+Delayed('subtract_vis_convert-9899b955-bef6-4d3e-a735-30e4bc78dc03')
+Delayed('subtract_vis_convert-6443d38b-6204-4baf-8826-5a9c8f8c4600')
+Delayed('subtract_vis_convert-919b4cc4-cd12-4564-90bf-3ae4b43a73bc')
+Delayed('subtract_vis_convert-fba6bc20-1df8-484d-8814-967066561ad9')
+Delayed('subtract_vis_convert-968c8527-b3d9-45b6-9f9a-5ce6ed7ac1ce')
+Delayed('subtract_vis_convert-20126d29-be2e-48e8-870d-f69f23814daa')
+Delayed('subtract_vis_convert-29e2100b-e742-4f7a-9b5f-2e16bbeb6270')
+Delayed('subtract_vis_convert-5e28467e-d7bf-4d16-885d-154826236c3f')
+Delayed('subtract_vis_convert-8cd35b07-95ff-40c9-867e-ff4d850422d7')
+Delayed('subtract_vis_convert-e432ada0-06f5-4eb3-bb39-ed39506e0734')
+Delayed('subtract_vis_convert-781008b1-0820-4fdb-ac70-8afec8a1f689')
+Delayed('subtract_vis_convert-80ab114e-f1a0-4cde-b34e-51202ad7e825')
+Delayed('subtract_vis_convert-3b36ac7b-6a3f-45d8-b1e4-7b3141e1d3e3')
+Delayed('subtract_vis_convert-a71d1f99-15b6-4ed1-87cf-e04d6bc1c401')
+Delayed('subtract_vis_convert-7e9004b4-b7f8-4ec8-b54e-0bdc67a3f944')
+Delayed('subtract_vis_convert-537140a6-7f9e-4bf9-83a1-bae7563e755c')
+Delayed('subtract_vis_convert-ae90d805-8ec8-4d80-b903-d8594eea8e96')
+Delayed('subtract_vis_convert-70c2b48e-29cc-4176-8c05-7efc246d5726')
+Delayed('subtract_vis_convert-308ee00f-4666-47a0-baf8-7d77fac83d08')
+Delayed('subtract_vis_convert-5d872916-0068-4ac5-a1b7-cde7db38352c')
+Delayed('subtract_vis_convert-1e53f0ee-382f-496e-8a47-b5ef17b5bb7b')
+Delayed('subtract_vis_convert-53ae7915-ccf8-439a-9c77-d7187bda34be')
+Delayed('subtract_vis_convert-a3f9b409-d1b6-4411-aba8-b0def838acfb')
+Delayed('subtract_vis_convert-650eda5f-3a6b-49b4-b108-88abd5d65dfd')
+Delayed('subtract_vis_convert-b4581bf7-07a2-40aa-b32a-ebb405ef1441')
+Delayed('subtract_vis_convert-6b6ceccf-b39d-4341-81fb-f7e45bd44fd1')
+Delayed('subtract_vis_convert-c34a5d6e-a271-4828-bcd2-0c8028326594')
+Delayed('subtract_vis_convert-9da3370b-5af6-43ac-9f29-93d4ac0938a4')
+Delayed('subtract_vis_convert-2aa70c03-1f80-432e-8378-4ec003b39f23')
+Delayed('subtract_vis_convert-cdfe7ad3-fe9c-40b5-89a2-92ad78975e3e')
+Delayed('subtract_vis_convert-c0e6f10a-aade-4802-a4ab-839b9c2bab87')
+Delayed('subtract_vis_convert-95a14448-03dd-478f-9825-2b9f3c08a6b3')
+Delayed('subtract_vis_convert-0740db7a-cbc5-43d1-952a-0e5c0f578a0a')
+Delayed('subtract_vis_convert-8939a0ba-9032-4ce9-a1ae-b80acd113cc7')
+Delayed('subtract_vis_convert-34dd508d-d86c-49d8-bc46-40d937fdae40')
+Delayed('subtract_vis_convert-b4a1ce34-e489-45f2-9953-46287727e66e')
+Delayed('subtract_vis_convert-0bab4523-73be-4e3e-b111-d8fd1331ae67')
+Delayed('subtract_vis_convert-42d38648-e06f-4eca-a8fc-45e5a173b623')
+Delayed('subtract_vis_convert-fcac98b9-1e2c-4ea1-ac0b-12da9f45e606')
+Delayed('subtract_vis_convert-a9c108c2-84ec-4581-ba44-dfb6a67bf523')
+Delayed('subtract_vis_convert-555c52b7-4ab0-49a8-aa8c-e25947e4849d')
+Delayed('subtract_vis_convert-ef478c59-2086-4dfb-972b-057876ae3ec7')
+Delayed('subtract_vis_convert-5f3295fa-64cc-45fa-b102-aa1d7000e39d')
+Delayed('subtract_vis_convert-c62979b8-a3a3-4acf-9dde-9a93e95402f0')
+Delayed('subtract_vis_convert-1942a1cf-b96e-4afd-9dc1-99a9e23bed52')
+Delayed('subtract_vis_convert-0fa11914-b8d5-4b65-b6dc-2f60baa29171')
+Delayed('subtract_vis_convert-1ce4f6d0-b18f-4682-8d5f-fa342a1e079e')
+Delayed('subtract_vis_convert-c0c3e7c3-9f1f-4c57-96d0-471a0a0422e3')
+Delayed('subtract_vis_convert-2d93b7e8-ba9b-4c68-80b0-3b4b34e1ebbe')
+Delayed('subtract_vis_convert-4c5b1c01-1168-4a09-b62f-5ec5a5196813')
+Delayed('subtract_vis_convert-2e6fb6e4-98b6-4937-909e-a88d1e815575')
+Delayed('subtract_vis_convert-8c07e50f-4784-42ad-ae40-6f733f505f4a')
+Delayed('subtract_vis_convert-e6010bca-c8dc-4d95-8f42-c3dd5349cf82')
+Delayed('subtract_vis_convert-f694e3bb-9f2a-40de-be05-2a4223bbe256')
+Delayed('subtract_vis_convert-1aeddc17-0a9f-4097-8dc2-e8566ddd7916')
+Delayed('subtract_vis_convert-a43a1163-5a94-4000-8c8a-c200e3d784fd')
+Delayed('subtract_vis_convert-ca0183a1-05a6-45d9-843b-4edf398204ce')
+Delayed('subtract_vis_convert-700f7d06-a135-488b-b3df-50cd2ca2a956')
+Delayed('subtract_vis_convert-46879f59-7212-459e-bed3-9a0fa043b9d8')
+Delayed('subtract_vis_convert-61f9eae5-b4e0-4e02-8c1e-aea5de960c18')
+Delayed('subtract_vis_convert-cf6fa668-6a1a-44e3-8f34-b6d8fa4d7cbd')
+Delayed('subtract_vis_convert-5af9adaa-72e3-46b8-9683-99af42c0ecd6')
+Delayed('subtract_vis_convert-a9b439d1-2ecb-4b8e-94b2-11218efd32c5')
+Delayed('subtract_vis_convert-b71489fd-2eb4-4a83-bf0a-198a567ac84a')
+Delayed('subtract_vis_convert-e49ce869-86d1-4a3e-8f5e-2c7900d6c006')
+Delayed('subtract_vis_convert-a0f0c4a0-744f-4d17-b1b0-ab2811abfd0d')
+Delayed('subtract_vis_convert-cd8f9c6c-bc19-4dff-8fc0-3ddf70f2f298')
+Delayed('subtract_vis_convert-c1dd7def-e3b5-4585-b5fe-464d95c1efef')
+Delayed('subtract_vis_convert-ec5aa723-7b53-4066-80c6-26552f4f3c8d')
+Delayed('subtract_vis_convert-a547c404-2440-46e6-a456-69466eb8d039')
+Delayed('subtract_vis_convert-804396dc-1260-4e1c-b0d6-3f8348cd8959')
+Delayed('subtract_vis_convert-96b345dc-f16e-4ed0-9b1f-0207f22912d9')
+Delayed('subtract_vis_convert-74f2dd9f-2601-4798-b7c4-461283ddc6de')
+Delayed('subtract_vis_convert-adb93009-e17f-4a4e-837f-13ce16e2d5f4')
+Delayed('subtract_vis_convert-351fd9e5-5be9-4b08-ba72-4a2a431077ff')
+Delayed('subtract_vis_convert-11d8861b-92c4-4f2a-9743-290e81964f2c')
+Delayed('subtract_vis_convert-995099de-ab55-4483-85a4-0a1f1be8503d')
+Delayed('subtract_vis_convert-b7931deb-7ee6-4314-8f88-f288cd07148b')
+Delayed('subtract_vis_convert-5a681c10-a232-4662-8275-d73f7cac1f20')
+Delayed('subtract_vis_convert-764115c8-b5b9-478c-8efd-48978ac93d4b')
+Delayed('subtract_vis_convert-f04ddca6-6bb1-4a76-bc9e-cfc06b28206e')
+Delayed('subtract_vis_convert-ae474627-214c-4ca5-9ffc-1797ca1a3257')
+Delayed('subtract_vis_convert-5888aeb1-c402-4090-a1f1-fa317dc394a9')
+Delayed('subtract_vis_convert-ed04e021-5068-467d-b791-dcc577c8fb7e')
+Delayed('subtract_vis_convert-a4b69923-edd1-4d15-9fff-4f1785950d0a')
+Delayed('subtract_vis_convert-4a61b35c-b5a7-4acf-b018-389028df9175')
+Delayed('subtract_vis_convert-c427033c-5b9c-4e95-951c-06a55a600887')
+Delayed('subtract_vis_convert-c642fd01-49df-411c-b54b-416346cfc70a')
+Delayed('subtract_vis_convert-62626b27-4781-4699-b530-261bfc404b59')
+Delayed('subtract_vis_convert-1f42cc5d-e9bb-4852-9dff-fdf871c12470')
+Delayed('subtract_vis_convert-cea952b0-b24a-4834-92e8-7f053ba998fe')
+Delayed('subtract_vis_convert-4d22b256-5872-4053-a325-9f267dd8438b')
+Delayed('subtract_vis_convert-b6c2635f-7db8-48ff-9a2f-ffe302c23a2e')
+Delayed('subtract_vis_convert-159d6f88-a9bb-4793-b92f-fb2e26fef313')
+Delayed('subtract_vis_convert-a82c3547-b43d-4bd1-a70c-fef9979c1d7d')
+Delayed('subtract_vis_convert-d2bfe5c8-bfdd-49bf-8ab8-91f81cab34d0')
+Delayed('subtract_vis_convert-508864bc-e81c-40f1-8eb1-0087d7f23258')
+Delayed('subtract_vis_convert-94f6909b-e57c-497c-859f-cd6616b371ff')
+Delayed('subtract_vis_convert-3136c386-0b74-495a-8161-17c3f1351ed5')
+Delayed('subtract_vis_convert-818a0ec9-e85a-436d-870d-38b0eedc7b54')
+Delayed('subtract_vis_convert-c3725509-1233-4651-aa87-00d7177f4426')
+Delayed('subtract_vis_convert-a8bfbca5-ef75-46d1-a9cf-1f5305db0d21')
+Delayed('subtract_vis_convert-11208a9a-e46d-4740-9488-b4dcf757afe9')
+Delayed('subtract_vis_convert-93346b37-dd98-4f85-8f58-736b5d9b713b')
+Delayed('subtract_vis_convert-8ab65985-2713-44a9-909e-ed0e6cbc81f6')
+Delayed('subtract_vis_convert-fbbc46e5-96d9-42c6-ad58-ed7ade63cdcc')
+Delayed('subtract_vis_convert-726a7674-45d4-4dfe-9d84-65a8efb5a5e8')
+Delayed('subtract_vis_convert-cb707a04-3af4-4899-8c84-9787cf5795a5')
+Delayed('subtract_vis_convert-e6180a01-c545-4a5f-9c73-ee86f3e21b5c')
+Delayed('subtract_vis_convert-50379142-96d9-4fcf-a57f-5975988df2cd')
+Delayed('subtract_vis_convert-71d39382-cd06-4aae-857c-79fec1abafc1')
+Delayed('subtract_vis_convert-92cbe6f8-d027-4cc9-a844-bf154db50388')
+Delayed('subtract_vis_convert-ad6d47ca-a4a8-435e-a15e-b748a9ec6dee')
+Delayed('subtract_vis_convert-7b577bf1-4acb-49d9-845b-ea7234bf7328')
+Delayed('subtract_vis_convert-fa35bd14-0486-49f4-a256-a0c3984b6401')
+Delayed('subtract_vis_convert-f16dfe59-861c-47f0-93a4-f5696ee374a2')
+Delayed('subtract_vis_convert-cfac537d-bcb2-45df-876e-5def0b42e7d6')
+Delayed('subtract_vis_convert-5bc626a8-eda2-40d6-a3f9-89b78336e913')
+Delayed('subtract_vis_convert-31a1079c-813b-4b06-8e13-8424ce96b446')
+Delayed('subtract_vis_convert-ae82a667-56a6-49c0-afbd-944437e573b3')
+Delayed('subtract_vis_convert-e623a9bd-f9ec-4269-987f-384e9d3f9cd1')
+Delayed('subtract_vis_convert-8c0943cb-9b0c-438c-96c5-e5bbf2410d5f')
+Delayed('subtract_vis_convert-83aae4db-cfdc-4c0b-b7c8-9f105554ac46')
+Delayed('subtract_vis_convert-976f38c9-2415-4e20-9455-632b616d0608')
+Delayed('subtract_vis_convert-6398838a-dde1-4f15-a619-75a361504de1')
+Delayed('subtract_vis_convert-fddb52d0-3ee7-4332-a873-48980eaa59ca')
+Delayed('subtract_vis_convert-fc0ca03b-36ca-4f2a-85c6-b7e8a6633124')
+Delayed('subtract_vis_convert-b7fe295a-0fe8-41aa-9e0c-07b5d74fcd62')
+Delayed('subtract_vis_convert-50e5dd10-99de-4865-a4be-da7a2e2c9593')
+Delayed('subtract_vis_convert-40559720-04e5-4e7c-a68a-6c7e1f5a3ab6')
+Delayed('subtract_vis_convert-4fda9bc2-5d44-474e-bb06-aadcca6192cb')
+Delayed('subtract_vis_convert-227da4ec-bed6-405a-bc4b-05f15e07b2c6')
+Delayed('subtract_vis_convert-41011196-8b9e-4515-9c1d-b96ea7ac3d8b')
+Delayed('subtract_vis_convert-8440b14f-5889-4b8f-bb09-a9d4bd2127d4')
+Delayed('subtract_vis_convert-76569bdd-ff7e-4712-ae3a-d520c0f77136')
+Delayed('subtract_vis_convert-37fe023b-0035-45d4-87c5-d19efcc0d2f7')
+Delayed('subtract_vis_convert-49fac213-05ea-4673-bc83-8fbc902eaade')
+Delayed('subtract_vis_convert-07dbe69e-3100-4aeb-964c-a9f8a72b304a')
+Delayed('subtract_vis_convert-e7291adb-d44f-4cd2-87d5-822334e3db79')
+Delayed('subtract_vis_convert-ef796bfb-56fd-46db-b05f-289d6b8bad37')
+Delayed('subtract_vis_convert-54cd17cb-4259-4774-9c73-3b402686befe')
+Delayed('subtract_vis_convert-2c82f359-d873-4a8f-a451-e2773e91b706')
+Delayed('subtract_vis_convert-5e76e892-5210-4c87-8164-886d8b48c985')
+Delayed('subtract_vis_convert-0f1b5add-76dc-485b-b76b-b63257e7c0e3')
+Delayed('subtract_vis_convert-0b335988-e239-424e-8302-8ff28ecd2ef1')
+Delayed('subtract_vis_convert-5af61d96-998e-4ded-bb0e-3b7388a0ac28')
+Delayed('subtract_vis_convert-ac869448-e18e-48e6-a9cc-223324c9c01b')
+Delayed('subtract_vis_convert-e566c949-ae27-4f3d-8ba9-77c4ffeaa7e2')
+Delayed('subtract_vis_convert-980331ab-cc47-4c52-9208-82645d339275')
+Delayed('subtract_vis_convert-59302c7e-f27d-4ad3-974b-2e1a89e05c5d')
+Delayed('subtract_vis_convert-afb8496f-5810-49a2-8f13-e150bb07befd')
+Delayed('subtract_vis_convert-2bcf67d9-1086-42d5-8c41-5fa11919f945')
+Delayed('subtract_vis_convert-bc2bc401-5f66-4a7d-8fab-b954f53224ee')
+Delayed('subtract_vis_convert-7b71039d-c2b3-41b4-bf66-56f00d215ae2')
+Delayed('subtract_vis_convert-8c2f745f-612a-49ea-8c57-b5f5fc35fff3')
+Delayed('subtract_vis_convert-faf1c5cd-9f13-4e1f-b683-185e7a687af4')
+Delayed('subtract_vis_convert-042efcdd-4f0e-485a-8efc-31079bd9fd2b')
+Delayed('subtract_vis_convert-5901d5fe-819e-41cb-a1b1-2eb620255b00')
+Delayed('subtract_vis_convert-e3f61eb3-d1c8-4f48-932b-934d484f0b49')
+Delayed('subtract_vis_convert-21fd5fa2-2bfd-4698-ba8a-26e21475984e')
+Delayed('subtract_vis_convert-ddb506f1-41a3-43a1-a2c7-c55abae403e2')
+Delayed('subtract_vis_convert-6cf67f95-8cb6-4fe5-b785-f6b1ace9b83d')
+Delayed('subtract_vis_convert-eb243816-1251-4a5e-a468-52cbbf50d812')
+Delayed('subtract_vis_convert-23974dc8-10d6-41cc-8792-4ac209d344bd')
+Delayed('subtract_vis_convert-2a467e4b-8bdf-4500-aa2b-b21ec37b7d27')
+Delayed('subtract_vis_convert-66b74576-14b4-4c94-b550-c73cf6b2f39f')
+Delayed('subtract_vis_convert-26726866-e5b0-4230-b909-696e05b35889')
+Delayed('subtract_vis_convert-10f8a579-98f0-4f0f-aa2e-4f22234d6d99')
+Delayed('subtract_vis_convert-1c21ea4f-6020-4fa3-96e5-0afd85937a5c')
+Delayed('subtract_vis_convert-b055e4ac-3d7e-461f-a8a0-0cc59876dcbc')
+Delayed('subtract_vis_convert-fbbc0203-971d-4082-835c-2553049d0a93')
+Delayed('subtract_vis_convert-7c4e3501-53a5-450a-aa83-6aeb497a8fed')
+Delayed('subtract_vis_convert-3bb9a5ac-98bc-4ff7-be5c-716b5b2fe570')
+Delayed('subtract_vis_convert-5cdd57d8-9181-46e4-9bb7-c0d41126036e')
+Delayed('subtract_vis_convert-156fd031-f728-4da2-9869-0914885bcb1a')
+Delayed('subtract_vis_convert-dee142ff-62d7-41b5-858e-eae8aaeac979')
+Delayed('subtract_vis_convert-b65a3c41-8749-43f3-a7cc-84f8ffbe1997')
+Delayed('subtract_vis_convert-6c8ec857-890c-4f66-b0b5-9b0c980d0ff0')
+Delayed('subtract_vis_convert-80e0ce3c-1128-4656-8e0f-55f2a4c91f29')
+Delayed('subtract_vis_convert-6169260e-c40c-49fb-b16a-836e95278ea4')
+Delayed('subtract_vis_convert-5fdc624c-55fd-4575-b43b-2c39d44fcb95')
+Delayed('subtract_vis_convert-37e4d581-1b57-417f-b4e6-33bc9c55d480')
+Delayed('subtract_vis_convert-9f44fad4-89d3-4c5c-893f-2e304476b993')
+Delayed('subtract_vis_convert-bac988e3-156d-43b7-b6fd-7000f292dfef')
+Delayed('subtract_vis_convert-2a64fe35-8aa7-4890-b195-93c092fc8ff4')
+Delayed('subtract_vis_convert-a4063fde-6c00-478c-b345-ba65b41f33ba')
+Delayed('subtract_vis_convert-15efdc64-baf7-4f8e-aad4-6b21b124bd63')
+Delayed('subtract_vis_convert-2e074ead-0607-4bd1-a8b8-7ed0397efb5e')
+Delayed('subtract_vis_convert-73eaeb29-894e-405f-9f30-a7b6f934b5a8')
+Delayed('subtract_vis_convert-4315a91f-2dfc-4faa-94f9-843ebfcb4493')
+Delayed('subtract_vis_convert-9efab0e7-2546-410e-b07c-5ed70565fe47')
+Delayed('subtract_vis_convert-23c3bf1d-773f-43bd-8eb7-e373a7ea93cd')
+Delayed('subtract_vis_convert-570a5732-36f7-4643-8637-912935efd4aa')
+Delayed('subtract_vis_convert-b608297c-29ae-4163-baeb-ae47aeca9071')
+Delayed('subtract_vis_convert-b18fc7c5-7eff-4959-a0c5-98734dcfafea')
+Delayed('subtract_vis_convert-ea3b6e0b-d267-429c-8783-b2b64c657f9b')
+Delayed('subtract_vis_convert-0215ce4f-0571-4838-bc36-5d407e2450ed')
+Delayed('subtract_vis_convert-c7868588-40f4-4bea-8ee8-9662bb4ae791')
+Delayed('subtract_vis_convert-35e67848-a867-41d1-af8e-2928d6a679ad')
+Delayed('subtract_vis_convert-a9f5d73d-f0cd-4583-b652-616a503ca2ec')
+Delayed('subtract_vis_convert-ea0c8ced-edd5-4b1c-896a-d1ee559799b4')
+Delayed('subtract_vis_convert-5b21a0c1-da20-40a3-9d36-ec55da6c00ee')
+Delayed('subtract_vis_convert-76798dc4-4aba-4c81-8164-70642876a64d')
+Delayed('subtract_vis_convert-c1788aa3-aaac-4bd5-9939-0daa7c0c7c22')
+Delayed('subtract_vis_convert-ca0f0856-db2f-411f-8dcf-9b76ab82fa9c')
+Delayed('subtract_vis_convert-bb07e1e5-ead7-4b1a-9d9a-abe820f6cba4')
+Delayed('subtract_vis_convert-4421ab9b-70a7-46e6-933e-c51753b2bfff')
+Delayed('subtract_vis_convert-704e8476-20c0-46f6-a310-1d7676dcd7a8')
+Delayed('subtract_vis_convert-48c75be8-2096-49da-a10c-3e03ccb1102d')
+Delayed('subtract_vis_convert-358d06ce-4132-4e0b-b9dd-94f39167359e')
+Delayed('subtract_vis_convert-b5c42616-848f-478b-867b-6942a0c541c7')
+Delayed('subtract_vis_convert-c12a94be-a8b3-4f7c-8702-f61e222a504b')
+Delayed('subtract_vis_convert-ae9eb013-c762-4c1f-9607-d20c76e41a36')
+Delayed('subtract_vis_convert-4c8b877c-58d3-42d9-9c8a-cf6d64c517b8')
+Delayed('subtract_vis_convert-ffa277cf-6991-4a7c-adab-f2572243d453')
+Delayed('subtract_vis_convert-cb821eaf-f717-4463-9bf0-a04f5c49ef57')
+Delayed('subtract_vis_convert-2c8626b0-0182-4e58-a483-72c3d10f2a69')
+Delayed('subtract_vis_convert-a679cdda-929c-43f1-b639-7dfe2552c98b')
+Delayed('subtract_vis_convert-0c9ec6d5-19dd-4b6a-875f-ccedd2ad4ed5')
+Delayed('subtract_vis_convert-8a163671-0c8e-419b-a8c6-e93ddf2cce20')
+Delayed('subtract_vis_convert-b42a9534-aa06-49e3-9797-9281c2e27b33')
+Delayed('subtract_vis_convert-0838e3cd-423c-41cf-9b44-ae7b96fde2c2')
+Delayed('subtract_vis_convert-37225bd9-1b1e-44c4-a859-05028221285f')
+Delayed('subtract_vis_convert-1e19b2cc-5d72-479d-ab15-2aaf3abff52b')
+Delayed('subtract_vis_convert-9b2aa57f-4078-460d-bd4d-ff73d0fb9b69')
+Delayed('subtract_vis_convert-ba5ff6f5-4430-418b-8c95-08106b565205')
+Delayed('subtract_vis_convert-3cf6fc58-a464-48ad-ae9c-a3b4c7920c53')
+Delayed('subtract_vis_convert-d8b7f90d-d2bf-40cc-80e8-09ee63b62a27')
+Delayed('subtract_vis_convert-f70b84f2-15cd-4941-a6ca-3fc7a37cf4c8')
+Delayed('subtract_vis_convert-7ce39a37-482f-4035-8876-5359ba7c61fe')
+Delayed('subtract_vis_convert-8a084c43-b5ef-4d38-9732-3dab04298849')
+Delayed('subtract_vis_convert-7e28896e-c660-4ddc-90d7-ad6b8f6b0bd9')
+Delayed('subtract_vis_convert-48f87573-52eb-4edf-b0fe-3d2b099bf9bd')
+Delayed('subtract_vis_convert-73c467d8-1b2c-4c85-860f-93f68e20aec2')
+Delayed('subtract_vis_convert-268b99b4-770f-45d9-9c94-2dbf84bf2e2a')
+Delayed('subtract_vis_convert-333233a0-0777-42d8-ba81-d34f997249b7')
+Delayed('subtract_vis_convert-a2fd60cd-06a9-41af-8067-e8914f178ad8')
+Delayed('subtract_vis_convert-f25623aa-f248-4883-a79b-5680b0c01593')
+Delayed('subtract_vis_convert-59357427-9b32-46b8-b9a8-5594736e7bbb')
+Delayed('subtract_vis_convert-d0abf222-61cb-4c3a-b076-b6cf25783187')
+Delayed('subtract_vis_convert-c9d761f2-d389-4c29-9b01-b6bac6598938')
+Delayed('subtract_vis_convert-7c10dd32-5d41-484a-8c51-effd59a09706')
+Delayed('subtract_vis_convert-0d175c76-0321-4e8a-83d4-d222da54a47b')
+Delayed('subtract_vis_convert-135b1024-538d-4b60-848a-afd6b7c8e2e7')
+Delayed('subtract_vis_convert-3a60936e-61fe-4b00-af76-ff606e897074')
+Delayed('subtract_vis_convert-8b0e156c-bd1e-4472-9fb7-bc09f184ce96')
+Delayed('subtract_vis_convert-f8620e2c-14fc-4a90-b43b-31c78bfabb20')
+Delayed('subtract_vis_convert-85cc727f-019a-455b-9ef9-308bcfee6a0b')
+Delayed('subtract_vis_convert-17b3ad92-ec31-467c-bece-1bb9d6c07f89')
+Delayed('subtract_vis_convert-efacc5b0-c0ad-4174-ab93-0578645756f5')
+Delayed('subtract_vis_convert-56862681-f3a5-4b0b-8739-cfe15eb8b587')
+Delayed('subtract_vis_convert-71bd36b4-3720-44c6-96f6-fb99075aa020')
+Delayed('subtract_vis_convert-1a4b804e-2645-4afe-aa99-f0583cb408d1')
+Delayed('subtract_vis_convert-08ae0b10-1891-4fd3-ac71-d69b74eee5e2')
+Delayed('subtract_vis_convert-8c0a738c-ebd8-4a18-be96-c3be7d30e1a3')
+Delayed('subtract_vis_convert-9e1536bb-efe5-4c38-bb14-d0683eea9921')
+Delayed('subtract_vis_convert-9f1efd89-3b34-4a5e-9d28-d6c31b5edc42')
+Delayed('subtract_vis_convert-792b3549-e0fa-4d07-ba1e-fd9c7fe932a9')
+Delayed('subtract_vis_convert-bd283b7d-042c-4760-8ab1-482a4f895d20')
+Delayed('subtract_vis_convert-d7b1582b-d054-4116-919c-b53f5fd00df0')
+Delayed('subtract_vis_convert-26c4ee3f-51a6-4179-9229-cfc0adfffb47')
+Delayed('subtract_vis_convert-dafafd8c-8528-4229-b3fd-96e7f8d35f8c')
+Delayed('subtract_vis_convert-b6e19929-ada5-40ca-9924-ddc0508dea6d')
+Delayed('subtract_vis_convert-a34ef76f-9d90-4759-88cd-5630509ace88')
+Delayed('subtract_vis_convert-2eec8fea-188a-422d-90c6-ed6829ea99fa')
+Delayed('subtract_vis_convert-25c2ab39-39fc-4910-ac94-897e649a163c')
+Delayed('subtract_vis_convert-7f193309-0b3f-4b23-b242-12ed34f5c418')
+Delayed('subtract_vis_convert-aa7caf55-a469-42e0-8aaf-4e172d4ff6ff')
+Delayed('subtract_vis_convert-a59dfe2c-d3cb-4518-b115-1704d82080fe')
+Delayed('subtract_vis_convert-206343c1-e984-44df-a228-230dd2f0c626')
+Delayed('subtract_vis_convert-efce908e-ab2c-4815-8d27-899f69160e2d')
+Delayed('subtract_vis_convert-0c30d4d7-a218-4daf-b1cc-8ddc65d25589')
+Delayed('subtract_vis_convert-1415412c-5d59-463a-9535-64a5ca5271d2')
+Delayed('subtract_vis_convert-41e6d902-7ae7-4931-a3ca-fcd1286757c9')
+Delayed('subtract_vis_convert-f6886efe-d827-4443-ab59-b9bf71f4d35a')
+Delayed('subtract_vis_convert-28ea0d88-90c7-45b3-951a-65c3e8f036a1')
+Delayed('subtract_vis_convert-43ff9f12-4e83-4524-a540-d518df7c2bc6')
+Delayed('subtract_vis_convert-85e6fd8d-5228-4be0-9682-e932bc04c4a9')
+Delayed('subtract_vis_convert-1308811a-588b-43e3-90fa-004107823dac')
+Delayed('subtract_vis_convert-294eabb4-2b80-49c7-a7d1-db7382256fa5')
+Delayed('subtract_vis_convert-5bb0325c-6f90-4f33-82dd-2859baae4f9f')
+Delayed('subtract_vis_convert-019145d5-2916-4bd3-aacd-02988c55383d')
+Delayed('subtract_vis_convert-df33cca5-0aab-434f-ba5e-681fde691c39')
+Delayed('subtract_vis_convert-decf6487-06a5-4f8a-b530-942245ec08bc')
+Delayed('subtract_vis_convert-6d276bd8-ea82-491d-a2b1-3fce3716909b')
+Delayed('subtract_vis_convert-f983bb01-94b9-4cc7-9ae3-09b862771c89')
+Delayed('subtract_vis_convert-1ad2459e-3dd0-4e66-a494-81f06c916741')
+Delayed('subtract_vis_convert-9254a1c8-83e5-45c2-92e7-c6a9f3a17326')
+Delayed('subtract_vis_convert-c17040b6-419b-4038-bb4b-de85dc452ae4')
+Delayed('subtract_vis_convert-34cf51ae-89c2-4e96-a1fe-603f7a891925')
+Delayed('subtract_vis_convert-d079a825-e9a0-422d-a7ad-5dad52ad7666')
+Delayed('subtract_vis_convert-ce08a760-3ec3-4c7a-a125-409df4a2a32a')
+Delayed('subtract_vis_convert-89eaca59-aa2d-479d-8f91-682803dd7b4a')
+Delayed('subtract_vis_convert-c13e929e-2a69-4b96-bcc3-4da5d24a9bb6')
+Delayed('subtract_vis_convert-f53bffa6-0de6-4856-935e-68e09b290a05')
+Delayed('subtract_vis_convert-50c708dd-7a58-41fc-85d5-3b7d6fe12857')
+Delayed('subtract_vis_convert-81938d83-f4a2-4265-9523-5cd1721bf985')
+Delayed('subtract_vis_convert-c5faaa59-2acc-4baa-94ad-446d6b7bfbe5')
+Delayed('subtract_vis_convert-127abd8f-9067-46a7-9650-72e507e49443')
+Delayed('subtract_vis_convert-de700f0a-4cb4-4a0b-b55c-64f8968a3e70')
+Delayed('subtract_vis_convert-3aac92a5-16f4-4ce0-98f2-70a16bd1d351')
+Delayed('subtract_vis_convert-2de86aa7-b20d-4704-8764-3983ceafd1bb')
+Delayed('subtract_vis_convert-008e20b7-20bf-41cc-a43d-7eced7a7e491')
+Delayed('subtract_vis_convert-94f81113-f4dc-46b5-b7fe-5afcedb9abf2')
+Delayed('subtract_vis_convert-31ea0df9-7cd4-454c-a4db-0818ea1b91e1')
+Delayed('subtract_vis_convert-5d411c1a-993a-441b-9ee1-413e0c9421cb')
+Delayed('subtract_vis_convert-bec981f2-5280-4106-a64b-734e11022517')
+Delayed('subtract_vis_convert-fff379e8-51a3-4117-bdbb-a4e9e472a3e9')
+Delayed('subtract_vis_convert-100d4002-3f56-440d-afde-b114a63885a7')
+Delayed('subtract_vis_convert-dde77851-1059-4f03-b2d3-5641325954d6')
+Delayed('subtract_vis_convert-9bd8abbd-a47e-419d-b485-1c77e1e1047b')
+Delayed('subtract_vis_convert-bc5abf88-deec-4598-8ec3-104f7efbd904')
+Delayed('subtract_vis_convert-899b1c0e-4b65-4b90-aa09-be6967977801')
+Delayed('subtract_vis_convert-7293d0d5-95fa-4ca7-af61-7c724bc9593b')
+Delayed('subtract_vis_convert-cb3a59fd-e0e9-44d0-bfd9-0e26faa438b4')
+Delayed('subtract_vis_convert-ee0be446-5545-4eca-98d1-4c610e4944a6')
+Delayed('subtract_vis_convert-2624422e-58d7-45b9-9d32-f445c996422f')
+Delayed('subtract_vis_convert-5a77c0de-235e-4309-ba8d-d810dc785c6d')
+Delayed('subtract_vis_convert-45e36016-e201-40bc-af1d-3c6bc7ba1224')
+Delayed('subtract_vis_convert-a92a97e4-a627-49d5-9db0-deba2be262ed')
+Delayed('subtract_vis_convert-e65e533f-0ac7-4acc-bfdb-8cd99224c5e6')
+Delayed('subtract_vis_convert-c2b216c8-740a-4c53-b682-f9ed539e190a')
+Delayed('subtract_vis_convert-bc26e311-f122-4ff4-b85f-3388dbe7755d')
+Delayed('subtract_vis_convert-b7118f90-434a-435d-b638-c9bbd5c6e08d')
+Delayed('subtract_vis_convert-051feb7f-2f94-42d2-b2d1-e9a1976427b8')
+Delayed('subtract_vis_convert-5b768e9c-0fce-473c-ba32-ba154bc4e09b')
+Delayed('subtract_vis_convert-b3dc167a-e9c2-46b4-9070-2602b7aa6505')
+Delayed('subtract_vis_convert-4c8823b8-6dd0-4ac7-bad8-b13ddc64c381')
+Delayed('subtract_vis_convert-9b72d051-7cc4-403c-85be-d16ea88569fa')
+Delayed('subtract_vis_convert-6cb9429c-3cfe-46a1-85d5-e1350a416b7a')
+Delayed('subtract_vis_convert-bf260261-dba8-485a-ab3f-7450c8583216')
+Delayed('subtract_vis_convert-3b2f7e01-2abb-4509-b4e6-d74d6ab89e0d')
+Delayed('subtract_vis_convert-15c6e992-2d72-4719-8b02-ba1c471761ef')
+Delayed('subtract_vis_convert-f915c7ee-5811-4777-bcca-4bd25bf66d90')
+Delayed('subtract_vis_convert-42ffc72f-460e-4e55-989f-d2b6a748b292')
+Delayed('subtract_vis_convert-b8521cfa-c401-43c9-9101-d8d260a338a0')
+Delayed('subtract_vis_convert-7c5572ee-cbcd-4b3e-afc5-dd3a1413ac0e')
+Delayed('subtract_vis_convert-c418bf57-aff6-44a5-8dc5-4c432a96e5da')
+Delayed('subtract_vis_convert-24876995-4de8-4ee7-a365-1884f301f245')
+Delayed('subtract_vis_convert-8a756147-a2d9-4f21-9552-7e01a6d378b0')
+Delayed('subtract_vis_convert-9ec0a071-df6a-492d-9081-19dc4dc12a81')
+Delayed('subtract_vis_convert-614d8c6a-54d0-4b54-aa9b-dc27f0c22e4b')
+Delayed('subtract_vis_convert-3bc1c71c-7cb2-4047-99f3-3c9125980916')
+Delayed('subtract_vis_convert-bee94ad2-8d50-4ef5-b1dd-6fa403d14048')
+Delayed('subtract_vis_convert-3acd752c-72a5-41ad-8fdc-0b1fb2b83d70')
+Delayed('subtract_vis_convert-d217bf00-450e-4116-9ec7-21b284e0200d')
+Delayed('subtract_vis_convert-27cf372b-ba96-46f8-bc26-45b4c05cf59c')
+Delayed('subtract_vis_convert-c9ce6c9d-29c2-4f35-898f-7347cf0704b5')
+Delayed('subtract_vis_convert-9b6361b6-fd2e-490e-a073-ea598bb5c38f')
+Delayed('subtract_vis_convert-11cf74e6-e1f6-4d94-9562-c0bec4ce64bb')
+Delayed('subtract_vis_convert-3faca3cf-96fa-405d-b37b-eaf550bac1d3')
+Delayed('subtract_vis_convert-707c3600-f6e3-4c9a-b94e-36f71df274ca')
+Delayed('subtract_vis_convert-7eb145dc-d035-4202-aba6-0c3321379b51')
+Delayed('subtract_vis_convert-934b8264-a456-40ac-a977-361e4816be04')
+Delayed('subtract_vis_convert-687af4ea-59aa-497a-bb6e-e32d3ae31f6a')
+Delayed('subtract_vis_convert-b6c41189-28a8-4edd-9390-53d2143cd0dd')
+Delayed('subtract_vis_convert-abf3aeab-0e09-4ff0-8352-994e620b4504')
+Delayed('subtract_vis_convert-98fde621-bdf2-44f0-ad80-821500edb2f9')
+Delayed('subtract_vis_convert-37920be1-7cba-4064-9da0-de534a4b4081')
+Delayed('subtract_vis_convert-92ccce31-0eb9-4964-bea5-7831172fddb5')
+Delayed('subtract_vis_convert-33560e94-12e2-498f-bb70-d5faaf066ca3')
+Delayed('subtract_vis_convert-3ae3d2d9-792f-4c1c-b97d-f753d264eb44')
+Delayed('subtract_vis_convert-78c89415-f004-4ec7-a7ea-4d75e2d0899e')
+Delayed('subtract_vis_convert-d0806788-fc03-47e3-a7a0-f77f3b175da9')
+Delayed('subtract_vis_convert-45db78f3-f248-4692-8f38-d147e85a5d5c')
+Delayed('subtract_vis_convert-f489d5a1-e751-4e13-985d-01cf343cf600')
+Delayed('subtract_vis_convert-a37e08e2-d879-45ef-9641-3a24aa63db2f')
+Delayed('subtract_vis_convert-c2530074-74eb-48dc-8180-95f214662f26')
+Delayed('subtract_vis_convert-a973f2c2-02ee-4ada-96fa-00dfc99fd2a4')
+Delayed('subtract_vis_convert-1b7bb553-9a6b-4542-9561-840acc270b98')
+Delayed('subtract_vis_convert-5395db4c-9779-4e77-9d88-3c5a11696e55')
+Delayed('subtract_vis_convert-eebe0fc9-a211-432d-ac97-6e6cc8a8928e')
+Delayed('subtract_vis_convert-5b5c3cbe-0847-4352-8299-10eb94b28b0f')
+Delayed('subtract_vis_convert-4fd50b10-e93e-4c44-a125-41c78318aaa5')
+Delayed('subtract_vis_convert-d588f307-57d1-4e7e-aafa-bf951b03363d')
+Delayed('subtract_vis_convert-ef8d227a-a0a5-494e-921a-05dcc35cdab0')
+Delayed('subtract_vis_convert-df13991c-1fc2-4c99-9cf6-5fea850500e5')
+Delayed('subtract_vis_convert-957b23fc-dc64-4ce2-a423-e7856adff4e8')
+Delayed('subtract_vis_convert-b0d834bb-b576-4c35-b6ce-2f1563a27854')
+Delayed('subtract_vis_convert-82bd56e0-fdf2-4d4e-89cd-e5a42a5e4878')
+Delayed('subtract_vis_convert-c2042fb8-3e84-48d3-a07a-c9c66faf13bf')
+Delayed('subtract_vis_convert-c3a0db39-0353-40d3-9087-5f9a48e00ca5')
+Delayed('subtract_vis_convert-2a60bc34-a012-4d64-8ae4-e48911b4975a')
+Delayed('subtract_vis_convert-fed35529-cfdf-4779-83a6-c93a8a2c3810')
+Delayed('subtract_vis_convert-ce0b33e9-7ff7-402f-9da3-f0c63f2eda03')
+Delayed('subtract_vis_convert-7b352bad-4b18-4ff8-a6f8-abef206d288c')
+Delayed('subtract_vis_convert-8171ee37-f0e1-491f-964d-03ddb4a28224')
+Delayed('subtract_vis_convert-1b70f2d2-cad9-4c37-994f-bdf621cf15aa')
+Delayed('subtract_vis_convert-6acd9d21-895a-4cea-9883-9e17cf522f91')
+Delayed('subtract_vis_convert-f2ea184e-d0ae-4ad5-a84e-9743086620a1')
+Delayed('subtract_vis_convert-7dbb05e3-4673-4ac1-95dc-336031194b23')
+Delayed('subtract_vis_convert-9c4f6544-5ae5-490e-b3df-827db4e75cc0')
+Delayed('subtract_vis_convert-f4ae0def-acea-4189-b4b6-0341a1a9c2a5')
+Delayed('subtract_vis_convert-fbdac8db-e7cc-4b4b-ae71-b90b823816aa')
+Delayed('subtract_vis_convert-30d82848-aa0a-4ed5-9bd9-a455f65e82dd')
+Delayed('subtract_vis_convert-c750aee9-eb2f-4c64-b80a-037eb2b1fddc')
+Delayed('subtract_vis_convert-534297e4-4b9f-40f4-b6af-1df15fdc15e7')
+Delayed('subtract_vis_convert-d324fbcb-bdef-4a3d-ad82-3f9336dd711c')
+Delayed('subtract_vis_convert-1b1df74c-c21f-4d32-b931-e61c61be26c1')
+Delayed('subtract_vis_convert-daf7bfc3-b2ea-406b-adfa-f2f676ee5ea0')
+Delayed('subtract_vis_convert-439bbfdf-16cc-4423-8406-6b309c382628')
+Delayed('subtract_vis_convert-eb5f6eba-000e-4521-a7ab-4ad0a17f9e38')
+Delayed('subtract_vis_convert-e91c0f3b-9cbd-4847-8bbf-a23d6fb3f64b')
+Delayed('subtract_vis_convert-722a88cd-ad27-4dc2-841b-100031718fe0')
+Delayed('subtract_vis_convert-6c61e6e1-2b48-4cef-ba7e-1830b1e458af')
+Delayed('subtract_vis_convert-27a93db7-0307-4946-a935-f808b73f9b3e')
+Delayed('subtract_vis_convert-8b247153-6b15-4b1f-9c76-58af50599e86')
+Delayed('subtract_vis_convert-791f9d9b-e80a-4684-ab14-e77d83b01f11')
+Delayed('subtract_vis_convert-7120bbf0-37c1-4b17-b51b-5cb66c4d85c1')
+Delayed('subtract_vis_convert-09621b8a-892f-443f-b061-2c8637e4bd6c')
+Delayed('subtract_vis_convert-86417e10-f46c-446b-b45c-d9240cbbac5f')
+Delayed('subtract_vis_convert-429fa254-88ae-433d-b3eb-1c2e8836500e')
+Delayed('subtract_vis_convert-0f9edd18-0f01-47b0-a41f-c833efed6bf3')
+Delayed('subtract_vis_convert-829bc65a-77b0-423c-a820-30870d918d2e')
+Delayed('subtract_vis_convert-ebad620d-18b5-4fec-90bd-d70074b301b8')
+Delayed('subtract_vis_convert-ca6b8727-9ae7-4aa8-825c-66e6272dc34d')
+Delayed('subtract_vis_convert-4804be5a-79b8-4959-be68-2402f67f56be')
+Delayed('subtract_vis_convert-af4a5868-651d-4331-b57d-0f65fee38ea5')
+Delayed('subtract_vis_convert-ec015a2b-5d9a-4898-810a-ffec4000f15f')
+Delayed('subtract_vis_convert-3d9891a9-cb20-49d9-bed8-44522d00bf1b')
+Delayed('subtract_vis_convert-294b137e-f139-4c44-9ed1-39e62580af3d')
+Delayed('subtract_vis_convert-7df401d1-8bd8-45ac-99f6-db787ec1ebe1')
+Delayed('subtract_vis_convert-3f364e1d-ea4f-4552-b6b8-692d1b79776c')
+Delayed('subtract_vis_convert-337e53b8-3768-4790-9666-3c5650f39456')
+Delayed('subtract_vis_convert-68dc5726-2d33-404c-87c4-fab0ab49164d')
+Delayed('subtract_vis_convert-6430c0b7-458b-4ddc-af5f-71c174e59631')
+Delayed('subtract_vis_convert-09c60328-a8c0-4d6b-bd00-3f35db489c04')
+Delayed('subtract_vis_convert-b618a9c1-b19b-4274-8247-c50df449225e')
+Delayed('subtract_vis_convert-b0cb898f-1bdb-4d15-b67f-f36ea63aa257')
+Delayed('subtract_vis_convert-22e39f8f-f62e-48bc-8778-7403a2173fc3')
+Delayed('subtract_vis_convert-a306b601-bf62-46fc-89db-8e23eb229ce9')
+Delayed('subtract_vis_convert-be11b83c-8713-4d0c-9b3e-b6bb20ed0526')
+Delayed('subtract_vis_convert-ae663f2e-5e1d-41ce-bec5-78ccc06f3f91')
+Delayed('subtract_vis_convert-015eb590-f14e-44fd-9d73-56684bf188eb')
+Delayed('subtract_vis_convert-546948b2-3268-4e70-846a-1e2c74843e43')
+Delayed('subtract_vis_convert-2b6f78bc-6f4d-41d4-9237-434e552a14ec')
+Delayed('subtract_vis_convert-a2fa551d-c565-4f49-9d77-38a6cb60f0fb')
+Delayed('subtract_vis_convert-c85d82ab-e978-49fc-b49d-4c0766ebd485')
+Delayed('subtract_vis_convert-7700c0c4-9751-4bf9-97e5-d6d6f4a0701e')
+Delayed('subtract_vis_convert-5ca50b2d-2a7f-49e5-871b-d93a3f7f8c89')
+Delayed('subtract_vis_convert-01b0e81f-0014-4a18-a307-8f744713c0ef')
+Delayed('subtract_vis_convert-fec90ae4-2281-4f28-a8d7-9184efbacf7b')
+Delayed('subtract_vis_convert-6350d0c9-a2e0-4399-a793-2e709ed2ea61')
+Delayed('subtract_vis_convert-b9098860-d6a7-4c44-b855-74d299922837')
+Delayed('subtract_vis_convert-7f0c3559-d290-4dab-b930-6702575f470f')
+Delayed('subtract_vis_convert-2823250d-4dce-4438-8f07-1bf0c760ccba')
+Delayed('subtract_vis_convert-2ef5f26c-7c29-48ba-802f-c83cff26d2a9')
+Delayed('subtract_vis_convert-8bf49495-2658-4d1e-8482-18415ca8a45b')
+Delayed('subtract_vis_convert-c7dca980-4c62-4db1-80af-f55fd1bc3c1c')
+Delayed('subtract_vis_convert-cfb2e39f-1b93-4b8f-8e4f-603d5843da12')
+Delayed('subtract_vis_convert-3c9cb80c-f18c-45ce-ba2f-fa2b1691a78e')
+Delayed('subtract_vis_convert-a922e633-712c-4614-9cbb-c4c2e0ee49bb')
+Delayed('subtract_vis_convert-b628f9ed-2016-4f25-a97c-21dcd02b14c9')
+Delayed('subtract_vis_convert-a894bad8-761e-4add-b991-0349d99c5063')
+Delayed('subtract_vis_convert-7456513c-04a9-40f5-9aac-a467d0e65348')
+Delayed('subtract_vis_convert-b5379913-7971-4838-9bc3-f8bde3b69e62')
+Delayed('subtract_vis_convert-c6e4b8e3-8ea7-43cf-bdbd-6d08068b4c0b')
+Delayed('subtract_vis_convert-c8c264ac-ee05-429c-8464-ba1c88fbcb82')
+Delayed('subtract_vis_convert-ac0479a6-366b-4e5d-99d1-970618bf1516')
+Delayed('subtract_vis_convert-2f7b75ca-d79b-4360-823d-381853f93a50')
+Delayed('subtract_vis_convert-54b18483-fc36-4218-b16c-d9e3c2efb7a3')
+Delayed('subtract_vis_convert-fd0b0d65-42a3-4cde-b64c-db10fb8f37e4')
+Delayed('subtract_vis_convert-47a5d71f-2e90-4d9f-a27f-cae8c46db820')
+Delayed('subtract_vis_convert-1583ac36-4fda-40b3-9e07-627329aa0142')
+Delayed('subtract_vis_convert-a65891ac-c38e-4fc7-9bbc-0a9eff9d7062')
+Delayed('subtract_vis_convert-8ce2ff87-e2d3-4f2d-9bd2-f9838388da7f')
+Delayed('subtract_vis_convert-6f7d6258-a24c-4ba6-9b54-75875f7204d2')
+Delayed('subtract_vis_convert-67d60abf-5f8b-404a-b7cb-8048a9e35def')
+Delayed('subtract_vis_convert-9969d7fc-204f-4235-98e6-077c105ce73b')
+Delayed('subtract_vis_convert-5a67314e-ae0d-49ad-bc43-8cb565946841')
+Delayed('subtract_vis_convert-b246dcfa-214c-49d0-817f-48465f320109')
+Delayed('subtract_vis_convert-7bf33609-00b9-4517-b6d5-8c3fb4b3cb12')
+Delayed('subtract_vis_convert-ec698ea5-8b73-450a-97b1-5ebc3cfd32a4')
+Delayed('subtract_vis_convert-87353553-2dce-4d93-942d-6f626abb18b2')
+Delayed('subtract_vis_convert-e14bbc68-d131-42cb-80e0-4796c1e3affb')
+Delayed('subtract_vis_convert-3feeaed7-758b-41f3-b8dd-430fcd3a57ee')
+Delayed('subtract_vis_convert-4a5c2c91-8c7b-47fe-ba9e-d5266b5d0f13')
+Delayed('subtract_vis_convert-f2cab733-e179-408a-a3a6-9ade6d14abd3')
+Delayed('subtract_vis_convert-3dc2d5a8-5bf5-41da-a862-dd3f910c9152')
+Delayed('subtract_vis_convert-6661239e-4856-4d43-bca1-dd8c1b800b54')
+Delayed('subtract_vis_convert-5b854bb3-f58b-4095-af5d-9002430f96f0')
+Delayed('subtract_vis_convert-664accca-0fb3-41df-9ab9-92cf78887d8d')
+Delayed('subtract_vis_convert-cd04a1cf-e36d-4554-8b0e-d69ae407e6e9')
+Delayed('subtract_vis_convert-24b4ab5a-d6ac-4706-99e6-f1cc8b360890')
+Delayed('subtract_vis_convert-9377c844-03d7-4b96-98a5-6855bfb7a3ac')
+Delayed('subtract_vis_convert-7eaac5d6-b0fa-4286-9334-11ffc95ed188')
+Delayed('subtract_vis_convert-b05444a3-fb0f-408a-ba40-8a245501006e')
+Delayed('subtract_vis_convert-6b1ea77e-076b-4164-8223-0afc5a13c5eb')
+Delayed('subtract_vis_convert-1a014153-4895-4d24-8b0e-31af061ba01b')
+Delayed('subtract_vis_convert-b065ee4b-f0a8-42ed-a2fa-814da54632fe')
+Delayed('subtract_vis_convert-31c0d7fb-3ccd-439e-b736-f6fa8b3bd025')
+Delayed('subtract_vis_convert-f4cb6fd4-a7b2-4c86-ad6c-f4824583f145')
+Delayed('subtract_vis_convert-2243d9c8-6f37-431e-9f68-3f1c7d1b7c8b')
+Delayed('subtract_vis_convert-5b5c5d7e-7e9a-43c9-8ae5-482d8f8e625b')
+Delayed('subtract_vis_convert-dee5e296-db51-498a-8df8-df4628c5c355')
+Delayed('subtract_vis_convert-b9851083-5bf4-486a-871f-d9e7de65a105')
+Delayed('subtract_vis_convert-39d96726-8d78-4316-b4c6-31423966e62e')
+Delayed('subtract_vis_convert-8a3ddf60-d0cb-47a4-98bd-a74753676476')
+Delayed('subtract_vis_convert-2a9aebe1-73dc-436c-b209-03fd0b2ce034')
+Delayed('subtract_vis_convert-1fa297df-c3cd-4324-9f1a-9ff0a6474be6')
+Delayed('subtract_vis_convert-72bf54da-8a0d-47d4-b0ae-b7d094151002')
+Delayed('subtract_vis_convert-9ce33c37-a4da-49ae-86de-2acfdde70d87')
+Delayed('subtract_vis_convert-ad695bdd-6611-4636-938f-4df920250454')
+Delayed('subtract_vis_convert-aed22967-cc65-4a7b-8e55-5e567d58fd21')
+Delayed('subtract_vis_convert-3f7eb441-d739-4324-ac06-3f5c2d8a55a3')
+Delayed('subtract_vis_convert-602b4fbb-ea15-4fa5-8451-41a69e7cc39f')
+Delayed('subtract_vis_convert-ee2d1ec3-1c63-4f69-85a5-1ad3db2e9431')
+Delayed('subtract_vis_convert-b8f5f0ce-6b68-4ef9-ba54-68ee393a319f')
+Delayed('subtract_vis_convert-a6ad64c7-89bc-4c64-842b-4145eae52634')
+Delayed('subtract_vis_convert-5a1dda1c-046c-4757-83c7-7737b73823f2')
+Delayed('subtract_vis_convert-69853dce-b078-405b-8b2e-8c75f7673f48')
+Delayed('subtract_vis_convert-7a5855cf-4e96-4a45-8359-e4508c824541')
+Delayed('subtract_vis_convert-e64acfe2-b551-4e87-8804-fdce407e5286')
+Delayed('subtract_vis_convert-0f4dbd8e-ab35-4848-af06-473580e6c75c')
+Delayed('subtract_vis_convert-7fbe8434-8733-4256-909b-55f96767a3ad')
+Delayed('subtract_vis_convert-bc2be34e-2034-4d49-8ecc-fc037b4c3abe')
+Delayed('subtract_vis_convert-2652b1fe-fd5c-4102-983a-05c8b46522c9')
+Delayed('subtract_vis_convert-eb003228-cc38-4871-9801-d9ce0bc0676f')
+Delayed('subtract_vis_convert-16bfc6fc-8b41-411f-a25d-a9cfe47f05c5')
+Delayed('subtract_vis_convert-0e59b326-3315-4a46-968c-8be645e76499')
+Delayed('subtract_vis_convert-a4d71a7a-f206-4833-83ab-546a61a5b8e0')
+Delayed('subtract_vis_convert-3dc28a79-c807-43f6-8598-7ef3f4562b50')distributed.scheduler - INFO - Register tcp://10.60.253.14:36006
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:36006
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.14:44723
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.14:44723
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.19:39957
+distributed.scheduler - INFO - Register tcp://10.60.253.19:36519
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:39957
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.19:36519
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.38:45082
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:45082
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.38:38744
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.38:38744
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:38278
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:38278
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.23:41043
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.23:41043
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:34152
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:34152
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.39:46675
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.39:46675
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.16:36392
+distributed.scheduler - INFO - Register tcp://10.60.253.16:46680
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:36392
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.16:46680
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.18:44054
+distributed.scheduler - INFO - Register tcp://10.60.253.18:36787
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:44054
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.18:36787
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.04s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.core - INFO - Event loop was unresponsive in Worker for 3.08s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+distributed.scheduler - INFO - Register tcp://10.60.253.41:42476
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:42476
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.41:40294
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.41:40294
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.33:46737
+distributed.scheduler - INFO - Register tcp://10.60.253.33:35116
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:46737
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.33:35116
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.55:33717
+distributed.scheduler - INFO - Register tcp://10.60.253.55:33153
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:33717
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.55:33153
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.27:32964
+distributed.scheduler - INFO - Register tcp://10.60.253.27:39189
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:32964
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.27:39189
+distributed.core - INFO - Starting established connection
+distributed.utils_perf - INFO - full garbage collection released 24.04 MB from 5832 reference cycles (threshold: 10.00 MB)
+distributed.scheduler - INFO - Register tcp://10.60.253.36:40113
+distributed.scheduler - INFO - Register tcp://10.60.253.36:38461
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:40113
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.36:38461
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.51:43521
+distributed.scheduler - INFO - Register tcp://10.60.253.51:42737
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:43521
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.51:42737
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.12:46208
+distributed.scheduler - INFO - Register tcp://10.60.253.12:43258
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:46208
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.12:43258
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register tcp://10.60.253.37:38120
+distributed.scheduler - INFO - Register tcp://10.60.253.37:46073
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:38120
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.37:46073
+distributed.core - INFO - Starting established connection
+distributed.utils_perf - INFO - full garbage collection released 38.63 MB from 6636 reference cycles (threshold: 10.00 MB)
+distributed.scheduler - INFO - Register tcp://10.60.253.13:33251
+distributed.scheduler - INFO - Register tcp://10.60.253.13:46834
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:33251
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Starting worker compute stream, tcp://10.60.253.13:46834
+distributed.core - INFO - Starting established connection
+
+Delayed('subtract_vis_convert-2d739f8a-8d64-4e0e-802f-59bec4958089')
+Delayed('subtract_vis_convert-2707955d-9d01-46c7-a81f-47cfa213a3a8')
+Delayed('subtract_vis_convert-12e13eb7-3a53-4f0b-bd31-89c45354808a')
+Delayed('subtract_vis_convert-7cc06d31-d56d-4c8b-9e87-439d54e4ccad')
+Delayed('subtract_vis_convert-9791b113-dd96-48ec-a3b6-a28cfbc9ae94')
+Delayed('subtract_vis_convert-8b7d2a62-c1f9-4e07-8cc1-b520aac391e2')
+Delayed('subtract_vis_convert-b324b9fc-d200-4111-a18f-ecd7c15b8c0a')
+Delayed('subtract_vis_convert-be9606c3-22da-42df-b362-df258a8b27b1')
+Delayed('subtract_vis_convert-a8c5b6fe-602b-444b-9e97-eb5160d29583')
+Delayed('subtract_vis_convert-cf440daa-52fd-41eb-8bd0-402274569ccc')
+Delayed('subtract_vis_convert-0171a4c5-833a-4c0e-926c-d8d3ed8aa60b')
+Delayed('subtract_vis_convert-7445223f-7637-49c1-b320-e172736dac95')
+Delayed('subtract_vis_convert-9dfd4fe8-6b43-4040-8236-cf7e1954f2bf')
+Delayed('subtract_vis_convert-72a07ca5-7205-4e66-8f3d-07295ba359b4')
+Delayed('subtract_vis_convert-a7ed4e33-385c-42a3-9475-13ef778f9720')
+Delayed('subtract_vis_convert-470a599b-9d7d-42e1-999b-cd77d39d8ef4')
+Delayed('subtract_vis_convert-55bbb3ff-7d6d-4aae-95ce-f461e7857034')
+Delayed('subtract_vis_convert-15dea734-2261-4a62-a875-095fb44eed5d')
+Delayed('subtract_vis_convert-8fdae668-9335-4201-a524-0c99bb267141')
+Delayed('subtract_vis_convert-4747928f-23d2-4326-a722-525bbfac9fe0')
+Delayed('subtract_vis_convert-b81731ca-8262-4188-b6e5-13f27d5c83a3')
+Delayed('subtract_vis_convert-dca528b2-78e7-4869-ac1c-a1f58ba27a82')
+Delayed('subtract_vis_convert-bcfcf6fd-2f1f-4224-b3c1-6f9df6cd2c29')
+Delayed('subtract_vis_convert-7958eb38-e33f-4a5f-adce-9299bf6629d2')
+Delayed('subtract_vis_convert-654738ac-e760-447e-9c02-3234d97ae0c4')
+Delayed('subtract_vis_convert-d0ea89dd-a222-4304-9087-c84bdd919193')
+Delayed('subtract_vis_convert-75792223-a8f8-4509-bfb1-c664096bdc1a')
+Delayed('subtract_vis_convert-988eb258-fcea-4705-a378-d959f3be01e2')
+Delayed('subtract_vis_convert-8cfb5120-367d-44ac-a2b8-2954630d99ae')
+Delayed('subtract_vis_convert-fda6baf4-2858-4d44-b774-a76f0f117c39')
+Delayed('subtract_vis_convert-e0e85c03-cfee-4514-9d8f-21d54306bdb1')
+Delayed('subtract_vis_convert-3795e4c3-739b-4d17-bf71-cb03f6d3dbe7')
+Delayed('subtract_vis_convert-32b6d846-6016-4419-9dd8-f586cc4f00b7')
+Delayed('subtract_vis_convert-4ba9b285-d369-4ae4-ad47-54abf94cfb8c')
+Delayed('subtract_vis_convert-b5f3cff4-5d00-4ed7-9ad7-f2ea77b00f42')
+Delayed('subtract_vis_convert-d23427e3-0d23-47d8-97df-ac62bcb025af')
+Delayed('subtract_vis_convert-fdb21e23-be16-4f0b-ad7a-973de5205db0')
+Delayed('subtract_vis_convert-a282cbac-a06e-44a9-a546-85dc2aeff82e')
+Delayed('subtract_vis_convert-5e3e6836-51a6-45f5-805f-c3c1f6992f14')
+Delayed('subtract_vis_convert-2648def4-7885-4f30-834e-b30576efc002')
+Delayed('subtract_vis_convert-83bba4c7-b206-48e8-945f-ae1098873b9c')
+Delayed('subtract_vis_convert-73b2bb92-40e0-4d05-9d7c-ee757c8bc603')
+Delayed('subtract_vis_convert-77906939-1fb1-4e31-bf2f-e65a703b47ff')
+Delayed('subtract_vis_convert-613af630-6f6c-41c4-8001-400894ce4250')
+Delayed('subtract_vis_convert-f5487b57-5b76-46eb-aa8d-233c52c5c82c')
+Delayed('subtract_vis_convert-283b1fb6-d3b6-4d1f-bc0e-8d936886da81')
+Delayed('subtract_vis_convert-9a1ff722-3110-4673-84d9-3ba09c4dd434')
+Delayed('subtract_vis_convert-0ee741e1-946f-4d50-869f-afde85905b0f')
+Delayed('subtract_vis_convert-95b00cf9-f13d-43ec-a944-9cc020238e8b')
+Delayed('subtract_vis_convert-d7137db5-dad3-4e12-b0b5-45bcfec6e704')
+Delayed('subtract_vis_convert-0bf788e3-7906-4e5a-90a3-382333308cc2')
+Delayed('subtract_vis_convert-538d186a-f353-4aca-89cf-d0e67df6bebc')
+Delayed('subtract_vis_convert-779ac42b-e87a-43d3-98d1-296a4fccf7d7')
+Delayed('subtract_vis_convert-f2526b1f-ec27-4495-a079-c83d1fca9804')
+Delayed('subtract_vis_convert-78e2fbfd-c77e-40c3-8b4c-be4cde837c77')
+Delayed('subtract_vis_convert-7077390c-dbfd-4b68-ac15-f292cc5f03e5')
+Delayed('subtract_vis_convert-0dc4417f-14a2-4881-83ce-595d619cea00')
+Delayed('subtract_vis_convert-9395e613-6442-49f5-afc5-40911e3922b4')
+Delayed('subtract_vis_convert-927d19b7-bbdf-4399-8d19-3d8c8e3ac907')
+Delayed('subtract_vis_convert-f2aeb1f0-00ee-491c-a8bc-ef5a79bd349f')
+Delayed('subtract_vis_convert-ce128f41-93ec-4b27-bf79-40beb87f1d77')
+Delayed('subtract_vis_convert-609b649b-8b15-4600-8741-f09def6773e0')
+Delayed('subtract_vis_convert-69e436ce-cb49-4a0a-be79-c7274b7b605f')
+Delayed('subtract_vis_convert-eb4cb031-9b6d-462d-b3bc-56b592100d9e')
+Delayed('subtract_vis_convert-db11b0d0-4afe-40ad-8b3b-0a64a81b2026')
+Delayed('subtract_vis_convert-3ce1eeae-e322-4f5c-a4a5-837ffba4a591')
+Delayed('subtract_vis_convert-4d25870e-20bd-40eb-b7be-b0ebe3e2c02e')
+Delayed('subtract_vis_convert-c78df703-7403-4892-8656-d32fcfd9798e')
+Delayed('subtract_vis_convert-50022f9c-a653-4cdd-8960-571ed3c20391')
+Dirty image sumwt [[3083.]]
+Quality assessment:
+	Origin: qa_image
+	Context: 
+	Data:
+		shape: '(1, 1, 512, 512)'
+		max: '0.00011010712211507926'
+		min: '-0.00011898180975967879'
+		maxabs: '0.00011898180975967879'
+		rms: '1.979003607871373e-05'
+		sum: '-0.005700740394318013'
+		medianabs: '1.3009470636569535e-05'
+		medianabsdevmedian: '1.2986673293627402e-05'
+		median: '7.073403705569434e-07'
+
+Elapsed time = 27.2 (s)
+[{'basename': 'm15',
+  'context': 's3sky',
+  'declination': -15.0,
+  'elapsed_time': 27.171292304992676,
+  'epoch': '2019-09-09 15:12:40',
+  'flux_limit': 0.003,
+  'hostname': 'openhpc-compute-0.novalocal',
+  'integration_time': 30.0,
+  'nb_name': '../../../surface_simulation_elevation.py',
+  'ngroup_components': 100,
+  'ngroup_visibility': 2880,
+  'npixel': 512,
+  'ntotal': 14363664,
+  'nworkers': 32,
+  'offset_dir': '1.0 0.0',
+  'onsource_abscentral': 6.057080421133317e-07,
+  'onsource_maxabs': 0.00011898180975967879,
+  'onsource_medianabs': 1.3009470636569535e-05,
+  'onsource_rms': 1.979003607871373e-05,
+  'opposite': False,
+  'pb_npixel': 1024,
+  'pbtype': 'MID_FEKO_B1',
+  'psf_maxabs': 0.9990162559177576,
+  'psf_medianabs': 0.008024384822161026,
+  'psf_rms': 0.016839353580676644,
+  'se': 0.0,
+  'seed': 18051955,
+  'snapshot': False,
+  'surface_scaling': 0.0,
+  'time_range': '-0.05 0.05',
+  'tsys': 0.0,
+  'use_natural': False,
+  'use_radec': False}]
+Total processing 1.43637e+07 times-baselines-components-scenarios
+Processing rate of time-baseline-component-scenario = 16519.4 per worker-second
+distributed.scheduler - INFO - Remove client Client-aab335fa-d30b-11e9-bea0-246e964883a8
+distributed.scheduler - INFO - Remove client Client-aab335fa-d30b-11e9-bea0-246e964883a8
+Traceback (most recent call last):
+  File "../../../surface_simulation_elevation.py", line 722, in <module>
+    arlexecute.close()
+  File "/alaska/tim/Code/algorithm-reference-library/wrappers/arlexecute/execution_support/arlexecutebase.py", line 206, in close
+    self._client.cluster.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+distributed.scheduler - INFO - Close client connection: Client-aab335fa-d30b-11e9-bea0-246e964883a8

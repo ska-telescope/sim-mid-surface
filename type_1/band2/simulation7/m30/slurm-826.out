@@ -1,0 +1,1407 @@
+PYTHONPATH is /alaska/tim/Code/algorithm-reference-library/::/alaska/tim/Code/algorithm-reference-library/
+Running python: /alaska/tim/alaska-venv/bin/python
+Running dask-scheduler: /alaska/tim/alaska-venv/bin/dask-scheduler
+/var/spool/slurm/job00826/slurm_script: line 52: cd: /mnt/storage-ssd/tim/Code/sim-mid-surface/type_1/1: No such file or directory
+Changed directory to /alaska/tim/Code/sim-mid-surface/type_1/1 degree/simulation7/m30.
+
+openhpc-compute-[0-15]
+Working on openhpc-compute-0 ....
+run dask-scheduler
+distributed.scheduler - INFO - -----------------------------------------------
+distributed.scheduler - INFO - Local Directory:    /tmp/scheduler-3x5k2jo4
+distributed.scheduler - INFO - -----------------------------------------------
+distributed.scheduler - INFO - Clear task state
+Traceback (most recent call last):
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/cli/dask_scheduler.py", line 230, in main
+    loop.run_sync(run)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/tornado/ioloop.py", line 532, in run_sync
+    return future_cell[0].result()
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/cli/dask_scheduler.py", line 226, in run
+    await scheduler
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/scheduler.py", line 1207, in start
+    self.listen(self._start_address, listen_args=self.listen_args)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/core.py", line 326, in listen
+    self.listener.start()
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/comm/tcp.py", line 418, in start
+    self.port, address=self.ip, backlog=backlog
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/tornado/netutil.py", line 174, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/alaska/tim/alaska-venv/bin/dask-scheduler", line 10, in <module>
+    sys.exit(go())
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/cli/dask_scheduler.py", line 241, in go
+    main()
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/click/core.py", line 764, in __call__
+    return self.main(*args, **kwargs)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/click/core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/cli/dask_scheduler.py", line 236, in main
+    logger.info("End scheduler at %r", scheduler.address)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/core.py", line 280, in address
+    self._address = self.listener.contact_address
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/comm/tcp.py", line 476, in contact_address
+    host, port = self.get_host_port()
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/comm/tcp.py", line 460, in get_host_port
+    self.bound_address = get_tcp_server_address(self.tcp_server)
+  File "/alaska/tim/alaska-venv/lib/python3.6/site-packages/distributed/comm/utils.py", line 77, in get_tcp_server_address
+    raise RuntimeError("TCP Server %r not started yet?" % (tcp_server,))
+RuntimeError: TCP Server <tornado.tcpserver.TCPServer object at 0x7f531b346898> not started yet?
+run dask-worker
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:41803'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.14:36155'
+Working on openhpc-compute-1 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:34071
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:34071
+distributed.worker - INFO -          dashboard at:         10.60.253.14:46266
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-fhkgnfhy
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.14:41250
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.14:41250
+distributed.worker - INFO -          dashboard at:         10.60.253.14:44161
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-pe7m4gbq
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:45445'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.19:37598'
+Working on openhpc-compute-2 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:35489
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:35489
+distributed.worker - INFO -          dashboard at:         10.60.253.19:46389
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-rroxgykz
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.19:36782
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.19:36782
+distributed.worker - INFO -          dashboard at:         10.60.253.19:34734
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-ay7nkufu
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:46650'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.38:46214'
+Working on openhpc-compute-3 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:36863
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:36863
+distributed.worker - INFO -          dashboard at:         10.60.253.38:45666
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-mjx0ialv
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.38:33610
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.38:33610
+distributed.worker - INFO -          dashboard at:         10.60.253.38:37487
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-sq7j525b
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:37599'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.23:43695'
+Working on openhpc-compute-4 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:37871
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:37871
+distributed.worker - INFO -          dashboard at:         10.60.253.23:45590
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-he4oj3d3
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.23:34571
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.23:34571
+distributed.worker - INFO -          dashboard at:         10.60.253.23:37134
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-4c2z3sfb
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:36169'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.39:43526'
+Working on openhpc-compute-5 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:45400
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:45400
+distributed.worker - INFO -          dashboard at:         10.60.253.39:43304
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-8xvcpkl3
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.39:35297
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.39:35297
+distributed.worker - INFO -          dashboard at:         10.60.253.39:37779
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-8l0h6r3a
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:45544'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.16:43524'
+Working on openhpc-compute-6 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:39723
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:39723
+distributed.worker - INFO -          dashboard at:         10.60.253.16:39426
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.16:41577
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.16:41577
+distributed.worker - INFO -          dashboard at:         10.60.253.16:43329
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-1engo115
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-u1_4w81r
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:44783'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.18:40007'
+Working on openhpc-compute-7 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:44657
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:44657
+distributed.worker - INFO -          dashboard at:         10.60.253.18:45016
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-mtkdn1gh
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.18:36493
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.18:36493
+distributed.worker - INFO -          dashboard at:         10.60.253.18:42493
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-72zagw7t
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:33676'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.41:40050'
+Working on openhpc-compute-8 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:46433
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:46433
+distributed.worker - INFO -          dashboard at:         10.60.253.41:44604
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-g88rkekg
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.41:39686
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.41:39686
+distributed.worker - INFO -          dashboard at:         10.60.253.41:34247
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-l1q92ysd
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:39268'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.33:34539'
+Working on openhpc-compute-9 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:38496
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:38496
+distributed.worker - INFO -          dashboard at:         10.60.253.33:34556
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-xezemnbu
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.33:46079
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.33:46079
+distributed.worker - INFO -          dashboard at:         10.60.253.33:36047
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-ixp46_d1
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:43855'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.55:39318'
+Working on openhpc-compute-10 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:37883
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:37883
+distributed.worker - INFO -          dashboard at:         10.60.253.55:41506
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-qm1tvva9
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.55:36256
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.55:36256
+distributed.worker - INFO -          dashboard at:         10.60.253.55:35676
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-dyhumq04
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:43093'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.27:44999'
+Working on openhpc-compute-11 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:39774
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:39774
+distributed.worker - INFO -          dashboard at:         10.60.253.27:35979
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-pwcp9e4_
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.27:42847
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.27:42847
+distributed.worker - INFO -          dashboard at:         10.60.253.27:43496
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-f4ocl7pv
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:42775'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.36:45310'
+Working on openhpc-compute-12 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:43824
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:43824
+distributed.worker - INFO -          dashboard at:         10.60.253.36:34845
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-c8un71wn
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.36:34206
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.36:34206
+distributed.worker - INFO -          dashboard at:         10.60.253.36:46195
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-aw8uiob9
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:42195'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.51:43123'
+Working on openhpc-compute-13 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:38522
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:38522
+distributed.worker - INFO -          dashboard at:         10.60.253.51:36315
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-qvij5s3g
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.51:32976
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.51:32976
+distributed.worker - INFO -          dashboard at:         10.60.253.51:38239
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-2pfxnq5v
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:37669'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.12:38616'
+Working on openhpc-compute-14 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:46881
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:46881
+distributed.worker - INFO -          dashboard at:         10.60.253.12:46835
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-m3drsmb5
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.12:33315
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.12:33315
+distributed.worker - INFO -          dashboard at:         10.60.253.12:33594
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-pe32xzcy
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:36322'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.37:45088'
+Working on openhpc-compute-15 ....
+run dask-worker
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:36910
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:36910
+distributed.worker - INFO -          dashboard at:         10.60.253.37:39770
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-t9k4kh2m
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.37:38201
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.37:38201
+distributed.worker - INFO -          dashboard at:         10.60.253.37:40252
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-cmn7r5_v
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:37716'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://10.60.253.13:44233'
+Scheduler and workers now running
+Scheduler is running at openhpc-compute-0
+About to execute python ../../../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 --ngroup_visibility 2880 --ngroup_components 100 --show True --elevation_sampling 1.0 --declination -30 --seed 18051955  --pbtype MID_FEKO_B1 --memory 32  --integration_time 30 --use_agg True --time_chunk 30 --time_range -0.05 0.05 --shared_directory /alaska/tim/Code/sim-mid-surface/shared --vp_directory /alaska/tim/Code/sim-mid-surface/beams/interpolated/ | tee surface_simulation.log
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.13:44726
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.13:44726
+distributed.worker - INFO -          dashboard at:         10.60.253.13:37552
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-7rgj9puv
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -       Start worker at:   tcp://10.60.253.13:35341
+distributed.worker - INFO -          Listening to:   tcp://10.60.253.13:35341
+distributed.worker - INFO -          dashboard at:         10.60.253.13:34745
+distributed.worker - INFO - Waiting to connect to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          1
+distributed.worker - INFO -                Memory:                  101.18 GB
+distributed.worker - INFO -       Local Directory:       /tmp/worker-9rv85jg3
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to: tcp://openhpc-compute-0:8786
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+ 
+Distributed simulation of surface errors for SKA-MID
+----------------------------------------------------
+ 
+Random number seed is 18051955
+Creating Dask Client using externally defined scheduler
+Using 128 Dask workers
+Start times for chunks:
+array([-180., -150., -120.,  -90.,  -60.,  -30.,    0.,   30.,   60.,
+         90.,  120.,  150.])
+array([-180., -150., -120.,  -90.,  -60.,  -30.,    0.,   30.,   60.,
+         90.,  120.,  150.])
+Observation times:
+[array([-180.]),
+ array([-150.]),
+ array([-120.]),
+ array([-90.]),
+ array([-60.]),
+ array([-30.]),
+ array([0.]),
+ array([30.]),
+ array([60.]),
+ array([90.]),
+ array([120.]),
+ array([150.])]
+12 integrations of duration 30.0 s processed in 12 chunks
+MID_FEKO_B1: HWHM beam = 0.447 deg
+[-180.]
+[-150.]
+[-120.]
+[-90.]
+[-60.]
+[-30.]
+[0.]
+[30.]
+[60.]
+[90.]
+[120.]
+[150.]
+Context is  s3sky
+Constructing s3sky components
+create_test_skycomponents_from_s3: Reading S3-SEX sources from /alaska/tim/Code/algorithm-reference-library/data/models/S3_1400MHz_100uJy_18deg.csv 
+create_test_skycomponents_from_s3: 1924 sources found above fluxlimit inside search radius
+1924 components before application of primary beam
+62 components > 0.003 Jy after application of primary beam
+Strongest components is 0.950783 (Jy)
+Total flux in components is 1.73951 (Jy)
+Created 62 components
+Memory use (GB)
+{'bvis_list': 0.024288833141326904,
+ 'model_list': 0.12109375,
+ 'vis_list': 0.02416527271270752,
+ 'vp_list': 0.046875}
+Summary of processing:
+    There are 128 workers
+    There are 12 separate visibility time chunks being processed
+    The integration time within each chunk is 30.0 (s)
+    There are a total of 12 integrations
+    There are 19306 baselines
+    There are 62 components
+    1 surface scenario(s) will be tested
+    Total processing 1.43637e+07 times-baselines-components-scenarios
+    Approximate total memory use for data = 0.216 GB
+    Using 228 Dask workers
+Using uniform weighting
+Inverting to get PSF
+<Future: status: finished, type: Visibility, key: Visibility-ca3a6ee73253a78d853e836ea18f8a90>
+<Future: status: finished, type: Visibility, key: Visibility-c58e3432d35cdf47f7b0809f10f7b4eb>
+<Future: status: finished, type: Visibility, key: Visibility-8a2987184e4db892acf5a2b16aa61047>
+<Future: status: finished, type: Visibility, key: Visibility-67c64458bd95207620dbf35b0d8becf1>
+<Future: status: finished, type: Visibility, key: Visibility-0a869fe4270577e802b2dfff7c7975a8>
+<Future: status: finished, type: Visibility, key: Visibility-ce95330a190ca05ac7f8d6c48297055a>
+<Future: status: finished, type: Visibility, key: Visibility-42650272634ee8051b6bbadb21ab5c8e>
+<Future: status: finished, type: Visibility, key: Visibility-92e48713369eab0f362d75d9c56e42f6>
+<Future: status: finished, type: Visibility, key: Visibility-60a5098bec54ca0f747dc78524139d91>
+<Future: status: finished, type: Visibility, key: Visibility-5a32dc231baab52a43256b827bda98c6>
+<Future: status: finished, type: Visibility, key: Visibility-eb5d38ff5a190c995de73a35caa9ae0e>
+<Future: status: finished, type: Visibility, key: Visibility-2df66a0928f7f67e903d5ff16ef32115>
+PSF sumwt  [[3336.]]
+Primary beam: Image:
+	Shape: (1, 1, 1024, 1024)
+	WCS: WCS Keywords
+
+Number of WCS axes: 4
+CTYPE : 'RA---SIN'  'DEC--SIN'  'STOKES'  'FREQ'  
+CRVAL : 15.0  -30.0  1.0  1360000000.0  
+CRPIX : 513.0  513.0  1.0  1.0  
+PC1_1 PC1_2 PC1_3 PC1_4  : 1.0  0.0  0.0  0.0  
+PC2_1 PC2_2 PC2_3 PC2_4  : 0.0  1.0  0.0  0.0  
+PC3_1 PC3_2 PC3_3 PC3_4  : 0.0  0.0  1.0  0.0  
+PC4_1 PC4_2 PC4_3 PC4_4  : 0.0  0.0  0.0  1.0  
+CDELT : -0.0078125  0.0078125  1.0  9999999.9999  
+NAXIS : 0  0
+	Polarisation frame: stokesI
+
+Saving results to ./surface_simulation_openhpc-compute-0.novalocal_0.csv
+
+***** Starting loop over scenarios ******
+
+Processing component_chunk 0, visibility chunk 0
+Delayed('subtract_vis_convert-896551db-fcae-479a-a6de-cd946bd0c9fe')
+Delayed('subtract_vis_convert-1d72f0b8-96a2-452f-ba87-839906e67036')
+Delayed('subtract_vis_convert-63f3316b-fd0e-49ea-aeb2-29c743014df5')
+Delayed('subtract_vis_convert-d01a8c08-3c02-4475-a98d-52a00841681b')
+Delayed('subtract_vis_convert-e369e105-455c-4749-b5bd-4965ecb8072b')
+Delayed('subtract_vis_convert-17b2f5dd-5f7e-45f6-ba17-a89d8d02d169')
+Delayed('subtract_vis_convert-ddf60198-73d9-467c-a50e-c3e3409563d6')
+Delayed('subtract_vis_convert-3b1f5561-83bb-47a5-86aa-070b3b34bf56')
+Delayed('subtract_vis_convert-1141bc11-1b4e-442e-9c26-dd1b0622f19e')
+Delayed('subtract_vis_convert-dc695256-d049-4525-aa14-ebc8b159e659')
+Delayed('subtract_vis_convert-59775e80-1875-498c-9587-8d0fbf005243')
+Delayed('subtract_vis_convert-7dd9f9ce-96d4-45a0-899d-f45e4e68016d')
+Delayed('subtract_vis_convert-97aff5e3-a94d-41b4-97e1-dfc39c21f451')
+Delayed('subtract_vis_convert-08b16d07-ec63-46a6-99fd-b65fe0ccb837')
+Delayed('subtract_vis_convert-5288341b-f3dc-4f1e-973d-3c104a437a38')
+Delayed('subtract_vis_convert-42c756f2-5b07-4de6-a6de-15583c686848')
+Delayed('subtract_vis_convert-c664fa48-d014-4a01-9a3d-1dc06c2e4005')
+Delayed('subtract_vis_convert-5d8e8fb5-3248-40e3-bd0b-ae1f0a146ba6')
+Delayed('subtract_vis_convert-3a9b2e60-b84a-47b1-93ec-70be74d9880d')
+Delayed('subtract_vis_convert-dd0a2bb6-127d-4ba7-9c07-b5ffa615f866')
+Delayed('subtract_vis_convert-94c38f25-a3dd-4a84-81b5-75b51a1a7f25')
+Delayed('subtract_vis_convert-6b8b2132-c432-4488-afab-a282f9c24373')
+Delayed('subtract_vis_convert-63b0fa7c-3fd2-412a-a5a2-fe10e7349534')
+Delayed('subtract_vis_convert-37958053-9b8e-4ad7-9f47-2bb40cdb2956')
+Delayed('subtract_vis_convert-f0df1807-11b1-46ba-b0f2-2d8047addfe0')
+Delayed('subtract_vis_convert-db1c2320-6ddc-4d07-a9eb-d4992e728733')
+Delayed('subtract_vis_convert-f7154016-6e42-413c-9ea9-faa1d303f0af')
+Delayed('subtract_vis_convert-1c1ae58e-1626-4a3c-9d47-d694d6ccdf2e')
+Delayed('subtract_vis_convert-b2afd7c4-345e-4561-b776-f51d5c4e8499')
+Delayed('subtract_vis_convert-e7fa8f3c-9be3-4477-95eb-9d8c1d5d5695')
+Delayed('subtract_vis_convert-48438975-e189-429e-93dd-da00f03bb704')
+Delayed('subtract_vis_convert-3039fdc6-a6d9-46f0-a9f4-e47f6cf60222')
+Delayed('subtract_vis_convert-ccf10a61-23e8-4dc7-a5c6-4e7041913b89')
+Delayed('subtract_vis_convert-14cf491e-486c-43bb-8442-51b7c7814a25')
+Delayed('subtract_vis_convert-70544c56-9a56-4712-add0-e3ab8891a6f7')
+Delayed('subtract_vis_convert-f01b9701-d1f1-4195-be3c-8cc46ef06ad6')
+Delayed('subtract_vis_convert-b58b0733-90c7-4743-9b24-a226bd615eb5')
+Delayed('subtract_vis_convert-a9dd0eb4-d521-405a-8921-4caf6d894f2a')
+Delayed('subtract_vis_convert-2d73f3e2-03f7-4dd7-abaf-211a0ef7a8e9')
+Delayed('subtract_vis_convert-11719707-a478-461c-9541-295a36494291')
+Delayed('subtract_vis_convert-d0cc8a2b-6857-47dd-bde9-b97b79eeb165')
+Delayed('subtract_vis_convert-b94d874a-cc6d-46ec-8a83-f79fc62e72ce')
+Delayed('subtract_vis_convert-82efa3ab-075b-44d1-a962-3fec94756e49')
+Delayed('subtract_vis_convert-508cb744-eddf-472d-9cac-74d40c5f12cf')
+Delayed('subtract_vis_convert-3a9ee79d-311a-4781-8912-1efc44095856')
+Delayed('subtract_vis_convert-d0f645a1-b0d9-4bb4-a4fc-49644d048d1e')
+Delayed('subtract_vis_convert-0486060a-7116-436f-899e-2642dcc8bcd2')
+Delayed('subtract_vis_convert-df44e02c-de1e-4ef1-9837-22cb5c58247b')
+Delayed('subtract_vis_convert-34f79ca4-af4e-492a-aa69-c15bbf5ae6c2')
+Delayed('subtract_vis_convert-b6791be3-5166-46d9-ac44-261694bfc2d8')
+Delayed('subtract_vis_convert-ce13df2e-f932-415c-a10a-04621191e75e')
+Delayed('subtract_vis_convert-f464a7ce-7ab2-4557-9b5b-8ae179ba019e')
+Delayed('subtract_vis_convert-dbd5249a-d457-49b4-b022-7318eff979a8')
+Delayed('subtract_vis_convert-7a617457-f172-4e7a-b69f-5bd1d12f55f0')
+Delayed('subtract_vis_convert-657c49df-697d-482f-9d05-dd0867755942')
+Delayed('subtract_vis_convert-1c1f86fa-9d5b-4ea3-ab87-c4f132035a15')
+Delayed('subtract_vis_convert-81eed599-d749-407b-a0ee-deefd272eff7')
+Delayed('subtract_vis_convert-a53b3975-6c94-4215-8ed8-836435d48ed3')
+Delayed('subtract_vis_convert-c8bcd0d2-d2e9-46f0-b1ec-4132a079332f')
+Delayed('subtract_vis_convert-d35d47f1-8ef6-47d5-9f78-806194d215e9')
+Delayed('subtract_vis_convert-2e8b11d9-445b-4a73-b720-3225d7d659e0')
+Delayed('subtract_vis_convert-a330c802-69f0-412f-a3d6-f5e578243ea3')
+Delayed('subtract_vis_convert-1faa0e5a-7b96-48bf-b9f9-d03646a4eab1')
+Delayed('subtract_vis_convert-a1a6acd9-9803-417e-ba4f-4a6a2d4301eb')
+Delayed('subtract_vis_convert-72b4f8cc-24af-4767-a162-e652e3dac32e')
+Delayed('subtract_vis_convert-a6e3e5b5-b5ff-419f-be07-b53b4abfb090')
+Delayed('subtract_vis_convert-e4f25f65-59c9-486a-be0d-17c3b9dc64e1')
+Delayed('subtract_vis_convert-eb278fc9-b371-470b-b5a3-e5aa53a3db3f')
+Delayed('subtract_vis_convert-fa1bfe45-b634-46b5-975e-b10d8343e46b')
+Delayed('subtract_vis_convert-46d7a579-e4b6-4e14-be9b-cf57193b9f6d')
+Delayed('subtract_vis_convert-788f211e-76c4-4cfe-8ec1-cca78554f85d')
+Delayed('subtract_vis_convert-f65eccb1-e458-40c4-8b67-d89b1630b8f7')
+Delayed('subtract_vis_convert-41a91161-f29d-4678-9935-68eb79737bee')
+Delayed('subtract_vis_convert-336cd6b6-1120-4c02-b0e3-216122442b08')
+Delayed('subtract_vis_convert-0fb9d03a-dabb-40b0-beca-b5dd0e84285f')
+Delayed('subtract_vis_convert-0b284959-9f42-4c3c-a81c-27b802e90847')
+Delayed('subtract_vis_convert-3005a2c2-97d2-479c-a64e-4d735b0c7fad')
+Delayed('subtract_vis_convert-c0dc6588-3ee3-42d4-ac69-a982336f5094')
+Delayed('subtract_vis_convert-8804368e-acce-4d65-96c7-4c6f42590687')
+Delayed('subtract_vis_convert-87b7891c-4c5c-415d-84c1-0c586d0d0c0d')
+Delayed('subtract_vis_convert-d7bf7701-8d63-479b-9ec8-c651895d923b')
+Delayed('subtract_vis_convert-403ac38c-4942-4171-bc6e-172e8bee9446')
+Delayed('subtract_vis_convert-131986bc-e85d-4c67-86c2-a0847c9accff')
+Delayed('subtract_vis_convert-eca46dbd-644a-4c6b-9739-7822378403a8')
+Delayed('subtract_vis_convert-ac0b8d45-62b4-428d-8f73-d5b7af390344')
+Delayed('subtract_vis_convert-dad92811-1fc2-4c8a-ba75-30b7a887adf5')
+Delayed('subtract_vis_convert-c5da75ba-874d-4ad7-8ce4-21441633c77e')
+Delayed('subtract_vis_convert-c84dc187-f841-4564-a390-43851fe71838')
+Delayed('subtract_vis_convert-24241815-b608-42a7-ac12-b8b77a660de3')
+Delayed('subtract_vis_convert-4d2b7bf8-41c0-4de8-ab34-48d8ca3392f1')
+Delayed('subtract_vis_convert-4734a61e-e58f-4fdd-980d-67bee5d70a53')
+Delayed('subtract_vis_convert-b5e079fb-e7e8-4a40-8725-9d67db5cdd9c')
+Delayed('subtract_vis_convert-16df8640-e218-49e4-a261-be92dc4567ef')
+Delayed('subtract_vis_convert-8dfd83c4-100b-43cd-9a4c-fb75419ac2c9')
+Delayed('subtract_vis_convert-195547bb-cd50-4518-bdc7-47d2acde010d')
+Delayed('subtract_vis_convert-b080dd85-4801-47ac-910c-7c1f94bdce4f')
+Delayed('subtract_vis_convert-c83829f7-83d4-415b-9a09-8d74790c250b')
+Delayed('subtract_vis_convert-64c904a9-73c6-4929-afd3-d866c4a3b9fb')
+Delayed('subtract_vis_convert-90d33119-e95a-41e1-b16f-0a92ec0ccd03')
+Delayed('subtract_vis_convert-58fb4403-3553-4035-a962-32a77ecf62e5')
+Delayed('subtract_vis_convert-fd450f5a-098a-4912-a928-0aa3698eb373')
+Delayed('subtract_vis_convert-34753b92-7023-4b76-a0d7-31c0dc52eb63')
+Delayed('subtract_vis_convert-953f883a-d5cb-4a85-828d-3b6dc1ba7fcf')
+Delayed('subtract_vis_convert-861bed16-461e-491c-9d27-f106879d5502')
+Delayed('subtract_vis_convert-40c09a2e-008a-48d8-8dc2-1f8dd261de4b')
+Delayed('subtract_vis_convert-28cd3caa-7557-47d1-91bf-657cb557d2cb')
+Delayed('subtract_vis_convert-442c83d8-c0b4-4a79-a109-2dab53f6f39a')
+Delayed('subtract_vis_convert-83536dc0-145b-47da-9748-926890de8dd6')
+Delayed('subtract_vis_convert-93e4f8af-61ca-47b4-8cec-80a2ee9d17d3')
+Delayed('subtract_vis_convert-07fdda6b-731d-4942-b46d-1f43ab9bcc14')
+Delayed('subtract_vis_convert-0b863118-ca1e-4980-bcb4-dda08e3cfa73')
+Delayed('subtract_vis_convert-8bfdb9b6-d89a-4404-bfdd-cbeb1d6a7cf3')
+Delayed('subtract_vis_convert-025310fa-5fbc-4902-ada3-a9c1829f1655')
+Delayed('subtract_vis_convert-a9183b0f-25f2-4ddd-81f9-234339c0723c')
+Delayed('subtract_vis_convert-378cb290-202d-4471-9291-9909cdac67d0')
+Delayed('subtract_vis_convert-181be20b-682e-48ee-bc06-abf5c2ba1e66')
+Delayed('subtract_vis_convert-4dee7bed-d6cc-4968-9a3c-37f434b08ef7')
+Delayed('subtract_vis_convert-17c19c58-b0fe-4b2a-a6c1-b880a6758ba9')
+Delayed('subtract_vis_convert-20ba5bf4-42a2-4169-901d-84bd3e31aaec')
+Delayed('subtract_vis_convert-8d264373-42aa-447a-92e2-af0864e0168b')
+Delayed('subtract_vis_convert-b905eded-7009-47ad-b814-0c4f22845b6c')
+Delayed('subtract_vis_convert-fafa2044-a2c2-497e-a513-c0980970d5bc')
+Delayed('subtract_vis_convert-b9707059-316f-4dc1-aab2-24d1bcb2030b')
+Delayed('subtract_vis_convert-c75cbb26-fcb1-4723-bbdb-5b194b64f2e7')
+Delayed('subtract_vis_convert-d751067f-4b45-4366-ac64-48aa83f85616')
+Delayed('subtract_vis_convert-b7912d16-213d-4865-b5a9-0d2ae5680f1c')
+Delayed('subtract_vis_convert-561f2ee5-7ce7-4ce5-9030-800220839094')
+Delayed('subtract_vis_convert-b7c4eff9-706b-4de2-b3ea-aff05e94ea6d')
+Delayed('subtract_vis_convert-1b17fe5b-918b-4483-b080-533119159d0c')
+Delayed('subtract_vis_convert-763dcba4-438f-413d-80c5-328152230d96')
+Delayed('subtract_vis_convert-94d54957-b19c-4e4e-a7fb-41c98cf4dc85')
+Delayed('subtract_vis_convert-e1043d73-521c-442c-aabc-12aa99275914')
+Delayed('subtract_vis_convert-f5d8c3b5-2e78-414f-a08e-b20bf3d99c11')
+Delayed('subtract_vis_convert-0f03ddee-1051-4104-a012-47dba2a1f7cb')
+Delayed('subtract_vis_convert-89a399a1-e250-4928-b187-330d45d19792')
+Delayed('subtract_vis_convert-08f274ca-95ca-4efa-9da4-449884bf715f')
+Delayed('subtract_vis_convert-7918ec57-bd89-4e2d-85e3-7046930bd3ea')
+Delayed('subtract_vis_convert-32aaa365-288d-4706-90a2-ee10064b2101')
+Delayed('subtract_vis_convert-75692c71-2347-45c3-9489-6d661d540b11')
+Delayed('subtract_vis_convert-ba610495-b10a-4602-af77-48f0ba0dabab')
+Delayed('subtract_vis_convert-e451ef85-aa11-485c-b58d-94d13ea5e5d1')
+Delayed('subtract_vis_convert-6f98d085-56ef-4093-94e2-e6c8bff9c2b4')
+Delayed('subtract_vis_convert-fddca7e2-39d2-47bf-82c1-c120e6277241')
+Delayed('subtract_vis_convert-a3650d29-48fd-460e-aeb7-70588c712f8f')
+Delayed('subtract_vis_convert-3c6a78bd-ad39-4994-9977-1ee561cc0ce1')
+Delayed('subtract_vis_convert-3b586f5b-0668-40cc-bee7-edbbaa789583')
+Delayed('subtract_vis_convert-de27ee22-cc03-4e3e-96e7-7fa3f3ca057f')
+Delayed('subtract_vis_convert-c0494df0-f0d0-41ae-800d-eeb242396b2c')
+Delayed('subtract_vis_convert-f1966ae2-a3f2-4f90-abd4-6a8ba409b015')
+Delayed('subtract_vis_convert-9c7ca083-2090-44f2-8076-1153db4e4bd6')
+Delayed('subtract_vis_convert-d0e0b7bd-d198-4d68-a26b-6fd102160b21')
+Delayed('subtract_vis_convert-57446c5b-9eff-443c-a387-7d670352efa2')
+Delayed('subtract_vis_convert-08a0d985-fc7e-4e71-b527-a1242afa248a')
+Delayed('subtract_vis_convert-0dcd4820-e2b1-4cd2-9c29-cf2e7d8b2824')
+Delayed('subtract_vis_convert-932eeb53-d7a3-41f4-99c5-b7bd03160163')
+Delayed('subtract_vis_convert-d23f0036-76ff-4730-9374-b25e5eaf52f1')
+Delayed('subtract_vis_convert-44d52b58-d631-4017-9397-24e987c00733')
+Delayed('subtract_vis_convert-93cb8ef0-b1ff-4dd6-b045-29f314b585e3')
+Delayed('subtract_vis_convert-d33515ac-122c-4bee-96e0-6b730a3687eb')
+Delayed('subtract_vis_convert-449d339d-d19c-4432-9ff6-b1da5fa96de2')
+Delayed('subtract_vis_convert-65999bb7-3fad-41a4-8a98-860695f3a7e1')
+Delayed('subtract_vis_convert-398c4aff-a9db-40fd-8ac1-5d0452e4dbc8')
+Delayed('subtract_vis_convert-4e2ba846-0622-4368-b9d2-b59147db248e')
+Delayed('subtract_vis_convert-b95364f5-5965-4b42-b2d7-09668526918f')
+Delayed('subtract_vis_convert-01dd4bc2-96ac-418d-92c6-a35bbe433971')
+Delayed('subtract_vis_convert-f2a19446-21da-4c68-acc3-b075c948a78e')
+Delayed('subtract_vis_convert-e38187e4-eed3-4ba3-85c4-14773c3fae1f')
+Delayed('subtract_vis_convert-0110e304-3cfb-4dd3-88f1-e8789ef29f48')
+Delayed('subtract_vis_convert-bd35cf0b-3f7a-4055-a216-16b3c7995083')
+Delayed('subtract_vis_convert-27860f44-429b-418a-816e-5c13932edcfe')
+Delayed('subtract_vis_convert-449bd07d-8787-412d-b8eb-2d0a797af992')
+Delayed('subtract_vis_convert-4348567b-e622-49a8-9997-40d8d0478d4d')
+Delayed('subtract_vis_convert-2f90cdf1-713c-42d9-b0d6-6def741c8de0')
+Delayed('subtract_vis_convert-3cc7c336-9ebd-44a0-b278-b16d7d75d8aa')
+Delayed('subtract_vis_convert-20bc9c71-a1b5-4b1c-b5a3-208a42d8aa2a')
+Delayed('subtract_vis_convert-5381a6b1-23f1-4fd6-b0f4-fe2e85a7db82')
+Delayed('subtract_vis_convert-2e93d06f-20c2-45a4-b9f8-0b625811ae9f')
+Delayed('subtract_vis_convert-77ff9898-e80b-4dc2-91be-9eef3c6f78d8')
+Delayed('subtract_vis_convert-72c17394-fe12-481a-ae1b-10437bb9980a')
+Delayed('subtract_vis_convert-cc7516ee-5f0e-48cb-ab4e-e05603fef216')
+Delayed('subtract_vis_convert-ddc65eb5-bbf2-4bb6-8f72-8a9944bef938')
+Delayed('subtract_vis_convert-507763f4-c6ea-498e-8135-98b839295c0b')
+Delayed('subtract_vis_convert-b909a271-7a46-4fa2-b960-f8f034b840b1')
+Delayed('subtract_vis_convert-d3bef44b-f19a-4099-abd0-c47e5f4abe8d')
+Delayed('subtract_vis_convert-77bcaa4d-f1cc-4759-84a0-cd6105a03ec5')
+Delayed('subtract_vis_convert-14ef615b-2762-45e0-93a1-52ceb297a046')
+Delayed('subtract_vis_convert-6407434b-051e-49ad-85bf-993d9ea5bffd')
+Delayed('subtract_vis_convert-cf2013fb-9968-46a0-852d-ade9ac0831a0')
+Delayed('subtract_vis_convert-955a9437-3b05-4f27-9cc9-18c6e4c14895')
+Delayed('subtract_vis_convert-d1056687-7730-4483-8ff5-cf2a61485f41')
+Delayed('subtract_vis_convert-2f0ff2da-06ed-479a-8005-2a9c8928d29d')
+Delayed('subtract_vis_convert-a02321d7-e8fa-4cd8-aa66-01a34ac79dca')
+Delayed('subtract_vis_convert-ac9fcce7-472a-4018-89fd-23e31ce8dbc3')
+Delayed('subtract_vis_convert-55d31221-27d4-4b7b-a9d8-cd1a2b07dc2d')
+Delayed('subtract_vis_convert-c7ca3253-765a-4c5e-98ed-8d698efc9e2c')
+Delayed('subtract_vis_convert-15cea79d-e7dd-4c1a-8651-d936fded1f3d')
+Delayed('subtract_vis_convert-5a2ff280-d547-438d-ac0f-5aa77df57cfe')
+Delayed('subtract_vis_convert-32a6d832-3e92-4e95-afd8-5290dd902428')
+Delayed('subtract_vis_convert-09ce48b8-ea9e-4cad-9ff5-d54478d796ab')
+Delayed('subtract_vis_convert-439d982a-61ee-4dbf-a34d-ed0717f480b8')
+Delayed('subtract_vis_convert-5843fbe4-3d72-4bf2-9039-1a0379ee03d4')
+Delayed('subtract_vis_convert-e15f37b2-270e-4972-8c17-e2955f6bc3b8')
+Delayed('subtract_vis_convert-5923449c-7ce4-4d80-b8af-0459e440f42c')
+Delayed('subtract_vis_convert-89c6e23c-29c5-42d0-baa2-75616732b592')
+Delayed('subtract_vis_convert-369fef30-63e7-4b77-ab6d-8fd7cb825dd9')
+Delayed('subtract_vis_convert-a44e272e-bd70-431b-b74e-4e582f475682')
+Delayed('subtract_vis_convert-1657a1f2-d0ed-4657-95c8-b76d1ae16a25')
+Delayed('subtract_vis_convert-a78d7ba4-696e-49fc-aede-780c0226d48e')
+Delayed('subtract_vis_convert-5c4e60f8-8e13-41f7-b69f-c5f61710228f')
+Delayed('subtract_vis_convert-535ea0c1-80ee-4b9f-b993-47c0cf23f063')
+Delayed('subtract_vis_convert-5b9881e6-f9fd-4c19-a68a-c41c49fa771a')
+Delayed('subtract_vis_convert-ab6f15e2-5fdd-49e4-a243-885555ad4f3b')
+Delayed('subtract_vis_convert-27c495b0-8552-406c-9e33-91b76d6908c7')
+Delayed('subtract_vis_convert-c7d3b926-c226-4da6-89c6-539f906702eb')
+Delayed('subtract_vis_convert-a746d434-30dc-4e30-a0fe-b46827c78ee1')
+Delayed('subtract_vis_convert-f268ed44-389b-4d41-823c-7a51afa047b7')
+Delayed('subtract_vis_convert-f90da027-40a8-4f65-8842-948716659b8d')
+Delayed('subtract_vis_convert-fa404f3e-9aba-4d0a-8851-9dba5993c119')
+Delayed('subtract_vis_convert-e28d0863-47ba-4a9e-909f-6df6f0899da4')
+Delayed('subtract_vis_convert-dab77822-fd62-4c08-8eb0-27bddf5b8c56')
+Delayed('subtract_vis_convert-e915406b-f1b6-4543-9b96-07fc89da4431')
+Delayed('subtract_vis_convert-1057a227-c78b-446f-b281-121788e08117')
+Delayed('subtract_vis_convert-9bcdb4ee-6046-4b48-b788-02edcbc2f519')
+Delayed('subtract_vis_convert-264c6fdb-3faf-4843-b0d8-7bde9d6091e8')
+Delayed('subtract_vis_convert-915ddab7-83cb-4a8d-8bc7-bf428b372bac')
+Delayed('subtract_vis_convert-a6b8c724-6d75-4020-890f-bbb308460d37')
+Delayed('subtract_vis_convert-79615fb6-6503-4f17-9f4d-59b6fa8633e0')
+Delayed('subtract_vis_convert-0559c0ed-36dc-488c-9872-a833c5a11dcb')
+Delayed('subtract_vis_convert-6fa481ff-cc9f-489c-860d-6cd8dc937634')
+Delayed('subtract_vis_convert-fcddd2df-0c8f-4ef1-a78c-c292d19cedbb')
+Delayed('subtract_vis_convert-a89d9d00-9f75-414a-b093-5e511f3aa085')
+Delayed('subtract_vis_convert-a9f0654c-16dc-4d3e-933c-9c4548afd19a')
+Delayed('subtract_vis_convert-aee440d6-983a-4528-a2ca-449e9a51a667')
+Delayed('subtract_vis_convert-408613ff-191c-4f8f-9f97-28aa259ba40f')
+Delayed('subtract_vis_convert-65be7ed1-9578-4d93-a022-2e5697bab831')
+Delayed('subtract_vis_convert-b54462ce-99db-4590-b019-1df9e38216f2')
+Delayed('subtract_vis_convert-0ca546bc-f5cd-4830-ae8f-96aae7b5b270')
+Delayed('subtract_vis_convert-a44f8047-c6b5-46b7-9b52-71d363139bb2')
+Delayed('subtract_vis_convert-2a4eb7a8-63c5-4d97-ab44-3a8b2ae470cf')
+Delayed('subtract_vis_convert-78b0d6cf-a8bf-4e8f-b499-5911d20f6112')
+Delayed('subtract_vis_convert-976bde4b-5a95-4a98-b7ba-47956633600d')
+Delayed('subtract_vis_convert-a916d4e4-98fc-4566-8ccc-aa3caed7385e')
+Delayed('subtract_vis_convert-fa09f7b0-d2ba-4c41-a39d-1e210b9e2d81')
+Delayed('subtract_vis_convert-2759d9b5-b787-42ed-bd45-52b477f935f5')
+Delayed('subtract_vis_convert-7283c76d-2700-4593-a2c7-448df1e072fe')
+Delayed('subtract_vis_convert-8774a01a-f0bd-4177-9b16-5b573f864f04')
+Delayed('subtract_vis_convert-098ac6cb-485b-4e58-88d4-79d31777fda8')
+Delayed('subtract_vis_convert-57349f88-ccce-4025-bf8d-09687cd0aafe')
+Delayed('subtract_vis_convert-73e3f3d0-5f1d-411c-b796-795766bd624f')
+Delayed('subtract_vis_convert-fced59b4-a2c1-463e-9385-add3f5e8323c')
+Delayed('subtract_vis_convert-af080bcc-1020-4877-afcf-67d884bb7a3a')
+Delayed('subtract_vis_convert-934f5226-db78-40c4-be60-0ca4e675d293')
+Delayed('subtract_vis_convert-3c0df8db-1d50-4e6e-91d8-c3abac93ebd8')
+Delayed('subtract_vis_convert-86bccfbb-e8d8-4b59-a3b1-1ceb0fd3c3b5')
+Delayed('subtract_vis_convert-03b75b43-8c71-4c2d-9c39-c9e3439d0e6b')
+Delayed('subtract_vis_convert-ea98dbd9-d18c-4ffe-9bc5-1704124e9546')
+Delayed('subtract_vis_convert-78f2f6a0-19e8-41fb-a70c-f4bb767e5ac6')
+Delayed('subtract_vis_convert-22dccb95-6902-4fde-8207-7acb2bbe69bd')
+Delayed('subtract_vis_convert-e73f5d60-fbd6-44b9-a71a-25f274eaaf4a')
+Delayed('subtract_vis_convert-55343557-54e2-4792-8684-225e91a44eee')
+Delayed('subtract_vis_convert-75526da2-4b12-45e1-9c2b-4dd7894e0856')
+Delayed('subtract_vis_convert-d6bdb98e-5fce-4201-aa7f-cd00dc4b3082')
+Delayed('subtract_vis_convert-2ec6d737-e647-4353-a670-b01cf5153c7e')
+Delayed('subtract_vis_convert-1a59de49-2ede-433b-b2d3-04d3f61f5d2e')
+Delayed('subtract_vis_convert-d27ed643-56c9-4fe6-8c8f-d60625969caa')
+Delayed('subtract_vis_convert-1996c163-4d76-442e-9cec-92b127981643')
+Delayed('subtract_vis_convert-08d9633c-a562-4cf7-afe8-50ee4e8d7070')
+Delayed('subtract_vis_convert-4af701ed-9a02-4e6f-a2b9-35d481d81598')
+Delayed('subtract_vis_convert-36d4c8a9-0db7-44bf-9c85-8cdf28ada69f')
+Delayed('subtract_vis_convert-c09447cc-0f81-4eeb-be58-b36164084acf')
+Delayed('subtract_vis_convert-8f43bf38-e839-4a4d-9c02-c0ff2d85f904')
+Delayed('subtract_vis_convert-e4693f4d-0dc1-4c31-9f7b-00259c5f4550')
+Delayed('subtract_vis_convert-8682a2aa-7b0d-4109-82d9-06635219354b')
+Delayed('subtract_vis_convert-b6986498-b6c3-42e9-9057-bbf35b4fbf81')
+Delayed('subtract_vis_convert-4d705948-fc6a-447d-9066-04ebc937b949')
+Delayed('subtract_vis_convert-7d8d5552-cef6-4269-9fa3-1ed1ae689298')
+Delayed('subtract_vis_convert-4324d952-4149-4b46-a56e-f1f3611e2e15')
+Delayed('subtract_vis_convert-06565452-1d13-4a3c-9ec6-137b0c85b724')
+Delayed('subtract_vis_convert-eebcd966-3791-4621-8e67-b007dcc531ec')
+Delayed('subtract_vis_convert-c2775007-cf20-4f0e-b8cc-6f0944be25e7')
+Delayed('subtract_vis_convert-566c9d93-923d-46b9-a09a-3d5001ce251f')
+Delayed('subtract_vis_convert-c317e631-2112-4b59-a16e-9e5fc34ab19f')
+Delayed('subtract_vis_convert-02706f04-5a28-48e5-83c7-f3d1f45372c8')
+Delayed('subtract_vis_convert-d10311c5-f420-4616-94f1-2fbdab1716e5')
+Delayed('subtract_vis_convert-df5f0934-8328-4aeb-8aeb-6debe5b34d29')
+Delayed('subtract_vis_convert-d8cb3287-9287-4dbc-ad83-c4dca3420dd1')
+Delayed('subtract_vis_convert-184e4c43-d5d9-4520-ad83-200a01a4c592')
+Delayed('subtract_vis_convert-eb0f6412-32ce-4de3-8c0e-43a2c21b2428')
+Delayed('subtract_vis_convert-13231eac-69ad-4831-a66d-42d811f2c52f')
+Delayed('subtract_vis_convert-41554fe0-bf2c-407b-b839-cd97da7ca66b')
+Delayed('subtract_vis_convert-16179f04-5501-4a53-b71a-b577fc6d463f')
+Delayed('subtract_vis_convert-03627582-fc2c-4f72-baaa-46687025c13b')
+Delayed('subtract_vis_convert-ba9791cb-c2a0-486b-b2ac-967ec2ad27b7')
+Delayed('subtract_vis_convert-70cd9b88-b37f-4d57-9f91-348a1cadda68')
+Delayed('subtract_vis_convert-9a464f89-b7fd-45b2-93af-0ddf6a63793d')
+Delayed('subtract_vis_convert-b4641cfb-41c1-435a-9be7-81258d8b3238')
+Delayed('subtract_vis_convert-8cc55eef-c7e9-455b-b297-02adacdc719c')
+Delayed('subtract_vis_convert-26f1867f-48d3-44c5-9187-2e149d2e3196')
+Delayed('subtract_vis_convert-017240a7-bc83-4220-9897-cab00b0e13d0')
+Delayed('subtract_vis_convert-0c4e9609-0366-43db-858d-a7b51838315f')
+Delayed('subtract_vis_convert-0c5830c5-f20f-4430-b27a-4b49781f8dde')
+Delayed('subtract_vis_convert-d1d8e487-3476-4049-a963-7e1fc2d0325b')
+Delayed('subtract_vis_convert-617589dd-e12c-4296-9383-833e2dd7b315')
+Delayed('subtract_vis_convert-441bc739-1868-4652-a60f-9f48dcf1dd08')
+Delayed('subtract_vis_convert-f8e32e1e-7f51-4e3e-bdeb-2ceaa3dadc96')
+Delayed('subtract_vis_convert-977fd218-3acb-4d94-bd52-83371e118944')
+Delayed('subtract_vis_convert-6c786b21-b873-4466-ad2c-4781ddaaf180')
+Delayed('subtract_vis_convert-580c7ec6-9217-4771-bd03-145eb16feeaf')
+Delayed('subtract_vis_convert-ce57ffab-ce17-406d-948e-8cdeb858c148')
+Delayed('subtract_vis_convert-1bc3decc-ad3e-43b9-ab68-2a6f7d251731')
+Delayed('subtract_vis_convert-cc2c173b-b99f-4bea-ac39-35b09d7bd327')
+Delayed('subtract_vis_convert-7d173554-018e-48e3-b1e4-e767096bd279')
+Delayed('subtract_vis_convert-35a0a8df-5c5b-4423-b33b-df0c0f3ca840')
+Delayed('subtract_vis_convert-1761f5a7-46b7-4192-8c5a-9089cea611fb')
+Delayed('subtract_vis_convert-36a0c258-c73a-4bf7-9e5b-c05d50f8228a')
+Delayed('subtract_vis_convert-e7cb6269-9c53-4e6a-bf91-6b20a5d7c374')
+Delayed('subtract_vis_convert-c0dc7143-ec76-41dd-9beb-6a691694ebd6')
+Delayed('subtract_vis_convert-57fca9f8-161b-44e4-bac4-f9720fccb466')
+Delayed('subtract_vis_convert-32c8d5df-86d2-441e-9dfb-c8802c4d29d1')
+Delayed('subtract_vis_convert-3216bae5-61ba-4825-a2d8-1e2d2b8f585e')
+Delayed('subtract_vis_convert-8678e529-758f-4404-880b-aeb457bcb8ef')
+Delayed('subtract_vis_convert-81185e63-63fb-4fb7-a414-17ad2943a997')
+Delayed('subtract_vis_convert-0a75d4f5-f8a5-485d-b650-f034f593fcdd')
+Delayed('subtract_vis_convert-c3b5a3d2-2ca7-4b20-af51-025acc59c985')
+Delayed('subtract_vis_convert-28beb490-35aa-41ad-842b-3755926cc0f1')
+Delayed('subtract_vis_convert-44219644-1d19-4947-b975-8f8e73bfaf1f')
+Delayed('subtract_vis_convert-5c88def8-6ebe-4cbc-9d05-a5de08c72b2b')
+Delayed('subtract_vis_convert-329bfadf-354b-468b-a0f1-58be31abe219')
+Delayed('subtract_vis_convert-7c1bbac5-1e46-4114-a6c1-670ab7101614')
+Delayed('subtract_vis_convert-f847c4b5-6966-48aa-905b-504fc8507bb7')
+Delayed('subtract_vis_convert-ee80b72c-b33b-4073-b58c-5aad46d0eef5')
+Delayed('subtract_vis_convert-8cdb3617-8a14-46a6-87ce-5a1d84e6431d')
+Delayed('subtract_vis_convert-0e54ec60-92a2-40a2-aa84-f93ad83034d0')
+Delayed('subtract_vis_convert-f7c9d2f5-c4a1-4574-990e-1e277531ba90')
+Delayed('subtract_vis_convert-364d319d-c566-41d7-b525-bc3d0a38675f')
+Delayed('subtract_vis_convert-278157b1-fdc9-46ca-8e49-831361b49754')
+Delayed('subtract_vis_convert-f7e26f48-bcb1-4c16-9ad9-53c785480963')
+Delayed('subtract_vis_convert-8c346eb7-7257-45f3-90d4-05cfa0cd9132')
+Delayed('subtract_vis_convert-07448892-5d6e-4569-bcd4-9228a2cde5ee')
+Delayed('subtract_vis_convert-98daea1f-6cc7-4728-9b02-44f95d833ce1')
+Delayed('subtract_vis_convert-9dd26836-c201-4fac-addd-ab5ddcfdc1a2')
+Delayed('subtract_vis_convert-a5eed386-0836-40cb-bdd3-45104bfdef71')
+Delayed('subtract_vis_convert-cd86c0ca-dc8a-4fe7-94ae-2edc4510bb04')
+Delayed('subtract_vis_convert-8ad3538d-d36c-4b06-877e-79f840e129ee')
+Delayed('subtract_vis_convert-a63e3bc4-be64-4cce-8801-0bc8ede490d8')
+Delayed('subtract_vis_convert-284d9358-92ac-466d-af02-dc4c622babcd')
+Delayed('subtract_vis_convert-0df4d58e-4c9f-48ed-9c50-de8e16bf72ec')
+Delayed('subtract_vis_convert-9d05f62a-3a97-4194-93ab-6aa88afca0db')
+Delayed('subtract_vis_convert-b82e52b2-047b-4ca2-b811-0cac5a48869b')
+Delayed('subtract_vis_convert-dbd0fc51-d715-4435-80ef-43f0d30284bd')
+Delayed('subtract_vis_convert-0637aab4-e9d5-4fbd-b191-a5759379d367')
+Delayed('subtract_vis_convert-57172359-8f40-4f92-8bc6-ef09467badd8')
+Delayed('subtract_vis_convert-cf134242-2324-43c1-83ab-4a7f3c309da5')
+Delayed('subtract_vis_convert-b0a4c740-c583-4216-9dc4-d2879eb60914')
+Delayed('subtract_vis_convert-1c81116f-f498-4db5-a700-2791321b1e89')
+Delayed('subtract_vis_convert-b53c392e-0130-4b87-9dd4-d349cc5f8a94')
+Delayed('subtract_vis_convert-6acb7d32-0022-46a1-ae44-126ee538301e')
+Delayed('subtract_vis_convert-e8add3f8-60ba-4baf-bbaa-35cc69eff6c8')
+Delayed('subtract_vis_convert-1b3bd4a0-438e-4619-a4a3-c45473dec11b')
+Delayed('subtract_vis_convert-75d0f532-c3ea-4178-bcd8-76ae021b0acb')
+Delayed('subtract_vis_convert-cfa882f6-4491-49e4-acfa-768ea1a44ce4')
+Delayed('subtract_vis_convert-8177f8bb-2579-42ee-b381-1275a2c17936')
+Delayed('subtract_vis_convert-0e7144f1-92ff-4d17-a07f-177c584ec505')
+Delayed('subtract_vis_convert-a19b63ac-c5bb-4b37-b970-590b59660e32')
+Delayed('subtract_vis_convert-70024b62-f8ff-4d8e-bedb-4e6c93c42b35')
+Delayed('subtract_vis_convert-fb638e3a-3a16-4193-b270-87dbf755f76d')
+Delayed('subtract_vis_convert-ae962514-5a84-4f40-99ad-b0a9b799ae97')
+Delayed('subtract_vis_convert-6ce082f1-9eba-4929-a418-3bf10a546c97')
+Delayed('subtract_vis_convert-e293a5db-813f-4017-8c40-4923d5e0c21a')
+Delayed('subtract_vis_convert-b537c819-ca74-4711-83dd-e7d8e48cec75')
+Delayed('subtract_vis_convert-b5f124b7-d157-433f-9cea-896cf46adbd7')
+Delayed('subtract_vis_convert-cb9eb179-5836-41b1-8123-655b35ab931c')
+Delayed('subtract_vis_convert-b0177607-d77e-4bee-8f9c-d6a9a78b64f5')
+Delayed('subtract_vis_convert-b2abe942-ccc3-402c-8eae-48c4954239a4')
+Delayed('subtract_vis_convert-78ff51c7-cd38-4791-897b-bf856fc6aabb')
+Delayed('subtract_vis_convert-a69283f2-db7d-4943-baaa-736d5b279193')
+Delayed('subtract_vis_convert-e335abb8-df72-42c4-b1ab-687937ba6693')
+Delayed('subtract_vis_convert-e3d0a718-d497-434a-85dd-c319ccd5df7b')
+Delayed('subtract_vis_convert-31d83af1-fdb0-46ca-bdbc-c523a806fe50')
+Delayed('subtract_vis_convert-70fce6f8-c8b7-44ad-933f-4f9113bc7316')
+Delayed('subtract_vis_convert-7e44aee3-ed5b-46d6-bce6-270c64d71481')
+Delayed('subtract_vis_convert-e5270f04-b829-47ff-82f5-12e821b36b4f')
+Delayed('subtract_vis_convert-5848ffe0-6325-4bd4-88f7-4c787589e25a')
+Delayed('subtract_vis_convert-4f72b51d-2e68-4160-80b6-bc64810c7816')
+Delayed('subtract_vis_convert-5463d603-53c6-4cf9-9593-b035321857aa')
+Delayed('subtract_vis_convert-a2becb8c-e759-403f-8068-a09f5525b021')
+Delayed('subtract_vis_convert-f2d0b81f-bbf6-4842-a5bf-5b6054cb72c6')
+Delayed('subtract_vis_convert-5ab46c33-5898-4b72-8288-701d8c157aa2')
+Delayed('subtract_vis_convert-e120be18-cf9b-4b7f-ab9d-6c8afcc574e0')
+Delayed('subtract_vis_convert-9b21e582-d19f-4889-ab8f-421cc757447e')
+Delayed('subtract_vis_convert-9d0449e8-80f5-4dd8-831e-b77912c87b9e')
+Delayed('subtract_vis_convert-0ff40766-f1d0-497c-8452-e00173bd0802')
+Delayed('subtract_vis_convert-7d7d8f33-4ffa-4b2a-ab54-8df27dbf8202')
+Delayed('subtract_vis_convert-a31346db-3cc5-4e74-927c-50f8c62f8c18')
+Delayed('subtract_vis_convert-0695eb5a-bece-4e04-9c0d-e21e74ea21ef')
+Delayed('subtract_vis_convert-ce4fc54e-98e3-4c7f-8249-bc1546737cf5')
+Delayed('subtract_vis_convert-7da3c275-b3f4-4877-b52e-e2dd951be3fa')
+Delayed('subtract_vis_convert-961da46b-ebd2-4674-83a6-67ec0e38e2f9')
+Delayed('subtract_vis_convert-bd6d875f-60d7-4327-bab0-91e0b4b7fb1d')
+Delayed('subtract_vis_convert-d6828e36-c779-4291-ace1-257770b1e1e9')
+Delayed('subtract_vis_convert-05695b4d-3f48-4e1c-8811-c447b0629603')
+Delayed('subtract_vis_convert-e68f4ac9-1d5a-4920-a59d-7de29de0b250')
+Delayed('subtract_vis_convert-8890fa88-27ac-42ad-9e8c-21148ac50a4d')
+Delayed('subtract_vis_convert-33cdf9c9-f478-4a3c-9105-f42af9c82299')
+Delayed('subtract_vis_convert-d6276122-86b6-4948-9d59-78e9cc8df3bc')
+Delayed('subtract_vis_convert-2039a876-a952-4bae-8d23-e6e24c312972')
+Delayed('subtract_vis_convert-5bc1125a-3804-48d8-949e-23e13bc3f508')
+Delayed('subtract_vis_convert-43de0942-9016-4a52-ae48-b41d7b848e45')
+Delayed('subtract_vis_convert-4d4ce8c3-153f-43a5-a32c-bc8acfb71a1e')
+Delayed('subtract_vis_convert-94e1af90-df01-4a8f-ab03-fc46c763e3dd')
+Delayed('subtract_vis_convert-a7739e9f-f586-4b15-a335-a3d58d3cf27a')
+Delayed('subtract_vis_convert-62d13eb2-4f8d-41c7-a60d-8e2d0aae720d')
+Delayed('subtract_vis_convert-b028618a-985a-4f44-8ca3-140733be663c')
+Delayed('subtract_vis_convert-b2a8581d-7799-4888-a588-36a0a4fa43e5')
+Delayed('subtract_vis_convert-0f11d705-da88-4f8e-9a21-3486f4f8eda8')
+Delayed('subtract_vis_convert-543ec563-4214-413a-9581-84ee73927065')
+Delayed('subtract_vis_convert-bf25cfbb-99f4-44c1-96db-1e6a467ba988')
+Delayed('subtract_vis_convert-f9434077-f9ec-456a-a08e-bad9990eaa38')
+Delayed('subtract_vis_convert-0089bff9-5939-43db-9435-76ca9926efff')
+Delayed('subtract_vis_convert-7e028b8b-61e5-4cd8-b5a0-d68d9050cd86')
+Delayed('subtract_vis_convert-f994f353-953d-4217-92db-252ee6ef246e')
+Delayed('subtract_vis_convert-c2c1bf25-ef49-4bef-889b-d0809e2afbe2')
+Delayed('subtract_vis_convert-1e8ba467-1e02-4a0f-97ea-5b4b89be8b09')
+Delayed('subtract_vis_convert-bc93398c-ed5e-4caa-89e5-ce19bf13b354')
+Delayed('subtract_vis_convert-bd42f071-06fc-458a-8aa6-cb000d052f7b')
+Delayed('subtract_vis_convert-0317e88d-2a89-41df-b71e-028abb83a3e1')
+Delayed('subtract_vis_convert-59974e2a-ec80-4195-bcd9-aa820d822de7')
+Delayed('subtract_vis_convert-00f0a2fb-ed19-4f61-a9e2-b35545c63688')
+Delayed('subtract_vis_convert-4ca4ea0c-6956-4ab5-a0fb-d71848b5c794')
+Delayed('subtract_vis_convert-7ab29e10-83d8-44f9-96ab-eb77a754170d')
+Delayed('subtract_vis_convert-4100dcf6-5d02-4bb6-9510-1dbd6b38886e')
+Delayed('subtract_vis_convert-7e6b43ae-d14b-439d-bdfe-73c43cf04f5a')
+Delayed('subtract_vis_convert-3d7c26c1-46dd-46b8-9f5f-6dcc4541ab9e')
+Delayed('subtract_vis_convert-8d4dc902-6a4b-4dd5-93e5-b35ff6442ce7')
+Delayed('subtract_vis_convert-879b1706-89b5-4f05-937a-49eb488504a4')
+Delayed('subtract_vis_convert-205cd4ee-539b-4d26-83fd-c484a5f8e939')
+Delayed('subtract_vis_convert-ff289ce7-b06e-44a6-9aed-411fd6215b07')
+Delayed('subtract_vis_convert-8e5eecf7-1e5d-4a24-a949-d28adda6967f')
+Delayed('subtract_vis_convert-aba41e42-f1df-4f1a-9e48-604fc7431e63')
+Delayed('subtract_vis_convert-4cc90286-80d8-4cb3-b889-fdeb1e9356ae')
+Delayed('subtract_vis_convert-642d2c49-4986-4265-891c-cab35584b4a6')
+Delayed('subtract_vis_convert-55af8743-51b5-4c1f-86d9-1857894db41f')
+Delayed('subtract_vis_convert-0f12ca36-0309-493c-ba13-d2ec829755ef')
+Delayed('subtract_vis_convert-dd9d7d34-46a2-4ffe-8592-82691056d9ca')
+Delayed('subtract_vis_convert-e54a28b9-302e-4ed9-bd9b-82b60af6de3c')
+Delayed('subtract_vis_convert-ab201734-6a06-4418-af03-3e581032fae2')
+Delayed('subtract_vis_convert-1bd043fc-1bad-4a04-9f6f-6b59d40a0fe5')
+Delayed('subtract_vis_convert-a5a529d0-c7be-497d-8747-f15ce5ed325e')
+Delayed('subtract_vis_convert-e626505b-e2f6-4ab8-82ad-3eda49c81176')
+Delayed('subtract_vis_convert-7e7fc2e3-8427-478f-bce0-60574673173d')
+Delayed('subtract_vis_convert-1395955a-1ce4-47ea-88dd-1151d26ab979')
+Delayed('subtract_vis_convert-68fd87b5-68b8-46d5-bbab-208504ff306b')
+Delayed('subtract_vis_convert-dc2f2f32-f452-4c97-b732-e572a3cca196')
+Delayed('subtract_vis_convert-e9c22d27-6e93-4ef9-8ed5-541ba4425ae5')
+Delayed('subtract_vis_convert-c4c6d96a-d119-48f0-8224-a0e5421bf1ab')
+Delayed('subtract_vis_convert-ed8dc89f-4a5d-40d5-ba80-a69f9cdd11a9')
+Delayed('subtract_vis_convert-cf9baea0-169d-4ab3-9c13-f852ced1190b')
+Delayed('subtract_vis_convert-a6b4f8bd-7dd4-48c6-9388-ed5c596edecf')
+Delayed('subtract_vis_convert-f9a507bd-bed0-45a8-86cc-284e1716d471')
+Delayed('subtract_vis_convert-5ba80459-15b8-4d24-a81d-22af9cf6748b')
+Delayed('subtract_vis_convert-aafd76c3-a34b-44dc-bee1-dfd11d98d263')
+Delayed('subtract_vis_convert-1d05602b-4d62-49f1-b44e-ca0a066f288b')
+Delayed('subtract_vis_convert-656bf298-25c5-43b9-af82-1d805e194b9b')
+Delayed('subtract_vis_convert-bef0a182-d703-4a58-9462-5a22bdd4a833')
+Delayed('subtract_vis_convert-9ffb6e8d-f2f3-4a8a-8f5b-1eea20683364')
+Delayed('subtract_vis_convert-170bf39e-4485-499d-acc5-0104b2820165')
+Delayed('subtract_vis_convert-00f2f87b-a3af-4653-87ca-a6155727fafd')
+Delayed('subtract_vis_convert-592cf39c-99e3-4e60-87e3-a7380e102143')
+Delayed('subtract_vis_convert-3a5f0dae-49cb-4a9f-98e8-8468afe6ad92')
+Delayed('subtract_vis_convert-f98e710e-6051-4f7c-84db-dd64707d0e30')
+Delayed('subtract_vis_convert-008e8e79-6ef3-4b12-a07c-979ed668a2d3')
+Delayed('subtract_vis_convert-c1eb4934-9095-43b3-b60d-1df15745eb19')
+Delayed('subtract_vis_convert-4f2fc085-58fc-48ca-aea4-87e25fa56e2d')
+Delayed('subtract_vis_convert-676eef45-5c28-44b3-8090-676305eb18e7')
+Delayed('subtract_vis_convert-63bbbf70-c2a2-480d-8767-cad82c5dcb3e')
+Delayed('subtract_vis_convert-89b2ecd8-603d-4c97-963a-f4cb8d3da0ba')
+Delayed('subtract_vis_convert-afb87071-e99c-48ca-a147-70d025e16091')
+Delayed('subtract_vis_convert-16405904-fb0b-48a8-8aac-0edec258159d')
+Delayed('subtract_vis_convert-47d423ec-1257-4731-bfff-6eb7943c9c48')
+Delayed('subtract_vis_convert-285ff5ba-44f0-4d9e-b7b3-7c6f0d7ffdb2')
+Delayed('subtract_vis_convert-cf22ae90-6ffe-4054-8344-f58eae87ee46')
+Delayed('subtract_vis_convert-eeca104c-4eb7-4a36-bc92-63e39898a26b')
+Delayed('subtract_vis_convert-b0f00762-a14c-4cec-a10e-b721eacb433b')
+Delayed('subtract_vis_convert-9125e301-520c-4c6c-a742-e6996e5b8124')
+Delayed('subtract_vis_convert-014a331f-557b-4a9d-abd0-58d0e959c9d2')
+Delayed('subtract_vis_convert-595bf2f1-0633-4a3e-a924-b8123186abf6')
+Delayed('subtract_vis_convert-151aee08-72c6-46d3-a255-bd4f89bcc362')
+Delayed('subtract_vis_convert-f5e65faf-c223-4cd1-bdc0-3a15ca38a7e1')
+Delayed('subtract_vis_convert-bca0c5e2-a9a0-41ae-b76e-28b7185c9470')
+Delayed('subtract_vis_convert-3b9dd85a-29ea-4b66-a43d-58417fc52b95')
+Delayed('subtract_vis_convert-f1732909-79c6-4627-ace9-1c2140da5443')
+Delayed('subtract_vis_convert-f664f4d6-91bb-4e05-9dfe-7d72ccafe460')
+Delayed('subtract_vis_convert-dd5193c8-22ec-4f3a-810f-204c2b081301')
+Delayed('subtract_vis_convert-7a09a94d-3117-47c8-838a-4ae116182775')
+Delayed('subtract_vis_convert-35c06caa-d5b6-435b-9625-a35420c7088e')
+Delayed('subtract_vis_convert-9717e770-9a5c-47db-be86-02edf2452d5c')
+Delayed('subtract_vis_convert-206ec9e9-f81c-4ad7-9ada-ef016dd5e6c6')
+Delayed('subtract_vis_convert-f8e73eb6-5dcb-4ef0-965f-ac13879794b9')
+Delayed('subtract_vis_convert-68e3afa4-335e-4ccf-bc2d-ade7ceb6ec86')
+Delayed('subtract_vis_convert-e912f749-f10a-41d9-8de8-d1f9844b2c67')
+Delayed('subtract_vis_convert-32503635-6f45-4b14-a2fd-34590b675e15')
+Delayed('subtract_vis_convert-6adafbd7-62b5-4573-b6f1-da9832782702')
+Delayed('subtract_vis_convert-0a4b733a-2af1-4be4-93a9-264b084ca15a')
+Delayed('subtract_vis_convert-fe0cffd4-a2a0-4109-a3ab-c6cdab0e236f')
+Delayed('subtract_vis_convert-3295b454-9319-4fd7-9eed-990864c1aff8')
+Delayed('subtract_vis_convert-41101c38-0d53-4467-97d6-5e470059d789')
+Delayed('subtract_vis_convert-792ee6a7-bda8-4c2e-9f94-3992fe1d91fb')
+Delayed('subtract_vis_convert-9890f153-bbe8-486f-bde1-73b262cb0ad6')
+Delayed('subtract_vis_convert-226a70cb-bca7-48ec-acec-474510709666')
+Delayed('subtract_vis_convert-607458d9-a388-47b5-9c83-97347edf8798')
+Delayed('subtract_vis_convert-b1c82de1-c0eb-47e8-8af0-24e2e61709ae')
+Delayed('subtract_vis_convert-282763df-f530-40a8-8acd-eafa32097157')
+Delayed('subtract_vis_convert-ca7a629b-4f93-4376-82c5-399fa86cba33')
+Delayed('subtract_vis_convert-5b2f0549-df54-422c-a6dc-71b2ea4d2deb')
+Delayed('subtract_vis_convert-4a253316-207d-4440-9afb-12843a98efc1')
+Delayed('subtract_vis_convert-7eb8480b-553a-41a7-be61-bf9583ae40ad')
+Delayed('subtract_vis_convert-dc5b8960-11f3-4a51-9313-c5b225d2e8fe')
+Delayed('subtract_vis_convert-e2f3aa27-a734-41cd-8ae5-ec11b73bd0bc')
+Delayed('subtract_vis_convert-51bb541f-832a-4fac-9fe1-8eb4660fa6d3')
+Delayed('subtract_vis_convert-cf525276-63c4-4fb3-8605-bf1e4fe45c4d')
+Delayed('subtract_vis_convert-6330e40b-a64d-4557-86b0-2a7dca0ab416')
+Delayed('subtract_vis_convert-35bd4a18-70eb-4102-bd2c-c856b9cfb1cf')
+Delayed('subtract_vis_convert-ab856b3e-2b68-4165-b167-a25e93aa5581')
+Delayed('subtract_vis_convert-2783a922-0fd1-45d4-aec1-9d48b33b4f37')
+Delayed('subtract_vis_convert-50540952-3ea4-4fbf-aab0-83169209079b')
+Delayed('subtract_vis_convert-91a420d8-e8c5-4b3e-b39f-7a43920ed808')
+Delayed('subtract_vis_convert-1b08c293-4450-4fc7-8921-62697ef6b6ed')
+Delayed('subtract_vis_convert-14fe7dcd-5ee7-45f0-a312-3dbdd2276e83')
+Delayed('subtract_vis_convert-d883d1d1-ef9e-410f-a588-45a3fcc2a5a3')
+Delayed('subtract_vis_convert-ad1e335b-e552-4464-8e39-3430cdc00ae7')
+Delayed('subtract_vis_convert-479acb0a-7de0-40c7-8a7a-f0de3840f9d3')
+Delayed('subtract_vis_convert-262a6563-b3a5-44d7-9b52-91d9c3027cef')
+Delayed('subtract_vis_convert-f5650a6b-92ab-4bb5-821c-00e1412c7eb9')
+Delayed('subtract_vis_convert-5b336bd9-8ec1-49c2-a7d6-5280000c1a9a')
+Delayed('subtract_vis_convert-212ee13e-7e62-4cc6-9438-e98a16654cb2')
+Delayed('subtract_vis_convert-65b66230-b973-433c-8241-fc7b306e803e')
+Delayed('subtract_vis_convert-f9e2f038-1096-4262-b831-96568683e23f')
+Delayed('subtract_vis_convert-bad78c03-263e-41f9-abc2-e579f908db7d')
+Delayed('subtract_vis_convert-5647777b-0a48-4101-8f0c-1171b71ab32a')
+Delayed('subtract_vis_convert-d76dd6a4-6ee1-48af-b8e4-cbfcea418a16')
+Delayed('subtract_vis_convert-d30aff42-3089-479b-9019-bd701dcba05e')
+Delayed('subtract_vis_convert-304eec40-9c7a-4132-9ef9-948b2246d8a8')
+Delayed('subtract_vis_convert-6d542373-7cac-47b8-9eb5-5bb8544b0cec')
+Delayed('subtract_vis_convert-a3f49da1-f52d-436e-9a37-36d649c1f496')
+Delayed('subtract_vis_convert-bdeca974-1b2f-4415-bdab-cfd115925e86')
+Delayed('subtract_vis_convert-33f47945-4126-4f05-9163-d93972a3eb52')
+Delayed('subtract_vis_convert-72b45dce-2b83-48b8-a9ff-e3b2c9d9d53d')
+Delayed('subtract_vis_convert-bffe0751-8db0-45ae-b280-35dfac45c995')
+Delayed('subtract_vis_convert-5aa59504-7882-435a-87da-9037fd13e6e4')
+Delayed('subtract_vis_convert-8011546d-bb10-4836-8fbb-31e68a6fdea7')
+Delayed('subtract_vis_convert-6d10dee6-6e7a-4f70-8bd7-4c06928abb7a')
+Delayed('subtract_vis_convert-a639e4cf-dba9-47d0-ac60-4a99df587658')
+Delayed('subtract_vis_convert-8113a507-5975-4ec0-919c-be434014128f')
+Delayed('subtract_vis_convert-5a123f11-ac82-40c2-b293-5bec9a55e9b1')
+Delayed('subtract_vis_convert-3336888c-01ca-4f7d-a0f6-df73a20db84a')
+Delayed('subtract_vis_convert-5742022a-8739-4e9c-a81d-599dff90647c')
+Delayed('subtract_vis_convert-8e336ed3-0cb4-47d6-b6bc-dd17ad89c68d')
+Delayed('subtract_vis_convert-2f855098-c3f4-47fe-8d2e-f58762bad57b')
+Delayed('subtract_vis_convert-60afd4d2-87c5-40e1-82e7-90be80a48f6a')
+Delayed('subtract_vis_convert-db5f4999-66a6-4d1b-a8ed-0e7a110dd75f')
+Delayed('subtract_vis_convert-2a00d5a1-e493-4b63-a1c4-04828bb9730a')
+Delayed('subtract_vis_convert-f554aa23-b49f-49ae-88b5-350f127fecca')
+Delayed('subtract_vis_convert-11f2a1d7-2db1-40d6-9aac-41b2f6b3c053')
+Delayed('subtract_vis_convert-c9bca0f6-cfbd-4bdf-b49f-cb8bfb9b644e')
+Delayed('subtract_vis_convert-7ea781a9-3bb3-4389-a47c-27deb7b027b6')
+Delayed('subtract_vis_convert-73ab2911-e7ac-4fcc-b30f-93994a171090')
+Delayed('subtract_vis_convert-687ac92e-bc78-4837-b0e1-70f629b6de48')
+Delayed('subtract_vis_convert-b53f2370-755d-4179-a53a-029592c0300e')
+Delayed('subtract_vis_convert-d18a37a2-a6fc-48ca-be95-5c59937b3c56')
+Delayed('subtract_vis_convert-2f540ec6-352f-474a-92f1-63521ab5eee9')
+Delayed('subtract_vis_convert-b1373d9d-6577-4c09-91cd-23b2e4ffaf3f')
+Delayed('subtract_vis_convert-cb81e003-8d1a-4f5c-9584-9ea2388f70c2')
+Delayed('subtract_vis_convert-e04055b7-6456-4804-b4c8-e937e1226f92')
+Delayed('subtract_vis_convert-e03f24e8-702d-4960-838a-79bba7427ebe')
+Delayed('subtract_vis_convert-39c3bab1-2163-41cc-975b-0572160bc148')
+Delayed('subtract_vis_convert-cf8c531b-e231-440b-8a0d-f4cafbe2fe9c')
+Delayed('subtract_vis_convert-93316fa2-122e-4e1f-b2b6-518e66279591')
+Delayed('subtract_vis_convert-1d8dabee-4fe5-4b7f-a45e-b663773b9789')
+Delayed('subtract_vis_convert-77575eff-9f14-426b-956c-0d6f09390b7b')
+Delayed('subtract_vis_convert-da18619f-bd26-4319-b50a-03b7b9a00b3d')
+Delayed('subtract_vis_convert-4d65476f-ad50-4ac2-8e15-435fcf354832')
+Delayed('subtract_vis_convert-5134af21-fe44-4e8a-921c-0732a761f7de')
+Delayed('subtract_vis_convert-882e1d5d-be67-4032-b0e6-581606749559')
+Delayed('subtract_vis_convert-5e138d3b-db3b-45fc-b7ad-f9ac1c1c8cc6')
+Delayed('subtract_vis_convert-cf2ccde6-d24e-42ec-bd06-694ec069f7a7')
+Delayed('subtract_vis_convert-d0e7973e-4ace-440d-add7-7f724cbe8480')
+Delayed('subtract_vis_convert-0b67808d-1a3b-4124-88d3-f987e84f9541')
+Delayed('subtract_vis_convert-0a5ddcd8-95cb-4d5e-98ba-ed00d618f26d')
+Delayed('subtract_vis_convert-3bc4d4cc-73b9-4f4c-a14e-bb227fbd4aee')
+Delayed('subtract_vis_convert-8158e4ca-fdc4-4278-8b74-ec7cc40fc3b9')
+Delayed('subtract_vis_convert-18211705-3399-40f7-b4e8-c065d0df443c')
+Delayed('subtract_vis_convert-9797c72b-42df-4b1d-abb0-d2020bca5c07')
+Delayed('subtract_vis_convert-50f6bd39-5bb4-4188-9add-22dc3a32ef88')
+Delayed('subtract_vis_convert-53958e0e-c334-4092-92c6-8879c1b3beb2')
+Delayed('subtract_vis_convert-c0125f16-370c-4d83-8814-7e1b118b5cfc')
+Delayed('subtract_vis_convert-7ac1a1d3-3439-48e0-9d4c-478c9c8aa953')
+Delayed('subtract_vis_convert-3ad69d77-00fe-43cb-aeb1-bed37df5f990')
+Delayed('subtract_vis_convert-b747d63b-0642-470e-a5a0-1a97e7e0b291')
+Delayed('subtract_vis_convert-13f52a3c-fc26-44bd-853e-4b1eb2b1b576')
+Delayed('subtract_vis_convert-8ea5c273-0510-4b4d-9d38-cd7d2727d19e')
+Delayed('subtract_vis_convert-359331c5-9ed8-44b0-a849-def259000f48')
+Delayed('subtract_vis_convert-4ea99aae-3d1d-41a7-91ee-bcdbc368be65')
+Delayed('subtract_vis_convert-a598375c-69d1-4a21-9916-7e36ea76c3f2')
+Delayed('subtract_vis_convert-c15c1abf-d337-4ff8-b4e0-48520c5046ff')
+Delayed('subtract_vis_convert-f6142da9-2375-4967-874b-7a6df307c12e')
+Delayed('subtract_vis_convert-1e0af70b-551b-4c67-82b1-094db0861882')
+Delayed('subtract_vis_convert-3052cab4-e4b4-4da8-a888-e2d97ee4fe6c')
+Delayed('subtract_vis_convert-751c3318-ac44-4820-94c5-ad4cb588a074')
+Delayed('subtract_vis_convert-072d275b-ad17-49da-8d6c-035cab351ba3')
+Delayed('subtract_vis_convert-d470cf22-c599-4b47-9730-ef67ca541f64')
+Delayed('subtract_vis_convert-6a562d81-2a1a-4a27-a42c-4d6288e59da6')
+Delayed('subtract_vis_convert-d4f4ce3b-04f2-4b29-a66c-e67cb63c2054')
+Delayed('subtract_vis_convert-6c00606c-07b0-4049-a3f1-c26b93c4599b')
+Delayed('subtract_vis_convert-a16e977b-591f-49df-afc0-8c3f5c3fa7bd')
+Delayed('subtract_vis_convert-d81efcf4-5421-4ecb-a582-0a4a466abcd3')
+Delayed('subtract_vis_convert-d0c972b8-b0b5-4ea4-b4d6-b18ddfa06980')
+Delayed('subtract_vis_convert-f51d3073-acca-4987-84fa-bd4a32882095')
+Delayed('subtract_vis_convert-d4655389-57f8-49f7-aa30-500507c3a4d1')
+Delayed('subtract_vis_convert-fe2d6fea-4255-49ba-9554-0089218bb082')
+Delayed('subtract_vis_convert-be2bbefa-a537-4ae0-a797-af611576e256')
+Delayed('subtract_vis_convert-d9f5adcc-80e1-499f-87f0-f9b6f7b49287')
+Delayed('subtract_vis_convert-0ffea0d7-745e-44cd-8bcc-c96db5bef532')
+Delayed('subtract_vis_convert-3472d19c-089d-4062-852a-bc65bee2734e')
+Delayed('subtract_vis_convert-8ce7c4a5-c2fa-4156-9bc5-203db3afcc93')
+Delayed('subtract_vis_convert-a775e958-63ba-4ce3-a815-1a1646df0e5c')
+Delayed('subtract_vis_convert-862158f9-d07b-4acf-933b-d5facc682a17')
+Delayed('subtract_vis_convert-497d7c1b-9436-4152-8b68-fc52e5b9ce88')
+Delayed('subtract_vis_convert-f7a587d8-3066-4a5e-b56b-d809302fe023')
+Delayed('subtract_vis_convert-f125d033-49a9-485b-8ab9-0604d8f5943a')
+Delayed('subtract_vis_convert-79cffd6e-9f3c-476f-8e68-b3d6c5a7e860')
+Delayed('subtract_vis_convert-f18e6a04-20eb-4522-a7de-d996acdd7596')
+Delayed('subtract_vis_convert-d4aefa7d-f421-4579-8665-e74b1af96747')
+Delayed('subtract_vis_convert-4eab8b33-9ebb-4a26-aa2a-900155c93d4f')
+Delayed('subtract_vis_convert-7ef43004-5488-4fd2-8df8-28b89d26f363')
+Delayed('subtract_vis_convert-9c800be5-d085-4dad-ad1b-79adef83aa3b')
+Delayed('subtract_vis_convert-50d0bcc8-298b-4609-a241-f4372fa681d1')
+Delayed('subtract_vis_convert-59883d64-a42e-421d-b63b-e368a5359d68')
+Delayed('subtract_vis_convert-d3fd125f-600d-4470-ab4a-0092a2949ba3')
+Delayed('subtract_vis_convert-48a6ab88-3561-4ed6-aaea-41595b976f98')
+Delayed('subtract_vis_convert-58498ac5-0c16-4387-bd10-e8ffead73d1c')
+Delayed('subtract_vis_convert-29bb7698-7e1a-440b-9165-407ac0a8293f')
+Delayed('subtract_vis_convert-2d8be9ce-4bb1-4710-b17b-932f67a5bcf3')
+Delayed('subtract_vis_convert-47a8a4ac-97e5-4154-941e-cfdb9e064ad5')
+Delayed('subtract_vis_convert-aa4b378e-4578-480e-9e63-0b631a1596bf')
+Delayed('subtract_vis_convert-f4acaa1c-5381-4f64-9031-1269287ed97d')
+Delayed('subtract_vis_convert-486bdb23-cf3e-45f1-9431-72cbce1730a2')
+Delayed('subtract_vis_convert-5e6fd3d1-8735-490c-913c-669c8040c0a1')
+Delayed('subtract_vis_convert-c9c4efe6-baad-4f2d-8a6c-0e7e7fe2ecfd')
+Delayed('subtract_vis_convert-db985fb8-123f-4f31-8775-697ce452e15e')
+Delayed('subtract_vis_convert-505b0827-9dd7-415c-b1be-198ad30c09ac')
+Delayed('subtract_vis_convert-a03494af-b563-4b14-b2ba-14bfc0ad6ac1')
+Delayed('subtract_vis_convert-c3fcc5a0-0f8c-4b11-b7c8-6851257c6143')
+Delayed('subtract_vis_convert-5287755d-ce6b-4262-aa53-d0ef3ce8d53b')
+Delayed('subtract_vis_convert-ccf0c2c2-048a-4dfe-8518-31711ff8050b')
+Delayed('subtract_vis_convert-0801ec83-6870-48d2-970f-a4268f3521ab')
+Delayed('subtract_vis_convert-d38565e4-4666-42b6-9d33-3dc36de38dfe')
+Delayed('subtract_vis_convert-684ac92c-570d-4aea-b006-46e1f091fcd3')
+Delayed('subtract_vis_convert-471dd6f6-2230-49fc-a96e-0266e7a708aa')
+Delayed('subtract_vis_convert-40de1620-7606-46f8-93cd-b19a095d46dc')
+Delayed('subtract_vis_convert-f02eca5e-75f5-43e8-b4b6-a5e4ede59ba0')
+Delayed('subtract_vis_convert-24c36707-a1cd-4889-b228-9402e77ff1c4')
+Delayed('subtract_vis_convert-4c4ccfa8-53f5-4533-a19f-811e96e6bd41')
+Delayed('subtract_vis_convert-2d902717-86cc-4657-9150-9b3e954b4c4c')
+Delayed('subtract_vis_convert-fac58671-770a-4f5a-9103-9223a0d6e961')
+Delayed('subtract_vis_convert-52e540ff-e0fc-4ccf-9607-914c5076b188')
+Delayed('subtract_vis_convert-e21ca704-2fcb-4410-8e1d-062a29cecd49')
+Delayed('subtract_vis_convert-ec25f085-71f8-409d-ba23-ed59bd19c894')
+Delayed('subtract_vis_convert-c9bfbee1-41b7-4edb-95e0-ba5ff6c3d2e7')
+Delayed('subtract_vis_convert-28239eb0-9e61-4726-b37a-962948f07d44')
+Delayed('subtract_vis_convert-ea5db5eb-471d-4f89-a5b0-1af1165c7f9f')
+Delayed('subtract_vis_convert-de3f6704-99d2-4343-90ef-0aae76182cdf')
+Delayed('subtract_vis_convert-90b03d96-df18-4e46-9d99-ace736e289d6')
+Delayed('subtract_vis_convert-270f2ce4-949b-4846-999c-f25c69b40105')
+Delayed('subtract_vis_convert-45d1908b-4518-4341-87d7-b1334d5cc23f')
+Delayed('subtract_vis_convert-1a6d49a1-4a7d-4ac2-90a9-60a72fc123f5')
+Delayed('subtract_vis_convert-cb35c488-7d81-4aba-825f-eb0a46a97ac7')
+Delayed('subtract_vis_convert-82d5b8c1-cf98-4748-ae5b-fd0016736e8d')
+Delayed('subtract_vis_convert-1f7afd61-72c2-4f96-996a-b258c468ab58')
+Delayed('subtract_vis_convert-6abb6592-f4d8-49a4-a7df-41561f94bac9')
+Delayed('subtract_vis_convert-4398bb3f-9aee-4344-b0d0-1f43c7093132')
+Delayed('subtract_vis_convert-b86d7c90-c389-4ac9-8309-885983a15478')
+Delayed('subtract_vis_convert-5227f5c0-9212-43d1-8151-5d119281a3cf')
+Delayed('subtract_vis_convert-cf85f0c4-4c79-467e-be01-b646cc16f5e5')
+Delayed('subtract_vis_convert-f50b16d5-b000-4c85-8741-5d4a3e043864')
+Delayed('subtract_vis_convert-fa7fdaec-11ab-4803-ad31-0d2fbca68652')
+Delayed('subtract_vis_convert-22f2d0fc-77ae-4bc8-9f7e-d9a296224346')
+Delayed('subtract_vis_convert-c33fc3ec-f079-4f0e-af99-28483cb1bc5d')
+Delayed('subtract_vis_convert-b99803b0-ee6f-4535-bfde-c9c34d51c495')
+Delayed('subtract_vis_convert-fffd91f1-c6ff-4358-a0f1-cbf239d98507')
+Delayed('subtract_vis_convert-c7c6ebf1-b9eb-4228-bfac-351ca3de06be')
+Delayed('subtract_vis_convert-e8b2a0d0-c187-4b0a-abd7-8b88b0ae795c')
+Delayed('subtract_vis_convert-036ecc0a-2fb9-4c9d-b908-5ec654af95af')
+Delayed('subtract_vis_convert-58dbfac4-6939-42d4-bedf-c92bc36c667a')
+Delayed('subtract_vis_convert-d5256e2b-ee65-409e-83d2-d7500bef580b')
+Delayed('subtract_vis_convert-8805b43a-4335-4e46-94b6-fdaa865de385')
+Delayed('subtract_vis_convert-1f6541b0-d4b1-4ce3-b874-8c30c57e552b')
+Delayed('subtract_vis_convert-7e712d3d-c809-40c8-8cc6-97ce50a98e47')
+Delayed('subtract_vis_convert-b6ca1cce-c3d2-4301-bd86-d904b8d52180')
+Delayed('subtract_vis_convert-bd8e4be2-6dae-4e74-bd33-e8a87fff1929')
+Delayed('subtract_vis_convert-aa77f05a-5700-4012-955a-7f8a0fefc13c')
+Delayed('subtract_vis_convert-b8042abc-1997-493d-8f92-f8d066044b4f')
+Delayed('subtract_vis_convert-4ae5dff0-9406-4099-8d26-376d8c7f954b')
+Delayed('subtract_vis_convert-8497c852-e029-46ea-a384-bcb2b97376d8')
+Delayed('subtract_vis_convert-2045bac2-a9e7-41f3-a10c-badfe834324a')
+Delayed('subtract_vis_convert-0eaeac38-e2ab-4d0d-a88d-abbaf35cf01e')
+Delayed('subtract_vis_convert-c9e1c01d-927c-4c2b-98b2-4c55879897b0')
+Delayed('subtract_vis_convert-dbe1f6fa-feb6-470b-836d-09bbbefc0a73')
+Delayed('subtract_vis_convert-daccd270-27e2-4dc4-8fb3-702ca8cf7fc1')
+Delayed('subtract_vis_convert-0b2bd922-bc89-4c25-a659-206ddee6b6b0')
+Delayed('subtract_vis_convert-adb7217c-319e-4acb-a8ff-bff81f3f43dc')
+Delayed('subtract_vis_convert-fbc67227-04f3-4932-b0db-ef39b73db089')
+Delayed('subtract_vis_convert-e25ae4d7-2763-4d21-9fbd-6a786ff95ba6')
+Delayed('subtract_vis_convert-be1a056f-8139-4758-b2ac-2a8eaea618c6')
+Delayed('subtract_vis_convert-e51722e0-9baf-4a22-a972-847250840ba9')
+Delayed('subtract_vis_convert-3c0bf2fa-d5b5-42ab-9032-8cc01a2aa510')
+Delayed('subtract_vis_convert-52cec5ab-ed8a-493c-9574-876f57473514')
+Delayed('subtract_vis_convert-9a5c6647-8306-440c-b5cb-d5e955a07797')
+Delayed('subtract_vis_convert-19e0e5fa-8fb9-40f8-8543-e378a6004d23')
+Delayed('subtract_vis_convert-fafd879e-8166-4e04-a1b8-07afc72cbd6c')
+Delayed('subtract_vis_convert-3a6056d6-45a8-48ba-b684-47cc9717d9da')
+Delayed('subtract_vis_convert-bc543242-8d44-4f9c-8d03-bfce756be9f1')
+Delayed('subtract_vis_convert-1b8af488-d51d-4b67-9f39-4f402b860cfd')
+Delayed('subtract_vis_convert-5e7a65d6-95a3-41fd-b275-bba981c5b356')
+Delayed('subtract_vis_convert-d19a2508-d40f-4527-8429-9d809e7bd508')
+Delayed('subtract_vis_convert-ba227180-cceb-42de-b392-e125fc7a943b')
+Delayed('subtract_vis_convert-874e6142-292a-4d25-887a-55eab1149b0e')
+Delayed('subtract_vis_convert-99b31e45-382c-4f5c-bac6-cbdf047488b6')
+Delayed('subtract_vis_convert-f37556ef-fe6d-4f58-b3b2-a0430c4ca407')
+Delayed('subtract_vis_convert-ab311024-5552-4f52-9cc0-cab5e3af91f0')
+Delayed('subtract_vis_convert-5c6705aa-49ff-4341-8de8-3f35edfdb444')
+Delayed('subtract_vis_convert-b36ff655-8a5f-46dd-bc9b-7f15bc683854')
+Delayed('subtract_vis_convert-561d3110-e783-492a-8ae7-bc3908aa95cf')
+Delayed('subtract_vis_convert-8ae54be8-9379-4968-b423-006969857828')
+Delayed('subtract_vis_convert-6767290c-e179-4f81-b830-2bc7b456ea5a')
+Delayed('subtract_vis_convert-c36d1a4b-15c6-4ecb-a2d4-8281b1d32b01')
+Delayed('subtract_vis_convert-aef0b101-9a8c-46f4-97f3-5a84e7614676')
+Delayed('subtract_vis_convert-48badade-8259-4cc7-bcfb-0a3edf964812')
+Delayed('subtract_vis_convert-a762cacc-ca54-4ec4-a7d4-72cd1abd822c')
+Delayed('subtract_vis_convert-fff234ec-aa8d-4bbc-af8f-4691bea37d59')
+Delayed('subtract_vis_convert-e04db8d3-a170-4b12-b37b-51d9cf4be49b')
+Delayed('subtract_vis_convert-1c2fb13a-4338-4b0e-8e60-0419f600af33')
+Delayed('subtract_vis_convert-4bafd76f-6c06-4d81-8803-f776a26a6509')
+Delayed('subtract_vis_convert-0b5afbd0-33e9-412c-b4f6-7972c0044e92')
+Delayed('subtract_vis_convert-99afa465-1737-4396-b33f-0a7780fe9679')
+Dirty image sumwt [[3336.]]
+Quality assessment:
+	Origin: qa_image
+	Context: 
+	Data:
+		shape: '(1, 1, 512, 512)'
+		max: '0.00034606530438410055'
+		min: '-0.00044750477158996086'
+		maxabs: '0.00044750477158996086'
+		rms: '7.226492543489561e-05'
+		sum: '-0.011224715157638105'
+		medianabs: '4.7807897811061015e-05'
+		medianabsdevmedian: '4.772202732006259e-05'
+		median: '2.0847584216485644e-06'
+
+Elapsed time = 21.4 (s)
+[{'basename': 'm30',
+  'context': 's3sky',
+  'declination': -30.0,
+  'elapsed_time': 21.428900480270386,
+  'epoch': '2019-09-09 15:15:02',
+  'flux_limit': 0.003,
+  'hostname': 'openhpc-compute-0.novalocal',
+  'integration_time': 30.0,
+  'nb_name': '../../../surface_simulation_elevation.py',
+  'ngroup_components': 100,
+  'ngroup_visibility': 2880,
+  'npixel': 512,
+  'ntotal': 14363664,
+  'nworkers': 228,
+  'offset_dir': '1.0 0.0',
+  'onsource_abscentral': 0.00012176201190386646,
+  'onsource_maxabs': 0.00044750477158996086,
+  'onsource_medianabs': 4.7807897811061015e-05,
+  'onsource_rms': 7.226492543489561e-05,
+  'opposite': False,
+  'pb_npixel': 1024,
+  'pbtype': 'MID_FEKO_B1',
+  'psf_maxabs': 0.9989933134607033,
+  'psf_medianabs': 0.007803824015738016,
+  'psf_rms': 0.01625884052699677,
+  'se': 0.0,
+  'seed': 18051955,
+  'snapshot': False,
+  'surface_scaling': 0.0,
+  'time_range': '-0.05 0.05',
+  'tsys': 0.0,
+  'use_natural': False,
+  'use_radec': False}]
+Total processing 1.43637e+07 times-baselines-components-scenarios
+Processing rate of time-baseline-component-scenario = 2939.79 per worker-second
+Traceback (most recent call last):
+  File "../../../surface_simulation_elevation.py", line 722, in <module>
+    arlexecute.close()
+  File "/alaska/tim/Code/algorithm-reference-library/wrappers/arlexecute/execution_support/arlexecutebase.py", line 206, in close
+    self._client.cluster.close()
+AttributeError: 'NoneType' object has no attribute 'close'
