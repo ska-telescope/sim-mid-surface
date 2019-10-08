@@ -69,7 +69,7 @@ for host in `cat hostfile.$JOBID`; do
     fi
     echo "run dask-worker"
     ssh $host dask-worker --host ${host} --nprocs 2 --nthreads 1  \
-    --memory-limit 0.75 --local-directory /tmp $scheduler:8786  &
+    --memory-limit 0.75   $scheduler:8786  &
         sleep 1
     hostIndex="1"
 done

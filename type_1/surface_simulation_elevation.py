@@ -261,7 +261,9 @@ if __name__ == '__main__':
                         help='Location of voltage pattern files')
     
     args = parser.parse_args()
-    
+
+    pp.pprint(vars(args))
+
     use_agg = args.use_agg == "True"
     if use_agg:
         import matplotlib as mpl
