@@ -83,8 +83,8 @@ CMD="python ../../../surface_simulation_elevation.py --context s3sky --rmax 1e5 
 --ngroup_visibility 2880 --ngroup_components 100 --show True \
 --elevation_sampling 1.0 --declination -75.0 \
 --seed 18051955  --band Ku --pbtype MID_FEKO_Ku --memory 32  --integration_time 30 --use_agg True \
---time_chunk 30 --time_range -6 6  --shared_directory /alaska/tim/Code/sim-mid-surface/shared \
---vp_directory /alaska/tim/Code/sim-mid-surface/beams/interpolated/ \
+--time_chunk 30 --time_range -6 6  --shared_directory /mnt/storage-ssd/tim/Code/sim-mid-surface/shared \
+--vp_directory /mnt/storage-ssd/tim/Code/sim-mid-surface/beams/interpolated/ \
 | tee surface_simulation.log"
 echo "About to execute $CMD"
 
