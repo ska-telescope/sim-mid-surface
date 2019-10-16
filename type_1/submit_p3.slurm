@@ -42,7 +42,7 @@
 module purge                               # Removes all modules still loaded
 
 #! Set up python
-. $HOME/alaska-venv/bin/activate
+# . $HOME/alaska-venv/bin/activate
 export PYTHONPATH=$PYTHONPATH:$ARL
 echo "PYTHONPATH is ${PYTHONPATH}"
 
@@ -69,7 +69,7 @@ for host in `cat hostfile.$JOBID`; do
     fi
     echo "run dask-worker"
     ssh $host dask-worker --host ${host} --nprocs 2 --nthreads 1  \
-    --memory-limit 0.75   $scheduler:8786  &
+    --memory-limit 16GB   $scheduler:8786  &
         sleep 1
     hostIndex="1"
 done

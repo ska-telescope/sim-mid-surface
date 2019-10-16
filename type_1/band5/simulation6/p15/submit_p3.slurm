@@ -42,7 +42,7 @@
 module purge                               # Removes all modules still loaded
 
 #! Set up python
-. $HOME/alaska-venv/bin/activate
+# . $HOME/alaska-venv/bin/activate
 export PYTHONPATH=$PYTHONPATH:$ARL
 echo "PYTHONPATH is ${PYTHONPATH}"
 
@@ -80,7 +80,7 @@ export ARL_DASK_SCHEDULER=${scheduler}:8786
 echo "Scheduler is running at ${scheduler}"
 
 CMD="python ../../../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 \
---ngroup_visibility 2880 --ngroup_components 100 --show True \
+ --show True \
 --elevation_sampling 1.0 --declination +15 \
 --seed 18051955  --band Ku --pbtype MID_FEKO_Ku --memory 32  --integration_time 30 --use_agg True \
 --time_chunk 30 --time_range -6 6  --shared_directory /mnt/storage-ssd/tim/Code/sim-mid-surface/shared \
