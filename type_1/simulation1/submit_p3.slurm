@@ -89,7 +89,7 @@ CMD="python ../../surface_simulation_elevation.py --context s3sky --rmax 1e5 --f
 | tee surface_simulation.log"
 =======
 CMD="python ../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 \
---ngroup_visibility 24 --ngroup_components 100 --show True \
+ --show True \
 --seed 18051955  --pbtype MID_GRASP --memory 32  --integration_time 30 --use_agg True --time_chunk \
 1800 --time_range -6 6 --shared_directory /mnt/storage-ssd/tim/Code/sim-mid-surface/shared \
 --vp_directory /alaska/tim/Code/sim-mid-pointing/beam_models/EMSS/with_elevation/ \

@@ -80,7 +80,7 @@ export ARL_DASK_SCHEDULER=${scheduler}:8786
 echo "Scheduler is running at ${scheduler}"
 
 CMD="python ../../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 \
---ngroup_visibility 24 --ngroup_components 100 --show True \
+ --show True \
 --seed 18051955  --pbtype MID_GRASP --memory 32  --integration_time 10 --use_agg True --time_chunk \
 180 --time_range -0.05 0.05 --shared_directory ../../../shared | tee surface_simulation.log"
 echo "About to execute $CMD"
