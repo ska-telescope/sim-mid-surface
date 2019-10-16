@@ -1,7 +1,6 @@
-"""Simulation of the effect of surface errors on MID observations
+"""Simulation of the effect of errors on MID observations
 
-This measures the effect of surface errors on the change in a dirty image induced by pointing errors:
-    - The pointing errors can be random per integration, static, or global, or drawn from power spectra
+This measures the change in a dirty imagethe induced by various errors:
     - The sky can be a point source at the half power point or a realistic sky constructed from S3-SEX catalog.
     - The observation is by MID over a range of hour angles
     - Processing can be divided into chunks of time (default 1800s)
@@ -24,35 +23,26 @@ results_dir = arl_path('test_results')
 
 import numpy
 
-import matplotlib as plt
 from astropy.coordinates import SkyCoord, EarthLocation
 from astropy import units as u
 
 from data_models.polarisation import PolarisationFrame
-from data_models.memory_data_models import Skycomponent, SkyModel
 
-from processing_library.image.operations import create_empty_image_like
 from wrappers.serial.visibility.base import create_blockvisibility
-
 from wrappers.serial.image.operations import show_image, qa_image, export_image_to_fits
 from wrappers.serial.simulation.configurations import create_configuration_from_MIDfile
-from wrappers.serial.image.operations import import_image_from_fits
-from wrappers.serial.skycomponent.operations import apply_beam_to_skycomponent
-from wrappers.serial.skycomponent.base import copy_skycomponent
-from processing_library.util.coordinate_support import hadec_to_azel
-from wrappers.serial.simulation.pointing import simulate_gaintable_from_pointingtable
-
-from wrappers.serial.imaging.primary_beams import create_pb
+from wrappers.serial.imaging.primary_beams import create_vp
 from wrappers.serial.imaging.base import create_image_from_visibility, advise_wide_field
-from wrappers.serial.calibration.pointing import create_pointingtable_from_blockvisibility
-
-from wrappers.arlexecute.visibility.base import copy_visibility
+from processing_components.simulation.simulation_helpers import find_times_above_elevation_limit, plot_azel, \
+    plot_uvcoverage, find_pb_width_null, create_simulation_components
 from wrappers.arlexecute.visibility.coalesce import convert_blockvisibility_to_visibility, \
     convert_visibility_to_blockvisibility
 
-from workflows.arlexecute.skymodel.skymodel_arlexecute import predict_skymodel_list_compsonly_arlexecute_workflow
-from workflows.arlexecute.imaging.imaging_arlexecute import invert_list_arlexecute_workflow
+from workflows.arlexecute.imaging.imaging_arlexecute import invert_list_arlexecute_workflow, \
+    sum_invert_results_arlexecute
 from workflows.arlexecute.imaging.imaging_arlexecute import weight_list_arlexecute_workflow
+from workflows.arlexecute.simulation.simulation_arlexecute import calculate_residual_from_gaintables, \
+    create_pointing_errors_gaintable, create_surface_errors_gaintable
 from workflows.shared.imaging.imaging_shared import sum_invert_results
 
 from wrappers.arlexecute.execution_support.arlexecute import arlexecute
@@ -70,148 +60,11 @@ import pprint
 
 pp = pprint.PrettyPrinter()
 
-
-# Process a set of BlockVisibility's, creating pointing errors, converting to gainables, applying
-# the gaintables to the FT of the skycomponents, and dirty images, one per BlockVisibility
-def create_vis_list_with_errors(band, sub_bvis_list, sub_components, sub_model_list, vp_directory, use_radec=False,
-                                elevation_sampling=5.0):
-        # /Users/timcornwell/Code/sim-mid-pointing/beam_models/EMSS/with_elevation/B2_15_1360_imag.fits
-        # /Users/timcornwell/Code/sim-mid-surface/beams/interpolated/B2_15_1360_real_interpolated.fits
-        
-    def get_band_vp(band, el):
-    
-        if band == 'B1':
-            vpa = import_image_from_fits('%s/B1_%d_0565_real_interpolated.fits' % (vp_directory, int(el)))
-            vpa_imag = import_image_from_fits('%s/B1_%d_0565_imag_interpolated.fits' % (vp_directory, int(el)))
-        elif band == 'B2':
-            vpa = import_image_from_fits('%s/B2_%d_1360_real_interpolated.fits' % (vp_directory, int(el)))
-            vpa_imag = import_image_from_fits('%s/B2_%d_1360_imag_interpolated.fits' % (vp_directory, int(el)))
-        elif band == 'Ku':
-            vpa = import_image_from_fits('%s/Ku_%d_11700_real_interpolated.fits' % (vp_directory, int(el)))
-            vpa_imag = import_image_from_fits('%s/Ku_%d_11700_imag_interpolated.fits' % (vp_directory, int(el)))
-        else:
-            raise ValueError("Unknown band %s" % band)
-        
-        vpa.data = vpa.data + 1j * vpa_imag.data
-        return vpa
-
-    def find_vp(band, vis):
-        ha = numpy.pi * numpy.average(vis.time) / 43200.0
-        dec = vis.phasecentre.dec.rad
-        latitude = vis.configuration.location.lat.rad
-        az, el = hadec_to_azel(ha, dec, latitude)
-
-        el_deg = el * 180.0 / numpy.pi
-        el_table = max(0.0,
-                       min(90.1, elevation_sampling * ((el_deg + elevation_sampling / 2.0) // elevation_sampling)))
-        return get_band_vp(band, el_table)
-
-    def find_vp_nominal(band):
-        el_nominal_deg = 45.0
-        return get_band_vp(band, el_nominal_deg)
-    
-    error_pt_list = [arlexecute.execute(create_pointingtable_from_blockvisibility)(bvis) for bvis in sub_bvis_list]
-    no_error_pt_list = [arlexecute.execute(create_pointingtable_from_blockvisibility)(bvis) for bvis in sub_bvis_list]
-    
-    vp_nominal_list = [arlexecute.execute(find_vp_nominal)(band) for bv in sub_bvis_list]
-    vp_actual_list = [arlexecute.execute(find_vp)(band, bv) for bv in sub_bvis_list]
-    
-    # Create the gain tables, one per Visibility and per component
-    no_error_gt_list = [arlexecute.execute(simulate_gaintable_from_pointingtable)
-                        (bvis, sub_components, no_error_pt_list[ibv], vp_nominal_list[ibv], use_radec=use_radec)
-                        for ibv, bvis in enumerate(sub_bvis_list)]
-    error_gt_list = [arlexecute.execute(simulate_gaintable_from_pointingtable)
-                     (bvis, sub_components, error_pt_list[ibv], vp_actual_list[ibv], use_radec=use_radec)
-                     for ibv, bvis in enumerate(sub_bvis_list)]
-    if show:
-        tmp_gt_list = arlexecute.compute(error_gt_list, sync=True)
-        plt.clf()
-        for igt, gt in enumerate(tmp_gt_list):
-            error_amp = numpy.abs(gt[0].gain[:, 0, 0, 0, 0])
-            plt.plot(gt[0].time[error_amp > 0.0],  1.0 / error_amp[error_amp > 0.0], '.')
-        # plt.ylim([1e-1, 1.1])
-        plt.title("%s: dish 0 amplitude gain, offsets %.2f %.2f" % (basename, offset[0], offset[1]))
-        plt.xlabel('Time (s)')
-        plt.savefig('gaintable_offset_%.2f_%.2f.png' % (offset[0], offset[1]))
-        plt.show(block=False)
-    
-    # Each component in original components becomes a separate skymodel
-    # Inner nest is over skymodels, outer is over bvis's
-    error_sm_list = [[
-        arlexecute.execute(SkyModel, nout=1)(components=[sub_components[i]], gaintable=error_gt_list[ibv][i])
-        for i, _ in enumerate(sub_components)] for ibv, bv in enumerate(sub_bvis_list)]
-    
-    no_error_sm_list = [[
-        arlexecute.execute(SkyModel, nout=1)(components=[sub_components[i]], gaintable=no_error_gt_list[ibv][i])
-        for i, _ in enumerate(sub_components)] for ibv, bv in enumerate(sub_bvis_list)]
-    
-    # Predict each visibility for each skymodel. We keep all the visibilities separate
-    # and add up dirty images at the end of processing. We calibrate which applies the voltage pattern
-    no_error_bvis_list = [arlexecute.execute(copy_visibility, nout=1)(bvis, zero=True) for bvis in sub_bvis_list]
-    no_error_bvis_list = [
-        predict_skymodel_list_compsonly_arlexecute_workflow(no_error_bvis_list[ibv],
-                                                            no_error_sm_list[ibv],
-                                                            context='2d', docal=True)
-        for ibv, bvis in enumerate(no_error_bvis_list)]
-    
-    error_bvis_list = [arlexecute.execute(copy_visibility, nout=1)(bvis, zero=True) for bvis in sub_bvis_list]
-    error_bvis_list = [predict_skymodel_list_compsonly_arlexecute_workflow(error_bvis_list[ibv],
-                                                                           error_sm_list[ibv],
-                                                                           context='2d', docal=True)
-                       for ibv, bvis in enumerate(error_bvis_list)]
-    
-    # Inner nest is bvis per skymodels, outer is over vis's. Calculate residual visibility
-    def subtract_vis_convert(error_bvis, no_error_bvis):
-        error_bvis.data['vis'] = error_bvis.data['vis'] - no_error_bvis.data['vis']
-        error_vis = convert_blockvisibility_to_visibility(error_bvis)
-        return error_vis
-    
-    error_vis_list = [[arlexecute.execute(subtract_vis_convert)(error_bvis_list[ibvis][icomp],
-                                                                no_error_bvis_list[ibvis][icomp])
-                       for icomp, _ in enumerate(sub_components)]
-                      for ibvis, _ in enumerate(error_bvis_list)]
-    
-    # Now for each visibility/component, we make the component dirty images. We just add these
-    # component dirty images since the weights should be the same
-    def sum_images(images):
-        sum_image = create_empty_image_like(images[0][0])
-        for im in images:
-            sum_image.data += im[0].data
-        return sum_image, images[0][1]
-    
-    dirty_list = list()
-    for vis in error_vis_list:
-        result = invert_list_arlexecute_workflow(vis, sub_model_list, '2d')
-        dirty_list.append(arlexecute.execute(sum_images)(result))
-    
-    return dirty_list
-
-
-def above_elevation_limit(start_times, phasecentre, location, elevation_limit):
-    
-    def valid_elevation(time, location, phasecentre):
-        ha = numpy.pi * time / 43200.0
-        dec = phasecentre.dec.rad
-        latitude = location.geodetic[1].to('rad').value
-        az, el = hadec_to_azel(ha, dec, latitude)
-        return el > elevation_limit
-    
-    number_valid_times = 0
-    valid_start_times = []
-    for it, t in enumerate(start_times):
-        if valid_elevation(t, location, phasecentre):
-            valid_start_times.append(start_times[it])
-            number_valid_times += 1
-    assert number_valid_times > 0, "No data above elevation limit"
-    
-    return valid_start_times
-
-
 if __name__ == '__main__':
     
     print(" ")
-    print("Distributed simulation of surface errors for SKA-MID")
-    print("----------------------------------------------------")
+    print("Distributed simulation of errors for SKA-MID")
+    print("--------------------------------------------")
     print(" ")
     
     memory_use = dict()
@@ -223,47 +76,51 @@ if __name__ == '__main__':
     parser.add_argument('--context', type=str, default='singlesource',
                         help='s3sky or singlesource or null')
     
+    # Observation definition
+    parser.add_argument('--ra', type=float, default=+15.0, help='Right ascension (degrees)')
+    parser.add_argument('--declination', type=float, default=-45.0, help='Declination (degrees)')
+    parser.add_argument('--frequency', type=float, default=1.36e9, help='Frequency')
     parser.add_argument('--rmax', type=float, default=1e5,
                         help='Maximum distance of station from centre (m)')
     
     parser.add_argument('--band', type=str, default='B2', help="Band")
-
-    parser.add_argument('--nnodes', type=int, default=1, help='Number of nodes')
-    parser.add_argument('--nthreads', type=int, default=1, help='Number of threads')
-    parser.add_argument('--memory', type=int, default=8, help='Memory per worker (GB)')
-    parser.add_argument('--nworkers', type=int, default=8, help='Number of workers')
-    parser.add_argument('--flux_limit', type=float, default=1.0, help='Flux limit (Jy)')
-    parser.add_argument('--show', type=str, default='True', help='Show images?')
-    parser.add_argument('--export_images', type=str, default='True', help='Export images in fits format?')
-    parser.add_argument('--ngroup_visibility', type=int, default=8, help='Process in visibility groups this large')
-    parser.add_argument('--ngroup_components', type=int, default=8, help='Process in component groups this large')
+    parser.add_argument('--integration_time', type=float, default=600, help='Integration time (s)')
+    parser.add_argument('--time_range', type=float, nargs=2, default=[-6.0, 6.0], help='Time range in hours')
+    
     parser.add_argument('--npixel', type=int, default=512, help='Number of pixels in image')
-    parser.add_argument('--seed', type=int, default=18051955, help='Random number seed')
+    parser.add_argument('--use_natural', type=str, default='False', help='Use natural weighting?')
+
     parser.add_argument('--snapshot', type=str, default='False', help='Do snapshot only?')
     parser.add_argument('--opposite', type=str, default='False',
                         help='Move source to opposite side of pointing centre')
     parser.add_argument('--offset_dir', type=float, nargs=2, default=[1.0, 0.0], help='Multipliers for null offset')
     parser.add_argument('--pbradius', type=float, default=2.0, help='Radius of sources to include (in HWHM)')
     parser.add_argument('--pbtype', type=str, default='MID', help='Primary beam model: MID or MID_GAUSS')
+    parser.add_argument('--seed', type=int, default=18051955, help='Random number seed')
+    parser.add_argument('--flux_limit', type=float, default=1.0, help='Flux limit (Jy)')
+
+    # Control parameters
+    parser.add_argument('--show', type=str, default='False', help='Show images?')
+    parser.add_argument('--export_images', type=str, default='False', help='Export images in fits format?')
     parser.add_argument('--use_agg', type=str, default="True", help='Use Agg matplotlib backend?')
-    parser.add_argument('--declination', type=float, default=-45.0, help='Declination (degrees)')
-    parser.add_argument('--elevation_sampling', type=float, default=1.0, help='Elevation sampling (deg)')
-    parser.add_argument('--tsys', type=float, default=0.0, help='System temperature: standard 20K')
-    parser.add_argument('--scale', type=float, nargs=2, default=[1.0, 1.0], help='Scale errors by this amount')
     parser.add_argument('--use_radec', type=str, default="False", help='Calculate in RADEC (false)?')
-    parser.add_argument('--use_natural', type=str, default="False", help='Use natural weighting?')
-    parser.add_argument('--integration_time', type=float, default=600.0, help="Integration time (s)")
-    parser.add_argument('--time_range', type=float, nargs=2, default=[-6.0, 6.0], help="Hourangle range (hours")
+    parser.add_argument('--shared_directory', type=str, default='../../shared/', help='Location of configuration files')
+
+    # Dask parameters
+    parser.add_argument('--nnodes', type=int, default=1, help='Number of nodes')
+    parser.add_argument('--nthreads', type=int, default=1, help='Number of threads')
+    parser.add_argument('--memory', type=int, default=8, help='Memory per worker (GB)')
+    parser.add_argument('--nworkers', type=int, default=8, help='Number of workers')
+
+    # Simulation parameters
     parser.add_argument('--time_chunk', type=float, default=1800.0, help="Time for a chunk (s)")
-    parser.add_argument('--shared_directory', type=str, default='../shared/',
-                        help='Location of configuration files')
-    parser.add_argument('--vp_directory', type=str, default='./',
-                        help='Location of voltage pattern files')
-    
+    parser.add_argument('--elevation_sampling', type=float, default=1.0, help='Elevation sampling (deg)')
+    parser.add_argument('--vp_directory', type=str, default='interpolated', help='Directory for beams')
+
     args = parser.parse_args()
-
+    
     pp.pprint(vars(args))
-
+    
     use_agg = args.use_agg == "True"
     if use_agg:
         import matplotlib as mpl
@@ -271,12 +128,11 @@ if __name__ == '__main__':
         mpl.use('Agg')
     from matplotlib import pyplot as plt
     
+    ra = args.ra
     declination = args.declination
-    elevation_sampling = args.elevation_sampling
     use_radec = args.use_radec == "True"
     use_natural = args.use_natural == "True"
     export_images = args.export_images == "True"
-    tsys = args.tsys
     integration_time = args.integration_time
     time_range = args.time_range
     time_chunk = args.time_chunk
@@ -289,8 +145,11 @@ if __name__ == '__main__':
     flux_limit = args.flux_limit
     npixel = args.npixel
     shared_directory = args.shared_directory
-    vp_directory = args.vp_directory
     
+    # Simulation specific parameters
+    vp_directory = args.vp_directory
+    elevation_sampling = args.elevation_sampling
+
     seed = args.seed
     print("Random number seed is", seed)
     show = args.show == 'True'
@@ -299,8 +158,6 @@ if __name__ == '__main__':
     nnodes = args.nnodes
     threads_per_worker = args.nthreads
     memory = args.memory
-    ngroup_visibility = args.ngroup_visibility
-    ngroup_components = args.ngroup_components
     
     basename = os.path.basename(os.getcwd())
     
@@ -329,37 +186,35 @@ if __name__ == '__main__':
         frequency = [12.179e9]
     else:
         raise ValueError("Unknown band %s" % band)
-
-    channel_bandwidth = [1e7]
     
-    phasecentre = SkyCoord(ra=+15.0 * u.deg, dec=declination * u.deg, frame='icrs', equinox='J2000')
-    location = EarthLocation(lon="21.443803", lat="-30.712925", height=0.0)
-
+    channel_bandwidth = [1e7]
+    phasecentre = SkyCoord(ra=ra * u.deg, dec=declination * u.deg, frame='icrs', equinox='J2000')
+    mid_location = EarthLocation(lon="21.443803", lat="-30.712925", height=0.0)
+    
+    # Do each time_chunk in parallel
     start_times = numpy.arange(time_range[0] * 3600, time_range[1] * 3600, time_chunk)
+    end_times = start_times + time_chunk
     print("Start times for chunks:")
     pp.pprint(start_times)
-
-    elevation_limit = numpy.pi * 15.0 / 180.0
-    start_times = above_elevation_limit(start_times, phasecentre, location, elevation_limit)
-    start_times = numpy.array(start_times)
-    pp.pprint(start_times)
-    end_times = start_times + time_chunk
-
+    
+    start_times = find_times_above_elevation_limit(start_times, end_times, location=mid_location,
+                                                   phasecentre=phasecentre, elevation_limit=15.0)
     times = [numpy.arange(start_times[itime], end_times[itime], integration_time) for itime in
              range(len(start_times))]
-    print("Observation times:")
-    pp.pprint(times)
+    print("Observation times:", times)
+    
     s2r = numpy.pi / (12.0 * 3600)
     rtimes = s2r * numpy.array(times)
     ntimes = len(rtimes.flat)
     nchunks = len(start_times)
     
     assert ntimes > 0, "No data above elevation limit"
-
+    pp.pprint(start_times)
+    
     print('%d integrations of duration %.1f s processed in %d chunks' % (ntimes, integration_time, nchunks))
     
     mid = create_configuration_from_MIDfile('%s/ska1mid_local.cfg' % shared_directory, rmax=rmax,
-                                            location=location)
+                                            location=mid_location)
     
     bvis_graph = [arlexecute.execute(create_blockvisibility)(mid, rtimes[itime], frequency=frequency,
                                                              channel_bandwidth=channel_bandwidth, weight=1.0,
@@ -380,15 +235,12 @@ if __name__ == '__main__':
     vis_list0 = arlexecute.compute(vis_graph[0], sync=True)
     memory_use['vis_list'] = nchunks * vis_list0.size()
     
-    # We need the HWHM of the primary beam
-    if pbtype == 'MID':
-        HWHM_deg = 0.596 * 1.36e9 / frequency[0]
-    else:
-        HWHM_deg = 0.447 * 1.36e9 / frequency[0]
+    # We need the HWHM of the primary beam, and the location of the nulls
+    HWHM_deg, null_az_deg, null_el_deg = find_pb_width_null(pbtype, frequency)
     
     HWHM = HWHM_deg * numpy.pi / 180.0
     
-    FOV_deg = 8.0
+    FOV_deg = 8.0 * 1.36e9 / frequency[0]
     print('%s: HWHM beam = %g deg' % (pbtype, HWHM_deg))
     
     advice_list = arlexecute.execute(advise_wide_field)(future_vis_list[0], guard_band_image=1.0,
@@ -400,152 +252,20 @@ if __name__ == '__main__':
     cellsize = advice['cellsize']
     
     if show:
-        future_vis_list = arlexecute.compute(future_vis_list, sync=True)
-        plt.clf()
-        for ivis in range(nchunks):
-            vis = future_vis_list[ivis]
-            print(numpy.unique(vis.time))
-            plt.plot(-vis.u, -vis.v, '.', color='b', markersize=0.2)
-            plt.plot(vis.u, vis.v, '.', color='b', markersize=0.2)
-        plt.xlabel('U (wavelengths)')
-        plt.ylabel('V (wavelengths)')
-        plt.title('UV coverage')
-        plt.savefig('uvcoverage.png')
-        plt.show(block=False)
-        future_vis_list = arlexecute.scatter(future_vis_list)
+        vis_list = arlexecute.compute(vis_graph, sync=True)
+        plot_uvcoverage(vis_list, title=basename)
         
-        plt.clf()
-        r2d = 180.0 / numpy.pi
-        future_bvis_list = arlexecute.compute(future_bvis_list, sync=True)
-        for ivis in range(nchunks):
-            bvis = future_bvis_list[ivis]
-            ha = numpy.pi * bvis.time / 43200.0
-            dec = phasecentre.dec.rad
-            latitude = bvis.configuration.location.lat.rad
-            az, el = hadec_to_azel(ha, dec, latitude)
-            if ivis == 0:
-                plt.plot(bvis.time, r2d * az, '.', color='r', label='Azimuth (deg)')
-                plt.plot(bvis.time, r2d * el, '.', color='b', label='Elevation (deg)')
-            else:
-                plt.plot(bvis.time, r2d * az, '.', color='r')
-                plt.plot(bvis.time, r2d * el, '.', color='b')
-        plt.xlabel('HA (s)')
-        plt.ylabel('Angle')
-        plt.legend()
-        plt.title('Azimuth and elevation vs hour angle')
-        plt.savefig('azel.png')
-        plt.show(block=False)
-        future_bvis_list = arlexecute.scatter(future_bvis_list)
+        bvis_list = arlexecute.compute(bvis_graph, sync=True)
+        plot_azel(bvis_list, title=basename)
     
-    print("Context is ", context)
-    # Construct the skycomponents
-    if context == 'singlesource':
-        print("Constructing single component")
-        offset = [HWHM_deg * offset_dir[0], HWHM_deg * offset_dir[1]]
-        if opposite:
-            offset = [-1.0 * offset[0], -1.0 * offset[1]]
-        print("Offset from pointing centre = %.3f, %.3f deg" % (offset[0], offset[1]))
-        
-        # The point source is offset to approximately the halfpower point
-        offset_direction = SkyCoord(ra=(+15.0 + offset[0] / numpy.cos(numpy.pi * 45.0 / 180.0)) * u.deg,
-                                    dec=(declination + offset[1]) * u.deg,
-                                    frame='icrs', equinox='J2000')
-
-        original_components = [Skycomponent(flux=[[1.0]], direction=offset_direction, frequency=frequency,
-                                            polarisation_frame=PolarisationFrame('stokesI'))]
-        print(original_components[0])
+    # Now construct the components
+    original_components, offset_direction = create_simulation_components(context, phasecentre, frequency,
+                                                                         pbtype, offset_dir, flux_limit,
+                                                                         pbradius * HWHM, pb_npixel, pb_cellsize)
     
-    elif context == 'null':
-        print("Constructing single component at the null")
-        
-        if pbtype == 'MID':
-            null_deg = 2.0 * HWHM_deg
-            offset = [null_deg * offset_dir[0], null_deg * offset_dir[1]]
-        elif pbtype == 'MID_FEKO_B1':
-            null_az_deg = 1.0779 * 1.36e9 / frequency[0]
-            null_el_deg = 1.149 * 1.36e9 / frequency[0]
-            offset = [null_az_deg * offset_dir[0], null_el_deg * offset_dir[1]]
-        elif pbtype == 'MID_FEKO_B2':
-            null_az_deg = 1.0779 * 1.36e9 / frequency[0]
-            null_el_deg = 1.149 * 1.36e9 / frequency[0]
-            offset = [null_az_deg * offset_dir[0], null_el_deg * offset_dir[1]]
-        elif pbtype == 'MID_FEKO_Ku':
-            null_az_deg = 1.0779 * 1.36e9 / frequency[0]
-            null_el_deg = 1.149 * 1.36e9 / frequency[0]
-            offset = [null_az_deg * offset_dir[0], null_el_deg * offset_dir[1]]
-        elif pbtype == 'MID_GAUSS':
-            null_deg = 1.145 * 1.36e9 / frequency[0]
-            offset = [null_deg * offset_dir[0], null_deg * offset_dir[1]]
-        else:
-            null_deg = 1.145 * 1.36e9 / frequency[0]
-            offset = [null_deg * offset_dir[0], null_deg * offset_dir[1]]
-        
-        HWHM = HWHM_deg * numpy.pi / 180.0
-        
-        print("Offset from pointing centre = %.3f, %.3f deg" % (offset[0], offset[1]))
-        
-        # The point source is offset to approximately the null point
-        offset_direction = SkyCoord(ra=(+15.0 + offset[0] / numpy.cos(numpy.pi * 45.0 / 180.0)) * u.deg,
-                                    dec=(declination+ offset[1]) * u.deg,
-                                    frame='icrs', equinox='J2000')
-        
-        original_components = [Skycomponent(flux=[[1.0]], direction=offset_direction, frequency=frequency,
-                                            polarisation_frame=PolarisationFrame('stokesI'))]
-        print(original_components[0])
+    scenarios = ['']
     
-    
-    else:
-        offset = [0.0, 0.0]
-        # Make a skymodel from S3
-        max_flux = 0.0
-        total_flux = 0.0
-        print("Constructing s3sky components")
-        from wrappers.serial.simulation.testing_support import create_test_skycomponents_from_s3
-        
-        original_components = create_test_skycomponents_from_s3(flux_limit=flux_limit / 100.0,
-                                                                phasecentre=phasecentre,
-                                                                polarisation_frame=PolarisationFrame("stokesI"),
-                                                                frequency=numpy.array(frequency),
-                                                                radius=pbradius * HWHM)
-        print("%d components before application of primary beam" %
-              (len(original_components)))
-        
-        pbmodel = arlexecute.execute(create_image_from_visibility)(vis_list0, npixel=pb_npixel,
-                                                                   cellsize=pb_cellsize,
-                                                                   override_cellsize=False,
-                                                                   phasecentre=phasecentre,
-                                                                   frequency=frequency,
-                                                                   nchan=nfreqwin,
-                                                                   polarisation_frame=PolarisationFrame(
-                                                                       "stokesI"))
-        pbmodel = arlexecute.compute(pbmodel, sync=True)
-        pb = create_pb(pbmodel, "MID_GAUSS", pointingcentre=phasecentre, use_local=False)
-        pb_feko = create_pb(pbmodel, pbtype, pointingcentre=phasecentre, use_local=False)
-        pb.data = pb_feko.data[:, 0, ...][:, numpy.newaxis, ...]
-        pb_applied_components = [copy_skycomponent(c) for c in original_components]
-        pb_applied_components = apply_beam_to_skycomponent(pb_applied_components, pb)
-        filtered_components = []
-        for icomp, comp in enumerate(pb_applied_components):
-            if comp.flux[0, 0] > flux_limit:
-                total_flux += comp.flux[0, 0]
-                if abs(comp.flux[0, 0]) > max_flux:
-                    max_flux = abs(comp.flux[0, 0])
-                filtered_components.append(original_components[icomp])
-        print("%d components > %.3f Jy after application of primary beam" %
-              (len(filtered_components), flux_limit))
-        print("Strongest components is %g (Jy)" % max_flux)
-        print("Total flux in components is %g (Jy)" % total_flux)
-        original_components = [copy_skycomponent(c) for c in filtered_components]
-        plt.clf()
-        show_image(pb, components=original_components)
-        plt.show(block=False)
-        
-        print("Created %d components" % len(original_components))
-        # Primary beam points to the phasecentre
-        offset_direction = SkyCoord(ra=+15.0 * u.deg, dec=declination * u.deg, frame='icrs', equinox='J2000')
-    
-    ses = [0.0]
-    
+    # Estimate resource usage
     nants = len(mid.names)
     nbaselines = nants * (nants - 1) // 2
     
@@ -562,23 +282,14 @@ if __name__ == '__main__':
     print("    There are a total of %d integrations" % ntimes)
     print("    There are %d baselines" % nbaselines)
     print("    There are %d components" % len(original_components))
-    print("    %d surface scenario(s) will be tested" % len(ses))
-    ntotal = ntimes * nbaselines * len(original_components) * len(ses)
+    print("    %d scenario(s) will be tested" % len(scenarios))
+    ntotal = ntimes * nbaselines * len(original_components) * len(scenarios)
     print("    Total processing %g times-baselines-components-scenarios" % ntotal)
     print("    Approximate total memory use for data = %.3f GB" % total_memory_use)
     nworkers = len(arlexecute.client.scheduler_info()['workers'])
     print("    Using %s Dask workers" % nworkers)
     
     # Uniform weighting
-    future_model_list = [arlexecute.execute(create_image_from_visibility)(vis_list0, npixel=npixel,
-                                                                          frequency=frequency,
-                                                                          nchan=nfreqwin, cellsize=cellsize,
-                                                                          phasecentre=offset_direction,
-                                                                          polarisation_frame=PolarisationFrame(
-                                                                              "stokesI"))
-                         for i, _ in enumerate(original_components)]
-    future_model_list = arlexecute.persist(future_model_list)
-    
     psf_list = [arlexecute.execute(create_image_from_visibility)(v, npixel=npixel, frequency=frequency,
                                                                  nchan=nfreqwin, cellsize=cellsize,
                                                                  phasecentre=phasecentre,
@@ -617,103 +328,98 @@ if __name__ == '__main__':
     del psf_list
     del future_psf_list
     
-    # ### Calculate the voltage pattern without pointing errors
-    vp = create_image_from_visibility(vis_list0, npixel=pb_npixel, frequency=frequency,
-                                      nchan=nfreqwin, cellsize=pb_cellsize,
-                                      phasecentre=phasecentre,
-                                      override_cellsize=False)
-    # Optionally show the primary beam, with components if the image is in RADEC coords
-    if show:
-        pb = create_pb(vp, "MID_GAUSS", pointingcentre=phasecentre, use_local=False)
-        print("Primary beam:", pb)
-        show_image(pb, title='%s: primary beam' % basename, components=original_components, vmax=1.0, vmin=0.0)
-        
-        plt.savefig('PB_arl.png')
-        plt.show(block=False)
-        if export_images:
-            export_image_to_fits(pb, 'PB_arl.fits')
-        plt.show(block=False)
+    # ### Calculate the voltage pattern without errors
+    vp_list = [arlexecute.execute(create_image_from_visibility)(bv, npixel=pb_npixel, frequency=frequency,
+                                                                nchan=nfreqwin, cellsize=pb_cellsize,
+                                                                phasecentre=phasecentre,
+                                                                override_cellsize=False) for bv in future_bvis_list]
+    print("Constructing voltage pattern")
+    vp_list = [arlexecute.execute(create_vp)(vp, pbtype, pointingcentre=phasecentre, use_local=not use_radec)
+               for vp in vp_list]
+    future_vp_list = arlexecute.persist(vp_list)
+    del vp_list
     
-    # Construct the voltage patterns
-    results = []
+    # Make one image per component
+    future_model_list = [arlexecute.execute(create_image_from_visibility)(future_vis_list[0], npixel=npixel,
+                                                                          frequency=frequency,
+                                                                          nchan=nfreqwin, cellsize=cellsize,
+                                                                          phasecentre=offset_direction,
+                                                                          polarisation_frame=PolarisationFrame(
+                                                                              "stokesI"))
+                         for i, _ in enumerate(original_components)]
+    
+    # Make a set of seeds, one per bvis, to ensure that we can get the same errors on different passes
+    seeds = numpy.round(numpy.random.uniform(1, numpy.power(2, 31), len(future_bvis_list))).astype(('int'))
+    print("Seeds per chunk:")
+    pp.pprint(seeds)
     
     filename = seqfile.findNextFile(prefix='surface_simulation_%s_' % socket.gethostname(), suffix='.csv')
     print('Saving results to %s' % filename)
-    
+    plotfile = seqfile.findNextFile(prefix='surface_simulation_%s_' % socket.gethostname(), suffix='.jpg')
     
     epoch = time.strftime("%Y-%m-%d %H:%M:%S")
     
     time_started = time.time()
     
-    # Now loop over all surface errors
+    # Now loop over all scenarios
     print("")
     print("***** Starting loop over scenarios ******")
     print("")
-    for se in ses:
+    results = []
+    
+    for scenario in scenarios:
         
         result = dict()
         result['context'] = context
         result['nb_name'] = sys.argv[0]
+        result['plotfile'] = plotfile
         result['hostname'] = socket.gethostname()
         result['epoch'] = epoch
         result['basename'] = basename
         result['nworkers'] = nworkers
-        result['ngroup_visibity'] = ngroup_visibility
-        result['ngroup_components'] = ngroup_components
-        
         result['npixel'] = npixel
         result['pb_npixel'] = pb_npixel
         result['flux_limit'] = flux_limit
         result['pbtype'] = pbtype
-        result['surface_scaling'] = se
         result['snapshot'] = snapshot
         result['offset_dir'] = offset_dir
         result['opposite'] = opposite
-        result['tsys'] = tsys
+        result['ra'] = ra
         result['declination'] = declination
         result['use_radec'] = use_radec
         result['use_natural'] = use_natural
         result['integration_time'] = integration_time
         result['seed'] = seed
         result['ntotal'] = ntotal
-        result['se'] = se
+        result['se'] = scenario
         result['band'] = band
         result['frequency'] = frequency
-
+        
         a2r = numpy.pi / (3600.0 * 180.0)
         
-        # The strategy for distribution is to iterate through big cells in (bvis, components). Within each
-        # cell we do distribution over the each bvis, component using create_vis_list_with_error
-        chunk_components = [original_components[i:i + ngroup_components]
-                            for i in range(0, len(original_components), ngroup_components)]
-        chunk_bvis = [future_bvis_list[i:i + ngroup_visibility]
-                      for i in range(0, len(future_bvis_list), ngroup_visibility)]
+        no_error_gtl, error_gtl = \
+            create_surface_errors_gaintable(band, future_bvis_list, original_components,
+                                           vp_directory=vp_directory, use_radec=use_radec,
+                                           show=show, basename=basename)
         
-        file_name = 'SE_type1_%.3f_%s' % (se, context)
+        # Now make all the residual images
+        vis_comp_chunk_dirty_list = \
+            calculate_residual_from_gaintables(future_bvis_list, original_components,
+                                               future_model_list,
+                                               no_error_gtl, error_gtl)
         
-        error_dirty_list = list()
-        for icomp_chunk, comp_chunk in enumerate(chunk_components):
-            for ivis_chunk, vis_chunk in enumerate(chunk_bvis):
-                print("Processing component_chunk %d, visibility chunk %d" % (icomp_chunk, ivis_chunk))
-                vis_comp_chunk_dirty_list = create_vis_list_with_errors(band, chunk_bvis[ivis_chunk],
-                                                                        chunk_components[icomp_chunk],
-                                                                        sub_model_list=future_model_list,
-                                                                        vp_directory=vp_directory,
-                                                                        use_radec=use_radec,
-                                                                        elevation_sampling=elevation_sampling)
-                this_result = arlexecute.compute(vis_comp_chunk_dirty_list, sync=True)
-                for r in this_result:
-                    error_dirty_list.append(r)
+        # Add the resulting images
+        error_dirty_list = sum_invert_results_arlexecute(vis_comp_chunk_dirty_list)
         
-        error_dirty, sumwt = sum_invert_results(error_dirty_list)
-        
+        # Actually compute the graph assembled above
+        error_dirty, sumwt = arlexecute.compute(error_dirty_list, sync=True)
         print("Dirty image sumwt", sumwt)
         del error_dirty_list
         print(qa_image(error_dirty))
         
         if show:
             show_image(error_dirty, cm='gray_r')
-            plt.savefig('%s.png' % file_name)
+            plt.savefig('residual_image.png')
             plt.show(block=False)
         
         qa = qa_image(error_dirty)
