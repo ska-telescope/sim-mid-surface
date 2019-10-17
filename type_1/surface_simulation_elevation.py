@@ -1,6 +1,6 @@
 """Simulation of the effect of errors on MID observations
 
-This measures the change in a dirty imagethe induced by various errors:
+This measures the change in a dirty image induced by various errors:
     - The sky can be a point source at the half power point or a realistic sky constructed from S3-SEX catalog.
     - The observation is by MID over a range of hour angles
     - Processing can be divided into chunks of time (default 1800s)
@@ -23,17 +23,15 @@ results_dir = arl_path('test_results')
 
 import numpy
 
-from astropy.coordinates import SkyCoord, EarthLocation
-from astropy import units as u
+from astropy.coordinates import SkyCoord
+from astropy import units as units
 
 from data_models.polarisation import PolarisationFrame
 
-from wrappers.serial.visibility.base import create_blockvisibility
 from wrappers.serial.image.operations import show_image, qa_image, export_image_to_fits
-from wrappers.serial.simulation.configurations import create_configuration_from_MIDfile
 from wrappers.serial.imaging.primary_beams import create_vp
 from wrappers.serial.imaging.base import create_image_from_visibility, advise_wide_field
-from processing_components.simulation.simulation_helpers import find_times_above_elevation_limit, plot_azel, \
+from processing_components.simulation.simulation_helpers import plot_azel, \
     plot_uvcoverage, find_pb_width_null, create_simulation_components
 from wrappers.arlexecute.visibility.coalesce import convert_blockvisibility_to_visibility, \
     convert_visibility_to_blockvisibility
@@ -42,7 +40,7 @@ from workflows.arlexecute.imaging.imaging_arlexecute import invert_list_arlexecu
     sum_invert_results_arlexecute
 from workflows.arlexecute.imaging.imaging_arlexecute import weight_list_arlexecute_workflow
 from workflows.arlexecute.simulation.simulation_arlexecute import calculate_residual_from_gaintables, \
-    create_pointing_errors_gaintable, create_surface_errors_gaintable
+    create_pointing_errors_gaintable, create_surface_errors_gaintable, create_standard_mid_simulation
 from workflows.shared.imaging.imaging_shared import sum_invert_results
 
 from wrappers.arlexecute.execution_support.arlexecute import arlexecute
@@ -89,7 +87,7 @@ if __name__ == '__main__':
     
     parser.add_argument('--npixel', type=int, default=512, help='Number of pixels in image')
     parser.add_argument('--use_natural', type=str, default='False', help='Use natural weighting?')
-
+    
     parser.add_argument('--snapshot', type=str, default='False', help='Do snapshot only?')
     parser.add_argument('--opposite', type=str, default='False',
                         help='Move source to opposite side of pointing centre')
@@ -98,27 +96,26 @@ if __name__ == '__main__':
     parser.add_argument('--pbtype', type=str, default='MID', help='Primary beam model: MID or MID_GAUSS')
     parser.add_argument('--seed', type=int, default=18051955, help='Random number seed')
     parser.add_argument('--flux_limit', type=float, default=1.0, help='Flux limit (Jy)')
-
+    
     # Control parameters
     parser.add_argument('--show', type=str, default='False', help='Show images?')
     parser.add_argument('--export_images', type=str, default='False', help='Export images in fits format?')
     parser.add_argument('--use_agg', type=str, default="True", help='Use Agg matplotlib backend?')
     parser.add_argument('--use_radec', type=str, default="False", help='Calculate in RADEC (false)?')
     parser.add_argument('--shared_directory', type=str, default='../../shared/', help='Location of configuration files')
-
+    
     # Dask parameters
     parser.add_argument('--nnodes', type=int, default=1, help='Number of nodes')
-    parser.add_argument('--nthreads', type=int, default=1, help='Number of threads')
+    parser.add_argument('--nthreads', type=int, default=4, help='Number of threads')
     parser.add_argument('--memory', type=int, default=8, help='Memory per worker (GB)')
     parser.add_argument('--nworkers', type=int, default=8, help='Number of workers')
-
+    
     # Simulation parameters
     parser.add_argument('--time_chunk', type=float, default=1800.0, help="Time for a chunk (s)")
     parser.add_argument('--elevation_sampling', type=float, default=1.0, help='Elevation sampling (deg)')
     parser.add_argument('--vp_directory', type=str, default='interpolated', help='Directory for beams')
-
-    args = parser.parse_args()
     
+    args = parser.parse_args()
     pp.pprint(vars(args))
     
     use_agg = args.use_agg == "True"
@@ -128,6 +125,7 @@ if __name__ == '__main__':
         mpl.use('Agg')
     from matplotlib import pyplot as plt
     
+    band = args.band
     ra = args.ra
     declination = args.declination
     use_radec = args.use_radec == "True"
@@ -149,7 +147,7 @@ if __name__ == '__main__':
     # Simulation specific parameters
     vp_directory = args.vp_directory
     elevation_sampling = args.elevation_sampling
-
+    
     seed = args.seed
     print("Random number seed is", seed)
     show = args.show == 'True'
@@ -161,6 +159,8 @@ if __name__ == '__main__':
     
     basename = os.path.basename(os.getcwd())
     
+    # Setup dask. If an external scheduler is defined we use that. Otherwise we construct
+    # a LocalCluster
     client = get_dask_Client(threads_per_worker=threads_per_worker,
                              processes=threads_per_worker == 1,
                              memory_limit=memory * 1024 * 1024 * 1024,
@@ -175,7 +175,6 @@ if __name__ == '__main__':
     time_started = time.time()
     
     # Set up details of simulated observation
-    band = args.band
     nfreqwin = 1
     diameter = 15.0
     if band == 'B1':
@@ -188,46 +187,15 @@ if __name__ == '__main__':
         raise ValueError("Unknown band %s" % band)
     
     channel_bandwidth = [1e7]
-    phasecentre = SkyCoord(ra=ra * u.deg, dec=declination * u.deg, frame='icrs', equinox='J2000')
-    mid_location = EarthLocation(lon="21.443803", lat="-30.712925", height=0.0)
+    # noinspection PyUnresolvedReferences
+    phasecentre = SkyCoord(ra=ra * units.deg, dec=declination * units.deg, frame='icrs', equinox='J2000')
     
-    # Do each time_chunk in parallel
-    start_times = numpy.arange(time_range[0] * 3600, time_range[1] * 3600, time_chunk)
-    end_times = start_times + time_chunk
-    print("Start times for chunks:")
-    pp.pprint(start_times)
-    
-    start_times = find_times_above_elevation_limit(start_times, end_times, location=mid_location,
-                                                   phasecentre=phasecentre, elevation_limit=15.0)
-    times = [numpy.arange(start_times[itime], end_times[itime], integration_time) for itime in
-             range(len(start_times))]
-    print("Observation times:", times)
-    
-    s2r = numpy.pi / (12.0 * 3600)
-    rtimes = s2r * numpy.array(times)
-    ntimes = len(rtimes.flat)
-    nchunks = len(start_times)
-    
-    assert ntimes > 0, "No data above elevation limit"
-    pp.pprint(start_times)
-    
-    print('%d integrations of duration %.1f s processed in %d chunks' % (ntimes, integration_time, nchunks))
-    
-    mid = create_configuration_from_MIDfile('%s/ska1mid_local.cfg' % shared_directory, rmax=rmax,
-                                            location=mid_location)
-    
-    bvis_graph = [arlexecute.execute(create_blockvisibility)(mid, rtimes[itime], frequency=frequency,
-                                                             channel_bandwidth=channel_bandwidth, weight=1.0,
-                                                             phasecentre=phasecentre,
-                                                             polarisation_frame=PolarisationFrame("stokesI"),
-                                                             zerow=True)
-                  for itime in range(nchunks)]
-    future_bvis_list = arlexecute.persist(bvis_graph, sync=True)
-    
+    bvis_graph = create_standard_mid_simulation(band, rmax, phasecentre, time_range, time_chunk, integration_time,
+                                                shared_directory)
+    future_bvis_list = arlexecute.persist(bvis_graph)
     bvis_list0 = arlexecute.compute(bvis_graph[0], sync=True)
-    
+    nchunks = len(bvis_graph)
     memory_use['bvis_list'] = nchunks * bvis_list0.size()
-    del bvis_list0
     
     vis_graph = [arlexecute.execute(convert_blockvisibility_to_visibility)(bv) for bv in future_bvis_list]
     future_vis_list = arlexecute.persist(vis_graph, sync=True)
@@ -266,7 +234,8 @@ if __name__ == '__main__':
     scenarios = ['']
     
     # Estimate resource usage
-    nants = len(mid.names)
+    nants = len(bvis_list0.configuration.names)
+    ntimes = len(bvis_list0.time)
     nbaselines = nants * (nants - 1) // 2
     
     memory_use['model_list'] = 8 * npixel * npixel * len(frequency) * len(original_components) / 1024 / 1024 / 1024
@@ -349,7 +318,7 @@ if __name__ == '__main__':
                          for i, _ in enumerate(original_components)]
     
     # Make a set of seeds, one per bvis, to ensure that we can get the same errors on different passes
-    seeds = numpy.round(numpy.random.uniform(1, numpy.power(2, 31), len(future_bvis_list))).astype(('int'))
+    seeds = numpy.round(numpy.random.uniform(1, numpy.power(2, 31), len(future_bvis_list))).astype('int')
     print("Seeds per chunk:")
     pp.pprint(seeds)
     
@@ -399,8 +368,8 @@ if __name__ == '__main__':
         
         no_error_gtl, error_gtl = \
             create_surface_errors_gaintable(band, future_bvis_list, original_components,
-                                           vp_directory=vp_directory, use_radec=use_radec,
-                                           show=show, basename=basename)
+                                            vp_directory=vp_directory, use_radec=use_radec,
+                                            show=show, basename=basename)
         
         # Now make all the residual images
         vis_comp_chunk_dirty_list = \
