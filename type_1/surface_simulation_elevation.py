@@ -24,7 +24,7 @@ results_dir = arl_path('test_results')
 import numpy
 
 from astropy.coordinates import SkyCoord
-from astropy import units as units
+from astropy import units as u
 
 from data_models.polarisation import PolarisationFrame
 
@@ -40,7 +40,7 @@ from workflows.arlexecute.imaging.imaging_arlexecute import invert_list_arlexecu
     sum_invert_results_arlexecute
 from workflows.arlexecute.imaging.imaging_arlexecute import weight_list_arlexecute_workflow
 from workflows.arlexecute.simulation.simulation_arlexecute import calculate_residual_from_gaintables, \
-    create_pointing_errors_gaintable, create_surface_errors_gaintable, create_standard_mid_simulation
+    create_surface_errors_gaintable, create_standard_mid_simulation
 from workflows.shared.imaging.imaging_shared import sum_invert_results
 
 from wrappers.arlexecute.execution_support.arlexecute import arlexecute
@@ -187,8 +187,7 @@ if __name__ == '__main__':
         raise ValueError("Unknown band %s" % band)
     
     channel_bandwidth = [1e7]
-    # noinspection PyUnresolvedReferences
-    phasecentre = SkyCoord(ra=ra * units.deg, dec=declination * units.deg, frame='icrs', equinox='J2000')
+    phasecentre = SkyCoord(ra=ra * u.deg, dec=declination * u.deg, frame='icrs', equinox='J2000')
     
     bvis_graph = create_standard_mid_simulation(band, rmax, phasecentre, time_range, time_chunk, integration_time,
                                                 shared_directory)
@@ -196,6 +195,8 @@ if __name__ == '__main__':
     bvis_list0 = arlexecute.compute(bvis_graph[0], sync=True)
     nchunks = len(bvis_graph)
     memory_use['bvis_list'] = nchunks * bvis_list0.size()
+    
+    
     
     vis_graph = [arlexecute.execute(convert_blockvisibility_to_visibility)(bv) for bv in future_bvis_list]
     future_vis_list = arlexecute.persist(vis_graph, sync=True)
@@ -213,6 +214,7 @@ if __name__ == '__main__':
     
     advice_list = arlexecute.execute(advise_wide_field)(future_vis_list[0], guard_band_image=1.0,
                                                         delA=0.02)
+    
     advice = arlexecute.compute(advice_list, sync=True)
     pb_npixel = 1024
     d2r = numpy.pi / 180.0
