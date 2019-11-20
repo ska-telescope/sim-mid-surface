@@ -16,9 +16,9 @@
 #! How many whole nodes should be allocated?
 #SBATCH --nodes=12
 #! How many (MPI) tasks will there be in total? (<= nodes*16)
-#SBATCH --ntasks=29
+#SBATCH --ntasks=48
 #! Memory limit: P3 has roughly 107GB per node
-##SBATCH --mem 50000
+##SBATCH --mem 10000
 #! How much wallclock time will be required?
 #SBATCH --time=23:59:59
 #! What types of email messages do you wish to receive?
@@ -56,7 +56,8 @@ JOBID=${SLURM_JOB_ID}
 echo ${SLURM_JOB_NODELIST}
 
 #! Create a hostfile:
-scontrol show hostnames $SLURM_JOB_NODELIST | uniq > hostfile.$JOBID
+#scontrol show hostnames $SLURM_JOB_NODELIST | uniq > hostfile.$JOBID
+scontrol show hostnames $SLURM_JOB_NODELIST > hostfile.$JOBID
 
 scheduler=$(head -1 hostfile.$JOBID)
 hostIndex=0
@@ -68,8 +69,8 @@ for host in `cat hostfile.$JOBID`; do
         sleep 5
     fi
     echo "run dask-worker"
-    ssh $host dask-worker --interface ib0  --nprocs 2 --nthreads 4  \
-    --memory-limit 50GB    --local-directory /mnt/storage-ssd/tim/dask-workspace/${host} $scheduler:8786   &
+    ssh $host dask-worker --interface ib0  --nprocs 4 --nthreads 1  \
+    --memory-limit 0.1   --local-directory /mnt/storage-ssd/tim/dask-workspace/${host} $scheduler:8786   &
         sleep 1
     hostIndex="1"
 done
@@ -79,23 +80,13 @@ echo "Scheduler and workers now running"
 export ARL_DASK_SCHEDULER=${scheduler}:8786
 echo "Scheduler is running at ${scheduler}"
 
-<<<<<<< HEAD:type_1/band2/simulation1/submit_p3.slurm
-CMD="python ../../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 \
+CMD="python ../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 \
  --show True \
 --elevation_sampling 1.0 \
---seed 18051955  --band B2 --pbtype MID_FEKO_B2 --memory 32  --integration_time 30 --use_agg True \
+--seed 18051955  --band B2 --pbtype MID_FEKO_B2 --integration_time 30 --use_agg True \
 --time_chunk 30 --time_range -6 6 --shared_directory /mnt/storage-ssd/tim/Code/sim-mid-surface/shared \
 --vp_directory /mnt/storage-ssd/tim/Code/sim-mid-surface/beams/interpolated/ \
 | tee surface_simulation.log"
-=======
-CMD="python ../surface_simulation_elevation.py --context s3sky --rmax 1e5 --flux_limit 0.003 \
- --show True \
---seed 18051955  --pbtype MID_GRASP --memory 32  --integration_time 30 --use_agg True --time_chunk \
-1800 --time_range -6 6 --shared_directory /mnt/storage-ssd/tim/Code/sim-mid-surface/shared \
---vp_directory /alaska/tim/Code/sim-mid-pointing/beam_models/EMSS/with_elevation/ \
-| tee surface_simulation
-.log"
->>>>>>> parent of c1115c2... End of sprint 3.6:type_1/simulation1/submit_p3.slurm
 echo "About to execute $CMD"
 
 eval $CMD
