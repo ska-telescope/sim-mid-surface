@@ -8,12 +8,12 @@ import numpy
 from astropy import units as u
 from astropy.coordinates import SkyCoord
 
-from data_models.polarisation import PolarisationFrame
-from processing_components.image.operations import export_image_to_fits, qa_image
-from processing_components.imaging.base import create_image_from_visibility
-from processing_components.imaging.primary_beams import create_vp_generic_numeric
-from processing_components.simulation.configurations import create_named_configuration
-from processing_components.visibility.base import create_visibility
+from rascil.data_models.polarisation import PolarisationFrame
+from rascil.processing_components.image.operations import export_image_to_fits, qa_image
+from rascil.processing_components.imaging.base import create_image_from_visibility
+from rascil.processing_components.imaging.primary_beams import create_vp_generic_numeric
+from rascil.processing_components.simulation.configurations import create_named_configuration
+from rascil.processing_components.visibility.base import create_visibility
 from processing_library.image.operations import copy_image
 
 log = logging.getLogger(__name__)
