@@ -26,7 +26,7 @@ import numpy
 from astropy.coordinates import SkyCoord
 from astropy import units as u
 
-from rascil.data_models.polarisation import PolarisationFrame
+from rascil.data_models import PolarisationFrame
 
 from rascil.processing_components import show_image, qa_image, export_image_to_fits, create_vp, \
     create_image_from_visibility, advise_wide_field, plot_azel, \
@@ -34,10 +34,9 @@ from rascil.processing_components import show_image, qa_image, export_image_to_f
     convert_blockvisibility_to_visibility, convert_visibility_to_blockvisibility
 
 from rascil.workflows import invert_list_rsexecute_workflow, sum_invert_results_rsexecute, \
-    weight_list_rsexecute_workflow
-from rascil.workflows import calculate_residual_from_gaintables_rsexecute_workflow, \
-    create_surface_errors_gaintable_rsexecute_workflow, create_standard_mid_simulation_rsexecute_workflow
-from rascil.workflows import sum_invert_results
+    weight_list_rsexecute_workflow, calculate_residual_from_gaintables_rsexecute_workflow, \
+    create_surface_errors_gaintable_rsexecute_workflow, create_standard_mid_simulation_rsexecute_workflow,\
+    sum_invert_results
 
 from rascil.workflows.rsexecute.execution_support.rsexecute import rsexecute, get_dask_client
 
@@ -56,8 +55,8 @@ pp = pprint.PrettyPrinter()
 if __name__ == '__main__':
     
     print(" ")
-    print("Distributed simulation of errors for SKA-MID")
-    print("--------------------------------------------")
+    print("Distributed simulation of dish deformation errors for SKA-MID")
+    print("-------------------------------------------------------------")
     print(" ")
     
     memory_use = dict()
@@ -65,7 +64,7 @@ if __name__ == '__main__':
     # Get command line inputs
     import argparse
     
-    parser = argparse.ArgumentParser(description='Simulate pointing errors')
+    parser = argparse.ArgumentParser(description='Distributed simulation of dish deformation errors for SKA-MID')
     parser.add_argument('--context', type=str, default='singlesource',
                         help='s3sky or singlesource or null')
     
@@ -97,18 +96,21 @@ if __name__ == '__main__':
     parser.add_argument('--export_images', type=str, default='False', help='Export images in fits format?')
     parser.add_argument('--use_agg', type=str, default="True", help='Use Agg matplotlib backend?')
     parser.add_argument('--use_radec', type=str, default="False", help='Calculate in RADEC (false)?')
-    parser.add_argument('--shared_directory', type=str, default='../../shared/', help='Location of configuration files')
+    default_shared_path = rascil_path("data/configurations")
+    parser.add_argument('--shared_directory', type=str, default=default_shared_path, help='Location of configuration files')
     
-    # Dask parameters
+    # Dask parameters; matched to P3
     parser.add_argument('--nnodes', type=int, default=1, help='Number of nodes')
-    parser.add_argument('--nthreads', type=int, default=4, help='Number of threads')
-    parser.add_argument('--memory', type=int, default=8, help='Memory per worker (GB)')
-    parser.add_argument('--nworkers', type=int, default=8, help='Number of workers')
+    parser.add_argument('--nthreads', type=int, default=1, help='Number of threads')
+    parser.add_argument('--memory', type=int, default=64, help='Memory per worker (GB)')
+    parser.add_argument('--nworkers', type=int, default=16, help='Number of workers')
     
     # Simulation parameters
     parser.add_argument('--time_chunk', type=float, default=1800.0, help="Time for a chunk (s)")
     parser.add_argument('--elevation_sampling', type=float, default=1.0, help='Elevation sampling (deg)')
-    parser.add_argument('--vp_directory', type=str, default='interpolated', help='Directory for beams')
+    parser.add_argument('--vp_directory', type=str,
+                        default='/mnt/storage-ssd/tim/Code/sim-mid-surface/beams/interpolated/',
+                        help='Directory for beams')
     
     args = parser.parse_args()
     pp.pprint(vars(args))
@@ -219,10 +221,15 @@ if __name__ == '__main__':
     if show:
         vis_list = rsexecute.compute(vis_graph, sync=True)
         plot_uvcoverage(vis_list, title=basename)
+        plt.savefig('uvcoverage.png')
+        plt.show(block=False)
+
         
         bvis_list = rsexecute.compute(bvis_graph, sync=True)
         plot_azel(bvis_list, title=basename)
-    
+        plt.savefig('azel.png')
+        plt.show(block=False)
+
     # Now construct the components
     original_components, offset_direction = create_simulation_components(context, phasecentre, frequency,
                                                                          pbtype, offset_dir, flux_limit,
